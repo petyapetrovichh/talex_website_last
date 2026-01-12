@@ -20,7 +20,7 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white py-3 shadow-sm`}
     >
       <div className="container flex items-center justify-between">
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-12">
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
               <span className="text-2xl font-bold tracking-tight">TaleX</span>
@@ -28,7 +28,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-8">
             <div className="relative group">
               <div className="flex items-center gap-1 cursor-pointer py-4">
                 <span className="text-sm font-medium text-gray-600 group-hover:text-black transition-colors">Explore</span>
