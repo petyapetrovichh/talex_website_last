@@ -7,35 +7,40 @@ const creators = [
     author: "Future Thinker",
     image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
     category: "Tech",
-    earnings: "$12.5k"
+    earnings: "$12.5k",
+    bgColor: "#1A1A1A" // Dark grey
   },
   {
     name: "What Should a 'Provider' Be?",
     author: "Medical Journal",
     image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
     category: "Health",
-    earnings: "$8.2k"
+    earnings: "$8.2k",
+    bgColor: "#1E293B" // Slate 800
   },
   {
     name: "Non-Fungible Token Series",
     author: "Crypto Daily",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
     category: "Crypto",
-    earnings: "$45.1k"
+    earnings: "$45.1k",
+    bgColor: "#0F172A" // Slate 900
   },
   {
     name: "Minimalist Thoughts",
     author: "Zen Master",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
     category: "Lifestyle",
-    earnings: "$5.6k"
+    earnings: "$5.6k",
+    bgColor: "#3F3F46" // Zinc 700
   },
   {
     name: "New AI Generation Tools",
     author: "Tech Insider",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
     category: "AI",
-    earnings: "$22.3k"
+    earnings: "$22.3k",
+    bgColor: "#18181B" // Zinc 900
   }
 ];
 
@@ -53,7 +58,7 @@ export default function CreatorList() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {creators.map((creator, index) => (
-            <Card key={index} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#2A3342] text-white group" style={{height: '471px'}}>
+            <Card key={index} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300 text-white group" style={{height: '471px', backgroundColor: creator.bgColor}}>
               <div className="relative pt-[100%] overflow-hidden">
                 <img 
                   src={creator.image} 
@@ -69,7 +74,7 @@ export default function CreatorList() {
                 </div>
               </div>
               <CardContent className="p-4 relative">
-                <div className="absolute -top-8 left-4 w-12 h-12 rounded-full border-2 border-[#2A3342] overflow-hidden">
+                <div className="absolute -top-8 left-4 w-12 h-12 rounded-full border-2 overflow-hidden" style={{borderColor: creator.bgColor}}>
                     <img src={creator.image} alt={creator.author} className="w-full h-full object-cover" />
                 </div>
                 <h3 className="font-bold text-sm mt-4 line-clamp-2 min-h-[2.5rem]">{creator.name}</h3>
@@ -87,7 +92,7 @@ export default function CreatorList() {
         {/* Second Row - Duplicate for visual effect as per design */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mt-6 opacity-60 hover:opacity-100 transition-opacity duration-500">
            {creators.map((creator, index) => (
-            <Card key={`row2-${index}`} className="overflow-hidden border-none shadow-lg bg-[#2A3342] text-white">
+            <Card key={`row2-${index}`} className="overflow-hidden border-none shadow-lg text-white" style={{backgroundColor: creator.bgColor}}>
               <div className="relative pt-[100%] overflow-hidden">
                 <img 
                   src={creator.image} 
