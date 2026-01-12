@@ -33,35 +33,8 @@ export default function Hero() {
           
           <div className="relative mt-12 lg:mt-0">
             {/* Mobile Mockups Container */}
-            <div className="relative w-full h-[600px] flex items-center justify-center">
-              {/* We will use CSS to position these mockups to match the design */}
-              <div className="absolute top-0 right-10 w-64 z-10 transform rotate-[-5deg] shadow-2xl rounded-[3rem] overflow-hidden border-8 border-white bg-white">
-                <img src="/images/design-mockup.png" alt="App Interface" className="w-full h-auto object-cover object-top" style={{ aspectRatio: '9/19.5' }} />
-              </div>
-              <div className="absolute bottom-10 left-10 w-64 z-20 transform rotate-[5deg] shadow-2xl rounded-[3rem] overflow-hidden border-8 border-white bg-white">
-                 {/* Placeholder for second screen */}
-                 <div className="w-full h-full bg-gray-100 flex flex-col p-4">
-                    <div className="w-full h-40 bg-gray-200 rounded-xl mb-4 animate-pulse"></div>
-                    <div className="w-3/4 h-4 bg-gray-200 rounded mb-2"></div>
-                    <div className="w-1/2 h-4 bg-gray-200 rounded mb-6"></div>
-                    <div className="flex gap-2 mb-4">
-                        <div className="w-10 h-10 rounded-full bg-gray-200"></div>
-                        <div className="flex-1">
-                            <div className="w-full h-3 bg-gray-200 rounded mb-1"></div>
-                            <div className="w-2/3 h-3 bg-gray-200 rounded"></div>
-                        </div>
-                    </div>
-                 </div>
-              </div>
-              
-              {/* Floating Elements */}
-              <div className="absolute top-1/4 left-0 bg-white p-4 rounded-2xl shadow-xl z-30 max-w-[200px] animate-bounce-slow">
-                <div className="flex items-center gap-3 mb-2">
-                    <div className="w-8 h-8 rounded-full bg-[#82E600] flex items-center justify-center font-bold text-xs">TX</div>
-                    <div className="text-sm font-bold">New Supporter!</div>
-                </div>
-                <div className="text-xs text-gray-500">Alex just subscribed to your exclusive content.</div>
-              </div>
+            <div className="relative w-full flex items-center justify-center">
+              <img src="/images/hero-mockup.png" alt="App Interface" className="w-full h-auto object-contain max-w-[600px]" />
             </div>
           </div>
         </div>

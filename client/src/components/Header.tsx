@@ -45,7 +45,7 @@ export default function Header() {
             </Button>
           </Link>
           <Link href="/signup">
-            <Button className="bg-[#82E600] hover:bg-[#70C700] text-black font-semibold rounded-full px-6">
+            <Button className="bg-[#82E600] hover:bg-white text-black font-semibold rounded-full px-6 border-2 border-transparent hover:border-[#82E600] transition-colors">
               Get Started
             </Button>
           </Link>
@@ -76,7 +76,7 @@ export default function Header() {
             </Button>
           </Link>
           <Link href="/signup">
-            <Button className="w-full bg-[#82E600] hover:bg-[#70C700] text-black font-semibold rounded-full" onClick={() => setIsMobileMenuOpen(false)}>
+            <Button className="w-full bg-[#82E600] hover:bg-white text-black font-semibold rounded-full border-2 border-transparent hover:border-[#82E600] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
               Get Started
             </Button>
           </Link>
