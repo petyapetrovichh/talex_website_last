@@ -6,7 +6,7 @@ export default function CreatorQuote() {
     <section className="relative py-32 bg-[#F0FDF4] overflow-hidden">
       {/* World Map Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <img src="/images/4.png" alt="World Map Background" className="w-full h-full object-cover opacity-30" />
+        <img src="/6.png" alt="Background Element" className="w-full h-full object-cover opacity-30" />
       </div>
 
       <div className="container relative z-10">
@@ -35,21 +35,17 @@ export default function CreatorQuote() {
         {/* Floating Creator Images - Simulated */}
         <div className="absolute top-1/2 left-4 md:left-20 transform -translate-y-1/2 hidden lg:block">
             <div className="w-32 h-40 bg-gray-200 rounded-lg rotate-[-6deg] shadow-lg overflow-hidden border-4 border-white" style={{width: '255px', height: '327px', marginRight: '5px', marginBottom: '-284px', marginLeft: '-148px'}}>
-                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=500&fit=crop" alt="Creator" className="w-full h-full object-cover" style={{marginTop: '-5px', marginRight: '13px', width: '255px', height: '334px'}} />
+                <img src="/16.png" alt="Creator" className="w-full h-full object-cover" style={{marginTop: '-5px', marginRight: '13px', width: '255px', height: '334px'}} />
             </div>
         </div>
         <div className="absolute top-1/2 right-4 md:right-20 transform -translate-y-1/2 hidden lg:block">
             <div className="w-32 h-40 bg-gray-200 rounded-lg rotate-[6deg] shadow-lg overflow-hidden border-4 border-white" style={{width: '253px', height: '338px', marginTop: '43px', marginRight: '-172px', marginBottom: '58px'}}>
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="Creator" className="w-full h-full object-cover" style={{marginTop: '-4px', width: '288px', height: '331px', marginRight: '-93px'}} />
+                <img src="/16.png" alt="Creator" className="w-full h-full object-cover" style={{marginTop: '-4px', width: '288px', height: '331px', marginRight: '-93px'}} />
             </div>
         </div>
         
         {/* Bottom Center Image */}
-        <div className="flex justify-center mt-16">
-             <div className="overflow-hidden border-4 border-white shadow-xl" style={{width: '206px', height: '215px', borderRadius: '20px'}}>
-                <img src="/images/6.png" alt="Petr Osipov" className="w-full h-full object-cover" style={{paddingBottom: '15px'}} />
-             </div>
-        </div>
+        {/* Bottom Center Image Removed as requested */}
       </div>
     </section>
   );

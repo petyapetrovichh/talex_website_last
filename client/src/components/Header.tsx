@@ -29,13 +29,36 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <div className="flex items-center gap-1 cursor-pointer group">
-              <span className="text-sm font-medium text-gray-600 group-hover:text-black transition-colors">Explore</span>
-              <ChevronDown size={16} className="text-gray-400 group-hover:text-black transition-colors" />
+            <div className="relative group">
+              <div className="flex items-center gap-1 cursor-pointer py-4">
+                <span className="text-sm font-medium text-gray-600 group-hover:text-black transition-colors">Explore</span>
+                <ChevronDown size={16} className="text-gray-400 group-hover:text-black transition-colors group-hover:rotate-180 duration-200" />
+              </div>
+              
+              {/* Dropdown Menu */}
+              <div className="absolute top-full left-0 w-48 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
+                <div className="flex flex-col">
+                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">TaleX App</a>
+                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Our Model</a>
+                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Featured</a>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center gap-1 cursor-pointer group">
-              <span className="text-sm font-medium text-gray-600 group-hover:text-black transition-colors">Community</span>
-              <ChevronDown size={16} className="text-gray-400 group-hover:text-black transition-colors" />
+
+            <div className="relative group">
+              <div className="flex items-center gap-1 cursor-pointer py-4">
+                <span className="text-sm font-medium text-gray-600 group-hover:text-black transition-colors">Community</span>
+                <ChevronDown size={16} className="text-gray-400 group-hover:text-black transition-colors group-hover:rotate-180 duration-200" />
+              </div>
+
+              {/* Dropdown Menu */}
+              <div className="absolute top-full left-0 w-48 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
+                <div className="flex flex-col">
+                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">About</a>
+                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Help Center</a>
+                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Contact</a>
+                </div>
+              </div>
             </div>
           </nav>
         </div>

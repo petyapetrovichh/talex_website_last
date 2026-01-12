@@ -5,8 +5,8 @@ export default function BusinessModel() {
     <section className="py-24 bg-white">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center justify-center p-3 bg-gray-100 rounded-full mb-6">
-            <div className="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden">
+          <div className="inline-flex items-center justify-center mb-6">
+            <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
               <img src="/5.png" alt="TaleX" className="w-full h-full object-contain" />
             </div>
           </div>
