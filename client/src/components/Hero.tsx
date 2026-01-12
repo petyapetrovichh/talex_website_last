@@ -10,9 +10,9 @@ export default function Hero() {
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center" style={{marginTop: '-60px', marginLeft: '-6px', width: '1250px', height: '757px'}}>
           <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6" style={{fontSize: '45px', paddingBottom: '1px'}}>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6" style={{fontSize: '45px', paddingBottom: '1px', marginRight: '-9px'}}>
               TaleX is where <br />
-              <span className="relative inline-block">
+              <span className="relative inline-block" style={{color: '#6FF000'}}>
                 great content
               </span> pays off <br />
               both creators and supporters
@@ -22,7 +22,7 @@ export default function Hero() {
               Earn from your first dollar, not your millionth view.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="bg-[#82E600] hover:bg-black text-black hover:text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg shadow-[#82E600]/20 transition-all hover:scale-105">
+              <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105">
                 Start a Tale
               </Button>
             </div>

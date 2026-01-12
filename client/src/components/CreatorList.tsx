@@ -51,7 +51,7 @@ export default function CreatorList() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Ideas already live on TaleX</h2>
           <p className="text-gray-600">Here are just a few of many people you can support and grow together</p>
-          <Button variant="outline" className="mt-6 rounded-full border-black bg-black text-white hover:bg-[#82E600] hover:text-black hover:border-[#82E600] transition-colors">
+          <Button variant="outline" className="mt-6 rounded-full border-black bg-black text-white hover:bg-[#6FF000] hover:text-black hover:border-[#6FF000] transition-colors">
             Discover ever more ideas
           </Button>
         </div>
@@ -68,8 +68,8 @@ export default function CreatorList() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" style={{height: '223px'}}></div>
                 <div className="absolute bottom-4 left-4 right-4">
                     <div className="flex justify-between items-end">
-                        <div className="text-xs font-bold text-[#82E600] mb-1">{creator.category}</div>
-                        <div className="text-xs font-bold text-[#82E600] mb-1">{creator.earnings}</div>
+                        <div className="text-xs font-bold text-[#6FF000] mb-1">{creator.category}</div>
+                        <div className="text-xs font-bold text-[#6FF000] mb-1">{creator.earnings}</div>
                     </div>
                 </div>
               </div>

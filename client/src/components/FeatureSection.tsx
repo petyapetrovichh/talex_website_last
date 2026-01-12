@@ -24,7 +24,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
                 />
             </div>
             {/* Decorative elements */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#82E600]/10 rounded-full blur-3xl -z-10 scale-90"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#6FF000]/10 rounded-full blur-3xl -z-10 scale-90"></div>
         </div>
       </div>
       
@@ -35,7 +35,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         <p className="text-lg text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0" style={{paddingBottom: '0px', paddingLeft: '0px', marginTop: '15px', marginRight: '43px', marginBottom: '30px', marginLeft: '2px', paddingRight: '0px', width: '638px'}}>
           {description}
         </p>
-        <Button className="bg-[#82E600] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#82E600]/20 transition-all hover:scale-105">
+        <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105">
           {buttonText}
         </Button>
       </div>

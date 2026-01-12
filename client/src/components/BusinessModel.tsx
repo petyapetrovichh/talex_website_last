@@ -16,7 +16,7 @@ export default function BusinessModel() {
 
 All that’s left is to focus on creating great content, not on the constant headache of chasing traffic.
           </p>
-          <Button className="mt-8 bg-[#82E600] hover:bg-[#70C700] text-black font-bold rounded-full px-8 py-6">
+          <Button className="mt-8 bg-[#6FF000] hover:bg-[#5ED000] text-black font-bold rounded-full px-8 py-6">
             Learn more about our model
           </Button>
         </div>

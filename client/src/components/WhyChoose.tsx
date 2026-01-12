@@ -40,7 +40,7 @@ export default function WhyChoose() {
                 <p className="text-gray-600 leading-relaxed text-lg">
                   {feature.description}
                 </p>
-                <button className="mt-4 text-[#82E600] font-bold text-sm hover:underline">
+                <button className="mt-4 text-[#6FF000] font-bold text-sm hover:underline">
                   Learn more →
                 </button>
               </div>

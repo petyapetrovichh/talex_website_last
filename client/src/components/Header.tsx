@@ -69,11 +69,11 @@ export default function Header() {
             <input 
               type="text" 
               placeholder="Search TaleX..." 
-              className="bg-[#F6F6F6] text-sm rounded-full pl-10 pr-4 py-2.5 outline-none focus:ring-2 focus:ring-[#82E600]/20 w-64 transition-all"
+              className="bg-[#F6F6F6] text-sm rounded-full pl-10 pr-4 py-2.5 outline-none focus:ring-2 focus:ring-[#6FF000]/20 w-64 transition-all"
             />
           </div>
           <Link href="/signup">
-            <Button className="bg-[#82E600] hover:bg-black text-black hover:text-white font-semibold rounded-full px-6 border-2 border-transparent transition-colors">
+            <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full px-6 border-2 border-transparent transition-colors">
               Start publishing
             </Button>
           </Link>
@@ -104,7 +104,7 @@ export default function Header() {
             </Button>
           </Link>
           <Link href="/signup">
-            <Button className="w-full bg-[#82E600] hover:bg-black text-black hover:text-white font-semibold rounded-full border-2 border-transparent transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+            <Button className="w-full bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full border-2 border-transparent transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
               Get Started
             </Button>
           </Link>
