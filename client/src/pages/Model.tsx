@@ -325,10 +325,10 @@ export default function Model() {
             
             <div className="relative max-w-3xl mx-auto aspect-[2/1] overflow-hidden">
                {/* Concentric Arcs representing time decay */}
-               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-[200%] rounded-full border-[40px] border-[#6FF000] opacity-20"></div>
-               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] h-[160%] rounded-full border-[40px] border-[#6FF000] opacity-40"></div>
-               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[60%] h-[120%] rounded-full border-[40px] border-[#6FF000] opacity-60"></div>
-               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[40%] h-[80%] rounded-full border-[40px] border-[#6FF000] opacity-80 flex items-end justify-center pb-8">
+               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-[200%] rounded-full border-[40px] border-[#6FF000] opacity-20 animate-ripple" style={{ animationDelay: '600ms' }}></div>
+               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] h-[160%] rounded-full border-[40px] border-[#6FF000] opacity-40 animate-ripple" style={{ animationDelay: '400ms' }}></div>
+               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[60%] h-[120%] rounded-full border-[40px] border-[#6FF000] opacity-60 animate-ripple" style={{ animationDelay: '200ms' }}></div>
+               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[40%] h-[80%] rounded-full border-[40px] border-[#6FF000] opacity-80 flex items-end justify-center pb-8 animate-ripple" style={{ animationDelay: '0ms' }}>
                   <span className="text-white font-bold text-2xl">24h</span>
                </div>
                
