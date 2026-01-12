@@ -45,7 +45,9 @@ export default function CreatorQuote() {
         </div>
         
         {/* Bottom Center Image */}
-        {/* Bottom Center Image Removed as requested */}
+        <div className="mt-12 flex justify-center">
+          <img src="/6.png" alt="Petr Osipov" className="w-64 h-auto object-contain" />
+        </div>
       </div>
     </section>
   );

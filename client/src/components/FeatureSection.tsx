@@ -49,14 +49,14 @@ export default function FeatureSection() {
       <Feature 
         title="Discover works worth supporting"
         description="On TaleX, finding new content by your favorite creators or discovering hidden gems has never been easier. Our feed is designed to help you build your own information ecology."
-        imageSrc="/images/feature-1.png"
+        imageSrc="/17.png"
         imageAlt="Discover Feed"
       />
       
       <Feature 
         title="Support that can benefit in return"
         description="Every interaction counts. All content on TaleX is an asset. You can support creators by buying their content shares. When the content grows in value, you benefit too."
-        imageSrc="/images/feature-2.png"
+        imageSrc="/18.png"
         imageAlt="Support & Earn"
         reverse={true}
         buttonText="Start supporting & earning"
