@@ -22,7 +22,7 @@ export default function Hero() {
               Earn from your first dollar, not your millionth view.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="bg-[#82E600] hover:bg-[#70C700] text-black font-bold text-lg px-8 py-6 rounded-full shadow-lg shadow-[#82E600]/20 transition-transform hover:scale-105">
+              <Button className="bg-[#82E600] hover:bg-black text-black hover:text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg shadow-[#82E600]/20 transition-all hover:scale-105">
                 Start a Tale
               </Button>
             </div>

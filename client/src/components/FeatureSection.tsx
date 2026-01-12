@@ -35,7 +35,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         <p className="text-lg text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0">
           {description}
         </p>
-        <Button className="bg-[#82E600] hover:bg-[#70C700] text-black font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#82E600]/20 transition-transform hover:scale-105">
+        <Button className="bg-[#82E600] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#82E600]/20 transition-all hover:scale-105">
           {buttonText}
         </Button>
       </div>
