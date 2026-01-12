@@ -16,7 +16,13 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         {/* Mockup Container */}
         <div className="relative w-full max-w-md mx-auto">
             {/* Image Container - Removed border/shadow wrapper to let the image shine as is, or keep minimal if needed */}
-            {/* Image removed as requested */}
+            <div className="relative z-10 flex justify-center">
+                <img 
+                  src={imageSrc} 
+                  alt={imageAlt} 
+                  className="w-full h-auto object-contain max-h-[600px] drop-shadow-2xl" style={{marginTop: '58px'}}
+                />
+            </div>
             {/* Decorative elements */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#82E600]/10 rounded-full blur-3xl -z-10 scale-90"></div>
         </div>
