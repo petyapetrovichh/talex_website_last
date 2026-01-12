@@ -3,20 +3,17 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-b from-[#F9FFF5] to-white">
+    <section className="relative pt-32 pb-20 overflow-hidden bg-white">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-[url('/images/hero-bg-pattern.svg')] opacity-10 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-full h-full bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat pointer-events-none" />
       
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6" style={{fontSize: '45px', paddingBottom: '1px'}}>
               TaleX is where <br />
               <span className="relative inline-block">
                 great content
-                <svg className="absolute w-full h-3 -bottom-1 left-0 text-[#82E600] -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
-                  <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
-                </svg>
               </span> pays off <br />
               both creators and supporters
             </h1>
