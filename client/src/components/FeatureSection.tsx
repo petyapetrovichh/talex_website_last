@@ -9,9 +9,9 @@ interface FeatureProps {
   buttonText?: string;
 }
 
-function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring in the app" }: FeatureProps) {
+function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring" }: FeatureProps) {
   return (
-    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-24`} style={{marginTop: '-1px', paddingBottom: '0px'}}>
+    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-24`}>
       <div className="flex-1 w-full flex justify-center">
         {/* Mockup Container */}
         <div className="relative w-full max-w-md mx-auto">
@@ -20,7 +20,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
                 <img 
                   src={imageSrc} 
                   alt={imageAlt} 
-                  className="w-full h-auto object-contain max-h-[600px] drop-shadow-2xl" style={{marginTop: '58px'}}
+                  className="w-full h-auto object-contain max-h-[600px] drop-shadow-2xl"
                 />
             </div>
             {/* Decorative elements */}
@@ -45,21 +45,21 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
 
 export default function FeatureSection() {
   return (
-    <section className="container py-10" style={{paddingBottom: '0px'}}>
+    <section className="container py-10">
       <Feature 
         title="Discover works worth supporting"
         description="On TaleX, finding new content by your favorite creators or discovering hidden gems has never been easier. Our feed is designed to help you build your own information ecology."
-        imageSrc="/17.png"
+        imageSrc="/images/feature-1.png"
         imageAlt="Discover Feed"
       />
       
       <Feature 
         title="Support that can benefit in return"
         description="Every interaction counts. All content on TaleX is an asset. You can support creators by buying their content shares. When the content grows in value, you benefit too."
-        imageSrc="/18.png"
+        imageSrc="/images/feature-2.png"
         imageAlt="Support & Earn"
         reverse={true}
-        buttonText="Start supporting & earning"
+        buttonText="Start earning"
       />
     </section>
   );

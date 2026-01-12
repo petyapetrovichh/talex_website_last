@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { useState, useEffect } from "react";
-import { Menu, X, ChevronDown, Search } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,64 +17,36 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white py-3 shadow-sm`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-5"
+      }`}
     >
       <div className="container flex items-center justify-between">
-        <div className="flex items-center gap-12">
-          <Link href="/">
-            <div className="flex items-center gap-2 cursor-pointer">
-              <span className="text-2xl font-bold tracking-tight">TaleX</span>
-            </div>
+        <Link href="/">
+          <div className="flex items-center gap-2 cursor-pointer">
+            <span className="text-2xl font-bold tracking-tight">TaleX</span>
+          </div>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center gap-8">
+          <Link href="/explore">
+            <span className="text-sm font-medium text-gray-600 hover:text-black transition-colors cursor-pointer">Explore</span>
           </Link>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            <div className="relative group">
-              <div className="flex items-center gap-1 cursor-pointer py-4">
-                <span className="text-sm font-medium text-gray-600 group-hover:text-black transition-colors">Explore</span>
-                <ChevronDown size={16} className="text-gray-400 group-hover:text-black transition-colors group-hover:rotate-180 duration-200" />
-              </div>
-              
-              {/* Dropdown Menu */}
-              <div className="absolute top-full left-0 w-48 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
-                <div className="flex flex-col">
-                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">TaleX App</a>
-                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Our Model</a>
-                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Featured</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative group">
-              <div className="flex items-center gap-1 cursor-pointer py-4">
-                <span className="text-sm font-medium text-gray-600 group-hover:text-black transition-colors">Community</span>
-                <ChevronDown size={16} className="text-gray-400 group-hover:text-black transition-colors group-hover:rotate-180 duration-200" />
-              </div>
-
-              {/* Dropdown Menu */}
-              <div className="absolute top-full left-0 w-48 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
-                <div className="flex flex-col">
-                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">About</a>
-                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Help Center</a>
-                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Contact</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
+          <Link href="/community">
+            <span className="text-sm font-medium text-gray-600 hover:text-black transition-colors cursor-pointer">Community</span>
+          </Link>
+        </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={16} />
-            <input 
-              type="text" 
-              placeholder="Search TaleX..." 
-              className="bg-[#F6F6F6] text-sm rounded-full pl-10 pr-4 py-2.5 outline-none focus:ring-2 focus:ring-[#82E600]/20 w-64 transition-all"
-            />
-          </div>
+          <Link href="/login">
+            <Button variant="ghost" className="text-sm font-medium">
+              Sign in
+            </Button>
+          </Link>
           <Link href="/signup">
             <Button className="bg-[#82E600] hover:bg-white text-black font-semibold rounded-full px-6 border-2 border-transparent hover:border-[#82E600] transition-colors">
-              Start publishing
+              Get Started
             </Button>
           </Link>
         </div>
