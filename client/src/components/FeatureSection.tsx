@@ -9,20 +9,14 @@ interface FeatureProps {
   buttonText?: string;
 }
 
-function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring" }: FeatureProps) {
+function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring in the app" }: FeatureProps) {
   return (
-    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-24`}>
+    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-24`} style={{marginTop: '-1px', paddingBottom: '0px'}}>
       <div className="flex-1 w-full flex justify-center">
         {/* Mockup Container */}
         <div className="relative w-full max-w-md mx-auto">
             {/* Image Container - Removed border/shadow wrapper to let the image shine as is, or keep minimal if needed */}
-            <div className="relative z-10 flex justify-center">
-                <img 
-                  src={imageSrc} 
-                  alt={imageAlt} 
-                  className="w-full h-auto object-contain max-h-[600px] drop-shadow-2xl"
-                />
-            </div>
+            {/* Image removed as requested */}
             {/* Decorative elements */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#82E600]/10 rounded-full blur-3xl -z-10 scale-90"></div>
         </div>
@@ -45,21 +39,21 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
 
 export default function FeatureSection() {
   return (
-    <section className="container py-10">
+    <section className="container py-10" style={{paddingBottom: '0px'}}>
       <Feature 
         title="Discover works worth supporting"
         description="On TaleX, finding new content by your favorite creators or discovering hidden gems has never been easier. Our feed is designed to help you build your own information ecology."
-        imageSrc="/images/feature-1.png"
+        imageSrc="/17.png"
         imageAlt="Discover Feed"
       />
       
       <Feature 
         title="Support that can benefit in return"
         description="Every interaction counts. All content on TaleX is an asset. You can support creators by buying their content shares. When the content grows in value, you benefit too."
-        imageSrc="/images/feature-2.png"
+        imageSrc="/18.png"
         imageAlt="Support & Earn"
         reverse={true}
-        buttonText="Start earning"
+        buttonText="Start supporting & earning"
       />
     </section>
   );

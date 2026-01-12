@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute top-0 right-0 w-full h-full bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat pointer-events-none" />
       
       <div className="container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center" style={{marginTop: '-60px', marginLeft: '-6px', width: '1250px', height: '757px'}}>
           <div className="max-w-2xl">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6" style={{fontSize: '45px', paddingBottom: '1px'}}>
               TaleX is where <br />
@@ -23,10 +23,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button className="bg-[#82E600] hover:bg-[#70C700] text-black font-bold text-lg px-8 py-6 rounded-full shadow-lg shadow-[#82E600]/20 transition-transform hover:scale-105">
-                Start now
-              </Button>
-              <Button variant="outline" className="text-lg px-8 py-6 rounded-full border-2 hover:bg-gray-50">
-                Learn more <ArrowRight className="ml-2 h-5 w-5" />
+                Start a Tale
               </Button>
             </div>
           </div>
@@ -34,7 +31,7 @@ export default function Hero() {
           <div className="relative mt-12 lg:mt-0">
             {/* Mobile Mockups Container */}
             <div className="relative w-full flex items-center justify-center">
-              <img src="/images/hero-mockup.png" alt="App Interface" className="w-full h-auto object-contain max-w-[600px]" />
+              <img src="/1.png" alt="App Interface" className="w-full h-auto object-contain" style={{width: '847px', height: '665px', maxWidth: 'none', marginTop: '-74px', marginRight: '126px', marginLeft: '7px', paddingLeft: '54px'}} />
             </div>
           </div>
         </div>
