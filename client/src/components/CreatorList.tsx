@@ -46,21 +46,21 @@ export default function CreatorList() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Ideas already live on TaleX</h2>
           <p className="text-gray-600">Discover projects that are already generating value for their creators and supporters.</p>
-          <Button variant="outline" className="mt-6 rounded-full border-black text-black hover:bg-black hover:text-white transition-colors">
+          <Button variant="outline" className="mt-6 rounded-full border-black bg-black text-white hover:bg-[#82E600] hover:text-black hover:border-[#82E600] transition-colors">
             Explore all projects
           </Button>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {creators.map((creator, index) => (
-            <Card key={index} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#2A3342] text-white group">
+            <Card key={index} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#2A3342] text-white group" style={{height: '471px'}}>
               <div className="relative pt-[100%] overflow-hidden">
                 <img 
                   src={creator.image} 
                   alt={creator.name} 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" style={{height: '223px'}}></div>
                 <div className="absolute bottom-4 left-4 right-4">
                     <div className="flex justify-between items-end">
                         <div className="text-xs font-bold text-[#82E600] mb-1">{creator.category}</div>
