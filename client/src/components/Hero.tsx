@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute top-0 right-0 w-full h-full bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat pointer-events-none" />
       
       <div className="container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center" style={{marginTop: '-62px'}}>
           <div className="max-w-2xl">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6" style={{fontSize: '45px', paddingBottom: '1px'}}>
               TaleX is where <br />
@@ -31,7 +31,7 @@ export default function Hero() {
           <div className="relative mt-12 lg:mt-0">
             {/* Mobile Mockups Container */}
             <div className="relative w-full flex items-center justify-center">
-              <img src="/images/hero-mockup.png" alt="App Interface" className="w-full h-auto object-contain max-w-[600px]" />
+              <img src="/images/hero-mockup.png" alt="App Interface" className="w-full h-auto object-contain" style={{width: '761px', height: '527px', maxWidth: 'none'}} />
             </div>
           </div>
         </div>

@@ -24,7 +24,7 @@ All that’s left is to focus on creating great content, not on the constant hea
         <div className="relative max-w-5xl mx-auto">
             {/* Central Phone Mockup */}
             <div className="relative z-10 w-full max-w-[320px] mx-auto">
-                <img src="/images/7.png" alt="Support & Earn" className="w-full h-auto drop-shadow-2xl" />
+                <img src="/images/7.png" alt="Support & Earn" className="w-full h-auto drop-shadow-2xl" style={{paddingTop: '151px', marginTop: '66px', marginBottom: '25px'}} />
             </div>
 
             {/* Floating Cards - Left */}
@@ -34,15 +34,15 @@ All that’s left is to focus on creating great content, not on the constant hea
 
             {/* Floating Cards - Right */}
             <div className="hidden md:block absolute top-40 right-0 lg:-right-10 w-64 animate-in slide-in-from-right-10 duration-1000 delay-200" style={{marginTop: '107px', marginRight: '-2px', marginBottom: '-36px', marginLeft: '-856px'}}>
-                <img src="/images/9.png" alt="Total Tipped" className="w-full h-auto drop-shadow-xl" />
+                <img src="/images/9.png" alt="Total Tipped" className="w-full h-auto drop-shadow-xl" style={{marginLeft: '-849px'}} />
             </div>
             
             <div className="hidden md:block absolute bottom-20 right-10 lg:right-0 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-500">
-                <img src="/11.png" alt="Rewards" className="w-full h-auto drop-shadow-xl" />
+                <img src="/11.png" alt="Rewards" className="w-full h-auto drop-shadow-xl" style={{marginBottom: '-208px', marginLeft: '9px', marginTop: '-35px'}} />
             </div>
             
             <div className="hidden md:block absolute bottom-40 left-0 lg:-left-10 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-300">
-                <img src="/10.png" alt="Earnings Detail" className="w-full h-auto drop-shadow-xl" />
+                <img src="/10.png" alt="Earnings Detail" className="w-full h-auto drop-shadow-xl" style={{marginTop: '3px', marginBottom: '291px', marginLeft: '821px'}} />
             </div>
         </div>
       </div>

@@ -46,7 +46,7 @@ export default function CreatorQuote() {
         
         {/* Bottom Center Image */}
         <div className="flex justify-center mt-16">
-             <div className="rounded-full overflow-hidden border-4 border-white shadow-xl" style={{width: '206px', height: '215px'}}>
+             <div className="overflow-hidden border-4 border-white shadow-xl" style={{width: '206px', height: '215px', borderRadius: '20px'}}>
                 <img src="/images/6.png" alt="Petr Osipov" className="w-full h-full object-cover" style={{paddingBottom: '15px'}} />
              </div>
         </div>
