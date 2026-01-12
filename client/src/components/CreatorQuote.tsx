@@ -18,8 +18,8 @@ export default function CreatorQuote() {
           </div>
           
           <blockquote className="text-2xl md:text-3xl font-medium leading-relaxed mb-10" style={{fontWeight: '300'}}>
-            "Being an independent creator often means pushing yourself to earn your first $1 — and then constantly thinking about how to drive traffic. Basically, chaos comes in waves: when content's liquidity dries, thinking more about attracting traffic than about the quality of their footage. That's when the panic hits: support creators sometimes, or just stops. Only a few manage to survive this drift. For me, the most valuable thing is extending a helping hand to creators — so you don't fall into this trap. <br/>
-            <span className="font-bold mt-4 block" style={{fontWeight: '300'}}>We want a solution, a brilliant one."</span>
+            "Being an independent creator often means pushing yourself to earn your first $1 — and then constantly thinking about how to drive traffic. Eventually, there comes a moment when creators inevitably starts thinking more about attracting traffic than about the quality of their content. That’s when the worst thing happens: creation slows down, or just stops. Only a few manage to survive this crisis. For me, the most valuable thing is extending a helping hand to creators — so you don’t fall into this trap. <br/>
+            <span className="font-bold mt-4 block" style={{fontWeight: '300'}}>We have a solution, a brilliant one."</span>
           </blockquote>
           
           <div className="flex flex-col items-center gap-2">

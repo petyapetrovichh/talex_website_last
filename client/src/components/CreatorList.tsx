@@ -50,9 +50,9 @@ export default function CreatorList() {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Ideas already live on TaleX</h2>
-          <p className="text-gray-600">Discover projects that are already generating value for their creators and supporters.</p>
+          <p className="text-gray-600">Here are just a few of many people you can support and grow together</p>
           <Button variant="outline" className="mt-6 rounded-full border-black bg-black text-white hover:bg-[#82E600] hover:text-black hover:border-[#82E600] transition-colors">
-            Explore all projects
+            Discover ever more ideas
           </Button>
         </div>
 
