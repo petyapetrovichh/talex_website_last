@@ -11,7 +11,7 @@ interface FeatureProps {
 
 function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring in the app" }: FeatureProps) {
   return (
-    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-24`} style={{marginTop: '-1px', paddingBottom: '0px', marginLeft: '-188px'}}>
+    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-24`} style={{marginTop: '-1px', paddingBottom: '0px', marginLeft: '167px'}}>
       <div className="flex-1 w-full flex justify-center">
         {/* Mockup Container */}
         <div className="relative w-full max-w-md mx-auto">
