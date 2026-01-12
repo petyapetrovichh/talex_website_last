@@ -38,6 +38,10 @@ All that’s left is to focus on creating great content, not on the constant hea
             </div>
             
             <div className="hidden md:block absolute bottom-20 right-10 lg:right-0 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-500">
+                <img src="/11.png" alt="Rewards" className="w-full h-auto drop-shadow-xl" />
+            </div>
+            
+            <div className="hidden md:block absolute bottom-40 left-0 lg:-left-10 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-300">
                 <img src="/10.png" alt="Earnings Detail" className="w-full h-auto drop-shadow-xl" />
             </div>
         </div>
