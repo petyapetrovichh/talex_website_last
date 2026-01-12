@@ -13,7 +13,7 @@ export default function CreatorQuote() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 flex justify-center">
             <div className="w-16 h-16 rounded-xl overflow-hidden">
-                <img src="/images/5.png" alt="Icon" className="w-full h-full object-contain" />
+                <img src="/5.png" alt="Icon" className="w-full h-full object-contain" />
             </div>
           </div>
           

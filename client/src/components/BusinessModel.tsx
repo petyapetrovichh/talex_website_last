@@ -35,11 +35,8 @@ All that’s left is to focus on creating great content, not on the constant hea
                 <img src="/images/9.png" alt="Total Tipped" className="w-full h-auto drop-shadow-xl" />
             </div>
             
-            <div className="hidden md:block absolute bottom-20 right-10 lg:right-0 bg-black text-white p-4 rounded-xl shadow-xl w-56 animate-in slide-in-from-bottom-10 duration-1000 delay-500">
-                <div className="flex items-center gap-3">
-                    <div className="text-3xl font-bold">160</div>
-                    <div className="text-xs text-gray-400">Supporters backed this content</div>
-                </div>
+            <div className="hidden md:block absolute bottom-20 right-10 lg:right-0 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-500">
+                <img src="/10.png" alt="Earnings Detail" className="w-full h-auto drop-shadow-xl" />
             </div>
         </div>
       </div>
