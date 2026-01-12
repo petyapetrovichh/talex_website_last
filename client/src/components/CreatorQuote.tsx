@@ -6,7 +6,7 @@ export default function CreatorQuote() {
     <section className="relative py-32 bg-[#F0FDF4] overflow-hidden">
       {/* World Map Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <img src="/6.png" alt="Background Element" className="w-full h-full object-cover opacity-30" />
+        <img src="/4.png" alt="World Map Background" className="w-full h-full object-cover opacity-30" />
       </div>
 
       <div className="container relative z-10">
