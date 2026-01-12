@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown, Search } from "lucide-react";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,36 +17,41 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-5"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white py-3 shadow-sm`}
     >
       <div className="container flex items-center justify-between">
-        <Link href="/">
-          <div className="flex items-center gap-2 cursor-pointer">
-            <span className="text-2xl font-bold tracking-tight">TaleX</span>
-          </div>
-        </Link>
+        <div className="flex items-center gap-12">
+          <Link href="/">
+            <div className="flex items-center gap-2 cursor-pointer">
+              <span className="text-2xl font-bold tracking-tight">TaleX</span>
+            </div>
+          </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
-          <Link href="/explore">
-            <span className="text-sm font-medium text-gray-600 hover:text-black transition-colors cursor-pointer">Explore</span>
-          </Link>
-          <Link href="/community">
-            <span className="text-sm font-medium text-gray-600 hover:text-black transition-colors cursor-pointer">Community</span>
-          </Link>
-        </nav>
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-8">
+            <div className="flex items-center gap-1 cursor-pointer group">
+              <span className="text-sm font-medium text-gray-600 group-hover:text-black transition-colors">Explore</span>
+              <ChevronDown size={16} className="text-gray-400 group-hover:text-black transition-colors" />
+            </div>
+            <div className="flex items-center gap-1 cursor-pointer group">
+              <span className="text-sm font-medium text-gray-600 group-hover:text-black transition-colors">Community</span>
+              <ChevronDown size={16} className="text-gray-400 group-hover:text-black transition-colors" />
+            </div>
+          </nav>
+        </div>
 
         <div className="hidden md:flex items-center gap-4">
-          <Link href="/login">
-            <Button variant="ghost" className="text-sm font-medium">
-              Sign in
-            </Button>
-          </Link>
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={16} />
+            <input 
+              type="text" 
+              placeholder="Search TaleX..." 
+              className="bg-[#F6F6F6] text-sm rounded-full pl-10 pr-4 py-2.5 outline-none focus:ring-2 focus:ring-[#82E600]/20 w-64 transition-all"
+            />
+          </div>
           <Link href="/signup">
             <Button className="bg-[#82E600] hover:bg-white text-black font-semibold rounded-full px-6 border-2 border-transparent hover:border-[#82E600] transition-colors">
-              Get Started
+              Start publishing
             </Button>
           </Link>
         </div>

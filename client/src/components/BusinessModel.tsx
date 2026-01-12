@@ -6,7 +6,9 @@ export default function BusinessModel() {
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="inline-flex items-center justify-center p-3 bg-gray-100 rounded-full mb-6">
-            <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white font-bold">TX</div>
+            <div className="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden">
+              <img src="/5.png" alt="TaleX" className="w-full h-full object-contain" />
+            </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">A model that changes everything</h2>
           <p className="text-lg text-gray-600 leading-relaxed" style={{paddingLeft: '63px', paddingRight: '4px', marginRight: '2px', height: '169px'}}>
@@ -26,12 +28,12 @@ All that’s left is to focus on creating great content, not on the constant hea
             </div>
 
             {/* Floating Cards - Left */}
-            <div className="hidden md:block absolute top-20 left-0 lg:-left-10 w-64 animate-in slide-in-from-left-10 duration-1000">
-                <img src="/images/8.png" alt="Unlock Full Story" className="w-full h-auto drop-shadow-xl" />
+            <div className="hidden md:block absolute top-20 left-0 lg:-left-10 w-64 animate-in slide-in-from-left-10 duration-1000" style={{marginTop: '-80px', marginLeft: '1px'}}>
+                <img src="/images/8.png" alt="Unlock Full Story" className="w-full h-auto drop-shadow-xl" style={{width: '237px', height: '206px'}} />
             </div>
 
             {/* Floating Cards - Right */}
-            <div className="hidden md:block absolute top-40 right-0 lg:-right-10 w-64 animate-in slide-in-from-right-10 duration-1000 delay-200">
+            <div className="hidden md:block absolute top-40 right-0 lg:-right-10 w-64 animate-in slide-in-from-right-10 duration-1000 delay-200" style={{marginTop: '107px', marginRight: '-2px', marginBottom: '-36px', marginLeft: '-856px'}}>
                 <img src="/images/9.png" alt="Total Tipped" className="w-full h-auto drop-shadow-xl" />
             </div>
             

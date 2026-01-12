@@ -9,7 +9,7 @@ interface FeatureProps {
   buttonText?: string;
 }
 
-function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring" }: FeatureProps) {
+function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring in the app" }: FeatureProps) {
   return (
     <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-24`}>
       <div className="flex-1 w-full flex justify-center">
@@ -59,7 +59,7 @@ export default function FeatureSection() {
         imageSrc="/images/feature-2.png"
         imageAlt="Support & Earn"
         reverse={true}
-        buttonText="Start earning"
+        buttonText="Start supporting & earning"
       />
     </section>
   );

@@ -23,10 +23,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button className="bg-[#82E600] hover:bg-[#70C700] text-black font-bold text-lg px-8 py-6 rounded-full shadow-lg shadow-[#82E600]/20 transition-transform hover:scale-105">
-                Start now
-              </Button>
-              <Button variant="outline" className="text-lg px-8 py-6 rounded-full border-2 hover:bg-gray-50">
-                Learn more <ArrowRight className="ml-2 h-5 w-5" />
+                Start a Tale
               </Button>
             </div>
           </div>
