@@ -31,7 +31,7 @@ export default function Hero() {
           <div className="relative mt-12 lg:mt-0">
             {/* Mobile Mockups Container */}
             <div className="relative w-full flex items-center justify-center">
-              <img src="/hero-updated.png" alt="App Interface" className="w-full h-auto object-contain" style={{width: '847px', height: '665px', maxWidth: 'none', marginTop: '-74px', marginRight: '126px', marginLeft: '7px', paddingLeft: '54px'}} />
+              <img src="/hero-updated.png" alt="App Interface" className="w-full h-auto object-contain" style={{width: '861px', height: '818px', maxWidth: 'none', marginTop: '-2px', marginRight: '126px', marginLeft: '451px', paddingLeft: '54px'}} />
             </div>
           </div>
         </div>
