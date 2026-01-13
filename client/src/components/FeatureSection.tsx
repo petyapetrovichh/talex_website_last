@@ -11,16 +11,16 @@ interface FeatureProps {
 
 function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring in the app" }: FeatureProps) {
   return (
-    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-24 mt-[-1px] pb-0 lg:ml-[167px]`}>
+    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-24 mt-[-1px] pb-0 lg:ml-[167px]`} style={{marginLeft: '53px', width: '1121px', marginTop: '-27px', marginBottom: '36px', height: '482px'}}>
       <div className="flex-1 w-full flex justify-center">
         {/* Mockup Container */}
         <div className="relative w-full max-w-md mx-auto">
             {/* Image Container - Removed border/shadow wrapper to let the image shine as is, or keep minimal if needed */}
-            <div className="relative z-10 flex justify-center">
+            <div className="relative z-10 flex justify-center" style={{marginLeft: '-17px'}}>
                 <img 
                   src={imageSrc} 
                   alt={imageAlt} 
-                  className="w-full h-auto object-contain max-h-[600px] drop-shadow-2xl"
+                  className="w-full h-auto object-contain max-h-[600px] drop-shadow-2xl" style={{marginTop: '-24px', width: '470px', height: '516px', marginLeft: '-27px'}}
                 />
             </div>
             {/* Decorative elements */}
@@ -28,8 +28,8 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         </div>
       </div>
       
-      <div className="flex-1 space-y-6 text-center lg:text-left lg:ml-[-121px] lg:pr-[13px]">
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight lg:pr-[19px] lg:mr-[-219px] mb-[27px]">
+      <div className="flex-1 space-y-6 text-center lg:text-left lg:ml-[-121px] lg:pr-[13px]" style={{marginLeft: '-156px', paddingLeft: '167px'}}>
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight lg:pr-[19px] lg:mr-[-219px] mb-[27px]" style={{fontSize: '39px', width: '609px'}}>
           {title}
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mt-[15px] mb-[30px] lg:mr-[43px] lg:ml-[2px] lg:w-[638px]">
@@ -48,7 +48,8 @@ export default function FeatureSection() {
     <section className="container py-10" style={{paddingBottom: '0px'}}>
       <Feature 
         title="Discover works worth supporting"
-        description="On TaleX, discovery isn’t driven by ads, sponsored content, or engagement algorithms. The Home feed is a place to see what you and your friends genuinely choose to support — ideas that earn attention through real tips, not forced promotion. It’s designed to help people build your own information pathways."
+        description={`On TaleX, discovery isn’t driven by ads, sponsored content, or engagement algorithms. The Home feed is a place to see what you and your friends genuinely choose to support — ideas that earn attention through real tips, not forced promotion.
+It’s designed to help people build their own information pathways.`}
         imageSrc="/2.png"
         imageAlt="Discover Feed"
       />
