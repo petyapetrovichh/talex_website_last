@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1">
             <Link href="/">
               <div className="flex items-center gap-2 cursor-pointer mb-6">
-                <img src="/logo-new.png" alt="TaleX" className="h-8 w-auto" style={{width: '165px', height: '29px'}} />
+                <img src="/logo-new.png" alt="TaleX" className="h-8 w-auto" style={{width: '136px', height: '24px'}} />
               </div>
             </Link>
             <p className="text-gray-500 text-sm leading-relaxed" style={{width: '285px'}}>
