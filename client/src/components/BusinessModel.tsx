@@ -7,7 +7,6 @@ export default function BusinessModel() {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="inline-flex items-center justify-center mb-6">
             <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
-              <img src="/5.png" alt="TaleX" className="w-full h-full object-contain" />
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">A model that changes everything</h2>

@@ -23,7 +23,7 @@ export default function Header() {
         <div className="flex items-center gap-8">
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
-              <img src="/logo-new.png" alt="TaleX" className="h-8 w-auto" />
+              <img src="/logo-new.png" alt="TaleX" className="h-8 w-auto" style={{width: '165px', height: '29px'}} />
             </div>
           </Link>
 
