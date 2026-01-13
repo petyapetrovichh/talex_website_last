@@ -39,7 +39,7 @@ export default function Footer() {
           
           <div>
             <h4 className="font-bold mb-6">Connect</h4>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col gap-4">
               <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">X (Twitter)</a>
               <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Telegram</a>
               <a href="https://discord.gg/talex" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Discord</a>
