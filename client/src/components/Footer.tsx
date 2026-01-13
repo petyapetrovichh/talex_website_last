@@ -9,10 +9,10 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1">
             <Link href="/">
               <div className="flex items-center gap-2 cursor-pointer mb-6">
-                <span className="text-2xl font-bold tracking-tight">TaleX</span>
+                <img src="/logo-new.png" alt="TaleX" className="h-8 w-auto" style={{width: '165px', height: '29px'}} />
               </div>
             </Link>
-            <p className="text-gray-500 text-sm leading-relaxed">
+            <p className="text-gray-500 text-sm leading-relaxed" style={{width: '285px'}}>
               Where great content pays off both creators and supporters. Join the revolution of content ownership.
             </p>
           </div>
@@ -39,19 +39,18 @@ export default function Footer() {
           
           <div>
             <h4 className="font-bold mb-6">Connect</h4>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#6FF000] hover:text-white transition-all">
-                <Twitter size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#6FF000] hover:text-white transition-all">
-                <Instagram size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#6FF000] hover:text-white transition-all">
-                <Linkedin size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#6FF000] hover:text-white transition-all">
-                <Github size={18} />
-              </a>
+            <div className="flex flex-wrap gap-4">
+              <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">X (Twitter)</a>
+              <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Telegram</a>
+              <a href="https://discord.gg/talex" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Discord</a>
+              <a href="https://www.binance.com/en/square/profile/talex_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Binance Square</a>
+              <a href="https://coinmarketcap.com/community/profile/TaleX_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">CoinMarketCap</a>
+              <a href="https://facebook.com/TaleXchain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Facebook</a>
+              <a href="https://youtube.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">YouTube</a>
+              <a href="https://www.instagram.com/talexchain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Instagram</a>
+              <a href="https://www.tiktok.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">TikTok</a>
+              <a href="https://open.spotify.com/show/51Q8zhfB2ADlmyEaUzT3iR" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Spotify</a>
+              <a href="https://www.linkedin.com/company/talexchain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">LinkedIn</a>
             </div>
           </div>
         </div>
