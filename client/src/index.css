@@ -195,3 +195,41 @@
     transform-origin: bottom center;
   }
 }
+
+@layer utilities {
+  .hover-green-text {
+    @apply transition-colors duration-200;
+  }
+  .hover-green-text:hover {
+    color: #6FF000 !important;
+  }
+}
+
+/* Global rule for black text hover effect */
+body .text-black:hover, 
+body .text-gray-900:hover,
+body .text-gray-800:hover,
+body h1:hover,
+body h2:hover,
+body h3:hover,
+body h4:hover,
+body h5:hover,
+body h6:hover,
+body p:hover,
+body span:hover,
+body a:hover {
+  @apply transition-colors duration-200;
+}
+
+/* Apply green hover to specific text elements that are dark */
+body .text-black:hover, 
+body .text-gray-900:hover,
+body .text-gray-800:hover,
+body h1:not(.text-white):not(.text-transparent):hover,
+body h2:not(.text-white):not(.text-transparent):hover,
+body h3:not(.text-white):not(.text-transparent):hover,
+body h4:not(.text-white):not(.text-transparent):hover,
+body h5:not(.text-white):not(.text-transparent):hover,
+body h6:not(.text-white):not(.text-transparent):hover {
+  color: #6FF000;
+}

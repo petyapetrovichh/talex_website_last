@@ -58,7 +58,7 @@ export default function CreatorList() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {creators.map((creator, index) => (
-            <Card key={index} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300 text-white group" style={{height: '471px', backgroundColor: creator.bgColor}}>
+            <Card key={index} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300 text-white group h-auto min-h-[400px]" style={{backgroundColor: creator.bgColor}}>
               <div className="relative pt-[100%] overflow-hidden">
                 <img 
                   src={creator.image} 

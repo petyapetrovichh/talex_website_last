@@ -29,11 +29,11 @@ export default function WhyChoose() {
       <div className="container">
         <h2 className="text-4xl font-bold text-center mb-20">Why Creators Choose TaleX</h2>
         
-        <div className="max-w-4xl mx-auto space-y-16" style={{height: '910px'}}>
+        <div className="max-w-4xl mx-auto space-y-16 h-auto">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col md:flex-row gap-8 items-start">
               <div className="flex-shrink-0">
-                <img src={feature.image} alt={feature.title} className="w-24 h-24 object-contain" style={{width: '180px', height: '180px'}} />
+                <img src={feature.image} alt={feature.title} className="w-24 h-24 md:w-[180px] md:h-[180px] object-contain" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>

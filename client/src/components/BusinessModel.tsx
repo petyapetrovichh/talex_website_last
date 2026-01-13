@@ -10,7 +10,7 @@ export default function BusinessModel() {
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">A model that changes everything</h2>
-          <p className="text-lg text-gray-600 leading-relaxed" style={{paddingLeft: '63px', paddingRight: '4px', marginRight: '2px', height: '169px'}}>
+          <p className="text-lg text-gray-600 leading-relaxed px-4 md:px-16 h-auto">
             When fans don’t just support creators by tipping their work, but join real economic value distribution, the magic happens. For the first time, creators get what nobody has offered them before — a natural promotional instrument powered by their own audience.
 
 All that’s left is to focus on creating great content, not on the constant headache of chasing traffic.
@@ -20,28 +20,28 @@ All that’s left is to focus on creating great content, not on the constant hea
           </Button>
         </div>
 
-        <div className="relative max-w-5xl mx-auto" style={{width: '1171px', height: '598px'}}>
+        <div className="relative max-w-5xl mx-auto w-full h-auto min-h-[600px]">
             {/* Central Phone Mockup */}
             <div className="relative z-10 w-full max-w-[320px] mx-auto">
-                <img src="/images/7.png" alt="Support & Earn" className="w-full h-auto drop-shadow-2xl" style={{paddingTop: '151px', marginTop: '66px', marginBottom: '25px'}} />
+                <img src="/images/7.png" alt="Support & Earn" className="w-full h-auto drop-shadow-2xl pt-20 md:pt-36 mt-16 mb-6" />
             </div>
 
             {/* Floating Cards - Left */}
-            <div className="hidden md:block absolute top-20 left-0 lg:-left-10 w-64 animate-in slide-in-from-left-10 duration-1000" style={{marginTop: '-80px', marginLeft: '1px'}}>
-                <img src="/images/8.png" alt="Unlock Full Story" className="w-full h-auto drop-shadow-xl" style={{width: '237px', height: '206px'}} />
+            <div className="hidden md:block absolute top-0 left-0 lg:-left-10 w-64 animate-in slide-in-from-left-10 duration-1000">
+                <img src="/images/8.png" alt="Unlock Full Story" className="w-full h-auto drop-shadow-xl" />
             </div>
 
             {/* Floating Cards - Right */}
-            <div className="hidden md:block absolute top-40 right-0 lg:-right-10 w-64 animate-in slide-in-from-right-10 duration-1000 delay-200" style={{marginTop: '107px', marginRight: '-2px', marginBottom: '-36px', marginLeft: '-856px'}}>
-                <img src="/images/9.png" alt="Total Tipped" className="w-full h-auto drop-shadow-xl" style={{marginLeft: '-852px', width: '252px'}} />
+            <div className="hidden md:block absolute top-20 right-0 lg:-right-10 w-64 animate-in slide-in-from-right-10 duration-1000 delay-200">
+                <img src="/images/9.png" alt="Total Tipped" className="w-full h-auto drop-shadow-xl" />
             </div>
             
-            <div className="hidden md:block absolute bottom-20 right-10 lg:right-0 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-500">
-                <img src="/11.png" alt="Rewards" className="w-full h-auto drop-shadow-xl" style={{marginBottom: '-263px', marginLeft: '15px', marginTop: '-20px'}} />
+            <div className="hidden md:block absolute bottom-0 right-10 lg:right-0 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-500">
+                <img src="/11.png" alt="Rewards" className="w-full h-auto drop-shadow-xl" />
             </div>
             
-            <div className="hidden md:block absolute bottom-40 left-0 lg:-left-10 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-300">
-                <img src="/10.png" alt="Earnings Detail" className="w-full h-auto drop-shadow-xl" style={{marginTop: '-24px', marginBottom: '250px', marginLeft: '826px'}} />
+            <div className="hidden md:block absolute bottom-20 left-0 lg:-left-10 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-300">
+                <img src="/10.png" alt="Earnings Detail" className="w-full h-auto drop-shadow-xl" />
             </div>
         </div>
       </div>
