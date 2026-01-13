@@ -54,6 +54,8 @@ export default function Header() {
               {/* Dropdown Menu */}
               <div className="absolute top-full left-0 w-48 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
                 <div className="flex flex-col">
+                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">About</a>
+                  <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Help</a>
                   <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Contact</a>
                 </div>
               </div>
