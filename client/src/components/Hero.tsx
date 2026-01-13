@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative pt-32 pb-20 overflow-hidden bg-white">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-full h-full bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat pointer-events-none" />
+      <div className="absolute top-0 right-0 w-full h-full bg-[url('/images/hero-bg-new.png')] bg-cover bg-center bg-no-repeat pointer-events-none" />
       
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
