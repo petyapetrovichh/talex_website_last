@@ -119,12 +119,27 @@ It’s designed to help people build their own information pathways.`}
       
       <Feature 
         title="Support that can benefit in return"
-        description="Every tip, whether to unlock full access or give extra support, is a prediction of the content’s future popularity. If others tip it after you, you can benefit from being early. Content recommendation returns to its most powerful form — word of mouth."
+        description="Every tip, whether to unlock full access or give extra support, is a prediction of the content's future popularity. If others tip it after you, you can benefit from being early. Content recommendation returns to its most powerful form — word of mouth."
         imageSrc="/3.png"
         imageAlt="Support & Earn"
         reverse={true}
         buttonText="Start supporting & earning"
       />
+      
+      <div className="relative w-full" style={{height: '400px', marginTop: '100px'}}>
+        <img
+          src="/images/community_illustration.png"
+          alt="Community illustration"
+          className="absolute object-contain drop-shadow-2xl"
+          style={{
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '600px',
+            height: 'auto',
+            top: '0',
+          }}
+        />
+      </div>
     </section>
   );
 }
