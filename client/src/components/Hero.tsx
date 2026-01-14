@@ -11,15 +11,15 @@ export default function Hero() {
       <div className="container relative z-10">
         <div className="relative w-full h-full">
           {/* Left side - Text content */}
-          <div className={styles.textContainer}>
-            <h1 className={`font-bold tracking-tight leading-[1.1] mb-6 w-full max-w-[559px] ${styles.title}`}>
+          <div className={styles.textContainer} style={{marginLeft: '7px'}}>
+            <h1 className={`font-bold tracking-tight leading-[1.1] mb-6 w-full max-w-[559px] ${styles.title}`} style={{width: '512px', fontSize: '24px'}}>
               TaleX is where <br />
               <span className="relative inline-block" style={{color: '#6FF000'}}>
                 great content
               </span> pays off <br />
               both creators and supporters
             </h1>
-            <p className={`text-gray-600 mb-8 leading-relaxed w-full max-w-[815px] ${styles.description}`}>
+            <p className={`text-gray-600 mb-8 leading-relaxed w-full max-w-[815px] ${styles.description}`} style={{width: '320px'}}>
               TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -46,6 +46,7 @@ export default function Hero() {
                 height: 'auto',
                 marginTop: '270px',
                 marginRight: '-580px',
+                paddingTop: '94px',
               }}
             />
 
@@ -59,7 +60,7 @@ export default function Hero() {
                 right: '400px',
                 width: '200px',
                 height: 'auto',
-                marginTop: '275px',
+                marginTop: '333px',
                 marginRight: '127px',
               }}
             />
@@ -74,7 +75,7 @@ export default function Hero() {
                 right: '99px',
                 width: '200px',
                 height: '349px',
-                marginTop: '-167px',
+                marginTop: '-75px',
                 marginRight: '428px',
               }}
             />
@@ -89,7 +90,7 @@ export default function Hero() {
                 right: '0px',
                 width: '200px',
                 height: 'auto',
-                marginTop: '-100px',
+                marginTop: '-2px',
                 marginRight: '20px',
               }}
             />
@@ -104,7 +105,7 @@ export default function Hero() {
                 right: '-180px',
                 width: '350px',
                 height: 'auto',
-                marginTop: '-100px',
+                marginTop: '-38px',
                 marginRight: '378px',
               }}
             />
