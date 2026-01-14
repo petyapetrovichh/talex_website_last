@@ -56,11 +56,15 @@ export default function Header() {
         <div className="md:hidden flex items-center justify-between w-full">
           <div className="flex items-center gap-2">
             <button
-              className="p-2 rounded-lg active:bg-gray-100 transition-colors"
+              className="p-2 rounded-lg transition-colors"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label={isMobileMenuOpen ? "关闭菜单" : "打开菜单"}
+              style={{
+                backgroundColor: isMobileMenuOpen ? 'black' : 'transparent',
+                transition: 'background-color 0.3s ease'
+              }}
             >
-              <Menu size={24} color="black" />
+              <Menu size={24} color={isMobileMenuOpen ? 'white' : 'black'} />
             </button>
 
             <Link href="/">
