@@ -201,7 +201,8 @@ export default function Header() {
             onClick={() => closeMobileMenu()}
             style={{ 
               top: '60px',
-              animation: isMenuClosing ? 'fadeOutSlow 0.8s ease-out' : 'fadeInSlow 0.4s ease-out'
+              animation: isMenuClosing ? 'fadeOutSlow 0.8s ease-out' : 'fadeInSlow 0.4s ease-out',
+              pointerEvents: isMenuClosing ? 'none' : 'auto'
             }}
           />
           
