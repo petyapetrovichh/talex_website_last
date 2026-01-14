@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <Link href="/">
               <div className="flex items-center gap-2 cursor-pointer">
-                <img src="/logo-new.png" alt="TaleX" className="h-6 w-auto" />
+                <img src="/logo-new.png" alt="TaleX" className="h-6 w-auto" style={{width: '76px', height: '12px'}} />
               </div>
             </Link>
             <p className="text-gray-500 text-sm leading-relaxed">

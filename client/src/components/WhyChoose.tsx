@@ -36,7 +36,7 @@ export default function WhyChoose() {
           {features.map((feature, index) => (
             <div key={`mobile-${index}`} className="flex flex-col gap-4 items-center text-center">
               <div className="flex-shrink-0">
-                <img src={feature.image} alt={feature.title} className="w-20 h-20 object-contain" />
+                <img src={feature.image} alt={feature.title} className="w-20 h-20 object-contain" style={{width: '152px', height: '152px'}} />
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2" style={{fontSize: '20px'}}>{feature.title}</h3>
