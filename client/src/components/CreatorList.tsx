@@ -122,7 +122,7 @@ const CreatorCard = ({ creator }: { creator: typeof creators[0] }) => (
 
 export default function CreatorList() {
   return (
-    <section className="bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1279px'}}>
+    <section className="bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1251px'}}>
       {/* Top Gradient Overlay for smooth blending if needed, though design shows solid background */}
       
       {/* First Row - Marquee Left */}
@@ -142,7 +142,7 @@ export default function CreatorList() {
         <p className="text-gray-700 text-sm md:text-base mb-8 max-w-xl mx-auto">
           Here are just a few of many people you can support and grow together
         </p>
-        <Button className="bg-black text-white hover:bg-[#6FF000] hover:text-black px-8 py-6 rounded-full text-sm font-medium transition-colors">
+        <Button className="bg-black text-white hover:bg-white hover:text-black px-8 py-6 rounded-full text-sm font-medium transition-colors">
           Discover ever more ideas
         </Button>
       </div>

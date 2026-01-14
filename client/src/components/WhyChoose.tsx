@@ -25,7 +25,7 @@ const features = [
 
 export default function WhyChoose() {
   return (
-    <section className="bg-white">
+    <section className="bg-white" style={{marginTop: '119px'}}>
       {/* =========================================
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
