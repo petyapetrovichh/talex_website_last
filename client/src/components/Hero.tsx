@@ -2,6 +2,14 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
+  const phoneImages = [
+    '/images/Phone5(1).png',
+    '/images/Phone2(1).png',
+    '/images/Phone1(1).png',
+    '/images/Phone4.png',
+    '/images/Phone3.png',
+  ];
+
   return (
     <section className="relative pt-32 pb-20 overflow-hidden bg-white" style={{height: '750px'}}>
       {/* Background decoration */}
@@ -9,6 +17,7 @@ export default function Hero() {
       
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
+          {/* Left side - Text content */}
           <div className="max-w-2xl" style={{marginRight: '-50px', marginLeft: '50px', marginTop: '75px'}}>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 w-full max-w-[559px]" style={{fontSize: '39px', fontWeight: '400'}}>
               TaleX is where <br />
@@ -26,8 +35,42 @@ export default function Hero() {
               </Button>
             </div>
           </div>
+
+          {/* Right side - Phone mockups carousel */}
+          <div className="hidden lg:flex justify-center items-center gap-4 overflow-x-auto pb-4">
+            <div className="flex gap-4 min-w-max">
+              {phoneImages.map((image, index) => (
+                <div 
+                  key={index}
+                  className="flex-shrink-0 transform transition-transform hover:scale-105"
+                  style={{
+                    animation: `slide-in 0.6s ease-out ${index * 0.1}s backwards`,
+                  }}
+                >
+                  <img 
+                    src={image} 
+                    alt={`TaleX app screen ${index + 1}`}
+                    className="h-96 object-contain drop-shadow-2xl"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
+
+      <style>{`
+        @keyframes slide-in {
+          from {
+            opacity: 0;
+            transform: translateX(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      `}</style>
     </section>
   );
 }
