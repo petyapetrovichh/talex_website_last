@@ -200,38 +200,7 @@ It’s designed to help people build their own information pathways.`}
         />
       </div>
 
-      {/* Desktop Illustration */}
-      <div className="hidden md:block relative w-full" style={{height: '400px', marginTop: '100px'}}>
-        <img
-          src="/images/community_illustration.png"
-          alt="Community illustration"
-          className="absolute object-contain drop-shadow-2xl"
-          style={{
-            left: '50%',
-            transform: 'translateX(-50%)',
-            width: '600px',
-            height: 'auto',
-            top: '0',
-            marginTop: '-150px',
-            marginLeft: '-466px',
-          }}
-        />
-        
-        <img
-          src="/images/creator_illustration.png"
-          alt="Creator illustration"
-          className="absolute object-contain drop-shadow-2xl"
-          style={{
-            right: '0',
-            width: '500px',
-            height: 'auto',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            marginTop: '-158px',
-            marginRight: '-40px',
-          }}
-        />
-      </div>
+
     </section>
   );
 }
