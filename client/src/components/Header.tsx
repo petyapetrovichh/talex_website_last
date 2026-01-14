@@ -54,7 +54,7 @@ export default function Header() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label={isMobileMenuOpen ? "关闭菜单" : "打开菜单"}
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X size={24} color="black" /> : <Menu size={24} color="black" />}
           </button>
         </div>
 
