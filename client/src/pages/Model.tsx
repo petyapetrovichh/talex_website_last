@@ -207,7 +207,7 @@ incentivizing early discovery and dissemination.
                 
                 <div className="space-y-12">
                   <div>
-                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]">1. Consumption Logic</h3>
+                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000'}}>1. Consumption Logic</h3>
                     <p className="text-gray-600 leading-relaxed italic mb-2"></p>
                     <p className="text-gray-600 leading-relaxed text-sm">
                       “I recognize the value of this content”.
@@ -217,7 +217,7 @@ The 20% payment creates a direct value exchange. It signals genuine appreciation
                   </div>
                   
                   <div>
-                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]">2. Prediction Logic</h3>
+                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000'}}>2. Prediction Logic</h3>
                     <p className="text-gray-600 leading-relaxed italic mb-2">“I predict this content will go viral”.</p>
                     <p className="text-gray-600 leading-relaxed text-sm">
                       The 80% contribution is an active prediction. By spotting quality early, the user positions themselves to earn “Thank-you Rewards” from future supporters.
@@ -231,7 +231,7 @@ The 20% payment creates a direct value exchange. It signals genuine appreciation
                 <img 
                   src="/images/9.png" 
                   alt="Green Crystal Chess King" 
-                  className="h-full object-contain drop-shadow-2xl"
+                  className="h-full object-contain drop-shadow-2xl" style={{marginTop: '-41px', width: '463px', height: '523px'}}
                 />
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-[#6FF000]/20 blur-3xl -z-10 rounded-full scale-75"></div>
@@ -315,19 +315,8 @@ The Goal: Be the one who sees potential before the crowd does.
             <h2 className="text-4xl font-bold mb-2 font-serif">The 365 day window rule</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Time-Decay Incentive Model</p>
             
-            <div className="relative max-w-3xl mx-auto aspect-[2/1] overflow-hidden">
-               {/* Concentric Arcs representing time decay */}
-               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-[200%] rounded-full border-[40px] border-[#6FF000] opacity-20 animate-ripple" style={{ animationDelay: '600ms' }}></div>
-               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] h-[160%] rounded-full border-[40px] border-[#6FF000] opacity-40 animate-ripple" style={{ animationDelay: '400ms' }}></div>
-               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[60%] h-[120%] rounded-full border-[40px] border-[#6FF000] opacity-60 animate-ripple" style={{ animationDelay: '200ms' }}></div>
-               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[40%] h-[80%] rounded-full border-[40px] border-[#6FF000] opacity-80 flex items-end justify-center pb-8 animate-ripple" style={{ animationDelay: '0ms' }}>
-                  <span className="text-white font-bold text-2xl">24h</span>
-               </div>
-               
-               {/* Labels */}
-               <div className="absolute bottom-4 left-[15%] text-xs font-bold text-gray-400">31-365 days</div>
-               <div className="absolute bottom-16 left-[25%] text-xs font-bold text-gray-500">8-30 days</div>
-               <div className="absolute bottom-28 left-[35%] text-xs font-bold text-gray-600">1-7 days</div>
+            <div className="relative max-w-4xl mx-auto">
+               <img src="/images/18.png" alt="Distribution Formula" className="w-full h-auto object-contain" />
             </div>
             
             <p className="text-gray-500 text-xs mt-8 max-w-xl mx-auto">
@@ -341,12 +330,13 @@ The Goal: Be the one who sees potential before the crowd does.
           <div className="container">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-2 font-serif">Simple math</h2>
-              <p className="text-gray-500 text-sm uppercase tracking-widest">Transparent Formula</p>
+              <p className="text-gray-500 text-sm uppercase tracking-widest">Distribution Formula</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {/* Creator Connected */}
               <div className="bg-[#F0FDF4] p-8 rounded-2xl border border-[#6FF000]/20">
+                <p className="text-sm text-gray-600 mb-4">For the n-th payer contributing amount $X:</p>
                 <h3 className="text-lg font-bold mb-4 text-gray-800">For those who pay & contribute amount (X):</h3>
                 <div className="bg-white p-6 rounded-xl shadow-sm mb-4">
                    <p className="font-mono text-sm text-gray-500 mb-2">Creator Connected</p>
@@ -360,6 +350,7 @@ The Goal: Be the one who sees potential before the crowd does.
 
               {/* Reward Distribution */}
               <div className="bg-white p-8 rounded-2xl border border-gray-100 flex flex-col justify-center">
+                <p className="text-sm text-gray-600 mb-4">Reward for a specific senior i in tier k:</p>
                 <h3 className="text-lg font-bold mb-4 text-gray-800">Reward for a specific senior (Y) will be:</h3>
                 <div className="bg-[#F6F6F6] p-8 rounded-xl flex items-center justify-center">
                    <div className="text-center">
@@ -370,7 +361,8 @@ The Goal: Be the one who sees potential before the crowd does.
                    </div>
                 </div>
                 <p className="text-xs text-gray-400 mt-6 text-center">
-                  * Your reward is proportional to your contribution relative to the total pool at the time of distribution.
+                  * Where Xi is the total contributed amount by senior i in tier k,
+Hk is the total historical payments in that tier.
                 </p>
               </div>
             </div>
@@ -399,11 +391,11 @@ The Goal: Be the one who sees potential before the crowd does.
                 <img 
                   src="/images/ecosystem-book.jpg" 
                   alt="Open book on table" 
-                  className="w-full h-full object-cover grayscale group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-2xl font-bold text-white mb-4">Users</h3>
-                  <p className="text-sm text-white/90 font-medium leading-relaxed">
+                <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 className="text-2xl font-bold text-black mb-4">Users</h3>
+                  <p className="text-sm text-black font-medium leading-relaxed">
                     They discover value, support creators, and earn rewards for their foresight.
                   </p>
                 </div>
@@ -414,11 +406,11 @@ The Goal: Be the one who sees potential before the crowd does.
                 <img 
                   src="/images/ecosystem-laptop.jpg" 
                   alt="Laptop workspace" 
-                  className="w-full h-full object-cover grayscale group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-2xl font-bold text-white mb-4">TaleX</h3>
-                  <p className="text-sm text-white/90 font-medium leading-relaxed">
+                <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 className="text-2xl font-bold text-black mb-4">TaleX</h3>
+                  <p className="text-sm text-black font-medium leading-relaxed">
                     We provide the infrastructure, ensure fair play, and grow with the ecosystem.
                   </p>
                 </div>
