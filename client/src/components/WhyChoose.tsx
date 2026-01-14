@@ -69,7 +69,25 @@ export default function WhyChoose() {
                 <p className="text-gray-600 leading-relaxed text-lg" style={{color: '#000000'}}>
                   {feature.description}
                 </p>
-                <button className="mt-4 text-[#6FF000] font-bold text-sm hover:underline" style={{color: '#000000', fontSize: '16px'}}>
+                <button 
+                  className="mt-4 font-bold text-sm transition-colors"
+                  style={{color: '#000000', fontSize: '16px'}}
+                  onMouseEnter={(e) => {
+                    const btn = e.currentTarget as HTMLButtonElement;
+                    btn.style.color = '#6FF000';
+                  }}
+                  onMouseLeave={(e) => {
+                    const btn = e.currentTarget as HTMLButtonElement;
+                    if (!btn.dataset.clicked) {
+                      btn.style.color = '#000000';
+                    }
+                  }}
+                  onClick={(e) => {
+                    const btn = e.currentTarget as HTMLButtonElement;
+                    btn.style.color = '#6FF000';
+                    btn.dataset.clicked = 'true';
+                  }}
+                >
                   Tell your Tale   →
                 </button>
               </div>
