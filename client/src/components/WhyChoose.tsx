@@ -56,7 +56,7 @@ export default function WhyChoose() {
           DESKTOP VIEW (Visible only on desktop)
           ========================================= */}
       <div className="hidden md:block container py-24" style={{marginBottom: '197px', marginTop: '-95px'}}>
-        <h2 className="text-4xl font-bold text-center mb-20">Why Creators Choose TaleX</h2>
+        <h2 className="text-4xl font-bold text-center mb-20" style={{fontSize: '39px', fontWeight: '400'}}>Why Creators Choose TaleX</h2>
         
         <div className="max-w-4xl mx-auto space-y-16 h-auto">
           {features.map((feature, index) => (
@@ -65,12 +65,12 @@ export default function WhyChoose() {
                 <img src={feature.image} alt={feature.title} className="w-24 h-24 md:w-[180px] md:h-[180px] object-contain" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-lg">
+                <h3 className="text-2xl font-bold mb-3" style={{fontWeight: '400'}}>{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed text-lg" style={{color: '#000000'}}>
                   {feature.description}
                 </p>
-                <button className="mt-4 text-[#6FF000] font-bold text-sm hover:underline">
-                  Learn more →
+                <button className="mt-4 text-[#6FF000] font-bold text-sm hover:underline" style={{color: '#000000', fontSize: '16px'}}>
+                  Tell your Tale   →
                 </button>
               </div>
             </div>
