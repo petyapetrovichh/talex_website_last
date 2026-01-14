@@ -79,8 +79,10 @@ export default function Hero() {
               style={{
                 top: '90px',
                 right: '0px',
-                width: '175px',
+                width: '200px',
                 height: 'auto',
+                marginTop: '-73px',
+                marginRight: '-75px',
               }}
             />
 
