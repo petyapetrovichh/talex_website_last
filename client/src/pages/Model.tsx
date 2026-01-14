@@ -45,24 +45,24 @@ export default function Model() {
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/1.png" alt="Subscription Ceiling" className="w-6 h-6" style={{width: '113px', height: '48px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{display: 'flex', alignItems: 'center', height: '48px'}}>
-                      <span className="whitespace-nowrap mr-1"><strong>Subscription Ceiling:</strong></span> Hard to convince users to subscribe forever for occasional hits.
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1">
+                      <strong>Subscription Ceiling:</strong> Hard to convince users to subscribe forever for occasional hits.
                     </p>
                   </div>
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" style={{width: '68px', height: '68px'}} />
+                      <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px', display: 'flex', alignItems: 'center', height: '68px'}}>
-                      <span className="whitespace-nowrap mr-1"><strong>Centralized Traffic:</strong></span> Algorithms favor clickbait over quality.
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
+                      <strong>Centralized Traffic:</strong> Algorithms favor clickbait over quality.
                     </p>
                   </div>
                   <div className="flex gap-4 items-start group" style={{paddingTop: '9px'}}>
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" style={{width: '68px', height: '68px'}} />
+                      <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px', display: 'flex', alignItems: 'center', height: '68px'}}>
-                      <span className="whitespace-nowrap mr-1"><strong>No Ownership:</strong></span> You build the audience, but the platform owns the relationship.
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
+                      <strong>No Ownership:</strong> You build the audience, but the platform owns the relationship.
                     </p>
                   </div>
                 </div>
@@ -74,26 +74,26 @@ export default function Model() {
                 <div className="space-y-8">
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform" style={{width: '48px', height: '48px'}}>
-                      <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" style={{width: '68px', height: '68px'}} />
+                      <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '13px', paddingTop: '7px', marginBottom: '-1px', display: 'flex', alignItems: 'center', height: '68px'}}>
-                      <span className="whitespace-nowrap mr-1"><strong>Information Overload:</strong></span> Valuable content is buried in noise and ads.
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '13px'}}>
+                      <strong>Information Overload:</strong> Valuable content is buried in noise and ads.
                     </p>
                   </div>
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/5.png" alt="Inefficient Payment" className="w-6 h-6" style={{width: '68px', height: '68px'}} />
+                      <img src="/images/5.png" alt="Inefficient Payment" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px', display: 'flex', alignItems: 'center', height: '68px'}}>
-                      <span className="whitespace-nowrap mr-1"><strong>Inefficient Payment:</strong></span> Forced to buy “the whole farm” just to eat one apple.
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
+                      <strong>Inefficient Payment:</strong> Forced to buy “the whole farm” just to eat one apple.
                     </p>
                   </div>
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" style={{width: '68px', height: '68px'}} />
+                      <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '11px', display: 'flex', alignItems: 'center', height: '68px'}}>
-                      <span className="whitespace-nowrap mr-1"><strong>Passive Role:</strong></span> No incentive to curate or filter good content.
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '11px'}}>
+                      <strong>Passive Role:</strong> No incentive to curate or filter good content.
                     </p>
                   </div>
                 </div>
