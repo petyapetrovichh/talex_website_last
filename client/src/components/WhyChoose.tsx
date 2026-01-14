@@ -5,25 +5,29 @@ const features = [
     image: "/12.png",
     title: "No Account",
     description: "Neither creators nor users need to register an account to start publishing or exploring. While most platforms force you through a time-consuming registration process, we simply removed it. All you need to do is enter a unique username and use what you already do every day when unlocking your phone — your fingerprint or face — as a passkey to access your account. Your username is your account, and only when you need it.",
-    buttonText: "Start publishing in one second   →"
+    buttonText: "Start publishing in one second   →",
+    buttonLink: "https://www.talex.world/publish"
   },
   {
     image: "/13.png",
     title: "Natural Promotion",
     description: "The problem of attracting traffic to content is the most common challenge in the creator economy. We offer creators a model where they no longer have to worry about it. Your supporters become your promoters through word of mouth, because they can now benefit from your growth as well. All that's left for you is the most important and enjoyable part — creating great content.",
-    buttonText: "Learn more about our model   →"
+    buttonText: "Learn more about our model   →",
+    buttonLink: "#our-model"
   },
   {
     image: "/14.png",
     title: "Healthy Virality",
     description: "Creators no longer fight algorithms that constantly favor noise or ads over their work. Our recommendation mechanism allows users to actively train their own content feed through real tipping behavior. The platform does not treat user attention as inventory to be freely sold. As a result, content virality is naturally biased toward works that aim to create real value for users.",
-    buttonText: "Explore our recommendation mechanism   →"
+    buttonText: "Explore our recommendation mechanism   →",
+    buttonLink: "https://www.talex.world/"
   },
   {
     image: "/15.png",
     title: "Ultimate Ownership",
     description: "Creators keep what matters most — complete freedom over how, when, and where their content is distributed. We don't require any transfer of rights, so you can publish, edit, or remove your work at any time. Many creators continue monetizing the same content across other platforms in parallel. But over time, their fans naturally choose to support works on TaleX — because here, they can benefit together with creators' growth.",
-    buttonText: "Tell your Tale   →"
+    buttonText: "Tell your Tale   →",
+    buttonLink: "https://www.talex.world/publish"
   }
 ];
 
@@ -90,6 +94,13 @@ export default function WhyChoose() {
                     const btn = e.currentTarget as HTMLButtonElement;
                     btn.style.color = '#6FF000';
                     btn.dataset.clicked = 'true';
+                    setTimeout(() => {
+                      if (feature.buttonLink.startsWith('http')) {
+                        window.open(feature.buttonLink, '_blank');
+                      } else {
+                        window.location.href = feature.buttonLink;
+                      }
+                    }, 100);
                   }}
                 >
                   {feature.buttonText}
