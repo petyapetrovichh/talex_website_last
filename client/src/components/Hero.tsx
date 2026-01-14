@@ -9,7 +9,7 @@ export default function Hero() {
       
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl" style={{marginRight: '-50px', marginLeft: '50px'}}>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 w-full max-w-[559px]" style={{fontSize: '39px', fontWeight: '400'}}>
               TaleX is where <br />
               <span className="relative inline-block" style={{color: '#6FF000'}}>
