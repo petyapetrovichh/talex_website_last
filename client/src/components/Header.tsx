@@ -162,7 +162,7 @@ export default function Header() {
             style={{ top: '60px' }}
           />
           
-          <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b shadow-lg max-h-[calc(100vh-60px)] overflow-y-auto animate-in slide-in-from-top-5 z-50">
+          <div className="md:hidden fixed top-0 left-0 bottom-0 w-80 bg-white shadow-lg overflow-y-auto animate-in slide-in-from-left z-50" style={{maxWidth: '90vw'}}>
             {/* 搜索框 */}
             <div className="p-4 border-b border-gray-100 sticky top-0 bg-white">
               <div className="relative">
