@@ -82,7 +82,7 @@ export default function Footer() {
                 <img src="/logo-new.png" alt="TaleX" className="h-8 w-auto" style={{width: '136px', height: '24px'}} />
               </div>
             </Link>
-            <p className="text-gray-500 text-sm leading-relaxed" style={{width: '285px', color: '#000000', fontSize: '18px', paddingRight: '533px'}}>
+            <p className="text-gray-500 text-sm leading-relaxed" style={{width: '600px', color: '#000000', fontSize: '18px', whiteSpace: 'nowrap'}}>
               Where great content pays off both creators and supporters
             </p>
           </div>
