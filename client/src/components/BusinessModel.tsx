@@ -6,7 +6,7 @@ export default function BusinessModel() {
       {/* =========================================
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
-      <div className="md:hidden py-16 px-6" style={{marginTop: '159px'}}>
+      <div className="md:hidden py-16 px-6" style={{marginTop: '159px', height: '740px'}}>
         <div className="text-center mb-12" style={{marginTop: '-177px'}}>
           <h2 className="text-3xl font-bold mb-6" style={{fontSize: '20px'}}>A model that changes everything</h2>
           <p className="text-base text-gray-600 leading-relaxed mb-8" style={{fontSize: '16px'}}>
