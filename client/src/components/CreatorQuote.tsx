@@ -34,7 +34,7 @@ export default function CreatorQuote() {
         
         {/* TaleX Logo */}
         <div className="absolute" style={{
-          top: '50%',
+          top: '15%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
           width: '120px',
