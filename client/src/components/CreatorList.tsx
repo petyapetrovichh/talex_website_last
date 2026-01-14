@@ -62,7 +62,7 @@ const creators = [
 ];
 
 // Duplicate creators to ensure smooth infinite scroll
-const marqueeCreators = [...creators, ...creators, ...creators];
+const marqueeCreators = [...creators, ...creators];
 
 const CreatorCard = ({ creator }: { creator: typeof creators[0] }) => (
   <div className="w-[280px] h-[380px] flex-shrink-0 rounded-xl overflow-hidden relative group mx-3">
