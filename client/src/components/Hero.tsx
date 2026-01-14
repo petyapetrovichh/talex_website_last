@@ -3,11 +3,42 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden bg-white" style={{height: '750px'}}>
-      {/* Background decoration */}
+    <section className="relative bg-white overflow-hidden">
+      {/* Background decoration - Shared */}
       <div className="absolute top-0 right-0 w-full h-full bg-[url('/images/hero-bg-new.png')] bg-cover bg-center bg-no-repeat pointer-events-none" />
       
-      <div className="container relative z-10">
+      {/* =========================================
+          MOBILE VIEW (Visible only on mobile)
+          ========================================= */}
+      <div className="md:hidden relative z-10 pt-28 pb-16 px-6 flex flex-col">
+        <div className="w-full max-w-md mx-auto">
+          <h1 className="text-4xl font-bold tracking-tight leading-[1.1] mb-6 text-left" style={{fontSize: '32px'}}>
+            TaleX is where <br />
+            <span className="relative inline-block text-[#6FF000]">
+              great content
+            </span> pays off <br />
+            both creators and supporters
+          </h1>
+          
+          <p className="text-base text-gray-600 mb-8 leading-relaxed text-left" style={{fontSize: '16px'}}>
+            TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
+          </p>
+          
+          <div className="flex flex-wrap gap-4">
+            <Button 
+              onClick={() => window.location.href = 'https://www.talex.world/publish'}
+              className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105 w-full sm:w-auto"
+            >
+              Tell Your Tale
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* =========================================
+          DESKTOP VIEW (Visible only on desktop)
+          ========================================= */}
+      <div className="hidden md:block container relative z-10 pt-32 pb-20" style={{height: '750px'}}>
         <div className="relative w-full h-full">
           {/* Left side - Text content */}
           <div className="max-w-2xl absolute left-0 top-0" style={{marginRight: '-50px', marginLeft: '50px', marginTop: '75px'}}>
@@ -32,7 +63,7 @@ export default function Hero() {
           </div>
 
           {/* Right side - Phone mockups with absolute positioning */}
-          <div className="hidden lg:block absolute right-0 top-0 w-1/2 h-full">
+          <div className="absolute right-0 top-0 w-1/2 h-full">
             {/* Phone 1 - Phone5(1).png */}
             <img 
               src="/images/Phone5(1).png" 

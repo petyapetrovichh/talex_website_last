@@ -46,8 +46,57 @@ const creators = [
 
 export default function CreatorList() {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-[#F0FDF4]">
-      <div className="container">
+    <section className="bg-gradient-to-b from-white to-[#F0FDF4]">
+      {/* =========================================
+          MOBILE VIEW (Visible only on mobile)
+          ========================================= */}
+      <div className="md:hidden py-12 px-6">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold mb-4" style={{fontSize: '28px'}}>Ideas already live on TaleX</h2>
+          <p className="text-gray-600 text-base" style={{fontSize: '16px'}}>Here are just a few of many people you can support and grow together</p>
+          <Button variant="outline" className="mt-6 rounded-full border-black bg-black text-white hover:bg-[#6FF000] hover:text-black hover:border-[#6FF000] transition-colors w-full">
+            Discover ever more ideas
+          </Button>
+        </div>
+
+        <div className="flex flex-col gap-6">
+          {creators.slice(0, 3).map((creator, index) => (
+            <Card key={`mobile-${index}`} className="overflow-hidden border-none shadow-lg text-white h-auto" style={{backgroundColor: creator.bgColor}}>
+              <div className="relative pt-[60%] overflow-hidden">
+                <img 
+                  src={creator.image} 
+                  alt={creator.name} 
+                  className="absolute inset-0 w-full h-full object-cover opacity-80"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                    <div className="flex justify-between items-end">
+                        <div className="text-xs font-bold text-[#6FF000] mb-1">{creator.category}</div>
+                        <div className="text-xs font-bold text-[#6FF000] mb-1">{creator.earnings}</div>
+                    </div>
+                </div>
+              </div>
+              <CardContent className="p-4 relative">
+                <div className="absolute -top-8 left-4 w-12 h-12 rounded-full border-2 overflow-hidden" style={{borderColor: creator.bgColor}}>
+                    <img src={creator.image} alt={creator.author} className="w-full h-full object-cover" />
+                </div>
+                <h3 className="font-bold text-sm mt-4 line-clamp-2 min-h-[2.5rem]">{creator.name}</h3>
+                <p className="text-xs text-gray-400 mt-1">{creator.author}</p>
+              </CardContent>
+              <CardFooter className="p-4 pt-0">
+                <Button className="w-full bg-white/10 hover:bg-white/20 text-white text-xs h-8 rounded-full">
+                  View Project
+                </Button>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      {/* =========================================
+          DESKTOP VIEW (Visible only on desktop)
+          ========================================= */}
+      <div className="hidden md:block container py-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Ideas already live on TaleX</h2>
           <p className="text-gray-600">Here are just a few of many people you can support and grow together</p>

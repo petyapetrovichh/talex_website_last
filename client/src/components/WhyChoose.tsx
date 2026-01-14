@@ -25,8 +25,37 @@ const features = [
 
 export default function WhyChoose() {
   return (
-    <section className="py-24 bg-white" style={{marginBottom: '197px'}}>
-      <div className="container">
+    <section className="bg-white">
+      {/* =========================================
+          MOBILE VIEW (Visible only on mobile)
+          ========================================= */}
+      <div className="md:hidden py-16 px-6">
+        <h2 className="text-3xl font-bold text-center mb-12" style={{fontSize: '28px'}}>Why Creators Choose TaleX</h2>
+        
+        <div className="space-y-12">
+          {features.map((feature, index) => (
+            <div key={`mobile-${index}`} className="flex flex-col gap-4 items-center text-center">
+              <div className="flex-shrink-0">
+                <img src={feature.image} alt={feature.title} className="w-20 h-20 object-contain" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2" style={{fontSize: '20px'}}>{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed text-base" style={{fontSize: '16px'}}>
+                  {feature.description}
+                </p>
+                <button className="mt-3 text-[#6FF000] font-bold text-sm hover:underline">
+                  Learn more →
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* =========================================
+          DESKTOP VIEW (Visible only on desktop)
+          ========================================= */}
+      <div className="hidden md:block container py-24" style={{marginBottom: '197px'}}>
         <h2 className="text-4xl font-bold text-center mb-20">Why Creators Choose TaleX</h2>
         
         <div className="max-w-4xl mx-auto space-y-16 h-auto">
