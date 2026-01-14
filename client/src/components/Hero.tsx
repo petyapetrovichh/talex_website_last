@@ -41,7 +41,7 @@ export default function Hero() {
                 width: '200px',
                 height: 'auto',
                 marginTop: '270px',
-                marginRight: '-636px',
+                marginRight: '-580px',
               }}
             />
 
@@ -55,8 +55,8 @@ export default function Hero() {
                 right: '400px',
                 width: '200px',
                 height: 'auto',
-                marginTop: '294px',
-                marginRight: '74px',
+                marginTop: '275px',
+                marginRight: '127px',
               }}
             />
 
@@ -86,7 +86,7 @@ export default function Hero() {
                 width: '200px',
                 height: 'auto',
                 marginTop: '-100px',
-                marginRight: '-36px',
+                marginRight: '20px',
               }}
             />
 
