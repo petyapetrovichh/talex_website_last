@@ -31,7 +31,7 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-6">
             <div className="relative group">
               <div className="flex items-center gap-1 cursor-pointer py-4">
-                <span className="text-sm font-medium text-gray-600 group-hover:text-[#6FF000] transition-colors">Explore</span>
+                <span className="text-sm font-medium text-gray-600 group-hover:text-[#6FF000] transition-colors" style={{fontSize: '18px'}}>Explore</span>
                 <ChevronDown size={16} className="text-gray-400 group-hover:text-[#6FF000] transition-colors group-hover:rotate-180 duration-200" />
               </div>
               
@@ -47,7 +47,7 @@ export default function Header() {
 
             <div className="relative group">
               <div className="flex items-center gap-1 cursor-pointer py-4">
-                <span className="text-sm font-medium text-gray-600 group-hover:text-[#6FF000] transition-colors">Company</span>
+                <span className="text-sm font-medium text-gray-600 group-hover:text-[#6FF000] transition-colors" style={{fontSize: '18px'}}>Company</span>
                 <ChevronDown size={16} className="text-gray-400 group-hover:text-[#6FF000] transition-colors group-hover:rotate-180 duration-200" />
               </div>
 
@@ -63,7 +63,7 @@ export default function Header() {
 
             <div className="relative group">
               <div className="flex items-center gap-1 cursor-pointer py-4">
-                <span className="text-sm font-medium text-gray-600 group-hover:text-[#6FF000] transition-colors">Community</span>
+                <span className="text-sm font-medium text-gray-600 group-hover:text-[#6FF000] transition-colors" style={{fontSize: '18px'}}>Community</span>
                 <ChevronDown size={16} className="text-gray-400 group-hover:text-[#6FF000] transition-colors group-hover:rotate-180 duration-200" />
               </div>
 
