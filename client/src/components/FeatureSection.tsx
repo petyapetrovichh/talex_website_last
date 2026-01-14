@@ -141,6 +141,19 @@ It’s designed to help people build their own information pathways.`}
             marginLeft: '-466px',
           }}
         />
+        
+        <img
+          src="/images/creator_illustration.png"
+          alt="Creator illustration"
+          className="absolute object-contain drop-shadow-2xl"
+          style={{
+            right: '0',
+            width: '500px',
+            height: 'auto',
+            top: '50%',
+            transform: 'translateY(-50%)',
+          }}
+        />
       </div>
     </section>
   );
