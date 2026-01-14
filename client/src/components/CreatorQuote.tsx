@@ -27,7 +27,7 @@ export default function CreatorQuote() {
             <span className="text-sm" style={{fontSize: '18px', color: '#878787', fontWeight: '700'}}>TaleX</span>
             
             <Button className="mt-6 rounded-full px-6 gap-2 bg-black text-white hover:bg-[#6FF000] hover:text-black transition-colors" onClick={() => {}}>
-              <Play size={16} fill="currentColor" /> Watch Video
+              <Play size={16} fill="white" className="hover:text-black" /> Watch now
             </Button>
           </div>
         </div>
