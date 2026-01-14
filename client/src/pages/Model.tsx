@@ -43,26 +43,26 @@ export default function Model() {
                 <div className="space-y-8">
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                      <img src="/images/1.png" alt="Subscription Ceiling" className="w-6 h-6" />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed pt-1">
-                      Algorithms prioritize clickbait over quality, forcing creators to chase trends instead of art.
+                      <strong>Subscription Ceiling:</strong> Hard to convince users to subscribe forever for occasional hits.
                     </p>
                   </div>
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                      <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1">
-                      Unpredictable income. Platforms take huge cuts, leaving crumbs for the actual makers.
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
+                      <strong>Centralized Traffic:</strong> Algorithms favor clickbait over quality.
                     </p>
                   </div>
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
+                      <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1">
-                      No ownership. You build the audience, but the platform owns the relationship.
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
+                      <strong>No Ownership:</strong> You build the audience, but the platform owns the relationship.
                     </p>
                   </div>
                 </div>
@@ -74,26 +74,26 @@ export default function Model() {
                 <div className="space-y-8">
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                      <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1">
-                      Information overload. Feeds are filled with ads and irrelevant suggested content.
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '13px'}}>
+                      <strong>Information Overload:</strong> Valuable content is buried in noise and ads.
                     </p>
                   </div>
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                      <img src="/images/5.png" alt="Inefficient Payment" className="w-6 h-6" />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1">
-                      Passive consumption. You spend hours scrolling but gain little real value or connection.
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
+                      <strong>Inefficient Payment:</strong> Forced to buy “the whole farm” just to eat one apple.
                     </p>
                   </div>
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg>
+                      <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1">
-                      Support feels futile. Your likes and shares benefit the platform, not you or the creator.
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '11px'}}>
+                      <strong>Passive Role:</strong> No incentive to curate or filter good content.
                     </p>
                   </div>
                 </div>
