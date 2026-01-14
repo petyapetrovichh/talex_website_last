@@ -132,7 +132,7 @@ export default function Footer() {
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               </a>
               <a href="https://www.instagram.com/talexchain" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#6FF000] transition-colors" title="Instagram">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2.25c5.385 0 9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12 6.615 2.25 12 2.25zm0 1.5c-4.557 0-8.25 3.693-8.25 8.25s3.693 8.25 8.25 8.25 8.25-3.693 8.25-8.25-3.693-8.25-8.25-8.25zm0 1.5c3.728 0 6.75 3.022 6.75 6.75s-3.022 6.75-6.75 6.75-6.75-3.022-6.75-6.75 3.022-6.75 6.75-6.75zm3.75-1.5a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z"/></svg>
+                <img src="/instagram-icon.png" alt="Instagram" className="w-5 h-5" />
               </a>
               <a href="https://www.tiktok.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#6FF000] transition-colors" title="TikTok">
                 <img src="/tiktok-icon.png" alt="TikTok" className="w-5 h-5" />
