@@ -3,7 +3,7 @@ import { Play } from "lucide-react";
 
 export default function CreatorQuote() {
   return (
-    <section className="relative py-32 bg-[#F0FDF4] overflow-hidden" style={{paddingBottom: '0px', marginTop: '-200px'}}>
+    <section className="relative py-32 bg-[#F0FDF4] overflow-hidden" style={{paddingBottom: '0px', marginTop: '-200px', height: '1015px'}}>
       {/* World Map Background */}
       <div className="absolute inset-0 pointer-events-none">
         <img src="/4.png" alt="World Map Background" className="w-full h-full object-cover opacity-30" />
@@ -35,7 +35,7 @@ export default function CreatorQuote() {
         
         {/* Bottom Center Image */}
         <div className="mt-12 flex justify-center" style={{paddingTop: '15px', marginTop: '0px'}}>
-          <img src="/6.png" alt="Petr Osipov" className="w-64 h-auto object-contain" style={{marginTop: '11px', width: '412px', height: '386px'}} />
+          <img src="/6.png" alt="Petr Osipov" className="w-64 h-auto object-contain" style={{marginTop: '-3px', width: '304px', height: '386px'}} />
         </div>
       </div>
     </section>
