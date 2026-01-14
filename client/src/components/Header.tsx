@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { useState, useEffect } from "react";
-import { Menu, X, ChevronDown, Search } from "lucide-react";
+import { Menu, X, ChevronDown, Search, Compass, Building2, Users } from "lucide-react";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -179,7 +179,10 @@ export default function Header() {
               onClick={() => toggleSubmenu('explore')}
               className="w-full flex items-center justify-between py-3 px-4 text-base font-medium text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100"
             >
-              <span>Explore</span>
+              <div className="flex items-center gap-3">
+                <Compass size={20} className="text-[#6FF000]" />
+                <span>Explore</span>
+              </div>
               <ChevronDown size={18} className={`transition-transform ${expandedMenu.includes('explore') ? 'rotate-180' : ''}`} />
             </button>
             {expandedMenu.includes('explore') && (
@@ -198,7 +201,10 @@ export default function Header() {
               onClick={() => toggleSubmenu('company')}
               className="w-full flex items-center justify-between py-3 px-4 text-base font-medium text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100"
             >
-              <span>Company</span>
+              <div className="flex items-center gap-3">
+                <Building2 size={20} className="text-[#6FF000]" />
+                <span>Company</span>
+              </div>
               <ChevronDown size={18} className={`transition-transform ${expandedMenu.includes('company') ? 'rotate-180' : ''}`} />
             </button>
             {expandedMenu.includes('company') && (
@@ -217,7 +223,10 @@ export default function Header() {
               onClick={() => toggleSubmenu('community')}
               className="w-full flex items-center justify-between py-3 px-4 text-base font-medium text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100"
             >
-              <span>Community</span>
+              <div className="flex items-center gap-3">
+                <Users size={20} className="text-[#6FF000]" />
+                <span>Community</span>
+              </div>
               <ChevronDown size={18} className={`transition-transform ${expandedMenu.includes('community') ? 'rotate-180' : ''}`} />
             </button>
             {expandedMenu.includes('community') && (
