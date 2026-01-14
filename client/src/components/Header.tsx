@@ -196,24 +196,10 @@ export default function Header() {
           <div 
             className="fixed inset-0 bg-black/30 backdrop-blur-md z-40 md:hidden"
             onClick={() => setIsMobileMenuOpen(false)}
-            style={{ 
-              top: '60px',
-              animation: 'fadeIn 0.3s ease-out',
-              opacity: 1
-            }}
+            style={{ top: '60px' }}
           />
           
-          <div 
-            className="md:hidden fixed left-0 right-0 bottom-0 bg-white shadow-lg z-50" 
-            style={{
-              width: '100vw', 
-              top: '60px', 
-              display: 'flex', 
-              flexDirection: 'column',
-              animation: 'slideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
-              transformOrigin: 'top'
-            }}
-          >
+          <div className="md:hidden fixed left-0 right-0 bottom-0 bg-white shadow-lg animate-in slide-in-from-left z-50" style={{width: '100vw', top: '60px', display: 'flex', flexDirection: 'column'}}>
             {/* 搜索框 */}
             <div className="p-4 border-b border-gray-100 bg-white flex-shrink-0" style={{paddingTop: '1rem'}}>
               <div className="relative">
