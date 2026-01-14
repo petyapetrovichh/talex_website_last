@@ -13,7 +13,7 @@ const features = [
     title: "Natural Promotion",
     description: "The problem of attracting traffic to content is the most common challenge in the creator economy. We offer creators a model where they no longer have to worry about it. Your supporters become your promoters through word of mouth, because they can now benefit from your growth as well. All that's left for you is the most important and enjoyable part — creating great content.",
     buttonText: "Learn more about our model   →",
-    buttonLink: "#our-model"
+    buttonLink: "/model"
   },
   {
     image: "/14.png",
