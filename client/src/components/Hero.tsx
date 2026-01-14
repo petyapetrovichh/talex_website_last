@@ -82,7 +82,7 @@ export default function Hero() {
                 width: '200px',
                 height: 'auto',
                 marginTop: '-73px',
-                marginRight: '-75px',
+                marginRight: '-36px',
               }}
             />
 
@@ -97,7 +97,7 @@ export default function Hero() {
                 width: '350px',
                 height: 'auto',
                 marginTop: '-100px',
-                marginRight: '304px',
+                marginRight: '325px',
               }}
             />
           </div>
