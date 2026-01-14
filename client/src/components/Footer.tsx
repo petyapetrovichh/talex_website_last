@@ -90,8 +90,8 @@ export default function Footer() {
           <div style={{marginLeft: '250px', marginRight: '-50px'}}>
             <h4 className="font-bold mb-6" style={{fontSize: '18px', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', color: '#000000'}}>Explore</h4>
             <ul className="space-y-4 text-sm text-gray-600">
-              <li><Link href="/features" className="hover:text-[#6FF000] transition-colors">TaleX App</Link></li>
-              <li><Link href="/pricing" className="hover:text-[#6FF000] transition-colors">Our Model</Link></li>
+              <li><a href="https://www.talex.world/" className="hover:text-[#6FF000] transition-colors">TaleX App</a></li>
+              <li><Link href="#our-model" className="hover:text-[#6FF000] transition-colors">Our Model</Link></li>
               <li><Link href="/creators" className="hover:text-[#6FF000] transition-colors">Featured</Link></li>
 
             </ul>
@@ -100,8 +100,8 @@ export default function Footer() {
           <div style={{marginRight: '15px', marginLeft: '50px'}}>
             <h4 className="font-bold mb-6" style={{fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', color: '#000000', fontSize: '18px'}}>Company</h4>
             <ul className="space-y-4 text-sm text-gray-600">
-              <li><Link href="/about" className="hover:text-[#6FF000] transition-colors">About</Link></li>
-              <li><Link href="/careers" className="hover:text-[#6FF000] transition-colors">Help</Link></li>
+              <li><a href="https://docs.talex.world/" className="hover:text-[#6FF000] transition-colors">About</a></li>
+              <li><a href="https://t.me/talex_chain_community" className="hover:text-[#6FF000] transition-colors">Help</a></li>
               <li><Link href="/blog" className="hover:text-[#6FF000] transition-colors">Contact</Link></li>
 
             </ul>
