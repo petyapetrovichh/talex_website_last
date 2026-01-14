@@ -46,7 +46,10 @@ export default function Hero() {
                 className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
                 style={{
                   ...phone.style,
-                  height: 'auto',
+                  height: '349px',
+                  marginTop: '-167px',
+                  marginRight: '99px',
+                  width: '200px',
                 }}
               />
             ))}
