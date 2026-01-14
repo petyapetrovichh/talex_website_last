@@ -26,7 +26,14 @@ export default function Hero() {
           
           <div className="flex flex-wrap gap-4">
             <Button 
-              onClick={() => window.location.href = 'https://www.talex.world/publish'}
+              onClick={(e) => {
+                const btn = e.currentTarget as HTMLButtonElement;
+                btn.style.backgroundColor = 'black';
+                btn.style.color = 'white';
+                setTimeout(() => {
+                  window.location.href = 'https://www.talex.world/publish';
+                }, 100);
+              }}
               className="font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-all hover:scale-105 w-full sm:w-auto"
               style={{
                 backgroundColor: '#6FF000',
@@ -39,20 +46,10 @@ export default function Hero() {
                 btn.style.backgroundColor = 'black';
                 btn.style.color = 'white';
               }}
-              onMouseUp={(e) => {
-                const btn = e.currentTarget as HTMLButtonElement;
-                btn.style.backgroundColor = '#6FF000';
-                btn.style.color = 'black';
-              }}
               onTouchStart={(e) => {
                 const btn = e.currentTarget as HTMLButtonElement;
                 btn.style.backgroundColor = 'black';
                 btn.style.color = 'white';
-              }}
-              onTouchEnd={(e) => {
-                const btn = e.currentTarget as HTMLButtonElement;
-                btn.style.backgroundColor = '#6FF000';
-                btn.style.color = 'black';
               }}
             >
               Tell Your Tale
