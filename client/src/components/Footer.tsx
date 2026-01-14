@@ -76,7 +76,7 @@ export default function Footer() {
           ========================================= */}
       <div className="hidden md:block container pt-20 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          <div className="col-span-1 md:col-span-1">
+          <div className="col-span-1 md:col-span-1" style={{marginRight: '-200px'}}>
             <Link href="/">
               <div className="flex items-center gap-2 cursor-pointer mb-6">
                 <img src="/logo-new.png" alt="TaleX" className="h-8 w-auto" style={{width: '136px', height: '24px'}} />
