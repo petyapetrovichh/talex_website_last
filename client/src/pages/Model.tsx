@@ -377,9 +377,9 @@ Hk is the total historical payments in that tier.
               <p className="text-gray-500 text-sm uppercase tracking-widest">Creators • Users • TaleX</p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto" style={{alignItems: 'start'}}>
               {/* Creators Card */}
-              <div className="relative aspect-square overflow-hidden group">
+              <div className="relative aspect-square overflow-hidden group" style={{marginTop: '0px'}}>
                 <img 
                   src="/images/7.png" 
                   alt="Writer at desk" 
@@ -394,13 +394,13 @@ Hk is the total historical payments in that tier.
               </div>
 
               {/* Users Card (Image) */}
-              <div className="relative aspect-square overflow-hidden group">
+              <div className="relative aspect-square overflow-hidden group" style={{marginTop: '40px'}}>
                 <img 
                   src="/images/66.png" 
                   alt="Open book on table" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{marginTop: '-1px'}}>
+                <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h3 className="text-2xl font-bold text-black mb-4">Users</h3>
                   <p className="text-sm text-black font-medium leading-relaxed">
                     Recover attention ownership. Gain financial upside from good taste. Information feed becomes high-signal.
@@ -409,7 +409,7 @@ Hk is the total historical payments in that tier.
               </div>
 
               {/* TaleX Card (Image) */}
-              <div className="relative aspect-square overflow-hidden group">
+              <div className="relative aspect-square overflow-hidden group" style={{marginTop: '80px'}}>
                 <img 
                   src="/images/ecosystem-laptop.jpg" 
                   alt="Laptop workspace" 
@@ -431,7 +431,7 @@ Hk is the total historical payments in that tier.
           <div className="container">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-2 font-serif">Risk control and safety</h2>
-              <p className="text-gray-500 text-sm uppercase tracking-widest">Sustainable Tokenomics</p>
+              <p className="text-gray-500 text-sm uppercase tracking-widest">Everyone Is Safe To Go</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -441,9 +441,9 @@ Hk is the total historical payments in that tier.
                   <svg className="w-6 h-6 text-[#6FF000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2">Anti-Ponzi mechanism</h3>
+                  <h3 className="text-white font-bold mb-2">Non-Financial Product</h3>
                   <p className="text-gray-400 text-xs leading-relaxed">
-                    Strict mathematical models ensure that rewards are always backed by real value creation, preventing inflationary bubbles.
+                    No tokens, no IPO, no ICO. Strictly a content appreciation mechanism.
                   </p>
                 </div>
               </div>
@@ -454,9 +454,9 @@ Hk is the total historical payments in that tier.
                   <svg className="w-6 h-6 text-[#6FF000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2">No central money market</h3>
+                  <h3 className="text-white font-bold mb-2">No Secondary Market</h3>
                   <p className="text-gray-400 text-xs leading-relaxed">
-                    TaleX does not hold user funds in a central pool. All transactions are peer-to-peer and transparent.
+                    Reward rights are tied to the account and cannot be traded or speculated on.
                   </p>
                 </div>
               </div>
@@ -467,9 +467,9 @@ Hk is the total historical payments in that tier.
                   <svg className="w-6 h-6 text-[#6FF000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2">Fully decentralized</h3>
+                  <h3 className="text-white font-bold mb-2">Finite Lifecycle</h3>
                   <p className="text-gray-400 text-xs leading-relaxed">
-                    Smart contracts govern the distribution rules, ensuring that no single entity can manipulate the outcome.
+                    Rights expire after 365 days. The system resets, preventing "Ponzi" structures.
                   </p>
                 </div>
               </div>
@@ -480,9 +480,9 @@ Hk is the total historical payments in that tier.
                   <svg className="w-6 h-6 text-[#6FF000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2">No financial advice</h3>
+                  <h3 className="text-white font-bold mb-2">No Guaranteed Returns</h3>
                   <p className="text-gray-400 text-xs leading-relaxed">
-                    We provide a platform for content support, not investment. Users should support content they genuinely value.
+                    All rewards depend on future real user activity.
                   </p>
                 </div>
               </div>
@@ -495,7 +495,7 @@ Hk is the total historical payments in that tier.
           <div className="container">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-2 font-serif">The shift from ads to direct value</h2>
-              <p className="text-gray-500 text-sm uppercase tracking-widest">Long-term Vision</p>
+              <p className="text-gray-500 text-sm uppercase tracking-widest">Back to Creating Real Value</p>
             </div>
 
             <div className="max-w-4xl mx-auto relative h-[400px] border-l border-b border-gray-200">
@@ -515,17 +515,17 @@ Hk is the total historical payments in that tier.
                 
                 {/* Label */}
                 <div className="absolute top-[20%] right-[10%] bg-[#6FF000] text-black px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  Capital Efficiency
+                  Direct Payment Economy
                 </div>
                 
                 <div className="absolute bottom-[10%] left-[10%] bg-white border border-gray-200 text-gray-500 px-4 py-2 rounded-full font-bold text-sm shadow-sm">
-                  Ad-based Model
+                  Ad-Based Economy
                 </div>
               </div>
             </div>
             
             <p className="text-center text-gray-500 text-xs mt-8">
-              * As the network grows, the efficiency of direct value exchange surpasses traditional ad-based monetization models.
+              
             </p>
           </div>
         </section>
