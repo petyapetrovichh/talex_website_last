@@ -18,32 +18,16 @@ export default function Model() {
           </div>
           
           <div className="container relative z-10 text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif tracking-tight">
-              A new economic engine for <br/>
-              <span className="italic relative inline-block">
-                great content
-                <svg className="absolute w-full h-3 -bottom-1 left-0 text-[#6FF000]" viewBox="0 0 100 10" preserveAspectRatio="none">
-                  <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="3" fill="none" />
-                </svg>
-              </span>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif tracking-tight" style={{fontSize: '56px', fontFamily: '"Abril Fatface", serif'}}>
+              A new economic engine for great content
             </h1>
             <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-              Simple. Content-first. Fair allocation. Always.
+              Single-Content Purchase & Prediction Market
             </p>
             
-            {/* Sketch Illustration Placeholder */}
+            {/* Sketch Illustration */}
             <div className="relative w-full max-w-5xl mx-auto h-[400px] mt-12">
-               <img src="/images/sketch-people.png" alt="People connecting sketch" className="w-full h-full object-contain opacity-80 mix-blend-multiply" onError={(e) => {
-                 // Fallback if image doesn't exist yet
-                 e.currentTarget.style.display = 'none';
-               }}/>
-               {/* Fallback visual if image missing */}
-               <div className="absolute inset-0 flex items-end justify-center gap-4 opacity-20 pointer-events-none">
-                  <div className="w-32 h-64 bg-[#6FF000] rounded-t-full"></div>
-                  <div className="w-32 h-48 bg-[#6FF000] rounded-t-full"></div>
-                  <div className="w-32 h-80 bg-[#6FF000] rounded-t-full"></div>
-                  <div className="w-32 h-56 bg-[#6FF000] rounded-t-full"></div>
-               </div>
+               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain" />
             </div>
           </div>
         </section>
