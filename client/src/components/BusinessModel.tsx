@@ -53,7 +53,7 @@ export default function BusinessModel() {
         <div className="relative max-w-5xl mx-auto w-full h-auto min-h-[600px]">
             {/* Central Phone Mockup */}
             <div className="relative z-10 w-full max-w-[320px] mx-auto">
-                <img src="/images/7.png" alt="Support & Earn" className="w-full h-auto drop-shadow-2xl pt-20 md:pt-36 mt-16 mb-6" style={{marginTop: '45px', marginBottom: '10px'}} />
+                <img src="/images/00.png" alt="Support & Earn" className="w-full h-auto drop-shadow-2xl pt-20 md:pt-36 mt-16 mb-6" style={{marginTop: '45px', marginBottom: '10px'}} />
             </div>
 
             {/* Floating Cards - Left */}
@@ -63,7 +63,7 @@ export default function BusinessModel() {
 
             {/* Floating Cards - Right */}
             <div className="absolute top-20 right-0 lg:-right-10 w-64 animate-in slide-in-from-right-10 duration-1000 delay-200">
-                <img src="/images/9.png" alt="Total Tipped" className="w-full h-auto drop-shadow-xl" style={{marginTop: '-96px'}} />
+                <img src="/images/0.png" alt="Total Tipped" className="w-full h-auto drop-shadow-xl" style={{marginTop: '-96px'}} />
             </div>
             
             <div className="absolute bottom-0 right-10 lg:right-0 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-500">

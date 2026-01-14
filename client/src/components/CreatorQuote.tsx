@@ -68,7 +68,7 @@ export default function CreatorQuote() {
             className="w-64 h-auto object-contain quote-image" 
             style={{
               // Mobile styles (default)
-              marginTop: '35px', 
+              marginTop: '122px', 
               width: '342px', 
               height: '378px'
             }} 
