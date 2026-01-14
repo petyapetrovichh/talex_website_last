@@ -169,6 +169,7 @@ export default function CreatorList() {
         </p>
         <Button 
           onClick={(e) => {
+            window.open('https://www.talex.world/', '_self');
             const btn = e.currentTarget as HTMLButtonElement;
             btn.style.backgroundColor = '#6FF000';
             btn.style.color = 'black';
