@@ -33,6 +33,23 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         />
       )}
       
+      {/* Phone8_withdraw - Absolutely positioned next to Phone6 for first feature */}
+      {!reverse && (
+        <img
+          src="/images/Phone8_withdraw.png"
+          alt="TaleX app screen"
+          className="hidden lg:block absolute object-contain drop-shadow-2xl"
+          style={{
+            left: '-150px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            width: '450px',
+            height: 'auto',
+            marginLeft: '700px',
+          }}
+        />
+      )}
+      
       {/* Phone8 - Absolutely positioned for reverse feature only */}
       {reverse && (
         <img
