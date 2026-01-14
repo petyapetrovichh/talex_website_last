@@ -6,8 +6,8 @@ export default function BusinessModel() {
     <section className={styles.section}>
       <div className="container">
         <div className={styles.headerContainer}>
-          <div className="inline-flex items-center justify-center mb-6">
-            <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
+          <div style={{display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem'}}>
+            <div style={{width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden'}}>
             </div>
           </div>
           <h2 className={styles.headerTitle}>A model that changes everything</h2>

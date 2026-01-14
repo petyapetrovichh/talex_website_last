@@ -12,8 +12,8 @@ interface FeatureProps {
 
 function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring in the app" }: FeatureProps) {
   return (
-    <div className={`${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} ${styles.featureContainer}`}>
-      <div className="flex-1 w-full flex justify-center">
+    <div className={styles.featureContainer}>
+      <div style={{flex: 1, width: '100%', display: 'flex', justifyContent: 'center'}}>
 
       </div>
       
@@ -53,16 +53,16 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         />
       )}
       
-      <div className={`flex-1 space-y-6 w-full ${styles.featureContent}`}>
-        <h2 className={`tracking-tight leading-tight mb-6 w-full ${styles.featureTitle}`}>
+      <div className={styles.featureContent}>
+        <h2 className={styles.featureTitle}>
           {title}
         </h2>
-        <p className={`text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-8 w-full ${styles.featureDescription}`}>
+        <p className={styles.featureDescription}>
           {description}
         </p>
         <Button 
           onClick={() => window.location.href = 'https://www.talex.world/reading/585449588677'}
-          className={`bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105 ${styles.featureButton}`}
+          className={`bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105 ${styles.featureButton}`}
         >
           {buttonText}
         </Button>
