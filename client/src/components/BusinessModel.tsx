@@ -53,7 +53,7 @@ export default function BusinessModel() {
       {/* =========================================
           DESKTOP VIEW (Visible only on desktop)
           ========================================= */}
-      <div className="hidden md:block container py-24">
+      <div className="hidden md:block py-24">
         <div className="text-center max-w-3xl mx-auto mb-20" style={{marginTop: '-50px'}}>
           <div className="inline-flex items-center justify-center mb-6">
             <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
@@ -91,102 +91,114 @@ export default function BusinessModel() {
           </Button>
         </div>
 
-        {/* Container for positioning reference - NOT a constraint */}
-        <div className="relative max-w-5xl mx-auto w-full h-auto min-h-[600px]">
+        {/* Container spanning full screen width */}
+        <div className="relative w-screen h-auto min-h-[600px]" style={{marginLeft: 'calc(-50vw + 50%)'}}>
+            {/* Central Phone Mockup - /images/00.png */}
+            <div 
+              className="absolute" 
+              style={{
+                width: `${IMAGE_CONFIG.unlockForMore.width}px`,
+                top: IMAGE_CONFIG.unlockForMore.top,
+                left: IMAGE_CONFIG.unlockForMore.left,
+                right: IMAGE_CONFIG.unlockForMore.right,
+                bottom: IMAGE_CONFIG.unlockForMore.bottom,
+                transform: IMAGE_CONFIG.unlockForMore.transform,
+                marginTop: IMAGE_CONFIG.unlockForMore.marginTop,
+                marginBottom: IMAGE_CONFIG.unlockForMore.marginBottom,
+                zIndex: 10,
+              }}
+            >
+                <img 
+                  src="/images/00.png" 
+                  alt="Support & Earn" 
+                  className="w-full h-auto drop-shadow-2xl pt-20 md:pt-36 mt-16 mb-6" 
+                />
+            </div>
+
+            {/* Left Card - /images/8.png */}
+            <div 
+              className="absolute" 
+              style={{
+                width: `${IMAGE_CONFIG.eyesight.width}px`,
+                top: IMAGE_CONFIG.eyesight.top,
+                left: IMAGE_CONFIG.eyesight.left,
+                right: IMAGE_CONFIG.eyesight.right,
+                bottom: IMAGE_CONFIG.eyesight.bottom,
+                transform: IMAGE_CONFIG.eyesight.transform,
+                zIndex: 9,
+              }}
+            >
+                <img 
+                  src="/images/8.png" 
+                  alt="Your eyesight is very valuable" 
+                  className="w-full h-auto drop-shadow-xl" 
+                />
+            </div>
+
+            {/* Right Top Card - /images/0.png */}
+            <div 
+              className="absolute" 
+              style={{
+                width: `${IMAGE_CONFIG.earningsDetail.width}px`,
+                top: IMAGE_CONFIG.earningsDetail.top,
+                left: IMAGE_CONFIG.earningsDetail.left,
+                right: IMAGE_CONFIG.earningsDetail.right,
+                bottom: IMAGE_CONFIG.earningsDetail.bottom,
+                transform: IMAGE_CONFIG.earningsDetail.transform,
+                marginTop: IMAGE_CONFIG.earningsDetail.marginTop,
+                zIndex: 9,
+              }}
+            >
+                <img 
+                  src="/images/0.png" 
+                  alt="Earnings Detail" 
+                  className="w-full h-auto drop-shadow-xl" 
+                />
+            </div>
+            
+            {/* Right Bottom Card - /11.png */}
+            <div 
+              className="absolute" 
+              style={{
+                width: `${IMAGE_CONFIG.rewards.width}px`,
+                top: IMAGE_CONFIG.rewards.top,
+                left: IMAGE_CONFIG.rewards.left,
+                right: IMAGE_CONFIG.rewards.right,
+                bottom: IMAGE_CONFIG.rewards.bottom,
+                transform: IMAGE_CONFIG.rewards.transform,
+                marginTop: IMAGE_CONFIG.rewards.marginTop,
+                marginBottom: IMAGE_CONFIG.rewards.marginBottom,
+                marginLeft: IMAGE_CONFIG.rewards.marginLeft,
+                zIndex: 9,
+              }}
+            >
+                <img 
+                  src="/11.png" 
+                  alt="Rewards" 
+                  className="w-full h-auto drop-shadow-xl" 
+                />
+            </div>
+            
+            {/* Left Bottom Card - /10.png */}
+            <div 
+              className="absolute" 
+              style={{
+                width: `${IMAGE_CONFIG.totalTipped.width}px`,
+                top: IMAGE_CONFIG.totalTipped.top,
+                left: IMAGE_CONFIG.totalTipped.left,
+                right: IMAGE_CONFIG.totalTipped.right,
+                bottom: IMAGE_CONFIG.totalTipped.bottom,
+                transform: IMAGE_CONFIG.totalTipped.transform,
+                zIndex: 9,
+              }}
+            >
+                <img 
+                  src="/10.png" 
+                  alt="Total Tipped" 
+                  className="w-full h-auto drop-shadow-xl" 
+                />
+            </div>
         </div>
-
-        {/* ALL IMAGES POSITIONED INDEPENDENTLY - OUTSIDE THE CONTAINER */}
-        
-        {/* Central Phone Mockup - /images/00.png */}
-        <img 
-          src="/images/00.png" 
-          alt="Support & Earn" 
-          className="h-auto drop-shadow-2xl hidden md:block" 
-          style={{
-            position: 'fixed',
-            width: `${IMAGE_CONFIG.unlockForMore.width}px`,
-            top: IMAGE_CONFIG.unlockForMore.top,
-            left: IMAGE_CONFIG.unlockForMore.left,
-            right: IMAGE_CONFIG.unlockForMore.right,
-            bottom: IMAGE_CONFIG.unlockForMore.bottom,
-            transform: IMAGE_CONFIG.unlockForMore.transform,
-            marginTop: IMAGE_CONFIG.unlockForMore.marginTop,
-            marginBottom: IMAGE_CONFIG.unlockForMore.marginBottom,
-            zIndex: 10,
-          }}
-        />
-
-        {/* Left Card - /images/8.png */}
-        <img 
-          src="/images/8.png" 
-          alt="Your eyesight is very valuable" 
-          className="h-auto drop-shadow-xl hidden md:block" 
-          style={{
-            position: 'fixed',
-            width: `${IMAGE_CONFIG.eyesight.width}px`,
-            top: IMAGE_CONFIG.eyesight.top,
-            left: IMAGE_CONFIG.eyesight.left,
-            right: IMAGE_CONFIG.eyesight.right,
-            bottom: IMAGE_CONFIG.eyesight.bottom,
-            transform: IMAGE_CONFIG.eyesight.transform,
-            zIndex: 9,
-          }}
-        />
-
-        {/* Right Top Card - /images/0.png */}
-        <img 
-          src="/images/0.png" 
-          alt="Earnings Detail" 
-          className="h-auto drop-shadow-xl hidden md:block" 
-          style={{
-            position: 'fixed',
-            width: `${IMAGE_CONFIG.earningsDetail.width}px`,
-            top: IMAGE_CONFIG.earningsDetail.top,
-            left: IMAGE_CONFIG.earningsDetail.left,
-            right: IMAGE_CONFIG.earningsDetail.right,
-            bottom: IMAGE_CONFIG.earningsDetail.bottom,
-            transform: IMAGE_CONFIG.earningsDetail.transform,
-            marginTop: IMAGE_CONFIG.earningsDetail.marginTop,
-            zIndex: 9,
-          }}
-        />
-        
-        {/* Right Bottom Card - /11.png */}
-        <img 
-          src="/11.png" 
-          alt="Rewards" 
-          className="h-auto drop-shadow-xl hidden md:block" 
-          style={{
-            position: 'fixed',
-            width: `${IMAGE_CONFIG.rewards.width}px`,
-            top: IMAGE_CONFIG.rewards.top,
-            left: IMAGE_CONFIG.rewards.left,
-            right: IMAGE_CONFIG.rewards.right,
-            bottom: IMAGE_CONFIG.rewards.bottom,
-            transform: IMAGE_CONFIG.rewards.transform,
-            marginTop: IMAGE_CONFIG.rewards.marginTop,
-            marginBottom: IMAGE_CONFIG.rewards.marginBottom,
-            marginLeft: IMAGE_CONFIG.rewards.marginLeft,
-            zIndex: 9,
-          }}
-        />
-        
-        {/* Left Bottom Card - /10.png */}
-        <img 
-          src="/10.png" 
-          alt="Total Tipped" 
-          className="h-auto drop-shadow-xl hidden md:block" 
-          style={{
-            position: 'fixed',
-            width: `${IMAGE_CONFIG.totalTipped.width}px`,
-            top: IMAGE_CONFIG.totalTipped.top,
-            left: IMAGE_CONFIG.totalTipped.left,
-            right: IMAGE_CONFIG.totalTipped.right,
-            bottom: IMAGE_CONFIG.totalTipped.bottom,
-            transform: IMAGE_CONFIG.totalTipped.transform,
-            zIndex: 9,
-          }}
-        />
       </div>
     </section>
   );
