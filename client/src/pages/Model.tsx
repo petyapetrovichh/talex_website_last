@@ -40,10 +40,10 @@ export default function Model() {
               {/* For Creators */}
               <div>
                 <h3 className="text-xl font-bold mb-8 border-b-2 border-black pb-2 inline-block">For Creators</h3>
-                <div className="space-y-8">
-                  <div className="flex gap-4 items-start group">
+                <div className="space-y-8" style={{paddingTop: '26px'}}>
+                  <div className="flex gap-4 items-start group" style={{marginTop: '-28px', paddingBottom: '20px'}}>
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/1.png" alt="Subscription Ceiling" className="w-6 h-6" />
+                      <img src="/images/1.png" alt="Subscription Ceiling" className="w-6 h-6" style={{width: '113px', height: '48px'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed pt-1">
                       <strong>Subscription Ceiling:</strong> Hard to convince users to subscribe forever for occasional hits.
@@ -51,15 +51,15 @@ export default function Model() {
                   </div>
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" />
+                      <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
                       <strong>Centralized Traffic:</strong> Algorithms favor clickbait over quality.
                     </p>
                   </div>
-                  <div className="flex gap-4 items-start group">
+                  <div className="flex gap-4 items-start group" style={{paddingTop: '9px'}}>
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" />
+                      <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
                       <strong>No Ownership:</strong> You build the audience, but the platform owns the relationship.
@@ -73,8 +73,8 @@ export default function Model() {
                 <h3 className="text-xl font-bold mb-8 border-b-2 border-black pb-2 inline-block">For Users</h3>
                 <div className="space-y-8">
                   <div className="flex gap-4 items-start group">
-                    <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" />
+                    <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform" style={{width: '48px', height: '48px'}}>
+                      <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '13px'}}>
                       <strong>Information Overload:</strong> Valuable content is buried in noise and ads.
@@ -82,7 +82,7 @@ export default function Model() {
                   </div>
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/5.png" alt="Inefficient Payment" className="w-6 h-6" />
+                      <img src="/images/5.png" alt="Inefficient Payment" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
                       <strong>Inefficient Payment:</strong> Forced to buy “the whole farm” just to eat one apple.
@@ -90,7 +90,7 @@ export default function Model() {
                   </div>
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" />
+                      <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '11px'}}>
                       <strong>Passive Role:</strong> No incentive to curate or filter good content.
@@ -103,10 +103,12 @@ export default function Model() {
         </section>
 
         {/* Separator */}
-        <div className="w-full h-4 bg-[#6FF000] transform -skew-y-1"></div>
+        <div className="w-full relative z-10">
+          <img src="/images/Maskgroup.png" alt="Separator" className="w-full h-auto object-cover" />
+        </div>
 
         {/* 3. Three core pillars of the new engine */}
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-white" style={{marginTop: '47px'}}>
           <div className="container text-center">
             <h2 className="text-4xl font-bold mb-2 font-serif">Three core pillars of the new engine</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">The Foundation of TaleX</p>
