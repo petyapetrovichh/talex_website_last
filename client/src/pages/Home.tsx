@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-white font-sans text-gray-900">
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow" style={{height: '7700px'}}>
         <Hero />
         <FeatureSection />
         <CreatorQuote />
