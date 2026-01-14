@@ -19,7 +19,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           ========================================= */}
       <div className="md:hidden flex flex-col gap-8 py-12 w-full">
         {/* Mobile Image - Moved to top */}
-        <div className="w-full flex justify-center px-4 gap-4">
+        <div className="w-full flex justify-center px-4 gap-4" style={{marginTop: '-87px', paddingRight: '0px', paddingLeft: '0px'}}>
           {mobileImages ? (
             // 如果有指定的移动端图片组，则并排显示
             mobileImages.map((img, index) => (
@@ -28,6 +28,11 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
                 src={img.src}
                 alt={img.alt}
                 className="w-1/2 max-w-[180px] object-contain drop-shadow-xl"
+                style={{
+                  width: '172px',
+                  marginTop: index === 0 ? '59px' : '85px',
+                  paddingTop: '0px'
+                }}
               />
             ))
           ) : (
@@ -40,7 +45,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           )}
         </div>
 
-        <div className="w-full px-6">
+        <div className="w-full px-6" style={{paddingRight: '0px', paddingLeft: '0px', marginTop: '-21px'}}>
           <h2 className="text-3xl font-bold tracking-tight leading-tight mb-4 text-left" style={{fontSize: '24px'}}>
             {title}
           </h2>
@@ -157,7 +162,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
 
 export default function FeatureSection() {
   return (
-    <section className="container py-10" style={{paddingBottom: '0px'}}>
+    <section className="container py-10" style={{paddingBottom: '0px', paddingRight: '14px', paddingLeft: '14px'}}>
       <Feature 
         title="Discover works worth supporting"
         description={`On TaleX, discovery isn’t driven by ads, sponsored content, or engagement algorithms. The Home feed is a place to see what you and your friends genuinely choose to support — ideas that earn attention through real tips, not forced promotion.
