@@ -37,7 +37,7 @@ export default function Header() {
     setTimeout(() => {
       setIsMobileMenuOpen(false);
       setIsMenuClosing(false);
-    }, 800);
+    }, 300);
   };
 
   // 处理菜单项点击
@@ -207,7 +207,7 @@ export default function Header() {
             onClick={() => closeMobileMenu()}
             style={{ 
               top: '60px',
-              animation: isMenuClosing ? 'fadeOutSlow 0.8s ease-out' : 'fadeInSlow 0.4s ease-out',
+              animation: isMenuClosing ? 'fadeOutSlow 0.3s ease-out' : 'fadeInSlow 0.4s ease-out',
               pointerEvents: isMenuClosing ? 'none' : 'auto'
             }}
           />
@@ -219,7 +219,7 @@ export default function Header() {
               top: '60px', 
               display: 'flex', 
               flexDirection: 'column',
-              animation: isMenuClosing ? 'slideRightToLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)' : 'slideLeftToRight 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+              animation: isMenuClosing ? 'slideRightToLeft 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)' : 'slideLeftToRight 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
             }}
           >
             {/* 搜索框 */}
