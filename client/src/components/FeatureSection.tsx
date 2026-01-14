@@ -52,13 +52,13 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
       )}
       
       <div className="flex-1 space-y-6 text-center lg:text-left w-full" style={{marginLeft: '100px', marginRight: '-100px'}}>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl tracking-tight leading-tight mb-6 w-full" style={{fontWeight: '400', fontSize: '39px'}}>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl tracking-tight leading-tight mb-6 w-full" style={{fontWeight: '400', fontSize: '39px', color: '#000000'}}>
           {title}
         </h2>
-        <p className="text-lg text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-8 w-full">
+        <p className="text-lg text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-8 w-full" style={{color: '#000000'}}>
           {description}
         </p>
-        <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105">
+        <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105" style={{marginTop: '-15px'}}>
           {buttonText}
         </Button>
       </div>
