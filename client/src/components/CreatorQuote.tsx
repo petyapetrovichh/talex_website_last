@@ -26,7 +26,7 @@ export default function CreatorQuote() {
             <cite className="not-italic font-bold" style={{fontSize: '20px', color: '#000000'}}>— Petr Osipov</cite>
             <span className="text-sm" style={{fontSize: '18px', color: '#878787', fontWeight: '700'}}>TaleX</span>
             
-            <Button className="mt-6 rounded-full px-6 gap-2 bg-black text-white hover:bg-[#6FF000] hover:text-black transition-colors group" onClick={() => {}}>
+            <Button className="mt-6 rounded-full px-6 gap-2 bg-black text-white hover:bg-[#6FF000] hover:text-black transition-colors group" onClick={() => window.open('https://youtu.be/Vn8x8L4dNi4', '_blank')}>
               <Play size={16} fill="white" className="group-hover:fill-black" /> Watch now
             </Button>
           </div>
