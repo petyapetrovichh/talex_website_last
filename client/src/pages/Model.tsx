@@ -9,15 +9,9 @@ export default function Model() {
       
       <div className="pt-20">
         {/* 1. Hero Section */}
-        <section className="relative py-24 overflow-hidden bg-gradient-to-b from-[#F0FDF4] to-white">
-          {/* Background Sketch Pattern */}
-          <div className="absolute inset-0 opacity-10 pointer-events-none" 
-               style={{
-                 backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236FF000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-               }}>
-          </div>
+        <section className="relative py-24 overflow-hidden bg-white">
           
-          <div className="container relative z-10 text-center">
+          <div className="container relative z-10 text-center" style={{paddingRight: '0px', paddingLeft: '0px', width: '1561px', height: '742px'}}>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif tracking-tight" style={{fontSize: '56px', fontFamily: '"Abril Fatface", serif'}}>
               A new economic engine for great content
             </h1>
@@ -27,7 +21,7 @@ export default function Model() {
             
             {/* Sketch Illustration */}
             <div className="relative w-full max-w-5xl mx-auto h-[400px] mt-12">
-               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain" />
+               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain" style={{width: '1010px', height: '500px'}} />
             </div>
           </div>
         </section>
