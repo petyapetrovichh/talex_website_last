@@ -23,7 +23,7 @@ export default function BusinessModel() {
         </div>
 
         <div className="relative w-full flex justify-center">
-          <img src="/images/7.png" alt="Support & Earn" className="w-full max-w-[280px] h-auto drop-shadow-2xl" />
+          <img src="/images/00.png" alt="Support & Earn" className="w-full max-w-[280px] h-auto drop-shadow-2xl" />
         </div>
       </div>
 
