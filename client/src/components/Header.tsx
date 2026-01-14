@@ -137,7 +137,7 @@ export default function Header() {
             <nav className="flex items-center gap-6">
               <div className="relative group">
                 <div className="flex items-center gap-1 cursor-pointer py-4">
-                  <span className="text-sm font-medium text-black group-hover:text-[#6FF000] transition-colors" style={{fontSize: '18px'}}>Explore</span>
+                  <span className="text-sm font-medium text-black group-hover:text-[#6FF000] transition-colors" style={{fontSize: '18px', fontWeight: '400'}}>Explore</span>
                   <ChevronDown size={16} className="text-gray-400 group-hover:text-[#6FF000] transition-colors group-hover:rotate-180 duration-200" />
                 </div>
                 
@@ -153,7 +153,7 @@ export default function Header() {
 
               <div className="relative group">
                 <div className="flex items-center gap-1 cursor-pointer py-4">
-                  <span className="text-sm font-medium text-black group-hover:text-[#6FF000] transition-colors" style={{fontSize: '18px'}}>Company</span>
+                  <span className="text-sm font-medium text-black group-hover:text-[#6FF000] transition-colors" style={{fontSize: '18px', fontWeight: '400'}}>Company</span>
                   <ChevronDown size={16} className="text-gray-400 group-hover:text-[#6FF000] transition-colors group-hover:rotate-180 duration-200" />
                 </div>
 
@@ -169,7 +169,7 @@ export default function Header() {
 
               <div className="relative group">
                 <div className="flex items-center gap-1 cursor-pointer py-4">
-                  <span className="text-sm font-medium text-black group-hover:text-[#6FF000] transition-colors" style={{fontSize: '18px'}}>Community</span>
+                  <span className="text-sm font-medium text-black group-hover:text-[#6FF000] transition-colors" style={{fontSize: '18px', fontWeight: '400'}}>Community</span>
                   <ChevronDown size={16} className="text-gray-400 group-hover:text-[#6FF000] transition-colors group-hover:rotate-180 duration-200" />
                 </div>
 
