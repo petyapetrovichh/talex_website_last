@@ -2,7 +2,7 @@ import { Link } from "wouter";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-100">
+    <footer className="bg-white border-t border-gray-100" style={{marginTop: '50px'}}>
       {/* =========================================
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
@@ -82,33 +82,33 @@ export default function Footer() {
                 <img src="/logo-new.png" alt="TaleX" className="h-8 w-auto" style={{width: '136px', height: '24px'}} />
               </div>
             </Link>
-            <p className="text-gray-500 text-sm leading-relaxed" style={{width: '285px'}}>
-              Where great content pays off both creators and supporters. Join the revolution of content ownership.
+            <p className="text-gray-500 text-sm leading-relaxed" style={{width: '285px', color: '#000000', fontSize: '18px'}}>
+              Where great content pays off both creators and supporters
             </p>
           </div>
           
           <div>
-            <h4 className="font-bold mb-6">Product</h4>
+            <h4 className="font-bold mb-6" style={{fontSize: '18px', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', color: '#000000'}}>Explore</h4>
             <ul className="space-y-4 text-sm text-gray-600">
-              <li><Link href="/features" className="hover:text-black transition-colors">Features</Link></li>
-              <li><Link href="/pricing" className="hover:text-black transition-colors">Pricing</Link></li>
-              <li><Link href="/creators" className="hover:text-black transition-colors">For Creators</Link></li>
+              <li><Link href="/features" className="hover:text-black transition-colors">TaleX App</Link></li>
+              <li><Link href="/pricing" className="hover:text-black transition-colors">Our Model</Link></li>
+              <li><Link href="/creators" className="hover:text-black transition-colors">Featured</Link></li>
               <li><Link href="/supporters" className="hover:text-black transition-colors">For Supporters</Link></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-bold mb-6">Company</h4>
+            <h4 className="font-bold mb-6" style={{fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', color: '#000000', fontSize: '18px'}}>Company</h4>
             <ul className="space-y-4 text-sm text-gray-600">
-              <li><Link href="/about" className="hover:text-black transition-colors">About Us</Link></li>
-              <li><Link href="/careers" className="hover:text-black transition-colors">Careers</Link></li>
-              <li><Link href="/blog" className="hover:text-black transition-colors">Blog</Link></li>
-              <li><Link href="/contact" className="hover:text-black transition-colors">Contact</Link></li>
+              <li><Link href="/about" className="hover:text-black transition-colors">About</Link></li>
+              <li><Link href="/careers" className="hover:text-black transition-colors">Help</Link></li>
+              <li><Link href="/blog" className="hover:text-black transition-colors">Contact</Link></li>
+
             </ul>
           </div>
           
           <div>
-            <h4 className="font-bold mb-6">Connect</h4>
+            <h4 className="font-bold mb-6" style={{color: '#000000', fontSize: '18px', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Community</h4>
             <div className="flex flex-col gap-4">
               <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">X (Twitter)</a>
               <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Telegram</a>
@@ -126,8 +126,8 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-gray-400">
-            © 2024 TaleX Inc. All rights reserved.
+          <p className="text-xs text-gray-400" style={{color: '#000000'}}>
+            © 2026 Powered by TaleX. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-gray-400">
             <Link href="/privacy" className="hover:text-black transition-colors">Privacy Policy</Link>

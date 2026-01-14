@@ -73,7 +73,7 @@ export default function WhyChoose() {
                 <img src={feature.image} alt={feature.title} className="w-24 h-24 md:w-[180px] md:h-[180px] object-contain" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3" style={{fontWeight: '400'}}>{feature.title}</h3>
+                <h3 className="text-2xl font-bold mb-3" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>{feature.title}</h3>
                 <p className="text-gray-600 leading-relaxed text-lg" style={{color: '#000000'}}>
                   {feature.description}
                 </p>
