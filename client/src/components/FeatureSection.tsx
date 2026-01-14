@@ -21,7 +21,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         <img
           src="/images/Phone6.png"
           alt="TaleX app screen"
-          className="hidden lg:block absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+          className="hidden lg:block absolute object-contain drop-shadow-2xl"
           style={{
             left: '-150px',
             top: '50%',
@@ -38,7 +38,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         <img
           src="/images/Phone8.png"
           alt="TaleX app screen"
-          className="hidden lg:block absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+          className="hidden lg:block absolute object-contain drop-shadow-2xl"
           style={{
             right: '-150px',
             top: '50%',

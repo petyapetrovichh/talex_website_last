@@ -37,7 +37,7 @@ export default function Hero() {
             <img 
               src="/images/Phone5(1).png" 
               alt="TaleX app screen 1"
-              className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+              className="absolute object-contain drop-shadow-2xl"
               style={{
                 top: '80px',
                 right: '600px',
@@ -52,7 +52,7 @@ export default function Hero() {
             <img 
               src="/images/Phone2(1).png" 
               alt="TaleX app screen 2"
-              className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+              className="absolute object-contain drop-shadow-2xl"
               style={{
                 top: '100px',
                 right: '400px',
@@ -67,7 +67,7 @@ export default function Hero() {
             <img 
               src="/images/Phone1(1).png" 
               alt="TaleX app screen 3"
-              className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+              className="absolute object-contain drop-shadow-2xl"
               style={{
                 top: '120px',
                 right: '99px',
@@ -82,7 +82,7 @@ export default function Hero() {
             <img 
               src="/images/Phone4.png" 
               alt="TaleX app screen 4"
-              className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+              className="absolute object-contain drop-shadow-2xl"
               style={{
                 top: '90px',
                 right: '0px',
@@ -97,7 +97,7 @@ export default function Hero() {
             <img 
               src="/images/Phone3.png" 
               alt="TaleX app screen 5"
-              className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+              className="absolute object-contain drop-shadow-2xl"
               style={{
                 top: '110px',
                 right: '-180px',
