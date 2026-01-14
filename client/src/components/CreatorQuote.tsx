@@ -18,7 +18,7 @@ export default function CreatorQuote() {
           </div>
           
           <blockquote className="text-2xl md:text-3xl font-medium leading-relaxed mb-10" style={{fontWeight: '400', fontSize: '22px', color: '#000000'}}>
-            Being an independent creator often means pushing yourself to earn your first $1 — and then constantly thinking about how to drive traffic. Eventually, there comes a moment when creators inevitably starts thinking more about attracting traffic than about the quality of their content. That's when the worst thing happens: creation slows down, or just stops. Only a few manage to survive this crisis. For me, the most valuable thing is extending a helping hand to creators — so you don't fall into this trap. <br/>
+            Being an independent creator often means pushing yourself to earn your first $1 — and then constantly thinking about how to drive traffic. Eventually, there comes a moment when creators inevitably starts thinking more about attracting traffic than about the quality of their content. That's when the worst thing happens: creation slows down, or just stops. Only a few manage to survive this crisis. For me, the most valuable thing is extending a supporting hand to creators — so you don't fall into this trap. <br/>
             <span className="font-bold mt-4 block" style={{fontWeight: '400'}}>We have a solution, a brilliant one.</span>
           </blockquote>
           
