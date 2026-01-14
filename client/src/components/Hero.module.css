@@ -1,0 +1,58 @@
+/* Hero 组件 - 响应式样式分离 */
+
+/* ============ 移动端样式 (默认) ============ */
+.heroContainer {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+  overflow: hidden;
+  background-color: white;
+  height: 750px;
+}
+
+.textContainer {
+  max-width: 28rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-right: -50px;
+  margin-left: 50px;
+  margin-top: 75px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 559px;
+  color: #000000;
+  /* 移动端特定样式 */
+}
+
+.description {
+  color: #000000;
+  font-size: 14px;
+  padding-right: 40px;
+  margin-bottom: 2rem;
+  line-height: 1.625;
+  width: 100%;
+  max-width: 815px;
+  /* 移动端特定样式 */
+}
+
+/* ============ PC 端样式 (1024px 及以上) ============ */
+@media (min-width: 1024px) {
+  .textContainer {
+    margin-left: 50px;
+  }
+
+  .title {
+    font-size: 39px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+}
