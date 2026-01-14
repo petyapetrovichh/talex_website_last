@@ -17,8 +17,13 @@ export default function Model() {
                }}>
           </div>
           
+          {/* Top Background Image */}
+          <div className="absolute top-0 left-0 w-full h-[500px] pointer-events-none z-0">
+             <img src="/Group1556239238.png" alt="Background pattern" className="w-full h-full object-cover opacity-50" />
+          </div>
+          
           <div className="container relative z-10 text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight" style={{ fontFamily: '"Abril Fatface", serif' }}>
               A new economic engine for <br/>
               <span className="italic relative inline-block">
                 great content
@@ -28,7 +33,7 @@ export default function Model() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-              Simple. Content-first. Fair allocation. Always.
+              Single-Content Purchase & Prediction Market
             </p>
             
             {/* Sketch Illustration Placeholder */}
@@ -52,7 +57,7 @@ export default function Model() {
         <section className="py-24 bg-white">
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-2 font-serif">What went wrong?</h2>
+              <h2 className="text-4xl font-bold mb-2" style={{ fontFamily: '"Abril Fatface", serif' }}>What went wrong?</h2>
               <p className="text-gray-500 text-sm uppercase tracking-widest">The Broken Content Economy</p>
             </div>
 
@@ -128,7 +133,7 @@ export default function Model() {
         {/* 3. Three core pillars of the new engine */}
         <section className="py-24 bg-white">
           <div className="container text-center">
-            <h2 className="text-4xl font-bold mb-2 font-serif">Three core pillars of the new engine</h2>
+            <h2 className="text-4xl font-bold mb-2" style={{ fontFamily: '"Abril Fatface", serif' }}>Three core pillars of the new engine</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">The Foundation of TaleX</p>
             
             <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
@@ -154,405 +159,161 @@ export default function Model() {
               
               <div className="flex flex-col items-center group">
                 <div className="w-24 h-24 mb-6 text-[#6FF000] group-hover:scale-110 transition-transform duration-300">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
                 </div>
-                <h3 className="text-xl font-bold mb-4">Prediction Game</h3>
+                <h3 className="text-xl font-bold mb-4">Prediction Market</h3>
                 <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
-                  Support early, earn from future growth. Your taste becomes your asset in the content market.
+                  Early supporters share in the success. Identify great content early and get rewarded as it grows.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 4. The economic mechanism: 20/80 split */}
-        <section className="py-24 bg-white">
-          <div className="container text-center">
-            <h2 className="text-4xl font-bold mb-2 font-serif">The economic mechanism: 20/80 split</h2>
-            <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Fair & Transparent</p>
-            
-            <div className="flex flex-col md:flex-row items-center justify-center gap-16 max-w-4xl mx-auto">
-              {/* Donut Chart */}
-              <div className="relative w-64 h-64">
-                <svg viewBox="0 0 100 100" className="transform -rotate-90 w-full h-full">
-                  <circle cx="50" cy="50" r="40" fill="transparent" stroke="#f3f4f6" strokeWidth="20" />
-                  {/* 80% Segment */}
-                  <circle cx="50" cy="50" r="40" fill="transparent" stroke="#6FF000" strokeWidth="20" strokeDasharray="201.06 251.32" strokeDashoffset="0" className="hover:opacity-90 transition-opacity" />
-                  {/* 20% Segment */}
-                  <circle cx="50" cy="50" r="40" fill="transparent" stroke="#FFE600" strokeWidth="20" strokeDasharray="50.26 251.32" strokeDashoffset="-201.06" className="hover:opacity-90 transition-opacity" />
-                </svg>
-                <div className="absolute inset-0 flex items-center justify-center bg-white rounded-full w-32 h-32 m-auto shadow-inner">
-                  <span className="font-bold text-xl">Split</span>
-                </div>
-              </div>
-              
-              {/* Legend */}
-              <div className="text-left space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-6 h-6 bg-[#FFE600] rounded-sm"></div>
-                  <div>
-                    <p className="font-bold text-lg">20% Content Value</p>
-                    <p className="text-gray-500 text-sm">(Goes to Creator)</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-6 h-6 bg-[#6FF000] rounded-sm"></div>
-                  <div>
-                    <p className="font-bold text-lg">80% Prediction Market</p>
-                    <p className="text-gray-500 text-sm">(Distributed to Users)</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <p className="text-gray-500 text-xs mt-12 max-w-2xl mx-auto italic">
-              * This split ensures creators get paid for their work, while the majority of the value circulates back to the community to incentivize discovery and promotion.
-            </p>
-          </div>
-        </section>
-
-        {/* 5. Why users pay? */}
-        <section className="py-24 bg-white overflow-hidden">
-          <div className="container">
-            <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-              <div>
-                <h2 className="text-4xl font-bold mb-12 font-serif">Why users pay?</h2>
-                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest">Dual Motivation</p>
-                
-                <div className="space-y-12">
-                  <div>
-                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]">1. Consumption Logic</h3>
-                    <p className="text-gray-600 leading-relaxed italic mb-2">"Because I value this piece of art"</p>
-                    <p className="text-gray-600 leading-relaxed text-sm">
-                      Direct support for creators. Unlocking premium content. No ads, no noise. Just pure value exchange.
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]">2. Prediction Logic</h3>
-                    <p className="text-gray-600 leading-relaxed italic mb-2">"Because I believe this will go viral"</p>
-                    <p className="text-gray-600 leading-relaxed text-sm">
-                      By tipping early, you become a stakeholder in the content's success. If it grows, you grow with it.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="relative h-[500px] flex items-center justify-center">
-                {/* Green Chess Piece Image */}
-                <img 
-                  src="/images/chess-king.jpg" 
-                  alt="Green Crystal Chess King" 
-                  className="h-full object-contain drop-shadow-2xl mix-blend-multiply filter brightness-110 contrast-125"
-                />
-                {/* Glow effect */}
-                <div className="absolute inset-0 bg-[#6FF000]/20 blur-3xl -z-10 rounded-full scale-75"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 6. The sharing chain */}
-        <section className="py-24 bg-gradient-to-b from-[#F0FDF4] to-white">
-          <div className="container">
-            <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-              {/* Phone Mockup */}
-              <div className="relative mx-auto w-full max-w-[320px]">
-                <div className="relative rounded-[3rem] overflow-hidden border-8 border-gray-800 bg-white shadow-2xl aspect-[9/19]">
-                  {/* Mockup Content */}
-                  <div className="p-6 h-full flex flex-col">
-                    <div className="flex items-center gap-2 mb-6">
-                      <div className="w-8 h-8 rounded-full bg-gray-200"></div>
-                      <div className="h-4 w-24 bg-gray-100 rounded"></div>
-                    </div>
-                    
-                    <div className="bg-[#F6F6F6] p-4 rounded-2xl mb-4">
-                      <h4 className="font-bold mb-2">Support & Earn</h4>
-                      <p className="text-xs text-gray-500 mb-4">Your tip supports the author and previous backers.</p>
-                      <div className="flex justify-between gap-2 mb-4">
-                        <div className="flex-1 py-2 bg-white rounded-lg text-center text-sm font-bold shadow-sm border border-gray-100">$1</div>
-                        <div className="flex-1 py-2 bg-[#6FF000] rounded-lg text-center text-sm font-bold shadow-sm border border-[#6FF000]">$5</div>
-                        <div className="flex-1 py-2 bg-white rounded-lg text-center text-sm font-bold shadow-sm border border-gray-100">$10</div>
-                      </div>
-                      <div className="w-full py-2 bg-white rounded-lg px-3 text-xs text-gray-400 border border-gray-100 mb-2">
-                        $ Custom Amount
-                      </div>
-                    </div>
-                    
-                    <div className="mt-auto">
-                      <div className="w-full h-12 bg-black rounded-full text-white flex items-center justify-center font-bold text-sm">
-                        Confirm Support
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div>
-                <h2 className="text-4xl font-bold mb-8 font-serif">The sharing chain</h2>
-                <p className="text-gray-500 text-sm mb-12 uppercase tracking-widest">Viral Growth</p>
-                
-                <div className="space-y-8">
-                  <div className="relative pl-8 border-l-2 border-[#6FF000]">
-                    <h3 className="text-lg font-bold mb-2">1. Survivors: Anyone who paid before you...</h3>
-                    <p className="text-gray-600 text-sm">
-                      ...receives a portion of your tip as a reward for discovering the content early.
-                    </p>
-                  </div>
-                  
-                  <div className="relative pl-8 border-l-2 border-gray-200">
-                    <h3 className="text-lg font-bold mb-2">2. Juniors: Anyone who pays after you...</h3>
-                    <p className="text-gray-600 text-sm">
-                      ...contributes to your reward pool. The earlier you are, the larger your potential upside.
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="mt-12 p-6 bg-[#F0FDF4] rounded-xl border border-[#6FF000]/20">
-                  <p className="text-sm text-gray-700 italic">
-                    "Everyone is incentivized to share good content, because their own return depends on its future popularity."
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 7. The 365 day window rule */}
-        <section className="py-24 bg-white">
-          <div className="container text-center">
-            <h2 className="text-4xl font-bold mb-2 font-serif">The 365 day window rule</h2>
-            <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Time-Decay Incentive Model</p>
-            
-            <div className="relative max-w-3xl mx-auto aspect-[2/1] overflow-hidden">
-               {/* Concentric Arcs representing time decay */}
-               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-[200%] rounded-full border-[40px] border-[#6FF000] opacity-20 animate-ripple" style={{ animationDelay: '600ms' }}></div>
-               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] h-[160%] rounded-full border-[40px] border-[#6FF000] opacity-40 animate-ripple" style={{ animationDelay: '400ms' }}></div>
-               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[60%] h-[120%] rounded-full border-[40px] border-[#6FF000] opacity-60 animate-ripple" style={{ animationDelay: '200ms' }}></div>
-               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[40%] h-[80%] rounded-full border-[40px] border-[#6FF000] opacity-80 flex items-end justify-center pb-8 animate-ripple" style={{ animationDelay: '0ms' }}>
-                  <span className="text-white font-bold text-2xl">24h</span>
-               </div>
-               
-               {/* Labels */}
-               <div className="absolute bottom-4 left-[15%] text-xs font-bold text-gray-400">31-365 days</div>
-               <div className="absolute bottom-16 left-[25%] text-xs font-bold text-gray-500">8-30 days</div>
-               <div className="absolute bottom-28 left-[35%] text-xs font-bold text-gray-600">1-7 days</div>
-            </div>
-            
-            <p className="text-gray-500 text-xs mt-8 max-w-xl mx-auto">
-              * Rewards are highest in the first 24 hours to incentivize discovery. The window closes after 365 days, ensuring content liquidity.
-            </p>
-          </div>
-        </section>
-
-        {/* 8. Simple math */}
-        <section className="py-24 bg-white">
+        {/* 4. The 365-day window rule */}
+        <section className="py-24 bg-gray-50">
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-2 font-serif">Simple math</h2>
-              <p className="text-gray-500 text-sm uppercase tracking-widest">Transparent Formula</p>
+              <h2 className="text-4xl font-bold mb-2" style={{ fontFamily: '"Abril Fatface", serif' }}>The 365-day window rule</h2>
+              <p className="text-gray-500 text-sm uppercase tracking-widest">Fair Distribution Mechanism</p>
             </div>
+            
+            <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+              <div className="p-8 md:p-12">
+                <div className="flex flex-col md:flex-row gap-12 items-center">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-6">How it works</h3>
+                    <ul className="space-y-6">
+                      <li className="flex gap-4">
+                        <div className="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center shrink-0 font-bold">1</div>
+                        <div>
+                          <h4 className="font-bold mb-1">Early Bird Period</h4>
+                          <p className="text-gray-600 text-sm">Support within the first 7 days to get maximum future revenue share.</p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <div className="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center shrink-0 font-bold">2</div>
+                        <div>
+                          <h4 className="font-bold mb-1">Standard Window</h4>
+                          <p className="text-gray-600 text-sm">From day 8 to 365, revenue share gradually decreases.</p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <div className="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center shrink-0 font-bold">3</div>
+                        <div>
+                          <h4 className="font-bold mb-1">Creator Forever</h4>
+                          <p className="text-gray-600 text-sm">After 365 days, 100% of new revenue goes directly to the creator.</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="flex-1 flex justify-center">
+                    {/* Replaced with Maskgroup.png */}
+                    <img src="/Maskgroup.png" alt="365-day window rule visualization" className="w-full max-w-sm object-contain" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        {/* 5. Economic Model */}
+        <section className="py-24 bg-white">
+          <div className="container text-center">
+            <h2 className="text-4xl font-bold mb-16" style={{ fontFamily: '"Abril Fatface", serif' }}>Economic Model</h2>
+            
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {/* Creator Connected */}
-              <div className="bg-[#F0FDF4] p-8 rounded-2xl border border-[#6FF000]/20">
-                <h3 className="text-lg font-bold mb-4 text-gray-800">For those who pay & contribute amount (X):</h3>
-                <div className="bg-white p-6 rounded-xl shadow-sm mb-4">
-                   <p className="font-mono text-sm text-gray-500 mb-2">Creator Connected</p>
-                   <p className="font-mono text-xl font-bold text-[#6FF000]">Revenue = 0.2 * X</p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                   <p className="font-mono text-sm text-gray-500 mb-2">Reward Pool</p>
-                   <p className="font-mono text-xl font-bold text-[#6FF000]">Pool = 0.8 * X</p>
-                </div>
+              <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:shadow-lg transition-shadow">
+                <div className="text-6xl font-bold text-[#6FF000] mb-4">80%</div>
+                <h3 className="text-xl font-bold mb-2">Creator Pool</h3>
+                <p className="text-gray-600 text-sm">
+                  Directly to the creator. Sustainable income for quality work.
+                </p>
               </div>
-
-              {/* Reward Distribution */}
-              <div className="bg-white p-8 rounded-2xl border border-gray-100 flex flex-col justify-center">
-                <h3 className="text-lg font-bold mb-4 text-gray-800">Reward for a specific senior (Y) will be:</h3>
-                <div className="bg-[#F6F6F6] p-8 rounded-xl flex items-center justify-center">
-                   <div className="text-center">
-                      <p className="font-serif text-2xl italic text-gray-800">
-                        Reward(Y) = Pool * <span className="inline-block border-b-2 border-black px-2 mx-1">X(Y)</span>
-                      </p>
-                      <p className="font-serif text-lg italic text-gray-600 mt-2">ΣX</p>
-                   </div>
-                </div>
-                <p className="text-xs text-gray-400 mt-6 text-center">
-                  * Your reward is proportional to your contribution relative to the total pool at the time of distribution.
+              
+              <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:shadow-lg transition-shadow">
+                <div className="text-6xl font-bold text-black mb-4">20%</div>
+                <h3 className="text-xl font-bold mb-2">Supporter Pool</h3>
+                <p className="text-gray-600 text-sm">
+                  Distributed to early backers. The earlier you support, the more you earn.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 9. Win Win Win ecosystem */}
-        <section className="py-24 bg-white">
+        {/* 6. Why this works */}
+        <section className="py-24 bg-black text-white">
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-2 font-serif">Win Win Win ecosystem</h2>
-              <p className="text-gray-500 text-sm uppercase tracking-widest">Creators • Users • TaleX</p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {/* Creators Card */}
-              <div className="bg-[#6FF000] p-8 aspect-square flex flex-col justify-center items-center text-center group hover:scale-105 transition-transform duration-300">
-                <h3 className="text-2xl font-bold mb-4">Creators</h3>
-                <p className="text-sm font-medium leading-relaxed">
-                  They create great content, receive direct support, and enjoy organic growth fueled by user incentives.
-                </p>
-              </div>
-
-              {/* Users Card (Image) */}
-              <div className="relative aspect-square overflow-hidden group">
-                <img 
-                  src="/images/ecosystem-book.jpg" 
-                  alt="Open book on table" 
-                  className="w-full h-full object-cover grayscale group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-2xl font-bold text-white mb-4">Users</h3>
-                  <p className="text-sm text-white/90 font-medium leading-relaxed">
-                    They discover value, support creators, and earn rewards for their foresight.
-                  </p>
-                </div>
-              </div>
-
-              {/* TaleX Card (Image) */}
-              <div className="relative aspect-square overflow-hidden group">
-                <img 
-                  src="/images/ecosystem-laptop.jpg" 
-                  alt="Laptop workspace" 
-                  className="w-full h-full object-cover grayscale group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-2xl font-bold text-white mb-4">TaleX</h3>
-                  <p className="text-sm text-white/90 font-medium leading-relaxed">
-                    We provide the infrastructure, ensure fair play, and grow with the ecosystem.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 10. Risk control and safety */}
-        <section className="py-24 bg-white">
-          <div className="container">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-2 font-serif">Risk control and safety</h2>
-              <p className="text-gray-500 text-sm uppercase tracking-widest">Sustainable Tokenomics</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {/* Card 1 */}
-              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
-                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0">
-                  <svg className="w-6 h-6 text-[#6FF000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                </div>
-                <div>
-                  <h3 className="text-white font-bold mb-2">Anti-Ponzi mechanism</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed">
-                    Strict mathematical models ensure that rewards are always backed by real value creation, preventing inflationary bubbles.
-                  </p>
-                </div>
-              </div>
-
-              {/* Card 2 */}
-              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
-                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0">
-                  <svg className="w-6 h-6 text-[#6FF000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-                </div>
-                <div>
-                  <h3 className="text-white font-bold mb-2">No central money market</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed">
-                    TaleX does not hold user funds in a central pool. All transactions are peer-to-peer and transparent.
-                  </p>
-                </div>
-              </div>
-
-              {/* Card 3 */}
-              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
-                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0">
-                  <svg className="w-6 h-6 text-[#6FF000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                </div>
-                <div>
-                  <h3 className="text-white font-bold mb-2">Fully decentralized</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed">
-                    Smart contracts govern the distribution rules, ensuring that no single entity can manipulate the outcome.
-                  </p>
-                </div>
-              </div>
-
-              {/* Card 4 */}
-              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
-                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0">
-                  <svg className="w-6 h-6 text-[#6FF000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
-                </div>
-                <div>
-                  <h3 className="text-white font-bold mb-2">No financial advice</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed">
-                    We provide a platform for content support, not investment. Users should support content they genuinely value.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 11. The shift from ads to direct value */}
-        <section className="py-24 bg-white">
-          <div className="container">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-2 font-serif">The shift from ads to direct value</h2>
-              <p className="text-gray-500 text-sm uppercase tracking-widest">Long-term Vision</p>
-            </div>
-
-            <div className="max-w-4xl mx-auto relative h-[400px] border-l border-b border-gray-200">
-              {/* Chart Area */}
-              <div className="absolute inset-0 overflow-hidden">
-                {/* Gradient Area */}
-                <svg className="w-full h-full" preserveAspectRatio="none">
-                  <defs>
-                    <linearGradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
-                      <stop offset="0%" stopColor="#6FF000" stopOpacity="0.5" />
-                      <stop offset="100%" stopColor="#6FF000" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                  <path d="M0,400 C200,380 400,350 600,200 S800,50 900,0 L900,400 Z" fill="url(#chartGradient)" />
-                  <path d="M0,400 C200,380 400,350 600,200 S800,50 900,0" fill="none" stroke="#6FF000" strokeWidth="3" />
-                </svg>
-                
-                {/* Label */}
-                <div className="absolute top-[20%] right-[10%] bg-[#6FF000] text-black px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  Capital Efficiency
-                </div>
-                
-                <div className="absolute bottom-[10%] left-[10%] bg-white border border-gray-200 text-gray-500 px-4 py-2 rounded-full font-bold text-sm shadow-sm">
-                  Ad-based Model
-                </div>
-              </div>
+              <h2 className="text-4xl font-bold mb-2 text-[#6FF000]" style={{ fontFamily: '"Abril Fatface", serif' }}>Why this works</h2>
+              <p className="text-gray-400 text-sm uppercase tracking-widest">Incentive Alignment</p>
             </div>
             
-            <p className="text-center text-gray-500 text-xs mt-8">
-              * As the network grows, the efficiency of direct value exchange surpasses traditional ad-based monetization models.
-            </p>
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              <div className="p-8 border border-gray-800 rounded-2xl hover:border-[#6FF000] transition-colors">
+                <h3 className="text-xl font-bold mb-4">For Creators</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Focus on quality, not quantity. Build a loyal community of true backers, not just passive viewers.
+                </p>
+              </div>
+              <div className="p-8 border border-gray-800 rounded-2xl hover:border-[#6FF000] transition-colors">
+                <h3 className="text-xl font-bold mb-4">For Backers</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Your taste has value. Discover great content early and get rewarded for your curation skills.
+                </p>
+              </div>
+              <div className="p-8 border border-gray-800 rounded-2xl hover:border-[#6FF000] transition-colors">
+                <h3 className="text-xl font-bold mb-4">For Ecosystem</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Quality rises to the top naturally. No black-box algorithms deciding what you should see.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* Bottom CTA */}
-        <section className="py-32 bg-gradient-to-b from-white to-[#F0FDF4] text-center">
+        {/* 7. FAQ */}
+        <section className="py-24 bg-white">
+          <div className="container max-w-3xl">
+            <h2 className="text-4xl font-bold mb-12 text-center" style={{ fontFamily: '"Abril Fatface", serif' }}>Frequently Asked Questions</h2>
+            
+            <div className="space-y-6">
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-lg font-bold mb-2">Is this a subscription?</h3>
+                <p className="text-gray-600">No. You pay once for each piece of content (article, video, etc.) and own access to it forever.</p>
+              </div>
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-lg font-bold mb-2">How much can I earn?</h3>
+                <p className="text-gray-600">It depends on how early you support and how popular the content becomes. The earlier you are, the higher your share of the supporter pool.</p>
+              </div>
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-lg font-bold mb-2">Can I withdraw my earnings?</h3>
+                <p className="text-gray-600">Yes, anytime. Earnings are credited to your wallet instantly and can be withdrawn to your bank account or crypto wallet.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 8. CTA */}
+        <section className="py-32 bg-[#F0FDF4] text-center">
           <div className="container">
-            <h2 className="text-5xl font-bold mb-8 font-serif">A new way of value discovery</h2>
+            <h2 className="text-5xl font-bold mb-8" style={{ fontFamily: '"Abril Fatface", serif' }}>Ready to join the new economy?</h2>
             <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-              Join TaleX today and be part of the revolution that puts value back into the hands of creators and supporters.
+              Start supporting creators you love and get rewarded for your taste.
             </p>
-            <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-12 py-8 text-xl shadow-xl shadow-[#6FF000]/30 transition-all hover:scale-105">
-              Start Publishing Now
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="bg-black text-white hover:bg-gray-800 text-lg px-8 py-6 rounded-full">
+                Start Exploring
+              </Button>
+              <Button variant="outline" className="border-black text-black hover:bg-gray-100 text-lg px-8 py-6 rounded-full">
+                Become a Creator
+              </Button>
+            </div>
           </div>
         </section>
       </div>
+      
       <Footer />
     </div>
   );
