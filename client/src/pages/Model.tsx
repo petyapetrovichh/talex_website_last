@@ -315,8 +315,8 @@ The Goal: Be the one who sees potential before the crowd does.
             <h2 className="text-4xl font-bold mb-2 font-serif">The 365 day window rule</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Time-Decay Incentive Model</p>
             
-            <div className="relative max-w-full" style={{marginBottom: '44px', marginLeft: '351px', width: '1117px'}}>
-               <img src="/images/18.png" alt="Distribution Formula" className="" style={{marginLeft: '0px', width: '931px', height: '430px', objectFit: 'fill'}} />
+            <div className="relative w-full max-w-5xl mx-auto mb-11 px-4">
+               <img src="/images/18.png" alt="Distribution Formula" className="w-full h-auto object-contain mx-auto" />
             </div>
             
             <p className="text-gray-500 text-xs mt-8 max-w-xl mx-auto">
