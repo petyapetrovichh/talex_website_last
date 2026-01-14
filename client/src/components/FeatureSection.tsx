@@ -45,7 +45,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
             transform: 'translateY(-50%)',
             width: '450px',
             height: 'auto',
-            marginLeft: '1218px',
+            marginLeft: '1185px',
             marginTop: '826px',
           }}
         />
@@ -81,7 +81,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
             transform: 'translateY(-50%)',
             width: '450px',
             height: 'auto',
-            marginRight: '499px',
+            marginRight: '515px',
             marginTop: '150px',
           }}
         />
