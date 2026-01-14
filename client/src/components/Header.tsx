@@ -96,11 +96,12 @@ export default function Header() {
               className="bg-[#F6F6F6] text-sm rounded-full pl-10 pr-4 py-2.5 outline-none focus:ring-2 focus:ring-[#6FF000]/20 w-64 transition-all"
             />
           </div>
-          <Link href="/signup">
-            <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full px-6 border-2 border-transparent transition-colors">
-              Start publishing
-            </Button>
-          </Link>
+          <Button 
+            onClick={() => window.location.href = 'https://www.talex.world/publish'}
+            className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full px-6 border-2 border-transparent transition-colors"
+          >
+            Start publishing
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
