@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { IMAGE_SIZES } from "@/const";
 
 export default function BusinessModel() {
   return (
@@ -40,7 +41,7 @@ export default function BusinessModel() {
         </div>
 
         <div className="relative w-full flex justify-center">
-          <img src="/images/00.png" alt="Support & Earn" className="w-full max-w-[280px] h-auto drop-shadow-2xl" />
+          <img src="/images/00.png" alt="Support & Earn" className="h-auto drop-shadow-2xl" style={{width: `${IMAGE_SIZES.unlockForMore}px`}} />
         </div>
       </div>
 
@@ -87,25 +88,25 @@ export default function BusinessModel() {
 
         <div className="relative max-w-5xl mx-auto w-full h-auto min-h-[600px]">
             {/* Central Phone Mockup */}
-            <div className="relative z-10 w-full max-w-[320px] mx-auto">
+            <div className="relative z-10 w-full mx-auto" style={{maxWidth: `${IMAGE_SIZES.unlockForMore}px`}}>
                 <img src="/images/00.png" alt="Support & Earn" className="w-full h-auto drop-shadow-2xl pt-20 md:pt-36 mt-16 mb-6" style={{marginTop: '45px', marginBottom: '10px'}} />
             </div>
 
             {/* Floating Cards - Left */}
-            <div className="absolute top-0 left-0 lg:-left-10 w-64 animate-in slide-in-from-left-10 duration-1000">
+            <div className="absolute top-0 left-0 lg:-left-10 animate-in slide-in-from-left-10 duration-1000" style={{width: `${IMAGE_SIZES.eyesight}px`}}>
                 <img src="/images/8.png" alt="Unlock Full Story" className="w-full h-auto drop-shadow-xl" />
             </div>
 
             {/* Floating Cards - Right */}
-            <div className="absolute top-20 right-0 lg:-right-10 w-64 animate-in slide-in-from-right-10 duration-1000 delay-200">
+            <div className="absolute top-20 right-0 lg:-right-10 animate-in slide-in-from-right-10 duration-1000 delay-200" style={{width: `${IMAGE_SIZES.earningsDetail}px`}}>
                 <img src="/images/0.png" alt="Total Tipped" className="w-full h-auto drop-shadow-xl" style={{marginTop: '-96px'}} />
             </div>
             
-            <div className="absolute bottom-0 right-10 lg:right-0 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-500">
+            <div className="absolute bottom-0 right-10 lg:right-0 animate-in slide-in-from-bottom-10 duration-1000 delay-500" style={{width: `${IMAGE_SIZES.rewards}px`}}>
                 <img src="/11.png" alt="Rewards" className="w-full h-auto drop-shadow-xl" style={{marginTop: '-2px', marginBottom: '81px', marginLeft: '44px'}} />
             </div>
             
-            <div className="absolute bottom-20 left-0 lg:-left-10 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-300">
+            <div className="absolute bottom-20 left-0 lg:-left-10 animate-in slide-in-from-bottom-10 duration-1000 delay-300" style={{width: `${IMAGE_SIZES.totalTipped}px`}}>
                 <img src="/10.png" alt="Earnings Detail" className="w-full h-auto drop-shadow-xl" />
             </div>
         </div>
