@@ -87,8 +87,8 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         />
       )}
       
-      <div className="flex-1 space-y-6 text-center lg:text-left w-full" style={{marginLeft: '60px', marginRight: '-100px'}}>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl tracking-tight leading-tight mb-6 w-full" style={{fontWeight: '400', fontSize: '39px', color: '#000000'}}>
+      <div className="flex-1 space-y-6 text-center lg:text-left w-full" style={{marginLeft: '60px', marginRight: '-100px', marginTop: '200px'}}>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl tracking-tight leading-tight mb-6 w-full" style={{fontWeight: '400', fontSize: '39px', color: '#000000', marginBottom: '24px'}}>
           {title}
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-8 w-full" style={{color: '#000000'}}>
