@@ -51,17 +51,17 @@ export default function Model() {
                   </div>
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+                      <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" style={{width: '58px', height: '58px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px', display: 'flex', alignItems: 'center', height: '58px'}}>
                       <strong>Centralized Traffic:</strong> Algorithms favor clickbait over quality.
                     </p>
                   </div>
                   <div className="flex gap-4 items-start group" style={{paddingTop: '9px'}}>
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+                      <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" style={{width: '58px', height: '58px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px', display: 'flex', alignItems: 'center', height: '58px'}}>
                       <strong>No Ownership:</strong> You build the audience, but the platform owns the relationship.
                     </p>
                   </div>
@@ -74,25 +74,25 @@ export default function Model() {
                 <div className="space-y-8">
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform" style={{width: '48px', height: '48px'}}>
-                      <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+                      <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" style={{width: '58px', height: '58px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '13px'}}>
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '13px', paddingTop: '7px', marginBottom: '-1px', display: 'flex', alignItems: 'center', height: '58px'}}>
                       <strong>Information Overload:</strong> Valuable content is buried in noise and ads.
                     </p>
                   </div>
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/5.png" alt="Inefficient Payment" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+                      <img src="/images/5.png" alt="Inefficient Payment" className="w-6 h-6" style={{width: '58px', height: '58px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px', display: 'flex', alignItems: 'center', height: '58px'}}>
                       <strong>Inefficient Payment:</strong> Forced to buy “the whole farm” just to eat one apple.
                     </p>
                   </div>
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+                      <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" style={{width: '58px', height: '58px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '11px'}}>
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '11px', display: 'flex', alignItems: 'center', height: '58px'}}>
                       <strong>Passive Role:</strong> No incentive to curate or filter good content.
                     </p>
                   </div>
