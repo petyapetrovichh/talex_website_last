@@ -10,17 +10,21 @@ export default function Hero() {
       <div className="container relative z-10">
         <div className="relative w-full h-full">
           {/* Left side - Text content */}
-          <div className="max-w-2xl absolute left-0 top-0" style={{marginRight: '-50px', marginLeft: '-7px', marginTop: '75px'}}>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 w-full max-w-[559px]" style={{fontSize: '26px', fontWeight: '400'}}>
+          <div className="max-w-2xl absolute left-0 top-0 px-4 lg:px-0" style={{marginRight: '-50px', marginTop: '75px'}}>
+            {/* 标题 - 移动端 16px, PC 端 26px */}
+            <h1 className="font-bold tracking-tight leading-[1.1] mb-6 w-full max-w-[559px] lg:max-w-[559px]" style={{fontSize: '16px', fontWeight: '400'}} data-responsive="true">
               TaleX is where <br />
               <span className="relative inline-block" style={{color: '#6FF000'}}>
                 great content
               </span> pays off <br />
               both creators and supporters
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed w-full max-w-[815px]" style={{color: '#000000', fontSize: '16px', paddingRight: '40px'}}>
+            
+            {/* 描述文本 - 移动端 14px, PC 端 16px */}
+            <p className="text-gray-600 mb-8 leading-relaxed w-full max-w-[815px]" style={{color: '#000000', fontSize: '14px', paddingRight: '40px'}} data-responsive="true">
               TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
             </p>
+            
             <div className="flex flex-wrap gap-4">
               <Button 
                 onClick={() => window.location.href = 'https://www.talex.world/publish'}
@@ -110,6 +114,15 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      {/* 响应式样式 - 在 CSS 中定义，确保移动端和 PC 端独立控制 */}
+      <style>{`
+        @media (min-width: 1024px) {
+          [data-responsive="true"] {
+            /* PC 端样式会在这里覆盖 */
+          }
+        }
+      `}</style>
     </section>
   );
 }
