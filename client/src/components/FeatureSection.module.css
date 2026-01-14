@@ -1,0 +1,165 @@
+/* FeatureSection 组件 - 响应式样式分离 */
+
+/* ============ 移动端样式 (默认) ============ */
+.featureContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  position: relative;
+  height: 777px;
+}
+
+.featureContent {
+  flex: 1;
+  space: 1.5rem;
+  text-align: center;
+  width: 100%;
+  margin-left: 60px;
+  margin-right: -100px;
+  margin-top: 200px;
+}
+
+.featureTitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  color: #000000;
+}
+
+.featureDescription {
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.625;
+  max-width: 28rem;
+  margin: 0 auto 2rem;
+  width: 100%;
+}
+
+.featureButton {
+  margin-top: -15px;
+}
+
+.phone6Image {
+  display: none;
+}
+
+.phone8WithdrawImage {
+  display: none;
+}
+
+.phone8Image {
+  display: none;
+}
+
+.phone7Image {
+  display: none;
+}
+
+/* ============ PC 端样式 (1024px 及以上) ============ */
+@media (min-width: 1024px) {
+  .featureContainer {
+    flex-direction: row;
+    gap: 6rem;
+  }
+
+  .featureContent {
+    flex: 1;
+    text-align: left;
+    margin-left: 60px;
+    margin-right: -100px;
+    margin-top: 200px;
+  }
+
+  .featureTitle {
+    font-size: 39px;
+  }
+
+  .featureDescription {
+    font-size: 18px;
+  }
+
+  .phone6Image {
+    display: block;
+    position: absolute;
+    left: -150px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 450px;
+    height: auto;
+    margin-left: 160px;
+  }
+
+  .phone8WithdrawImage {
+    display: block;
+    position: absolute;
+    left: -150px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 450px;
+    height: auto;
+    margin-left: 1185px;
+    margin-top: 826px;
+  }
+
+  .phone8Image {
+    display: block;
+    position: absolute;
+    right: -150px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 450px;
+    height: auto;
+    margin-right: 762px;
+    margin-top: -700px;
+  }
+
+  .phone7Image {
+    display: block;
+    position: absolute;
+    right: -150px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 450px;
+    height: auto;
+    margin-right: 515px;
+    margin-top: 150px;
+  }
+}
+
+/* ============ 底部插图容器 ============ */
+.illustrationContainer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-top: 100px;
+}
+
+.communityIllustration {
+  position: absolute;
+  object-fit: contain;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: auto;
+  top: 0;
+  margin-top: -150px;
+  margin-left: -466px;
+}
+
+.creatorIllustration {
+  position: absolute;
+  object-fit: contain;
+  right: 0;
+  width: 500px;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: -158px;
+  margin-right: -40px;
+}

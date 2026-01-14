@@ -1,0 +1,138 @@
+/* BusinessModel 组件 - 响应式样式分离 */
+
+/* ============ 移动端样式 (默认) ============ */
+.section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: white;
+}
+
+.headerContainer {
+  text-align: center;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+
+.headerTitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #000000;
+}
+
+.headerDescription {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.625;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: auto;
+}
+
+.learnMoreButton {
+  margin-top: 2rem;
+  background-color: #6FF000;
+  color: #000000;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 1.5rem 2rem;
+}
+
+.learnMoreButton:hover {
+  background-color: #5ED000;
+}
+
+.mockupContainer {
+  position: relative;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+}
+
+.centralPhone {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centralPhoneImage {
+  width: 100%;
+  height: auto;
+  padding-top: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.floatingCard {
+  display: none;
+}
+
+/* ============ PC 端样式 (768px 及以上) ============ */
+@media (min-width: 768px) {
+  .headerTitle {
+    font-size: 36px;
+  }
+
+  .headerDescription {
+    font-size: 18px;
+  }
+
+  .centralPhoneImage {
+    padding-top: 9rem;
+  }
+
+  .floatingCard {
+    display: block;
+    position: absolute;
+    width: 16rem;
+    height: auto;
+    drop-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  .leftCard {
+    top: 0;
+    left: 0;
+  }
+
+  .rightCard {
+    top: 5rem;
+    right: 0;
+  }
+
+  .bottomRightCard {
+    bottom: 0;
+    right: 2.5rem;
+  }
+
+  .bottomLeftCard {
+    bottom: 5rem;
+    left: 0;
+  }
+}
+
+/* ============ PC 端样式 (1024px 及以上) ============ */
+@media (min-width: 1024px) {
+  .leftCard {
+    left: -2.5rem;
+  }
+
+  .rightCard {
+    right: -2.5rem;
+  }
+
+  .bottomRightCard {
+    right: 0;
+  }
+
+  .bottomLeftCard {
+    left: -2.5rem;
+  }
+}

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import styles from "./FeatureSection.module.css";
 
 interface FeatureProps {
   title: string;
@@ -11,7 +12,7 @@ interface FeatureProps {
 
 function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring in the app" }: FeatureProps) {
   return (
-    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-12 lg:py-24 w-full relative`} style={{height: '777px'}}>
+    <div className={`${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} ${styles.featureContainer}`}>
       <div className="flex-1 w-full flex justify-center">
 
       </div>
@@ -21,15 +22,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         <img
           src="/images/Phone6.png"
           alt="TaleX app screen"
-          className="hidden lg:block absolute object-contain drop-shadow-2xl"
-          style={{
-            left: '-150px',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            width: '450px',
-            height: 'auto',
-            marginLeft: '160px',
-          }}
+          className={`object-contain drop-shadow-2xl ${styles.phone6Image}`}
         />
       )}
       
@@ -38,16 +31,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         <img
           src="/images/Phone8_withdraw.png"
           alt="TaleX app screen"
-          className="hidden lg:block absolute object-contain drop-shadow-2xl"
-          style={{
-            left: '-150px',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            width: '450px',
-            height: 'auto',
-            marginLeft: '1185px',
-            marginTop: '826px',
-          }}
+          className={`object-contain drop-shadow-2xl ${styles.phone8WithdrawImage}`}
         />
       )}
       
@@ -56,16 +40,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         <img
           src="/images/Phone8.png"
           alt="TaleX app screen"
-          className="hidden lg:block absolute object-contain drop-shadow-2xl"
-          style={{
-            right: '-150px',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            width: '450px',
-            height: 'auto',
-            marginRight: '762px',
-            marginTop: '-700px',
-          }}
+          className={`object-contain drop-shadow-2xl ${styles.phone8Image}`}
         />
       )}
       
@@ -74,30 +49,20 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         <img
           src="/images/Phone7.png"
           alt="TaleX app screen"
-          className="hidden lg:block absolute object-contain drop-shadow-2xl"
-          style={{
-            right: '-150px',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            width: '450px',
-            height: 'auto',
-            marginRight: '515px',
-            marginTop: '150px',
-          }}
+          className={`object-contain drop-shadow-2xl ${styles.phone7Image}`}
         />
       )}
       
-      <div className="flex-1 space-y-6 text-center lg:text-left w-full" style={{marginLeft: '60px', marginRight: '-100px', marginTop: '200px'}}>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl tracking-tight leading-tight mb-6 w-full" style={{fontWeight: '400', fontSize: '39px', color: '#000000', marginBottom: '24px'}}>
+      <div className={`flex-1 space-y-6 w-full ${styles.featureContent}`}>
+        <h2 className={`tracking-tight leading-tight mb-6 w-full ${styles.featureTitle}`}>
           {title}
         </h2>
-        <p className="text-lg text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-8 w-full" style={{color: '#000000'}}>
+        <p className={`text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-8 w-full ${styles.featureDescription}`}>
           {description}
         </p>
         <Button 
           onClick={() => window.location.href = 'https://www.talex.world/reading/585449588677'}
-          className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105" 
-          style={{marginTop: '-15px'}}
+          className={`bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105 ${styles.featureButton}`}
         >
           {buttonText}
         </Button>
@@ -111,8 +76,8 @@ export default function FeatureSection() {
     <section className="container py-10" style={{paddingBottom: '0px'}}>
       <Feature 
         title="Discover works worth supporting"
-        description={`On TaleX, discovery isn’t driven by ads, sponsored content, or engagement algorithms. The Home feed is a place to see what you and your friends genuinely choose to support — ideas that earn attention through real tips, not forced promotion.
-It’s designed to help people build their own information pathways.`}
+        description={`On TaleX, discovery isn't driven by ads, sponsored content, or engagement algorithms. The Home feed is a place to see what you and your friends genuinely choose to support — ideas that earn attention through real tips, not forced promotion.
+It's designed to help people build their own information pathways.`}
         imageSrc="/2.png"
         imageAlt="Discover Feed"
       />
@@ -126,35 +91,17 @@ It’s designed to help people build their own information pathways.`}
         buttonText="Start supporting & earning"
       />
       
-      <div className="relative w-full" style={{height: '400px', marginTop: '100px'}}>
+      <div className={styles.illustrationContainer}>
         <img
           src="/images/community_illustration.png"
           alt="Community illustration"
-          className="absolute object-contain drop-shadow-2xl"
-          style={{
-            left: '50%',
-            transform: 'translateX(-50%)',
-            width: '600px',
-            height: 'auto',
-            top: '0',
-            marginTop: '-150px',
-            marginLeft: '-466px',
-          }}
+          className={`drop-shadow-2xl ${styles.communityIllustration}`}
         />
         
         <img
           src="/images/creator_illustration.png"
           alt="Creator illustration"
-          className="absolute object-contain drop-shadow-2xl"
-          style={{
-            right: '0',
-            width: '500px',
-            height: 'auto',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            marginTop: '-158px',
-            marginRight: '-40px',
-          }}
+          className={`drop-shadow-2xl ${styles.creatorIllustration}`}
         />
       </div>
     </section>
