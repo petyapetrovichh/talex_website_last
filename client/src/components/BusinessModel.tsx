@@ -54,7 +54,7 @@ export default function BusinessModel() {
           DESKTOP VIEW (Visible only on desktop)
           ========================================= */}
       <div className="hidden md:block py-24">
-        <div className="text-center max-w-3xl mx-auto mb-20" style={{marginTop: '-50px'}}>
+        <div className="text-center mx-auto mb-20" style={{marginTop: '-50px'}}>
           <div className="inline-flex items-center justify-center mb-6">
             <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
             </div>
