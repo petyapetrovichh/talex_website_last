@@ -7,6 +7,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [activeMenuItem, setActiveMenuItem] = useState<string | null>(null);
   // 默认展开所有菜单
   const [expandedMenu, setExpandedMenu] = useState<string[]>(['explore', 'company', 'community']);
 
@@ -34,6 +35,15 @@ export default function Header() {
     setIsMobileMenuOpen(false);
     // 保持菜单展开状态，以便下次打开时仍然展开
     // setExpandedMenu([]); 
+  };
+
+  // 处理菜单项点击
+  const handleMenuItemClick = (itemName: string) => {
+    setActiveMenuItem(itemName);
+    // 300ms后清除活动状态
+    setTimeout(() => {
+      setActiveMenuItem(null);
+    }, 300);
   };
 
   // 切换子菜单
@@ -207,29 +217,29 @@ export default function Header() {
             <div className="p-4 flex flex-col gap-0 overflow-y-auto flex-1" style={{paddingBottom: '60px'}}>
               {/* Explore */}
               <div className="py-3 px-4 text-base font-bold text-black">Explore</div>
-              <a href="https://www.talex.world/" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">TaleX App</a>
-              <Link href="/model" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100 block" onClick={closeMobileMenu}>Our Model</Link>
-              <a href="#" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Featured</a>
+              <a href="https://www.talex.world/" onClick={() => handleMenuItemClick('talex-app')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'talex-app' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>TaleX App</a>
+              <Link href="/model" onClick={() => { handleMenuItemClick('our-model'); closeMobileMenu(); }} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 block ${activeMenuItem === 'our-model' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Our Model</Link>
+              <a href="#" onClick={() => handleMenuItemClick('featured')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'featured' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Featured</a>
 
               {/* Company */}
               <div className="py-3 px-4 text-base font-bold text-black mt-4">Company</div>
-              <a href="https://docs.talex.world/" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">About</a>
-              <a href="https://t.me/talex_chain_community" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Help</a>
-              <a href="#" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Contact</a>
+              <a href="https://docs.talex.world/" onClick={() => handleMenuItemClick('about')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'about' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>About</a>
+              <a href="https://t.me/talex_chain_community" onClick={() => handleMenuItemClick('help')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'help' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Help</a>
+              <a href="#" onClick={() => handleMenuItemClick('contact')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'contact' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Contact</a>
 
               {/* Community */}
               <div className="py-3 px-4 text-base font-bold text-black mt-4">Community</div>
-              <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">X (Twitter)</a>
-              <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Telegram</a>
-              <a href="https://discord.gg/talex" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Discord</a>
-              <a href="https://www.binance.com/en/square/profile/talex_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Binance Square</a>
-              <a href="https://coinmarketcap.com/community/profile/TaleX_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">CoinMarketCap</a>
-              <a href="https://facebook.com/TaleXchain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Facebook</a>
-              <a href="https://youtube.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">YouTube</a>
-              <a href="https://www.instagram.com/talexchain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Instagram</a>
-              <a href="https://www.tiktok.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">TikTok</a>
-              <a href="https://open.spotify.com/show/51Q8zhfB2ADlmyEaUzT3iR" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Spotify</a>
-              <a href="https://www.linkedin.com/company/talexchain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">LinkedIn</a>
+              <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" onClick={() => handleMenuItemClick('twitter')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'twitter' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>X (Twitter)</a>
+              <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" onClick={() => handleMenuItemClick('telegram')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'telegram' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Telegram</a>
+              <a href="https://discord.gg/talex" target="_blank" rel="noopener noreferrer" onClick={() => handleMenuItemClick('discord')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'discord' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Discord</a>
+              <a href="https://www.binance.com/en/square/profile/talex_chain" target="_blank" rel="noopener noreferrer" onClick={() => handleMenuItemClick('binance')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'binance' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Binance Square</a>
+              <a href="https://coinmarketcap.com/community/profile/TaleX_chain" target="_blank" rel="noopener noreferrer" onClick={() => handleMenuItemClick('cmc')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'cmc' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>CoinMarketCap</a>
+              <a href="https://facebook.com/TaleXchain" target="_blank" rel="noopener noreferrer" onClick={() => handleMenuItemClick('facebook')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'facebook' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Facebook</a>
+              <a href="https://youtube.com/@talex_chain" target="_blank" rel="noopener noreferrer" onClick={() => handleMenuItemClick('youtube')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'youtube' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>YouTube</a>
+              <a href="https://www.instagram.com/talexchain" target="_blank" rel="noopener noreferrer" onClick={() => handleMenuItemClick('instagram')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'instagram' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Instagram</a>
+              <a href="https://www.tiktok.com/@talex_chain" target="_blank" rel="noopener noreferrer" onClick={() => handleMenuItemClick('tiktok')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'tiktok' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>TikTok</a>
+              <a href="https://open.spotify.com/show/51Q8zhfB2ADlmyEaUzT3iR" target="_blank" rel="noopener noreferrer" onClick={() => handleMenuItemClick('spotify')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'spotify' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Spotify</a>
+              <a href="https://www.linkedin.com/company/talexchain" target="_blank" rel="noopener noreferrer" onClick={() => handleMenuItemClick('linkedin')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'linkedin' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>LinkedIn</a>
             </div>
           </div>
         </>
