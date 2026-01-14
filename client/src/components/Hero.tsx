@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative bg-white overflow-hidden" style={{height: '1008px', marginTop: '-54px', width: '390px'}}>
+    <section className="relative bg-white overflow-hidden -mt-[54px] md:mt-0 h-[1008px] md:h-auto">
       {/* Background decoration - Shared */}
       <div className="absolute top-0 right-0 w-full h-full bg-[url('/images/hero-bg-new.png')] bg-cover bg-center bg-no-repeat pointer-events-none" />
       
