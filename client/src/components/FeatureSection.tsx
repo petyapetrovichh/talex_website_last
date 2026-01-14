@@ -11,10 +11,26 @@ interface FeatureProps {
 
 function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring in the app" }: FeatureProps) {
   return (
-    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-12 lg:py-24 w-full`} style={{height: '777px'}}>
+    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-12 lg:py-24 w-full relative`} style={{height: '777px'}}>
       <div className="flex-1 w-full flex justify-center">
 
       </div>
+      
+      {/* Phone6 - Absolutely positioned for first feature only */}
+      {!reverse && (
+        <img
+          src="/images/Phone6.png"
+          alt="TaleX app screen"
+          className="hidden lg:block absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+          style={{
+            left: '-150px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            width: '280px',
+            height: 'auto',
+          }}
+        />
+      )}
       
       <div className="flex-1 space-y-6 text-center lg:text-left w-full">
         <h2 className="text-3xl md:text-4xl lg:text-5xl tracking-tight leading-tight mb-6 w-full" style={{fontWeight: '400', fontSize: '39px'}}>
