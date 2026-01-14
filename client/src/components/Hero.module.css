@@ -45,14 +45,17 @@
 /* ============ PC 端样式 (1024px 及以上) ============ */
 @media (min-width: 1024px) {
   .textContainer {
-    margin-left: 50px;
+    margin-left: 7px;
   }
 
   .title {
     font-size: 39px;
+    width: 512px;
+    margin-top: 57px;
   }
 
   .description {
     font-size: 18px;
+    width: 584px;
   }
 }

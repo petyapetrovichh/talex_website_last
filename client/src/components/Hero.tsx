@@ -11,15 +11,15 @@ export default function Hero() {
       <div className="container relative z-10">
         <div className="relative w-full h-full">
           {/* Left side - Text content */}
-          <div className={styles.textContainer} style={{marginLeft: '7px'}}>
-            <h1 className={`font-bold tracking-tight leading-[1.1] mb-6 w-full max-w-[559px] ${styles.title}`} style={{width: '512px', fontSize: '24px'}}>
+          <div className={styles.textContainer}>
+            <h1 className={`font-bold tracking-tight leading-[1.1] mb-6 w-full max-w-[559px] ${styles.title}`}>
               TaleX is where <br />
               <span className="relative inline-block" style={{color: '#6FF000'}}>
                 great content
               </span> pays off <br />
               both creators and supporters
             </h1>
-            <p className={`text-gray-600 mb-8 leading-relaxed w-full max-w-[815px] ${styles.description}`} style={{width: '320px'}}>
+            <p className={`text-gray-600 mb-8 leading-relaxed w-full max-w-[815px] ${styles.description}`}>
               TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
             </p>
             <div className="flex flex-wrap gap-4">
