@@ -23,7 +23,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105">
-                Tell a Tale
+                Tell Your Tale
               </Button>
             </div>
           </div>
