@@ -2,14 +2,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
-  const phoneImages = [
-    { src: '/images/Phone5(1).png', style: { top: '80px', right: '600px', width: '180px' } },
-    { src: '/images/Phone2(1).png', style: { top: '100px', right: '400px', width: '160px' } },
-    { src: '/images/Phone1(1).png', style: { top: '120px', right: '200px', width: '170px' } },
-    { src: '/images/Phone4.png', style: { top: '90px', right: '0px', width: '175px' } },
-    { src: '/images/Phone3.png', style: { top: '110px', right: '-180px', width: '165px' } },
-  ];
-
   return (
     <section className="relative pt-32 pb-20 overflow-hidden bg-white" style={{height: '750px'}}>
       {/* Background decoration */}
@@ -38,21 +30,70 @@ export default function Hero() {
 
           {/* Right side - Phone mockups with absolute positioning */}
           <div className="hidden lg:block absolute right-0 top-0 w-1/2 h-full">
-            {phoneImages.map((phone, index) => (
-              <img 
-                key={index}
-                src={phone.src} 
-                alt={`TaleX app screen ${index + 1}`}
-                className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
-                style={{
-                  ...phone.style,
-                  height: '349px',
-                  marginTop: '-167px',
-                  marginRight: '99px',
-                  width: '200px',
-                }}
-              />
-            ))}
+            {/* Phone 1 - Phone5(1).png */}
+            <img 
+              src="/images/Phone5(1).png" 
+              alt="TaleX app screen 1"
+              className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+              style={{
+                top: '80px',
+                right: '600px',
+                width: '180px',
+                height: 'auto',
+              }}
+            />
+
+            {/* Phone 2 - Phone2(1).png */}
+            <img 
+              src="/images/Phone2(1).png" 
+              alt="TaleX app screen 2"
+              className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+              style={{
+                top: '100px',
+                right: '400px',
+                width: '160px',
+                height: 'auto',
+              }}
+            />
+
+            {/* Phone 3 - Phone1(1).png */}
+            <img 
+              src="/images/Phone1(1).png" 
+              alt="TaleX app screen 3"
+              className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+              style={{
+                top: '120px',
+                right: '200px',
+                width: '200px',
+                height: '349px',
+              }}
+            />
+
+            {/* Phone 4 - Phone4.png */}
+            <img 
+              src="/images/Phone4.png" 
+              alt="TaleX app screen 4"
+              className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+              style={{
+                top: '90px',
+                right: '0px',
+                width: '175px',
+                height: 'auto',
+              }}
+            />
+
+            {/* Phone 5 - Phone3.png */}
+            <img 
+              src="/images/Phone3.png" 
+              alt="TaleX app screen 5"
+              className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+              style={{
+                top: '110px',
+                right: '-180px',
+                width: '165px',
+                height: 'auto',
+              }}
+            />
           </div>
         </div>
       </div>
