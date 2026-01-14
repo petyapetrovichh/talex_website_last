@@ -18,7 +18,7 @@ export default function Hero() {
               </span> pays off <br />
               both creators and supporters
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed w-full max-w-[815px]" style={{color: '#000000', fontSize: '18px', paddingRight: '100px'}}>
+            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed w-full max-w-[815px]" style={{color: '#000000', fontSize: '18px', paddingRight: '50px'}}>
               TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
             </p>
             <div className="flex flex-wrap gap-4">
