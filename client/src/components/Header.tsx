@@ -193,7 +193,7 @@ export default function Header() {
               </div>
             </div>
             
-            <div className="p-4 flex flex-col gap-0 overflow-y-auto" style={{maxHeight: 'calc(100vh - 120px)', paddingBottom: '120px'}}>
+            <div className="p-4 flex flex-col gap-0 overflow-y-auto" style={{maxHeight: 'calc(100vh - 120px)', paddingBottom: '60px'}}>
               {/* Explore */}
               <div className="py-3 px-4 text-base font-bold text-black">Explore</div>
               <a href="https://www.talex.world/" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">TaleX App</a>
