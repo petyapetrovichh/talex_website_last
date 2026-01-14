@@ -63,9 +63,10 @@ export default function Hero() {
               className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
               style={{
                 top: '120px',
-                right: '200px',
+                right: '99px',
                 width: '200px',
                 height: '349px',
+                marginTop: '-167px',
               }}
             />
 
