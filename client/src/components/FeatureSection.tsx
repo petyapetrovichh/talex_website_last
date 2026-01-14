@@ -152,6 +152,8 @@ It’s designed to help people build their own information pathways.`}
             height: 'auto',
             top: '50%',
             transform: 'translateY(-50%)',
+            marginTop: '-158px',
+            marginRight: '-12px',
           }}
         />
       </div>
