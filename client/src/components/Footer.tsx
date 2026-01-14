@@ -82,12 +82,12 @@ export default function Footer() {
                 <img src="/logo-new.png" alt="TaleX" className="h-8 w-auto" style={{width: '136px', height: '24px'}} />
               </div>
             </Link>
-            <p className="text-gray-500 text-sm leading-relaxed" style={{width: '600px', color: '#000000', fontSize: '18px', whiteSpace: 'nowrap'}}>
+            <p className="text-gray-500 text-sm leading-relaxed" style={{width: '600px', color: '#838383', fontSize: '18px', whiteSpace: 'nowrap', fontFamily: '"Abril Fatface", cursive'}}>
               Where great content pays off both creators and supporters
             </p>
           </div>
           
-          <div style={{marginLeft: '150px'}}>
+          <div style={{marginLeft: '250px', marginRight: '-50px'}}>
             <h4 className="font-bold mb-6" style={{fontSize: '18px', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', color: '#000000'}}>Explore</h4>
             <ul className="space-y-4 text-sm text-gray-600">
               <li><Link href="/features" className="hover:text-black transition-colors">TaleX App</Link></li>
@@ -97,7 +97,7 @@ export default function Footer() {
             </ul>
           </div>
           
-          <div>
+          <div style={{marginRight: '15px', marginLeft: '50px'}}>
             <h4 className="font-bold mb-6" style={{fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', color: '#000000', fontSize: '18px'}}>Company</h4>
             <ul className="space-y-4 text-sm text-gray-600">
               <li><Link href="/about" className="hover:text-black transition-colors">About</Link></li>
@@ -107,7 +107,7 @@ export default function Footer() {
             </ul>
           </div>
           
-          <div style={{marginRight: '300px', marginLeft: '-149px'}}>
+          <div style={{marginRight: '300px', marginLeft: '-125px'}}>
             <h4 className="font-bold mb-6" style={{color: '#000000', fontSize: '18px', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Community</h4>
             <div className="grid grid-cols-2 gap-4">
               <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#6FF000] transition-colors" title="X (Twitter)">
