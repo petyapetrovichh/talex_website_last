@@ -136,10 +136,10 @@ export default function CreatorList() {
 
       {/* Center Content */}
       <div className="container text-center mb-16 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 font-serif text-black">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 font-serif text-black" style={{fontSize: '22px'}}>
           Ideas already live on TaleX
         </h2>
-        <p className="text-gray-700 text-sm md:text-base mb-8 max-w-xl mx-auto">
+        <p className="text-gray-700 text-sm md:text-base mb-8 max-w-xl mx-auto" style={{fontSize: '16px'}}>
           Here are just a few of many people you can support and grow together
         </p>
         <Button className="bg-black text-white hover:bg-white hover:text-black px-8 py-6 rounded-full text-sm font-medium transition-colors">
