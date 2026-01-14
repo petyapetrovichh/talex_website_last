@@ -91,7 +91,7 @@ export default function Header() {
 
           <Button 
             onClick={() => window.location.href = 'https://www.talex.world/publish'}
-            className="font-semibold rounded-full px-6 border-2 border-transparent transition-colors outline-none active:scale-95" 
+            className="font-semibold rounded-full px-6 border-2 border-transparent transition-colors outline-none" 
             style={{
               width: '130px', 
               height: '30px', 
@@ -102,6 +102,22 @@ export default function Header() {
               backgroundColor: '#6FF000',
               color: 'black',
               transition: 'background-color 0.2s ease, color 0.2s ease'
+            }}
+            onMouseDown={(e) => {
+              (e.currentTarget as HTMLButtonElement).style.backgroundColor = 'black';
+              (e.currentTarget as HTMLButtonElement).style.color = 'white';
+            }}
+            onMouseUp={(e) => {
+              (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#6FF000';
+              (e.currentTarget as HTMLButtonElement).style.color = 'black';
+            }}
+            onTouchStart={(e) => {
+              (e.currentTarget as HTMLButtonElement).style.backgroundColor = 'black';
+              (e.currentTarget as HTMLButtonElement).style.color = 'white';
+            }}
+            onTouchEnd={(e) => {
+              (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#6FF000';
+              (e.currentTarget as HTMLButtonElement).style.color = 'black';
             }}
           >
             Start publishing
