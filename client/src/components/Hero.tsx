@@ -39,9 +39,9 @@ export default function Hero() {
           DESKTOP VIEW (Visible only on desktop)
           ========================================= */}
       <div className="hidden md:block container relative z-10 pt-32 pb-20" style={{height: '750px'}}>
-        <div className="relative w-full h-full" style={{marginLeft: '-31px'}}>
+        <div className="relative w-full h-full" style={{marginLeft: '-31px', marginTop: '-3px'}}>
           {/* Left side - Text content */}
-          <div className="max-w-2xl absolute left-0 top-0" style={{marginRight: '-50px', marginLeft: '50px', marginTop: '75px'}}>
+          <div className="max-w-2xl absolute left-0 top-0" style={{marginRight: '-50px', marginLeft: '50px', marginTop: '153px'}}>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 w-full max-w-[559px]" style={{fontSize: '39px', fontWeight: '400'}}>
               TaleX is where <br />
               <span className="relative inline-block" style={{color: '#6FF000'}}>
@@ -63,7 +63,7 @@ export default function Hero() {
           </div>
 
           {/* Right side - Phone mockups with absolute positioning */}
-          <div className="absolute right-0 top-0 w-1/2 h-full">
+          <div className="absolute right-0 top-0 w-1/2 h-full" style={{marginTop: '-45px', height: '795px'}}>
             {/* Phone 1 - Phone5(1).png */}
             <img 
               src="/images/Phone5(1).png" 
@@ -74,7 +74,7 @@ export default function Hero() {
                 right: '600px',
                 width: '200px',
                 height: 'auto',
-                marginTop: '270px',
+                marginTop: '442px',
                 marginRight: '-580px',
               }}
             />
@@ -89,7 +89,7 @@ export default function Hero() {
                 right: '400px',
                 width: '200px',
                 height: 'auto',
-                marginTop: '275px',
+                marginTop: '328px',
                 marginRight: '127px',
               }}
             />
@@ -104,7 +104,7 @@ export default function Hero() {
                 right: '99px',
                 width: '200px',
                 height: '349px',
-                marginTop: '-167px',
+                marginTop: '-120px',
                 marginRight: '428px',
               }}
             />
@@ -119,7 +119,7 @@ export default function Hero() {
                 right: '0px',
                 width: '200px',
                 height: 'auto',
-                marginTop: '-100px',
+                marginTop: '41px',
                 marginRight: '20px',
               }}
             />
