@@ -427,14 +427,14 @@ Hk is the total historical payments in that tier.
         </section>
 
         {/* 10. Risk control and safety */}
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-white" style={{paddingBottom: '48px'}}>
           <div className="container" style={{paddingRight: '0px', paddingLeft: '0px'}}>
-            <div className="text-center mb-16">
+            <div className="text-center mb-16 px-4">
               <h2 className="text-4xl font-bold mb-2 font-serif">Risk control and safety</h2>
               <p className="text-gray-500 text-sm uppercase tracking-widest">Everyone Is Safe To Go</p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" style={{width: '1072px'}}>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" style={{width: '1072px', height: 'auto', overflow: 'visible'}}>
               {/* Card 1 */}
               <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
                 <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0">
