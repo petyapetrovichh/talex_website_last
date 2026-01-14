@@ -310,13 +310,13 @@ The Goal: Be the one who sees potential before the crowd does.
         </section>
 
         {/* 7. The 365 day window rule */}
-        <section className="py-24 bg-white">
-          <div className="container text-center">
+        <section className="py-24 bg-white" style={{paddingBottom: '51px'}}>
+          <div className="container text-center" style={{paddingRight: '0px', paddingLeft: '0px'}}>
             <h2 className="text-4xl font-bold mb-2 font-serif">The 365 day window rule</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Time-Decay Incentive Model</p>
             
-            <div className="relative max-w-4xl mx-auto">
-               <img src="/images/18.png" alt="Distribution Formula" className="w-full h-auto object-contain" />
+            <div className="relative max-w-full" style={{marginBottom: '44px', marginLeft: '351px', width: '1117px'}}>
+               <img src="/images/18.png" alt="Distribution Formula" className="" style={{marginLeft: '0px', width: '931px', height: '430px', objectFit: 'fill'}} />
             </div>
             
             <p className="text-gray-500 text-xs mt-8 max-w-xl mx-auto">
@@ -389,8 +389,8 @@ Hk is the total historical payments in that tier.
               {/* Users Card (Image) */}
               <div className="relative aspect-square overflow-hidden group">
                 <img 
-                  src="/images/ecosystem-book.jpg" 
-                  alt="Open book on table" 
+                  src="/images/7.png" 
+                  alt="Writer at desk" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
