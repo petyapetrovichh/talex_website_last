@@ -156,7 +156,7 @@ export default function CreatorList() {
         <h2 className="text-4xl md:text-5xl font-bold mb-4 font-serif text-black" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", cursive'}}>
           Ideas already live on TaleX
         </h2>
-        <p className="text-gray-700 text-sm md:text-base mb-8 max-w-xl mx-auto" style={{fontSize: '18px'}}>
+        <p className="text-gray-700 text-sm md:text-base mb-8 max-w-xl mx-auto" style={{fontSize: '18px', color: '#000000'}}>
           Here are just a few of many people you can support and grow together
         </p>
         <Button 
