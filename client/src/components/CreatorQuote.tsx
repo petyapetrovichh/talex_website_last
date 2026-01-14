@@ -7,54 +7,21 @@ export default function CreatorQuote() {
       className="relative py-32 bg-[#F0FDF4] overflow-hidden" 
       style={{
         paddingBottom: '0px',
+        // Mobile styles (default)
+        marginTop: '-471px',
+        width: '363px',
+        height: '1002px',
+        paddingTop: '128px', // Restored mobile padding
       }}
     >
-      {/* Styles for specific pixel values that differ between mobile and desktop */}
+      {/* Desktop styles override using style tag for specific values that can't be easily handled by Tailwind classes alone due to specific pixel values */}
       <style>{`
-        /* Mobile styles (default) */
-        section.relative {
-          margin-top: -471px;
-          width: 363px;
-          height: 927px;
-          padding-top: 128px;
-        }
-        .quote-container {
-          margin-top: -104px;
-          height: 983px;
-        }
-        .quote-text {
-          font-weight: 400;
-          font-size: 16px;
-          color: #000000;
-        }
-        .quote-image {
-          margin-top: -21px;
-          width: 342px;
-          height: 378px;
-        }
-
-        /* Desktop quote image */
-        @media (min-width: 768px) {
-          .quote-image-mobile {
-            margin-top: -21px !important;
-          }
-        }
-
-        /* Desktop styles (min-width: 768px) */
         @media (min-width: 768px) {
           section.relative {
             margin-top: -138px !important;
             width: 1737px !important;
-            height: 1184px !important;
+            height: 1012px !important;
             padding-top: 135px !important;
-          }
-          .quote-container {
-            margin-top: -104px !important;
-            height: 983px !important;
-          }
-          .quote-text {
-            font-size: 30px !important; /* 3xl equivalent */
-            line-height: 1.6 !important;
           }
           .quote-image {
             margin-top: 26px !important;
@@ -69,7 +36,7 @@ export default function CreatorQuote() {
         <img src="/4.png" alt="World Map Background" className="w-full h-full object-cover opacity-30" />
       </div>
 
-      <div className="container relative z-10 quote-container">
+      <div className="container relative z-10" style={{marginTop: '-104px', height: '1482px'}}>
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 flex justify-center">
             <div className="w-16 h-16 rounded-xl overflow-hidden">
@@ -77,7 +44,7 @@ export default function CreatorQuote() {
             </div>
           </div>
           
-          <blockquote className="font-medium leading-relaxed mb-10 quote-text">
+          <blockquote className="text-2xl md:text-3xl font-medium leading-relaxed mb-10" style={{fontWeight: '400', fontSize: '16px', color: '#000000'}}>
             Being an independent creator often means pushing yourself to earn your first $1 — and then constantly thinking about how to drive traffic. Eventually, there comes a moment when creators inevitably starts thinking more about attracting traffic than about the quality of their content. That's when the worst thing happens: creation slows down, or just stops. Only a few manage to survive this crisis. For me, the most valuable thing is extending a helping hand to creators — so you don't fall into this trap. <br/>
             <span className="font-bold mt-4 block" style={{fontWeight: '400'}}>We have a solution, a brilliant one.</span>
           </blockquote>
@@ -98,7 +65,13 @@ export default function CreatorQuote() {
           <img 
             src="/6.png" 
             alt="Petr Osipov" 
-            className="object-contain quote-image" 
+            className="w-64 h-auto object-contain quote-image" 
+            style={{
+              // Mobile styles (default)
+              marginTop: '1px', 
+              width: '342px', 
+              height: '378px'
+            }} 
           />
         </div>
       </div>

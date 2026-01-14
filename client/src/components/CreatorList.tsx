@@ -122,7 +122,7 @@ const CreatorCard = ({ creator }: { creator: typeof creators[0] }) => (
 
 export default function CreatorList() {
   return (
-    <section className="bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1297px', marginTop: '-425px'}}>
+    <section className="bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1297px'}}>
       {/* Top Gradient Overlay for smooth blending if needed, though design shows solid background */}
       
       {/* First Row - Marquee Left */}
