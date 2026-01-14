@@ -32,6 +32,19 @@ export default function CreatorQuote() {
           </div>
         </div>
         
+        {/* TaleX Logo */}
+        <div className="absolute" style={{
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: '120px',
+          height: '120px',
+          zIndex: 5,
+          pointerEvents: 'none'
+        }}>
+          <img src="/images/talex_logo.png" alt="TaleX Logo" className="w-full h-full object-contain drop-shadow-2xl" />
+        </div>
+        
         {/* Bottom Center Image */}
         <div className="mt-12 flex justify-center" style={{paddingTop: '15px', marginTop: '0px'}}>
           <img src="/6.png" alt="Petr Osipov" className="w-64 h-auto object-contain" style={{marginTop: '11px', width: '412px', height: '386px'}} />
