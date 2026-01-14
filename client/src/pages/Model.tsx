@@ -388,7 +388,7 @@ Hk is the total historical payments in that tier.
                 <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h3 className="text-2xl font-bold text-black mb-4">Creators</h3>
                   <p className="text-sm text-black font-medium leading-relaxed">
-                    They create great content, receive direct support, and enjoy organic growth fueled by user incentives.
+                    Focus on quality over quantity. Immediate 20% revenue from single hits without needing a massive subscriber base.
                   </p>
                 </div>
               </div>
@@ -400,10 +400,10 @@ Hk is the total historical payments in that tier.
                   alt="Open book on table" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{marginTop: '-1px'}}>
                   <h3 className="text-2xl font-bold text-black mb-4">Users</h3>
                   <p className="text-sm text-black font-medium leading-relaxed">
-                    They discover value, support creators, and earn rewards for their foresight.
+                    Recover attention ownership. Gain financial upside from good taste. Information feed becomes high-signal.
                   </p>
                 </div>
               </div>
@@ -418,7 +418,7 @@ Hk is the total historical payments in that tier.
                 <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h3 className="text-2xl font-bold text-black mb-4">TaleX</h3>
                   <p className="text-sm text-black font-medium leading-relaxed">
-                    We provide the infrastructure, ensure fair play, and grow with the ecosystem.
+                    Shifts from an "Ad Engine" to a "Value Engine". Revenue aligns with content quality, not view counts.
                   </p>
                 </div>
               </div>
