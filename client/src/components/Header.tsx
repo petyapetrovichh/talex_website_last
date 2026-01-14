@@ -59,7 +59,12 @@ export default function Header() {
             </Link>
           </div>
 
-          <div className="w-10" />
+          <Button 
+            onClick={() => window.location.href = 'https://www.talex.world/publish'}
+            className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full px-4 py-2 border-2 border-transparent transition-colors text-sm"
+          >
+            Start
+          </Button>
         </div>
 
         {/* =========================================
