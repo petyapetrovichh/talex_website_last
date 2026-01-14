@@ -26,6 +26,10 @@ export default function Hero() {
               </Button>
             </div>
           </div>
+          
+          <div className="hidden lg:flex items-center justify-center">
+            <img src="/images/app-interface-mockup.png" alt="TaleX App Interface" className="w-full h-auto object-contain max-w-[600px]" />
+          </div>
         </div>
       </div>
     </section>
