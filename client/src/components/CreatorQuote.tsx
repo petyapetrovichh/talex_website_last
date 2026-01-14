@@ -3,13 +3,13 @@ import { Play } from "lucide-react";
 
 export default function CreatorQuote() {
   return (
-    <section className="relative py-32 bg-[#F0FDF4] overflow-hidden" style={{paddingBottom: '0px', marginTop: '-200px', height: '1015px'}}>
+    <section className="relative py-32 bg-[#F0FDF4] overflow-hidden" style={{paddingBottom: '0px', marginTop: '-471px', width: '363px', height: '1220px'}}>
       {/* World Map Background */}
       <div className="absolute inset-0 pointer-events-none">
         <img src="/4.png" alt="World Map Background" className="w-full h-full object-cover opacity-30" />
       </div>
 
-      <div className="container relative z-10">
+      <div className="container relative z-10" style={{marginTop: '-104px', height: '1482px'}}>
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 flex justify-center">
             <div className="w-16 h-16 rounded-xl overflow-hidden">
@@ -35,7 +35,7 @@ export default function CreatorQuote() {
         
         {/* Bottom Center Image */}
         <div className="mt-12 flex justify-center" style={{paddingTop: '15px', marginTop: '0px'}}>
-          <img src="/6.png" alt="Petr Osipov" className="w-64 h-auto object-contain" style={{marginTop: '-3px', width: '304px', height: '386px'}} />
+          <img src="/6.png" alt="Petr Osipov" className="w-64 h-auto object-contain" style={{marginTop: '-12px', width: '304px', height: '362px'}} />
         </div>
       </div>
     </section>

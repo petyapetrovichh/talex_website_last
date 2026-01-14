@@ -100,7 +100,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
               transform: 'translateY(-50%)',
               width: '450px',
               height: 'auto',
-              marginLeft: '1185px',
+              marginLeft: '1246px',
               marginTop: '826px',
             }}
           />
@@ -136,7 +136,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
               transform: 'translateY(-50%)',
               width: '450px',
               height: 'auto',
-              marginRight: '515px',
+              marginRight: '535px',
               marginTop: '150px',
             }}
           />
@@ -164,7 +164,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
 
 export default function FeatureSection() {
   return (
-    <section className="container py-10" style={{paddingBottom: '0px', paddingRight: '14px', paddingLeft: '14px'}}>
+    <section className="container py-10" style={{paddingBottom: '0px', paddingRight: '14px', paddingLeft: '14px', marginBottom: '10px', height: '2012px'}}>
       <Feature 
         title="Discover works worth supporting"
         description={`On TaleX, discovery isn’t driven by ads, sponsored content, or engagement algorithms. The Home feed is a place to see what you and your friends genuinely choose to support — ideas that earn attention through real tips, not forced promotion.
@@ -193,16 +193,18 @@ It’s designed to help people build their own information pathways.`}
       />
       
       {/* Mobile Illustration */}
-      <div className="md:hidden w-full mt-12 px-4">
+      <div className="md:hidden w-full mt-12 px-4" style={{marginTop: '-60px', marginLeft: '-13px', width: '355px'}}>
         <img
           src="/images/community_illustration.png"
           alt="Community illustration"
           className="w-full h-auto object-contain drop-shadow-xl mb-8"
+          style={{marginTop: '28px', marginBottom: '4px', marginLeft: '-46px', width: '174px'}}
         />
         <img
           src="/images/creator_illustration.png"
           alt="Creator illustration"
           className="w-full h-auto object-contain drop-shadow-xl"
+          style={{marginTop: '-105px', marginLeft: '186px', width: '158px'}}
         />
       </div>
 
@@ -234,7 +236,7 @@ It’s designed to help people build their own information pathways.`}
             top: '50%',
             transform: 'translateY(-50%)',
             marginTop: '-158px',
-            marginRight: '-40px',
+            marginRight: '19px',
           }}
         />
       </div>

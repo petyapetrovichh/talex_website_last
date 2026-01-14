@@ -50,7 +50,7 @@ export default function CreatorList() {
       {/* =========================================
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
-      <div className="md:hidden py-12 px-6">
+      <div className="md:hidden py-12 px-6" style={{marginTop: '-25px'}}>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold mb-4" style={{fontSize: '28px'}}>Ideas already live on TaleX</h2>
           <p className="text-gray-600 text-base" style={{fontSize: '16px'}}>Here are just a few of many people you can support and grow together</p>
