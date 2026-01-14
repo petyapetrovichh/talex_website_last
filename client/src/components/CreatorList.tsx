@@ -139,7 +139,7 @@ const CreatorCard = ({ creator }: { creator: typeof creators[0] }) => (
 
 export default function CreatorList() {
   return (
-    <section className="bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1297px'}}>
+    <section className="bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1250px'}}>
       {/* Top Gradient Overlay for smooth blending if needed, though design shows solid background */}
       
       {/* First Row - Marquee Left */}
@@ -153,10 +153,10 @@ export default function CreatorList() {
 
       {/* Center Content */}
       <div className="container text-center mb-16 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 font-serif text-black" style={{fontSize: '22px'}}>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 font-serif text-black" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", cursive'}}>
           Ideas already live on TaleX
         </h2>
-        <p className="text-gray-700 text-sm md:text-base mb-8 max-w-xl mx-auto" style={{fontSize: '16px'}}>
+        <p className="text-gray-700 text-sm md:text-base mb-8 max-w-xl mx-auto" style={{fontSize: '18px'}}>
           Here are just a few of many people you can support and grow together
         </p>
         <Button 
@@ -176,6 +176,7 @@ export default function CreatorList() {
             btn.style.backgroundColor = '#6FF000';
             btn.style.color = 'black';
           }}
+          style={{fontSize: '18px'}}
         >
           Discover ever more ideas
         </Button>
