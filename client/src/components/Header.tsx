@@ -43,19 +43,21 @@ export default function Header() {
             MOBILE HEADER (Visible only on mobile)
             ========================================= */}
         <div className="md:hidden flex items-center justify-between w-full">
+          <button
+            className="p-2 rounded-lg active:bg-gray-100 transition-colors mr-2"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "关闭菜单" : "打开菜单"}
+          >
+            {isMobileMenuOpen ? <X size={24} color="black" /> : <Menu size={24} color="black" />}
+          </button>
+
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
               <img src="/logo-new.png" alt="TaleX" className="h-8 w-auto" style={{width: '120px', height: 'auto'}} />
             </div>
           </Link>
 
-          <button
-            className="p-2 rounded-lg active:bg-gray-100 transition-colors"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label={isMobileMenuOpen ? "关闭菜单" : "打开菜单"}
-          >
-            {isMobileMenuOpen ? <X size={24} color="black" /> : <Menu size={24} color="black" />}
-          </button>
+          <div className="w-10" />
         </div>
 
         {/* =========================================
