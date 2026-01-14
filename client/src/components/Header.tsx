@@ -6,6 +6,7 @@ import { Menu, X, ChevronDown, Search } from "lucide-react";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
   // 默认展开所有菜单
   const [expandedMenu, setExpandedMenu] = useState<string[]>(['explore', 'company', 'community']);
 
@@ -149,8 +150,30 @@ export default function Header() {
 
       {/* Mobile Menu - 改进的移动端菜单 */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b shadow-lg max-h-[calc(100vh-60px)] overflow-y-auto animate-in slide-in-from-top-5">
-          <div className="p-4 flex flex-col gap-2">
+        <>
+          {/* 半透明背景模糊 */}
+          <div 
+            className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
+            onClick={() => setIsMobileMenuOpen(false)}
+            style={{ top: '60px' }}
+          />
+          
+          <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b shadow-lg max-h-[calc(100vh-60px)] overflow-y-auto animate-in slide-in-from-top-5 z-50">
+            {/* 搜索框 */}
+            <div className="p-4 border-b border-gray-100 sticky top-0 bg-white">
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={16} />
+                <input 
+                  type="text" 
+                  placeholder="搜索价格..." 
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full bg-[#F6F6F6] text-sm rounded-full pl-10 pr-4 py-2.5 outline-none focus:ring-2 focus:ring-[#6FF000]/20 transition-all"
+                />
+              </div>
+            </div>
+            
+            <div className="p-4 flex flex-col gap-2">
             {/* Explore 菜单 */}
             <button
               onClick={() => toggleSubmenu('explore')}
@@ -167,6 +190,9 @@ export default function Header() {
               </div>
             )}
 
+            {/* 分割线 */}
+            <div className="my-1 border-b border-gray-100" />
+
             {/* Company 菜单 */}
             <button
               onClick={() => toggleSubmenu('company')}
@@ -182,6 +208,9 @@ export default function Header() {
                 <a href="#" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">Contact</a>
               </div>
             )}
+
+            {/* 分割线 */}
+            <div className="my-1 border-b border-gray-100" />
 
             {/* Community 菜单 */}
             <button
@@ -207,16 +236,17 @@ export default function Header() {
               </div>
             )}
 
-            <div className="mt-4 pt-4 border-t border-gray-100">
-              <Button 
-                onClick={() => window.location.href = 'https://www.talex.world/publish'}
-                className="w-full bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full py-3 border-2 border-transparent transition-colors"
-              >
-                Start publishing
-              </Button>
+              <div className="mt-4 pt-4 border-t border-gray-100">
+                <Button 
+                  onClick={() => window.location.href = 'https://www.talex.world/publish'}
+                  className="w-full bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full py-3 border-2 border-transparent transition-colors"
+                >
+                  Start publishing
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
+        </>
       )}
     </header>
   );
