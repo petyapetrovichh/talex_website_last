@@ -92,8 +92,10 @@ export default function Hero() {
               style={{
                 top: '110px',
                 right: '-180px',
-                width: '165px',
+                width: '350px',
                 height: 'auto',
+                marginTop: '-100px',
+                marginRight: '304px',
               }}
             />
           </div>
