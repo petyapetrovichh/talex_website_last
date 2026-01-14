@@ -340,11 +340,11 @@ The Goal: Be the one who sees potential before the crowd does.
                 <h3 className="text-lg font-bold mb-4 text-gray-800">For those who pay & contribute amount (X):</h3>
                 <div className="bg-white p-6 rounded-xl shadow-sm mb-4">
                    <p className="font-mono text-sm text-gray-500 mb-2">Creator Connected</p>
-                   <p className="font-mono text-xl font-bold text-[#6FF000]">Revenue = 0.2 * X</p>
+                   <p className="font-mono text-xl font-bold text-[#6FF000]">Revenue = 0.2 × Xn</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-sm">
                    <p className="font-mono text-sm text-gray-500 mb-2">Reward Pool</p>
-                   <p className="font-mono text-xl font-bold text-[#6FF000]">Pool = 0.8 * X</p>
+                   <p className="font-mono text-xl font-bold text-[#6FF000]">Pool = 0.8 * Xn</p>
                 </div>
               </div>
 
@@ -437,8 +437,8 @@ Hk is the total historical payments in that tier.
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" style={{width: '1072px', height: 'auto', overflow: 'visible'}}>
               {/* Card 1 */}
               <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
-                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0">
-                  <img src="/images/11.png" alt="Non-Financial" className="w-6 h-6" />
+                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '68px', height: '68px'}}>
+                  <img src="/images/11.png" alt="Non-Financial" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
                 <div>
                   <h3 className="text-white font-bold mb-2">Non-Financial Product</h3>
@@ -450,8 +450,8 @@ Hk is the total historical payments in that tier.
 
               {/* Card 2 */}
               <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
-                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0">
-                  <img src="/images/22.png" alt="No Secondary Market" className="w-6 h-6" />
+                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '68px', height: '68px'}}>
+                  <img src="/images/22.png" alt="No Secondary Market" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
                 <div>
                   <h3 className="text-white font-bold mb-2">No Secondary Market</h3>
@@ -463,8 +463,8 @@ Hk is the total historical payments in that tier.
 
               {/* Card 3 */}
               <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
-                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0">
-                  <img src="/images/33.png" alt="Finite Lifecycle" className="w-6 h-6" />
+                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '68px', height: '68px'}}>
+                  <img src="/images/33.png" alt="Finite Lifecycle" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
                 <div>
                   <h3 className="text-white font-bold mb-2">Finite Lifecycle</h3>
@@ -476,8 +476,8 @@ Hk is the total historical payments in that tier.
 
               {/* Card 4 */}
               <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
-                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0">
-                  <img src="/images/44.png" alt="No Guaranteed Returns" className="w-6 h-6" />
+                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '68px', height: '68px'}}>
+                  <img src="/images/44.png" alt="No Guaranteed Returns" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
                 <div>
                   <h3 className="text-white font-bold mb-2">No Guaranteed Returns</h3>
