@@ -31,24 +31,30 @@ export default function CreatorQuote() {
             <span className="text-sm text-[#878787] font-medium">TaleX</span>
             
             <Button 
-              className="mt-6 rounded-full px-6 gap-2 bg-black text-white hover:bg-black hover:text-white transition-all hover:scale-105 shadow-lg shadow-[#6FF000]/20 group" 
+              className="mt-6 rounded-full px-6 gap-2 bg-black text-white hover:bg-[#6FF000] hover:text-black transition-all hover:scale-105 shadow-lg shadow-[#6FF000]/20 group" 
               onClick={(e) => {
                 const btn = e.currentTarget as HTMLButtonElement;
-                btn.style.backgroundColor = 'black';
-                btn.style.color = 'white';
+                btn.style.backgroundColor = '#6FF000';
+                btn.style.color = 'black';
+                const playIcon = btn.querySelector('svg');
+                if (playIcon) playIcon.style.fill = 'black';
                 setTimeout(() => {
                   window.open('https://youtu.be/Vn8x8L4dNi4', '_blank');
                 }, 100);
               }}
               onMouseDown={(e) => {
                 const btn = e.currentTarget as HTMLButtonElement;
-                btn.style.backgroundColor = 'black';
-                btn.style.color = 'white';
+                btn.style.backgroundColor = '#6FF000';
+                btn.style.color = 'black';
+                const playIcon = btn.querySelector('svg');
+                if (playIcon) playIcon.style.fill = 'black';
               }}
               onTouchStart={(e) => {
                 const btn = e.currentTarget as HTMLButtonElement;
-                btn.style.backgroundColor = 'black';
-                btn.style.color = 'white';
+                btn.style.backgroundColor = '#6FF000';
+                btn.style.color = 'black';
+                const playIcon = btn.querySelector('svg');
+                if (playIcon) playIcon.style.fill = 'black';
               }}
             >
               <Play size={16} fill="white" className="group-hover:fill-black" /> Watch now
