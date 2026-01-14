@@ -20,7 +20,7 @@ export default function CreatorQuote() {
             </div>
           </div>
           
-          <blockquote className="text-base md:text-3xl font-normal leading-relaxed mb-10 text-black">
+          <blockquote className="text-base md:text-3xl font-normal leading-relaxed mb-10 text-black" style={{fontSize: '18px'}}>
             Being an independent creator often means pushing yourself to earn your first $1 — and then constantly thinking about how to drive traffic. Eventually, there comes a moment when creators inevitably starts thinking more about attracting traffic than about the quality of their content. That's when the worst thing happens: creation slows down, or just stops. Only a few manage to survive this crisis. For me, the most valuable thing is extending a helping hand to creators — so you don't fall into this trap. <br/>
             <span className="font-normal mt-4 block">We have a solution, a brilliant one.</span>
           </blockquote>
