@@ -185,6 +185,11 @@ It’s designed to help people build their own information pathways.`}
         imageAlt="Support & Earn"
         reverse={true}
         buttonText="Start supporting & earning"
+        // 为第二个特性指定移动端并排显示的图片
+        mobileImages={[
+          { src: "/images/Phone7.png", alt: "Support Feature" },
+          { src: "/images/Phone9.png", alt: "Withdraw Feature" }
+        ]}
       />
       
       {/* Mobile Illustration */}
