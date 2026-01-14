@@ -13,23 +13,11 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
   return (
     <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-12 lg:py-24 w-full`}>
       <div className="flex-1 w-full flex justify-center">
-        {/* Mockup Container */}
-        <div className="relative w-full max-w-md mx-auto">
-            {/* Image Container - Removed border/shadow wrapper to let the image shine as is, or keep minimal if needed */}
-            <div className="relative z-10 flex justify-center">
-                <img 
-                  src={imageSrc} 
-                  alt={imageAlt} 
-                  className="w-full h-auto object-contain max-h-[600px] drop-shadow-2xl"
-                />
-            </div>
-            {/* Decorative elements */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#6FF000]/10 rounded-full blur-3xl -z-10 scale-90"></div>
-        </div>
+
       </div>
       
       <div className="flex-1 space-y-6 text-center lg:text-left w-full">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-6 w-full">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl tracking-tight leading-tight mb-6 w-full" style={{fontWeight: '400', fontSize: '39px'}}>
           {title}
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-8 w-full">
