@@ -9,7 +9,7 @@ export default function Hero() {
       
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
-          <div className="max-w-2xl" style={{marginRight: '-50px', marginLeft: '50px'}}>
+          <div className="max-w-2xl" style={{marginRight: '-92px', marginLeft: '25px'}}>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 w-full max-w-[559px]" style={{fontSize: '39px', fontWeight: '400'}}>
               TaleX is where <br />
               <span className="relative inline-block" style={{color: '#6FF000'}}>
@@ -17,12 +17,12 @@ export default function Hero() {
               </span> pays off <br />
               both creators and supporters
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed w-full max-w-[815px]">
+            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed w-full max-w-[815px]" style={{color: '#000000'}}>
               TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105">
-                Start a Tale
+                Tell a Tale
               </Button>
             </div>
           </div>
