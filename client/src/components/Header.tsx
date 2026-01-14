@@ -178,9 +178,9 @@ export default function Header() {
             style={{ top: '60px' }}
           />
           
-          <div className="md:hidden fixed left-0 right-0 bottom-0 bg-white shadow-lg overflow-y-auto animate-in slide-in-from-left z-50" style={{width: '100vw', top: '60px'}}>
+          <div className="md:hidden fixed left-0 right-0 bottom-0 bg-white shadow-lg animate-in slide-in-from-left z-50" style={{width: '100vw', top: '60px', display: 'flex', flexDirection: 'column'}}>
             {/* 搜索框 */}
-            <div className="p-4 border-b border-gray-100 sticky top-0 bg-white" style={{paddingTop: '1rem'}}>
+            <div className="p-4 border-b border-gray-100 bg-white flex-shrink-0" style={{paddingTop: '1rem'}}>
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={16} />
                 <input 
@@ -193,7 +193,7 @@ export default function Header() {
               </div>
             </div>
             
-            <div className="p-4 flex flex-col gap-0 overflow-y-auto" style={{maxHeight: 'calc(100vh - 120px)', paddingBottom: '60px'}}>
+            <div className="p-4 flex flex-col gap-0 overflow-y-auto flex-1" style={{paddingBottom: '60px'}}>
               {/* Explore */}
               <div className="py-3 px-4 text-base font-bold text-black">Explore</div>
               <a href="https://www.talex.world/" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">TaleX App</a>
