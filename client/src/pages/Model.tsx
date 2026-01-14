@@ -396,7 +396,7 @@ Hk is the total historical payments in that tier.
               {/* Users Card (Image) */}
               <div className="relative aspect-square overflow-hidden group">
                 <img 
-                  src="/images/ecosystem-book.jpg" 
+                  src="/images/66.png" 
                   alt="Open book on table" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
