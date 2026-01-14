@@ -3,7 +3,7 @@ import { Play } from "lucide-react";
 
 export default function CreatorQuote() {
   return (
-    <section className="relative py-32 bg-[#F0FDF4] overflow-hidden" style={{paddingBottom: '0px', marginTop: '350px'}}>
+    <section className="relative py-32 bg-[#F0FDF4] overflow-hidden" style={{paddingBottom: '0px', marginTop: '-200px'}}>
       {/* World Map Background */}
       <div className="absolute inset-0 pointer-events-none">
         <img src="/4.png" alt="World Map Background" className="w-full h-full object-cover opacity-30" />

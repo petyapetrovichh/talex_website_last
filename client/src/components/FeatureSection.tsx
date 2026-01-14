@@ -137,6 +137,8 @@ It’s designed to help people build their own information pathways.`}
             width: '600px',
             height: 'auto',
             top: '0',
+            marginTop: '-150px',
+            marginLeft: '-466px',
           }}
         />
       </div>
