@@ -6,36 +6,39 @@ import { useEffect, useRef } from "react";
 const creators = [
   {
     id: 1,
-    title: "How RWB changes the idea...",
-    author: "PETR OSIPOV",
-    role: "TaleX Co-Founder and Chief Marketing Officer",
-    reads: "1.2k Reads",
-    tipped: "$84.37 Tipped",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
-    bgImage: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
-    cardColor: "#1e293b"
+    title: "What Changes Is the Form of Assets. What Endures Is the Logic of Value Capture...",
+    author: "CHARI",
+    role: "Founder of TaleX, exploring a new world built and...",
+    reads: "1.2K Reads",
+    tipped: "$24.12 Tipped",
+    avatar: "https://bres.talex.world/avatar/3948d698-e996-4aec-a2c7-4878f63e98c6.webp",
+    bgImage: "https://bres.talex.world/avatar/3948d698-e996-4aec-a2c7-4878f63e98c6.webp",
+    cardColor: "#1e293b",
+    link: "https://www.talex.world/reading/585449588677"
   },
   {
     id: 2,
-    title: "What Should a \"Principled\"...",
-    author: "CHARI",
-    role: "Founder of TaleX, Founder of Z*******, Portfolio of Sequoia.",
-    reads: "3.7k Reads",
-    tipped: "$106.00 Tipped",
-    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
-    bgImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
-    cardColor: "#3f3f46"
+    title: "Polymarket: The 0.1%...",
+    author: "DFARM",
+    role: "Unwritten pages. Exploring the world of TaleX.",
+    reads: "1.1K Reads",
+    tipped: "$106.3 Tipped",
+    avatar: "https://bres.talex.world/avatar/a831afd6-97be-4b06-be47-9d4e2d4139fc.webp",
+    bgImage: "https://bres.talex.world/avatar/a831afd6-97be-4b06-be47-9d4e2d4139fc.webp",
+    cardColor: "#3f3f46",
+    link: "https://www.talex.world/reading/311088460094"
   },
   {
     id: 3,
-    title: "How RWB changes the idea...",
-    author: "PETR OSIPOV",
-    role: "TaleX Co-Founder and Chief Marketing Officer",
-    reads: "1.2k Reads",
-    tipped: "$84.37 Tipped",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    bgImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    cardColor: "#1e293b"
+    title: "Prediction on CZ's New...",
+    author: "GUANZIZAI",
+    role: "Unwritten pages. Exploring the world of TaleX.",
+    reads: "1.4K Reads",
+    tipped: "$62.45 Tipped",
+    avatar: "https://bres.talex.world/avatar/0e961cc0-2497-4dad-86b9-eff1c9566bd6.webp",
+    bgImage: "https://bres.talex.world/avatar/0e961cc0-2497-4dad-86b9-eff1c9566bd6.webp",
+    cardColor: "#1e293b",
+    link: "https://www.talex.world/reading/220997829917"
   },
   {
     id: 4,
@@ -114,6 +117,9 @@ const CreatorCard = ({ creator }: { creator: typeof creators[0] }) => (
         {/* Button */}
         <Button 
           onClick={(e) => {
+            if (creator.link) {
+              window.open(creator.link, '_self');
+            }
             const btn = e.currentTarget as HTMLButtonElement;
             btn.style.backgroundColor = 'black';
             btn.style.color = 'white';
