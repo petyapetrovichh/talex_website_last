@@ -19,7 +19,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           ========================================= */}
       <div className="md:hidden flex flex-col gap-8 py-12 w-full">
         {/* Mobile Image - Moved to top */}
-        <div className="w-full flex justify-center px-4 gap-4" style={{marginTop: '-87px', paddingRight: '20px', paddingLeft: '28px'}}>
+        <div className="w-full flex justify-center px-4 gap-4 -mt-[87px]">
           {mobileImages ? (
             // 如果有指定的移动端图片组，则并排显示
             mobileImages.map((img, index) => (
@@ -27,14 +27,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
                 key={index}
                 src={img.src}
                 alt={img.alt}
-                className="w-1/2 max-w-[180px] object-contain drop-shadow-xl"
-                style={{
-                  width: '172px',
-                  marginTop: index === 0 ? '33px' : '91px',
-                  marginLeft: index === 0 ? '-9px' : '0px',
-                  height: index === 0 ? '313px' : 'auto',
-                  paddingTop: '0px'
-                }}
+                className={`w-1/2 max-w-[180px] object-contain drop-shadow-xl ${index === 0 ? 'mt-[33px] h-[313px]' : 'mt-[91px] h-auto'}`}
               />
             ))
           ) : (
@@ -47,7 +40,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           )}
         </div>
 
-        <div className="w-full px-6" style={{paddingRight: '0px', paddingLeft: '0px', marginTop: '-21px'}}>
+        <div className="w-full px-6 -mt-[21px]">
           <h2 className="text-3xl font-bold tracking-tight leading-tight mb-4 text-left" style={{fontSize: '22px'}}>
             {title}
           </h2>
@@ -66,83 +59,62 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
       {/* =========================================
           DESKTOP VIEW (Visible only on desktop)
           ========================================= */}
-      <div className={`hidden md:flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-12 lg:py-24 w-full relative`} style={{height: '777px'}}>
-        <div className="flex-1 w-full flex justify-center">
-
+      <div className={`hidden md:flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24 py-12 lg:py-24 w-full relative min-h-[777px]`}>
+        <div className="flex-1 w-full flex justify-center relative h-[600px]">
+          {/* Phone6 - Absolutely positioned for first feature only */}
+          {!reverse && (
+            <>
+              <img
+                src="/images/Phone6.png"
+                alt="TaleX app screen"
+                className="hidden lg:block absolute object-contain drop-shadow-2xl w-[450px] h-auto"
+                style={{
+                  left: '0',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                }}
+              />
+              <img
+                src="/images/Phone8_withdraw.png"
+                alt="TaleX app screen"
+                className="hidden lg:block absolute object-contain drop-shadow-2xl w-[450px] h-auto"
+                style={{
+                  right: '-20%',
+                  bottom: '-20%',
+                  zIndex: 10
+                }}
+              />
+            </>
+          )}
+          
+          {/* Phone8 - Absolutely positioned for reverse feature only */}
+          {reverse && (
+            <>
+              <img
+                src="/images/Phone8.png"
+                alt="TaleX app screen"
+                className="hidden lg:block absolute object-contain drop-shadow-2xl w-[450px] h-auto"
+                style={{
+                  left: '-20%',
+                  top: '-10%',
+                }}
+              />
+              <img
+                src="/images/Phone7.png"
+                alt="TaleX app screen"
+                className="hidden lg:block absolute object-contain drop-shadow-2xl w-[450px] h-auto"
+                style={{
+                  right: '0',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  zIndex: 10
+                }}
+              />
+            </>
+          )}
         </div>
         
-        {/* Phone6 - Absolutely positioned for first feature only */}
-        {!reverse && (
-          <img
-            src="/images/Phone6.png"
-            alt="TaleX app screen"
-            className="hidden lg:block absolute object-contain drop-shadow-2xl"
-            style={{
-              left: '-150px',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              width: '450px',
-              height: 'auto',
-              marginLeft: '160px',
-            }}
-          />
-        )}
-        
-        {/* Phone8_withdraw - Absolutely positioned next to Phone6 for first feature */}
-        {!reverse && (
-          <img
-            src="/images/Phone8_withdraw.png"
-            alt="TaleX app screen"
-            className="hidden lg:block absolute object-contain drop-shadow-2xl"
-            style={{
-              left: '-150px',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              width: '450px',
-              height: 'auto',
-              marginLeft: '1246px',
-              marginTop: '826px',
-            }}
-          />
-        )}
-        
-        {/* Phone8 - Absolutely positioned for reverse feature only */}
-        {reverse && (
-          <img
-            src="/images/Phone8.png"
-            alt="TaleX app screen"
-            className="hidden lg:block absolute object-contain drop-shadow-2xl"
-            style={{
-              right: '-150px',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              width: '450px',
-              height: 'auto',
-              marginRight: '762px',
-              marginTop: '-700px',
-            }}
-          />
-        )}
-        
-        {/* Phone7 - Absolutely positioned for reverse feature (right side) */}
-        {reverse && (
-          <img
-            src="/images/Phone7.png"
-            alt="TaleX app screen"
-            className="hidden lg:block absolute object-contain drop-shadow-2xl"
-            style={{
-              right: '-150px',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              width: '450px',
-              height: 'auto',
-              marginRight: '535px',
-              marginTop: '150px',
-            }}
-          />
-        )}
-        
-        <div className="flex-1 space-y-6 text-center lg:text-left w-full" style={{marginLeft: '60px', marginRight: '-100px', marginTop: '200px'}}>
+        <div className="flex-1 space-y-6 text-center lg:text-left w-full pl-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl tracking-tight leading-tight mb-6 w-full" style={{fontWeight: '400', fontSize: '39px', color: '#000000', marginBottom: '24px'}}>
             {title}
           </h2>
@@ -164,7 +136,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
 
 export default function FeatureSection() {
   return (
-    <section className="container py-10" style={{paddingBottom: '0px', paddingRight: '14px', paddingLeft: '14px', marginBottom: '10px', height: '2012px'}}>
+    <section className="container py-10 pb-0 px-4 mb-2">
       <Feature 
         title="Discover works worth supporting"
         description={`On TaleX, discovery isn’t driven by ads, sponsored content, or engagement algorithms. The Home feed is a place to see what you and your friends genuinely choose to support — ideas that earn attention through real tips, not forced promotion.
@@ -193,51 +165,31 @@ It’s designed to help people build their own information pathways.`}
       />
       
       {/* Mobile Illustration */}
-      <div className="md:hidden w-full mt-12 px-4" style={{marginTop: '-60px', marginLeft: '-13px', width: '355px'}}>
+      <div className="md:hidden w-full -mt-[60px] px-4 relative h-[300px]">
         <img
           src="/images/community_illustration.png"
           alt="Community illustration"
-          className="w-full h-auto object-contain drop-shadow-xl mb-8"
-          style={{marginTop: '28px', marginBottom: '4px', marginLeft: '-46px', width: '174px'}}
+          className="absolute left-0 top-8 w-[174px] h-auto object-contain drop-shadow-xl"
         />
         <img
           src="/images/creator_illustration.png"
           alt="Creator illustration"
-          className="w-full h-auto object-contain drop-shadow-xl"
-          style={{marginTop: '-105px', marginLeft: '186px', width: '158px'}}
+          className="absolute right-0 top-12 w-[158px] h-auto object-contain drop-shadow-xl"
         />
       </div>
 
       {/* Desktop Illustration */}
-      <div className="hidden md:block relative w-full" style={{height: '400px', marginTop: '100px'}}>
+      <div className="hidden md:block relative w-full h-[400px] mt-[100px]">
         <img
           src="/images/community_illustration.png"
           alt="Community illustration"
-          className="absolute object-contain drop-shadow-2xl"
-          style={{
-            left: '50%',
-            transform: 'translateX(-50%)',
-            width: '600px',
-            height: 'auto',
-            top: '0',
-            marginTop: '-150px',
-            marginLeft: '-466px',
-          }}
+          className="absolute left-[10%] top-[-150px] w-[600px] h-auto object-contain drop-shadow-2xl"
         />
         
         <img
           src="/images/creator_illustration.png"
           alt="Creator illustration"
-          className="absolute object-contain drop-shadow-2xl"
-          style={{
-            right: '0',
-            width: '500px',
-            height: 'auto',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            marginTop: '-158px',
-            marginRight: '19px',
-          }}
+          className="absolute right-0 top-[-150px] w-[500px] h-auto object-contain drop-shadow-2xl"
         />
       </div>
     </section>
