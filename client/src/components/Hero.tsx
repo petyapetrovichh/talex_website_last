@@ -26,13 +26,6 @@ export default function Hero() {
               </Button>
             </div>
           </div>
-          
-          <div className="relative mt-12 lg:mt-0">
-            {/* Mobile Mockups Container */}
-            <div className="relative w-full flex items-center justify-center">
-              <img src="/hero-updated.png" alt="App Interface" className="hidden lg:block w-full h-auto object-contain max-w-[500px] lg:max-w-[861px] mx-auto lg:ml-auto lg:mr-0 lg:-mt-[51px]" style={{marginTop: '-15px', width: '419px'}} />
-            </div>
-          </div>
         </div>
       </div>
     </section>
