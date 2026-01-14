@@ -74,7 +74,7 @@ export default function Hero() {
                 right: '600px',
                 width: '200px',
                 height: 'auto',
-                marginTop: '442px',
+                marginTop: '446px',
                 marginRight: '-580px',
               }}
             />
