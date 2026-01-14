@@ -85,8 +85,8 @@ export default function Model() {
                     </p>
                   </div>
                   <div className="flex gap-4 items-start group">
-                    <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/5.png" alt="Inefficient Payment" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+                    <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform overflow-visible">
+                      <img src="/images/5.png" alt="Inefficient Payment" className="w-full h-full object-contain" style={{width: 'auto', height: 'auto'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
                       <strong>Inefficient Payment:</strong> Forced to buy “the whole farm” just to eat one apple.
