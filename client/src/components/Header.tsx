@@ -153,7 +153,7 @@ export default function Header() {
         <>
           {/* 半透明背景模糊 */}
           <div 
-            className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
+            className="fixed inset-0 bg-black/30 backdrop-blur-md z-40 md:hidden"
             onClick={() => setIsMobileMenuOpen(false)}
             style={{ top: '60px' }}
           />
@@ -165,7 +165,7 @@ export default function Header() {
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={16} />
                 <input 
                   type="text" 
-                  placeholder="搜索价格..." 
+                  placeholder="Search TaleX..." 
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-full bg-[#F6F6F6] text-sm rounded-full pl-10 pr-4 py-2.5 outline-none focus:ring-2 focus:ring-[#6FF000]/20 transition-all"
