@@ -36,21 +36,18 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right side - Phone mockups carousel */}
-          <div className="hidden lg:flex justify-center items-center gap-4 overflow-x-auto pb-4">
-            <div className="flex gap-4 min-w-max">
+          {/* Right side - Phone mockups static grid */}
+          <div className="hidden lg:flex justify-center items-center">
+            <div className="flex gap-3">
               {phoneImages.map((image, index) => (
                 <div 
                   key={index}
-                  className="flex-shrink-0 transform transition-transform hover:scale-105"
-                  style={{
-                    animation: `slide-in 0.6s ease-out ${index * 0.1}s backwards`,
-                  }}
+                  className="flex-shrink-0"
                 >
                   <img 
                     src={image} 
                     alt={`TaleX app screen ${index + 1}`}
-                    className="h-96 object-contain drop-shadow-2xl"
+                    className="h-80 object-contain drop-shadow-2xl"
                   />
                 </div>
               ))}
@@ -58,19 +55,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      <style>{`
-        @keyframes slide-in {
-          from {
-            opacity: 0;
-            transform: translateX(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-      `}</style>
     </section>
   );
 }
