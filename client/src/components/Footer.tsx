@@ -2,7 +2,7 @@ import { Link } from "wouter";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-100" style={{marginTop: '50px', height: '675px'}}>
+    <footer className="bg-white border-t border-gray-100" style={{marginTop: '50px'}}>
       {/* =========================================
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
@@ -74,7 +74,7 @@ export default function Footer() {
       {/* =========================================
           DESKTOP VIEW (Visible only on desktop)
           ========================================= */}
-      <div className="hidden md:block container pt-20 pb-20 lg:pb-[270px]">
+      <div className="hidden md:block container pt-20 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
             <Link href="/">
