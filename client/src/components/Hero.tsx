@@ -38,8 +38,10 @@ export default function Hero() {
               style={{
                 top: '80px',
                 right: '600px',
-                width: '180px',
+                width: '200px',
                 height: 'auto',
+                marginTop: '270px',
+                marginRight: '-636px',
               }}
             />
 
