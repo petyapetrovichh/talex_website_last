@@ -95,11 +95,7 @@ export default function WhyChoose() {
                     btn.style.color = '#6FF000';
                     btn.dataset.clicked = 'true';
                     setTimeout(() => {
-                      if (feature.buttonLink.startsWith('http')) {
-                        window.open(feature.buttonLink, '_blank');
-                      } else {
-                        window.location.href = feature.buttonLink;
-                      }
+                      window.location.href = feature.buttonLink;
                     }, 100);
                   }}
                 >
