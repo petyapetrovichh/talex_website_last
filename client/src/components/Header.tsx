@@ -6,7 +6,8 @@ import { Menu, X, ChevronDown, Search } from "lucide-react";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [expandedMenu, setExpandedMenu] = useState<string | null>(null);
+  // 默认展开所有菜单
+  const [expandedMenu, setExpandedMenu] = useState<string[]>(['explore', 'company', 'community']);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,12 +20,17 @@ export default function Header() {
   // 关闭菜单时的处理
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
-    setExpandedMenu(null);
+    // 保持菜单展开状态，以便下次打开时仍然展开
+    // setExpandedMenu([]); 
   };
 
   // 切换子菜单
   const toggleSubmenu = (menu: string) => {
-    setExpandedMenu(expandedMenu === menu ? null : menu);
+    if (expandedMenu.includes(menu)) {
+      setExpandedMenu(expandedMenu.filter(item => item !== menu));
+    } else {
+      setExpandedMenu([...expandedMenu, menu]);
+    }
   };
 
   return (
@@ -151,9 +157,9 @@ export default function Header() {
               className="w-full flex items-center justify-between py-3 px-4 text-base font-medium text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100"
             >
               <span>Explore</span>
-              <ChevronDown size={18} className={`transition-transform ${expandedMenu === 'explore' ? 'rotate-180' : ''}`} />
+              <ChevronDown size={18} className={`transition-transform ${expandedMenu.includes('explore') ? 'rotate-180' : ''}`} />
             </button>
-            {expandedMenu === 'explore' && (
+            {expandedMenu.includes('explore') && (
               <div className="flex flex-col gap-1 pl-4 pb-2">
                 <a href="https://www.talex.world/" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">TaleX App</a>
                 <Link href="/model" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100 block" onClick={closeMobileMenu}>Our Model</Link>
@@ -167,9 +173,9 @@ export default function Header() {
               className="w-full flex items-center justify-between py-3 px-4 text-base font-medium text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100"
             >
               <span>Company</span>
-              <ChevronDown size={18} className={`transition-transform ${expandedMenu === 'company' ? 'rotate-180' : ''}`} />
+              <ChevronDown size={18} className={`transition-transform ${expandedMenu.includes('company') ? 'rotate-180' : ''}`} />
             </button>
-            {expandedMenu === 'company' && (
+            {expandedMenu.includes('company') && (
               <div className="flex flex-col gap-1 pl-4 pb-2">
                 <a href="https://docs.talex.world/" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">About</a>
                 <a href="https://t.me/talex_chain_community" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">Help</a>
@@ -183,9 +189,9 @@ export default function Header() {
               className="w-full flex items-center justify-between py-3 px-4 text-base font-medium text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100"
             >
               <span>Community</span>
-              <ChevronDown size={18} className={`transition-transform ${expandedMenu === 'community' ? 'rotate-180' : ''}`} />
+              <ChevronDown size={18} className={`transition-transform ${expandedMenu.includes('community') ? 'rotate-180' : ''}`} />
             </button>
-            {expandedMenu === 'community' && (
+            {expandedMenu.includes('community') && (
               <div className="flex flex-col gap-1 pl-4 pb-2 max-h-64 overflow-y-auto">
                 <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">X (Twitter)</a>
                 <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">Telegram</a>
@@ -201,18 +207,14 @@ export default function Header() {
               </div>
             )}
 
-            <div className="h-px bg-gray-100 my-2" />
-            
-            {/* 移动端 CTA 按钮 */}
-            <Button 
-              onClick={() => {
-                window.location.href = 'https://www.talex.world/publish';
-                closeMobileMenu();
-              }}
-              className="w-full bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full py-3 border-2 border-transparent transition-colors active:scale-95"
-            >
-              Start publishing
-            </Button>
+            <div className="mt-4 pt-4 border-t border-gray-100">
+              <Button 
+                onClick={() => window.location.href = 'https://www.talex.world/publish'}
+                className="w-full bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full py-3 border-2 border-transparent transition-colors"
+              >
+                Start publishing
+              </Button>
+            </div>
           </div>
         </div>
       )}
