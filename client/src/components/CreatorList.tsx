@@ -112,7 +112,7 @@ const CreatorCard = ({ creator }: { creator: typeof creators[0] }) => (
         </div>
 
         {/* Button */}
-        <Button className="w-full bg-white text-black hover:bg-gray-200 font-bold text-xs h-8 rounded-md mt-3">
+        <Button className="w-full bg-white text-black hover:bg-[#6FF000] hover:text-black font-bold text-xs h-8 rounded-md mt-3 transition-colors">
           Read now
         </Button>
       </div>
@@ -122,7 +122,7 @@ const CreatorCard = ({ creator }: { creator: typeof creators[0] }) => (
 
 export default function CreatorList() {
   return (
-    <section className="bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1338px'}}>
+    <section className="bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1279px'}}>
       {/* Top Gradient Overlay for smooth blending if needed, though design shows solid background */}
       
       {/* First Row - Marquee Left */}
@@ -142,7 +142,7 @@ export default function CreatorList() {
         <p className="text-gray-700 text-sm md:text-base mb-8 max-w-xl mx-auto">
           Here are just a few of many people you can support and grow together
         </p>
-        <Button className="bg-black text-white hover:bg-gray-800 px-8 py-6 rounded-full text-sm font-medium">
+        <Button className="bg-black text-white hover:bg-[#6FF000] hover:text-black px-8 py-6 rounded-full text-sm font-medium transition-colors">
           Discover ever more ideas
         </Button>
       </div>

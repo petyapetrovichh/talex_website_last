@@ -16,7 +16,7 @@ export default function BusinessModel() {
           </p>
           <Button 
             onClick={() => window.location.href = '/model'}
-            className="bg-[#6FF000] hover:bg-[#5ED000] text-black font-bold rounded-full px-8 py-6 w-full"
+            className="bg-[#6FF000] hover:bg-black hover:text-white text-black font-bold rounded-full px-8 py-6 w-full transition-colors"
           >
             Learn more about our model
           </Button>
@@ -44,7 +44,7 @@ export default function BusinessModel() {
           </p>
           <Button 
             onClick={() => window.location.href = '/model'}
-            className="mt-8 bg-[#6FF000] hover:bg-[#5ED000] text-black font-bold rounded-full px-8 py-6"
+            className="mt-8 bg-[#6FF000] hover:bg-black hover:text-white text-black font-bold rounded-full px-8 py-6 transition-colors"
           >
             Learn more about our model
           </Button>
