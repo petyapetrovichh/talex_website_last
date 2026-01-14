@@ -198,7 +198,7 @@ export default function Header() {
             onClick={() => setIsMobileMenuOpen(false)}
             style={{ 
               top: '60px',
-              animation: 'fadeInSlow 0.6s ease-out'
+              animation: 'fadeInSlow 0.4s ease-out'
             }}
           />
           
@@ -209,7 +209,7 @@ export default function Header() {
               top: '60px', 
               display: 'flex', 
               flexDirection: 'column',
-              animation: 'slideUpSlow 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+              animation: 'slideLeftToRight 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
             }}
           >
             {/* 搜索框 */}
