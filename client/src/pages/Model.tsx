@@ -111,7 +111,7 @@ export default function Model() {
         <section className="py-24 bg-white" style={{marginTop: '47px'}}>
           <div className="container text-center">
             <h2 className="text-4xl font-bold mb-2 font-serif">Three core pillars of the new engine</h2>
-            <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">The Foundation of TaleX</p>
+            <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">The Foundation of the User-Driven Business Model</p>
             
             <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
               <div className="flex flex-col items-center group">
@@ -120,7 +120,8 @@ export default function Model() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Single Payment</h3>
                 <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
-                  One-time payment for permanent access. No subscriptions, no hidden fees. You own what you pay for.
+                  Pay per content piece, not per creator. 
+Flexible, low-friction micro-payments that liberate consumption.
                 </p>
               </div>
               
@@ -130,7 +131,8 @@ export default function Model() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">User Filter</h3>
                 <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
-                  Quality is determined by willingness to pay, not just clicks. A natural filter for high-value content.
+                  Users “vote with money”. 
+This signal is stronger than clicks, effectively filtering out noise.
                 </p>
               </div>
               
@@ -140,7 +142,8 @@ export default function Model() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Prediction Game</h3>
                 <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
-                  Support early, earn from future growth. Your taste becomes your asset in the content market.
+                  Payment acts as a prediction of future popularity,
+incentivizing early discovery and dissemination.
                 </p>
               </div>
             </div>
@@ -151,7 +154,7 @@ export default function Model() {
         <section className="py-24 bg-white">
           <div className="container text-center">
             <h2 className="text-4xl font-bold mb-2 font-serif">The economic mechanism: 20/80 split</h2>
-            <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Fair & Transparent</p>
+            <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Your Supporters Become Your Promoters</p>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-16 max-w-4xl mx-auto">
               {/* Donut Chart */}
@@ -164,7 +167,7 @@ export default function Model() {
                   <circle cx="50" cy="50" r="40" fill="transparent" stroke="#FFE600" strokeWidth="20" strokeDasharray="50.26 251.32" strokeDashoffset="-201.06" className="hover:opacity-90 transition-opacity" />
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center bg-white rounded-full w-32 h-32 m-auto shadow-inner">
-                  <span className="font-bold text-xl">Split</span>
+                  <span className="font-bold text-xl"></span>
                 </div>
               </div>
               
@@ -174,21 +177,22 @@ export default function Model() {
                   <div className="w-6 h-6 bg-[#FFE600] rounded-sm"></div>
                   <div>
                     <p className="font-bold text-lg">20% Content Value</p>
-                    <p className="text-gray-500 text-sm">(Goes to Creator)</p>
+                    <p className="text-gray-500 text-sm">(Direct to Creator)</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-6 h-6 bg-[#6FF000] rounded-sm"></div>
                   <div>
                     <p className="font-bold text-lg">80% Prediction Market</p>
-                    <p className="text-gray-500 text-sm">(Distributed to Users)</p>
+                    <p className="text-gray-500 text-sm">(To Supporters)</p>
                   </div>
                 </div>
               </div>
             </div>
             
             <p className="text-gray-500 text-xs mt-12 max-w-2xl mx-auto italic">
-              * This split ensures creators get paid for their work, while the majority of the value circulates back to the community to incentivize discovery and promotion.
+              * When a user pays $X, 20% goes directly to the creator as stable income. 80% enters the
+ “Reward Pool” to reward those who discovered the content earlier.
             </p>
           </div>
         </section>
@@ -204,17 +208,19 @@ export default function Model() {
                 <div className="space-y-12">
                   <div>
                     <h3 className="text-xl font-bold mb-4 text-[#6FF000]">1. Consumption Logic</h3>
-                    <p className="text-gray-600 leading-relaxed italic mb-2">"Because I value this piece of art"</p>
+                    <p className="text-gray-600 leading-relaxed italic mb-2"></p>
                     <p className="text-gray-600 leading-relaxed text-sm">
-                      Direct support for creators. Unlocking premium content. No ads, no noise. Just pure value exchange.
+                      “I recognize the value of this content”.
+
+The 20% payment creates a direct value exchange. It signals genuine appreciation and supports the creator's livelihood.
                     </p>
                   </div>
                   
                   <div>
                     <h3 className="text-xl font-bold mb-4 text-[#6FF000]">2. Prediction Logic</h3>
-                    <p className="text-gray-600 leading-relaxed italic mb-2">"Because I believe this will go viral"</p>
+                    <p className="text-gray-600 leading-relaxed italic mb-2">“I predict this content will go viral”.</p>
                     <p className="text-gray-600 leading-relaxed text-sm">
-                      By tipping early, you become a stakeholder in the content's success. If it grows, you grow with it.
+                      The 80% contribution is an active prediction. By spotting quality early, the user positions themselves to earn “Thank-you Rewards” from future supporters.
                     </p>
                   </div>
                 </div>
@@ -223,9 +229,9 @@ export default function Model() {
               <div className="relative h-[500px] flex items-center justify-center">
                 {/* Green Chess Piece Image */}
                 <img 
-                  src="/images/chess-king.jpg" 
+                  src="/images/9.png" 
                   alt="Green Crystal Chess King" 
-                  className="h-full object-contain drop-shadow-2xl mix-blend-multiply filter brightness-110 contrast-125"
+                  className="h-full object-contain drop-shadow-2xl"
                 />
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-[#6FF000]/20 blur-3xl -z-10 rounded-full scale-75"></div>
@@ -272,27 +278,30 @@ export default function Model() {
               
               <div>
                 <h2 className="text-4xl font-bold mb-8 font-serif">The sharing chain</h2>
-                <p className="text-gray-500 text-sm mb-12 uppercase tracking-widest">Viral Growth</p>
+                <p className="text-gray-500 text-sm mb-12 uppercase tracking-widest">How It Works</p>
                 
                 <div className="space-y-8">
                   <div className="relative pl-8 border-l-2 border-[#6FF000]">
-                    <h3 className="text-lg font-bold mb-2">1. Survivors: Anyone who paid before you...</h3>
+                    <h3 className="text-lg font-bold mb-2">1. Survivors:</h3>
                     <p className="text-gray-600 text-sm">
-                      ...receives a portion of your tip as a reward for discovering the content early.
+                      Anyone who paid before you.
                     </p>
                   </div>
                   
                   <div className="relative pl-8 border-l-2 border-gray-200">
                     <h3 className="text-lg font-bold mb-2">2. Juniors: Anyone who pays after you...</h3>
                     <p className="text-gray-600 text-sm">
-                      ...contributes to your reward pool. The earlier you are, the larger your potential upside.
+                      Anyone who pays after you.
                     </p>
                   </div>
                 </div>
                 
                 <div className="mt-12 p-6 bg-[#F0FDF4] rounded-xl border border-[#6FF000]/20">
                   <p className="text-sm text-gray-700 italic">
-                    "Everyone is incentivized to share good content, because their own return depends on its future popularity."
+                    When you pay, your 80% (Prediction Portion) rewards your seniors. 
+When future users pay, you become the senior, earning from their payments.
+
+The Goal: Be the one who sees potential before the crowd does.
                   </p>
                 </div>
               </div>
