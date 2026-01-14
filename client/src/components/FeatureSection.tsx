@@ -17,7 +17,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           ========================================= */}
       <div className="md:hidden flex flex-col gap-8 py-12 w-full">
         <div className="w-full px-6">
-          <h2 className="text-3xl font-bold tracking-tight leading-tight mb-4 text-left" style={{fontSize: '28px'}}>
+          <h2 className="text-3xl font-bold tracking-tight leading-tight mb-4 text-left" style={{fontSize: '24px'}}>
             {title}
           </h2>
           <p className="text-base text-gray-600 leading-relaxed mb-6 text-left" style={{fontSize: '16px'}}>
