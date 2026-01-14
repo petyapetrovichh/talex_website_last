@@ -19,7 +19,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           ========================================= */}
       <div className="md:hidden flex flex-col gap-8 py-12 w-full">
         {/* Mobile Image - Moved to top */}
-        <div className="w-full flex justify-center px-4 gap-4">
+        <div className="w-full flex justify-center px-4 gap-4" style={{marginTop: '-109px'}}>
           {mobileImages ? (
             // 如果有指定的移动端图片组，则并排显示
             mobileImages.map((img, index) => (
@@ -28,6 +28,11 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
                 src={img.src}
                 alt={img.alt}
                 className="w-1/2 max-w-[180px] object-contain drop-shadow-xl"
+                style={{
+                  width: '163px',
+                  marginTop: index === 0 ? '35px' : '83px',
+                  marginLeft: index === 0 ? '-17px' : '9px'
+                }}
               />
             ))
           ) : (
@@ -41,15 +46,16 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         </div>
 
         <div className="w-full px-6">
-          <h2 className="text-3xl font-bold tracking-tight leading-tight mb-4 text-left" style={{fontSize: '24px'}}>
+          <h2 className="text-3xl font-bold tracking-tight leading-tight mb-4 text-left" style={{fontSize: '21px', marginLeft: '-23px', width: '313px'}}>
             {title}
           </h2>
-          <p className="text-base text-gray-600 leading-relaxed mb-6 text-left" style={{fontSize: '16px'}}>
+          <p className="text-base text-gray-600 leading-relaxed mb-6 text-left" style={{fontSize: '16px', marginLeft: '-19px'}}>
             {description}
           </p>
           <Button 
             onClick={() => window.location.href = 'https://www.talex.world/reading/585449588677'}
             className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105 w-full" 
+            style={{marginLeft: '-19px'}} 
           >
             {buttonText}
           </Button>
