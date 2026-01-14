@@ -1,168 +1,182 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
+import { useEffect, useRef } from "react";
 
+// Mock data based on the design image
 const creators = [
   {
-    name: "How Will Changes Everything",
-    author: "Future Thinker",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
-    category: "Tech",
-    earnings: "$12.5k",
-    bgColor: "#1A1A1A" // Dark grey
+    id: 1,
+    title: "How RWB changes the idea...",
+    author: "PETR OSIPOV",
+    role: "TaleX Co-Founder and Chief Marketing Officer",
+    reads: "1.2k Reads",
+    tipped: "$84.37 Tipped",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
+    bgImage: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
+    cardColor: "#1e293b"
   },
   {
-    name: "What Should a 'Provider' Be?",
-    author: "Medical Journal",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
-    category: "Health",
-    earnings: "$8.2k",
-    bgColor: "#1E293B" // Slate 800
+    id: 2,
+    title: "What Should a \"Principled\"...",
+    author: "CHARI",
+    role: "Founder of TaleX, Founder of Z*******, Portfolio of Sequoia.",
+    reads: "3.7k Reads",
+    tipped: "$106.00 Tipped",
+    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
+    bgImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
+    cardColor: "#3f3f46"
   },
   {
-    name: "Non-Fungible Token Series",
-    author: "Crypto Daily",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    category: "Crypto",
-    earnings: "$45.1k",
-    bgColor: "#0F172A" // Slate 900
+    id: 3,
+    title: "How RWB changes the idea...",
+    author: "PETR OSIPOV",
+    role: "TaleX Co-Founder and Chief Marketing Officer",
+    reads: "1.2k Reads",
+    tipped: "$84.37 Tipped",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    bgImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    cardColor: "#1e293b"
   },
   {
-    name: "Minimalist Thoughts",
-    author: "Zen Master",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-    category: "Lifestyle",
-    earnings: "$5.6k",
-    bgColor: "#3F3F46" // Zinc 700
+    id: 4,
+    title: "What Should a \"Principled\"...",
+    author: "CHARI",
+    role: "Founder of TaleX, Founder of Z*******, Portfolio of Sequoia.",
+    reads: "3.7k Reads",
+    tipped: "$106.00 Tipped",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    bgImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    cardColor: "#3f3f46"
   },
   {
-    name: "New AI Generation Tools",
-    author: "Tech Insider",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-    category: "AI",
-    earnings: "$22.3k",
-    bgColor: "#18181B" // Zinc 900
+    id: 5,
+    title: "How RWB changes the idea...",
+    author: "PETR OSIPOV",
+    role: "TaleX Co-Founder and Chief Marketing Officer",
+    reads: "1.2k Reads",
+    tipped: "$84.37 Tipped",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    bgImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    cardColor: "#1e293b"
   }
 ];
 
+// Duplicate creators to ensure smooth infinite scroll
+const marqueeCreators = [...creators, ...creators, ...creators];
+
+const CreatorCard = ({ creator }: { creator: typeof creators[0] }) => (
+  <div className="w-[280px] h-[380px] flex-shrink-0 rounded-xl overflow-hidden relative group mx-3">
+    {/* Background Image with Blur */}
+    <div className="absolute inset-0 z-0">
+      <img 
+        src={creator.bgImage} 
+        alt="background" 
+        className="w-full h-full object-cover filter blur-xl scale-150 opacity-60"
+      />
+      <div className="absolute inset-0 bg-black/20"></div>
+    </div>
+
+    {/* Content Container */}
+    <div className="relative z-10 h-full flex flex-col">
+      {/* Top Section - Avatar */}
+      <div className="flex-1 flex items-center justify-center pt-4">
+        <div className="w-24 h-24 rounded-full border-4 border-white/20 overflow-hidden shadow-lg">
+          <img src={creator.avatar} alt={creator.author} className="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      {/* Bottom Section - Info Card */}
+      <div className="bg-[#4A4A4A]/90 backdrop-blur-sm p-4 text-white h-[200px] flex flex-col justify-between">
+        <div>
+          {/* Stats Row */}
+          <div className="flex items-center gap-2 text-[10px] font-bold text-[#6FF000] mb-1">
+            <span>{creator.reads}</span>
+            <span>•</span>
+            <span>{creator.tipped}</span>
+          </div>
+          
+          {/* Author Name */}
+          <div className="text-[10px] text-gray-300 uppercase tracking-wider mb-1">
+            BY {creator.author}
+          </div>
+          
+          {/* Title */}
+          <h3 className="font-bold text-lg leading-tight mb-2 line-clamp-2 font-serif">
+            {creator.title}
+          </h3>
+          
+          {/* Role/Description */}
+          <p className="text-[10px] text-gray-300 line-clamp-2 leading-relaxed">
+            {creator.role}
+          </p>
+        </div>
+
+        {/* Button */}
+        <Button className="w-full bg-white text-black hover:bg-gray-200 font-bold text-xs h-8 rounded-md mt-3">
+          Read now
+        </Button>
+      </div>
+    </div>
+  </div>
+);
+
 export default function CreatorList() {
   return (
-    <section className="bg-gradient-to-b from-white to-[#F0FDF4]">
-      {/* =========================================
-          MOBILE VIEW (Visible only on mobile)
-          ========================================= */}
-      <div className="md:hidden py-12 px-6" style={{marginTop: '-25px'}}>
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold mb-4" style={{fontSize: '28px'}}>Ideas already live on TaleX</h2>
-          <p className="text-gray-600 text-base" style={{fontSize: '16px'}}>Here are just a few of many people you can support and grow together</p>
-          <Button variant="outline" className="mt-6 rounded-full border-black bg-black text-white hover:bg-[#6FF000] hover:text-black hover:border-[#6FF000] transition-colors w-full">
-            Discover ever more ideas
-          </Button>
-        </div>
-
-        <div className="flex flex-col gap-6">
-          {creators.slice(0, 3).map((creator, index) => (
-            <Card key={`mobile-${index}`} className="overflow-hidden border-none shadow-lg text-white h-auto" style={{backgroundColor: creator.bgColor}}>
-              <div className="relative pt-[60%] overflow-hidden">
-                <img 
-                  src={creator.image} 
-                  alt={creator.name} 
-                  className="absolute inset-0 w-full h-full object-cover opacity-80"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                    <div className="flex justify-between items-end">
-                        <div className="text-xs font-bold text-[#6FF000] mb-1">{creator.category}</div>
-                        <div className="text-xs font-bold text-[#6FF000] mb-1">{creator.earnings}</div>
-                    </div>
-                </div>
-              </div>
-              <CardContent className="p-4 relative">
-                <div className="absolute -top-8 left-4 w-12 h-12 rounded-full border-2 overflow-hidden" style={{borderColor: creator.bgColor}}>
-                    <img src={creator.image} alt={creator.author} className="w-full h-full object-cover" />
-                </div>
-                <h3 className="font-bold text-sm mt-4 line-clamp-2 min-h-[2.5rem]">{creator.name}</h3>
-                <p className="text-xs text-gray-400 mt-1">{creator.author}</p>
-              </CardContent>
-              <CardFooter className="p-4 pt-0">
-                <Button className="w-full bg-white/10 hover:bg-white/20 text-white text-xs h-8 rounded-full">
-                  View Project
-                </Button>
-              </CardFooter>
-            </Card>
+    <section className="bg-[#C1F09D] py-20 overflow-hidden relative">
+      {/* Top Gradient Overlay for smooth blending if needed, though design shows solid background */}
+      
+      {/* First Row - Marquee Left */}
+      <div className="mb-16 relative w-full overflow-hidden">
+        <div className="flex animate-marquee whitespace-nowrap">
+          {marqueeCreators.map((creator, index) => (
+            <CreatorCard key={`row1-${index}`} creator={creator} />
           ))}
         </div>
       </div>
 
-      {/* =========================================
-          DESKTOP VIEW (Visible only on desktop)
-          ========================================= */}
-      <div className="hidden md:block container py-20">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Ideas already live on TaleX</h2>
-          <p className="text-gray-600">Here are just a few of many people you can support and grow together</p>
-          <Button variant="outline" className="mt-6 rounded-full border-black bg-black text-white hover:bg-[#6FF000] hover:text-black hover:border-[#6FF000] transition-colors">
-            Discover ever more ideas
-          </Button>
-        </div>
+      {/* Center Content */}
+      <div className="container text-center mb-16 relative z-10">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 font-serif text-black">
+          Ideas already live on TaleX
+        </h2>
+        <p className="text-gray-700 text-sm md:text-base mb-8 max-w-xl mx-auto">
+          Here are just a few of many people you can support and grow together
+        </p>
+        <Button className="bg-black text-white hover:bg-gray-800 px-8 py-6 rounded-full text-sm font-medium">
+          Discover ever more ideas
+        </Button>
+      </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          {creators.map((creator, index) => (
-            <Card key={index} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300 text-white group h-auto min-h-[400px]" style={{backgroundColor: creator.bgColor}}>
-              <div className="relative pt-[100%] overflow-hidden">
-                <img 
-                  src={creator.image} 
-                  alt={creator.name} 
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" style={{height: '223px'}}></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                    <div className="flex justify-between items-end">
-                        <div className="text-xs font-bold text-[#6FF000] mb-1">{creator.category}</div>
-                        <div className="text-xs font-bold text-[#6FF000] mb-1">{creator.earnings}</div>
-                    </div>
-                </div>
-              </div>
-              <CardContent className="p-4 relative">
-                <div className="absolute -top-8 left-4 w-12 h-12 rounded-full border-2 overflow-hidden" style={{borderColor: creator.bgColor}}>
-                    <img src={creator.image} alt={creator.author} className="w-full h-full object-cover" />
-                </div>
-                <h3 className="font-bold text-sm mt-4 line-clamp-2 min-h-[2.5rem]">{creator.name}</h3>
-                <p className="text-xs text-gray-400 mt-1">{creator.author}</p>
-              </CardContent>
-              <CardFooter className="p-4 pt-0">
-                <Button className="w-full bg-white/10 hover:bg-white/20 text-white text-xs h-8 rounded-full">
-                  View Project
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
-        
-        {/* Second Row - Duplicate for visual effect as per design */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mt-6 opacity-60 hover:opacity-100 transition-opacity duration-500">
-           {creators.map((creator, index) => (
-            <Card key={`row2-${index}`} className="overflow-hidden border-none shadow-lg text-white" style={{backgroundColor: creator.bgColor}}>
-              <div className="relative pt-[100%] overflow-hidden">
-                <img 
-                  src={creator.image} 
-                  alt={creator.name} 
-                  className="absolute inset-0 w-full h-full object-cover opacity-80"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-bold text-sm line-clamp-2">{creator.name}</h3>
-                <p className="text-xs text-gray-400 mt-1">{creator.author}</p>
-              </CardContent>
-              <CardFooter className="p-4 pt-0">
-                <Button className="w-full bg-white/10 text-white text-xs h-8 rounded-full">
-                  View Project
-                </Button>
-              </CardFooter>
-            </Card>
+      {/* Second Row - Marquee Right */}
+      <div className="relative w-full overflow-hidden">
+        <div className="flex animate-marquee-reverse whitespace-nowrap">
+          {marqueeCreators.map((creator, index) => (
+            <CreatorCard key={`row2-${index}`} creator={creator} />
           ))}
         </div>
       </div>
+
+      {/* CSS for Marquee Animation */}
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        @keyframes marquee-reverse {
+          0% { transform: translateX(-50%); }
+          100% { transform: translateX(0); }
+        }
+        .animate-marquee {
+          animation: marquee 40s linear infinite;
+        }
+        .animate-marquee-reverse {
+          animation: marquee-reverse 40s linear infinite;
+        }
+        /* Pause on hover */
+        .animate-marquee:hover, .animate-marquee-reverse:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
     </section>
   );
 }
