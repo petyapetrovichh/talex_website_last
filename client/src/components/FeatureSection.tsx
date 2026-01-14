@@ -29,9 +29,9 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
                 alt={img.alt}
                 className="w-1/2 max-w-[180px] object-contain drop-shadow-xl"
                 style={{
-                  width: '163px',
-                  marginTop: index === 0 ? '35px' : '83px',
-                  marginLeft: index === 0 ? '-17px' : '9px'
+                  width: index === 0 ? '175px' : '177px',
+                  marginTop: index === 0 ? '0px' : '121px',
+                  marginLeft: index === 0 ? '-2px' : '-14px'
                 }}
               />
             ))
@@ -45,7 +45,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           )}
         </div>
 
-        <div className="w-full px-6">
+        <div className="w-full px-6" style={{marginTop: '-15px'}}>
           <h2 className="text-3xl font-bold tracking-tight leading-tight mb-4 text-left" style={{fontSize: '21px', marginLeft: '-23px', width: '313px'}}>
             {title}
           </h2>
