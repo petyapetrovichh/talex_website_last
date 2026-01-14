@@ -38,7 +38,7 @@ export default function Header() {
               {/* Dropdown Menu */}
               <div className="absolute top-full left-0 w-48 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
                 <div className="flex flex-col">
-                  <a href="https://www.talex.world/" target="_blank" rel="noopener noreferrer" className="px-4 py-2.5 text-sm text-gray-600 hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors">TaleX App</a>
+                  <a href="https://www.talex.world/" className="px-4 py-2.5 text-sm text-gray-600 hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors">TaleX App</a>
                   <Link href="/model" className="px-4 py-2.5 text-sm text-gray-600 hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">Our Model</Link>
                   <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors">Featured</a>
                 </div>
@@ -54,8 +54,8 @@ export default function Header() {
               {/* Dropdown Menu */}
               <div className="absolute top-full left-0 w-48 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
                 <div className="flex flex-col">
-                  <a href="https://docs.talex.world/" target="_blank" rel="noopener noreferrer" className="px-4 py-2.5 text-sm text-gray-600 hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors">About</a>
-                  <a href="https://t.me/talex_chain_community" target="_blank" rel="noopener noreferrer" className="px-4 py-2.5 text-sm text-gray-600 hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors">Help</a>
+                  <a href="https://docs.talex.world/" className="px-4 py-2.5 text-sm text-gray-600 hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors">About</a>
+                  <a href="https://t.me/talex_chain_community" className="px-4 py-2.5 text-sm text-gray-600 hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors">Help</a>
                   <a href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors">Contact</a>
                 </div>
               </div>
