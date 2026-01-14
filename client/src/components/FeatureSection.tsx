@@ -31,7 +31,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
                 style={{
                   width: '172px',
                   marginTop: index === 0 ? '33px' : '91px',
-                  marginLeft: index === 0 ? '-36px' : '0px',
+                  marginLeft: index === 0 ? '-9px' : '0px',
                   height: index === 0 ? '313px' : 'auto',
                   paddingTop: '0px'
                 }}
