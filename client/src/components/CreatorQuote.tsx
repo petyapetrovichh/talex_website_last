@@ -33,17 +33,24 @@ export default function CreatorQuote() {
           height: 378px;
         }
 
+        /* Desktop quote image */
+        @media (min-width: 768px) {
+          .quote-image-mobile {
+            margin-top: -21px !important;
+          }
+        }
+
         /* Desktop styles (min-width: 768px) */
         @media (min-width: 768px) {
           section.relative {
             margin-top: -138px !important;
             width: 1737px !important;
-            height: 1012px !important;
+            height: 1184px !important;
             padding-top: 135px !important;
           }
           .quote-container {
             margin-top: -104px !important;
-            height: 1482px !important;
+            height: 983px !important;
           }
           .quote-text {
             font-size: 30px !important; /* 3xl equivalent */
