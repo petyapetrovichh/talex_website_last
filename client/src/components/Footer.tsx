@@ -91,7 +91,7 @@ export default function Footer() {
             <h4 className="font-bold mb-6" style={{fontSize: '18px', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', color: '#000000'}}>Explore</h4>
             <ul className="space-y-4 text-sm text-gray-600">
               <li><a href="https://www.talex.world/" className="hover:text-[#6FF000] transition-colors">TaleX App</a></li>
-              <li><Link href="#our-model" className="hover:text-[#6FF000] transition-colors">Our Model</Link></li>
+              <li><Link href="/explore#our-model" className="hover:text-[#6FF000] transition-colors">Our Model</Link></li>
               <li><Link href="/creators" className="hover:text-[#6FF000] transition-colors">Featured</Link></li>
 
             </ul>
