@@ -53,8 +53,10 @@ export default function Hero() {
               style={{
                 top: '100px',
                 right: '400px',
-                width: '160px',
+                width: '200px',
                 height: 'auto',
+                marginTop: '294px',
+                marginRight: '74px',
               }}
             />
 
@@ -83,7 +85,7 @@ export default function Hero() {
                 right: '0px',
                 width: '200px',
                 height: 'auto',
-                marginTop: '-73px',
+                marginTop: '-100px',
                 marginRight: '-36px',
               }}
             />
@@ -99,7 +101,7 @@ export default function Hero() {
                 width: '350px',
                 height: 'auto',
                 marginTop: '-100px',
-                marginRight: '325px',
+                marginRight: '378px',
               }}
             />
           </div>
