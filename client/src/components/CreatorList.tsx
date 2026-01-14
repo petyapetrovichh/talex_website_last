@@ -42,25 +42,27 @@ const creators = [
   },
   {
     id: 4,
-    title: "What Should a \"Principled\"...",
-    author: "CHARI",
-    role: "Founder of TaleX, Founder of Z*******, Portfolio of Sequoia.",
-    reads: "3.7k Reads",
-    tipped: "$106.00 Tipped",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-    bgImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-    cardColor: "#3f3f46"
+    title: "China's Digital Yuan 2.0...",
+    author: "Canjian | 残剑",
+    role: "不专业投资者｜Crypto × Stocks",
+    reads: "1.1K Reads",
+    tipped: "$62.41 Tipped",
+    avatar: "https://bres.talex.world/avatar/557e251a-a6b8-470c-9251-9c523fd6ad19.webp",
+    bgImage: "https://bres.talex.world/avatar/557e251a-a6b8-470c-9251-9c523fd6ad19.webp",
+    cardColor: "#3f3f46",
+    link: "https://www.talex.world/reading/392244031139"
   },
   {
     id: 5,
-    title: "How RWB changes the idea...",
-    author: "PETR OSIPOV",
-    role: "TaleX Co-Founder and Chief Marketing Officer",
-    reads: "1.2k Reads",
-    tipped: "$84.37 Tipped",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-    bgImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-    cardColor: "#1e293b"
+    title: "Polymarket Explained...",
+    author: "DFARM",
+    role: "Unwritten pages. Exploring the world of TaleX.",
+    reads: "2.1K Reads",
+    tipped: "$75.47 Tipped",
+    avatar: "https://bres.talex.world/avatar/a831afd6-97be-4b06-be47-9d4e2d4139fc.webp",
+    bgImage: "https://bres.talex.world/avatar/a831afd6-97be-4b06-be47-9d4e2d4139fc.webp",
+    cardColor: "#1e293b",
+    link: "https://www.talex.world/reading/739909406060"
   }
 ];
 
