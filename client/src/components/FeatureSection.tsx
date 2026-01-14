@@ -19,7 +19,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           ========================================= */}
       <div className="md:hidden flex flex-col gap-8 py-12 w-full">
         {/* Mobile Image - Moved to top */}
-        <div className="w-full flex justify-center px-4 gap-4" style={{marginTop: '-109px'}}>
+        <div className="w-full flex justify-center px-4 gap-4">
           {mobileImages ? (
             // 如果有指定的移动端图片组，则并排显示
             mobileImages.map((img, index) => (
@@ -28,11 +28,6 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
                 src={img.src}
                 alt={img.alt}
                 className="w-1/2 max-w-[180px] object-contain drop-shadow-xl"
-                style={{
-                  width: index === 0 ? '175px' : '177px',
-                  marginTop: index === 0 ? '0px' : '121px',
-                  marginLeft: index === 0 ? '-2px' : '-14px'
-                }}
               />
             ))
           ) : (
@@ -45,17 +40,16 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           )}
         </div>
 
-        <div className="w-full px-6" style={{marginTop: '-15px'}}>
-          <h2 className="text-3xl font-bold tracking-tight leading-tight mb-4 text-left" style={{fontSize: '21px', marginLeft: '-23px', width: '313px'}}>
+        <div className="w-full px-6">
+          <h2 className="text-3xl font-bold tracking-tight leading-tight mb-4 text-left" style={{fontSize: '24px'}}>
             {title}
           </h2>
-          <p className="text-base text-gray-600 leading-relaxed mb-6 text-left" style={{fontSize: '16px', marginLeft: '-19px'}}>
+          <p className="text-base text-gray-600 leading-relaxed mb-6 text-left" style={{fontSize: '16px'}}>
             {description}
           </p>
           <Button 
             onClick={() => window.location.href = 'https://www.talex.world/reading/585449588677'}
             className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105 w-full" 
-            style={{marginLeft: '-19px'}} 
           >
             {buttonText}
           </Button>
@@ -200,7 +194,38 @@ It’s designed to help people build their own information pathways.`}
         />
       </div>
 
-
+      {/* Desktop Illustration */}
+      <div className="hidden md:block relative w-full" style={{height: '400px', marginTop: '100px'}}>
+        <img
+          src="/images/community_illustration.png"
+          alt="Community illustration"
+          className="absolute object-contain drop-shadow-2xl"
+          style={{
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '600px',
+            height: 'auto',
+            top: '0',
+            marginTop: '-150px',
+            marginLeft: '-466px',
+          }}
+        />
+        
+        <img
+          src="/images/creator_illustration.png"
+          alt="Creator illustration"
+          className="absolute object-contain drop-shadow-2xl"
+          style={{
+            right: '0',
+            width: '500px',
+            height: 'auto',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            marginTop: '-158px',
+            marginRight: '-40px',
+          }}
+        />
+      </div>
     </section>
   );
 }
