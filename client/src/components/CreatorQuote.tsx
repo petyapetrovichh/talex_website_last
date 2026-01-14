@@ -10,7 +10,7 @@ export default function CreatorQuote() {
         // Mobile styles (default)
         marginTop: '-471px',
         width: '363px',
-        height: '1002px',
+        height: '927px',
         paddingTop: '128px', // Restored mobile padding
       }}
     >
@@ -68,7 +68,7 @@ export default function CreatorQuote() {
             className="w-64 h-auto object-contain quote-image" 
             style={{
               // Mobile styles (default)
-              marginTop: '1px', 
+              marginTop: '35px', 
               width: '342px', 
               height: '378px'
             }} 
