@@ -153,7 +153,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-6 text-xs text-gray-400">
             <Link href="/privacy" className="hover:text-black transition-colors" style={{color: '#000000'}}>Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-black transition-colors">Terms of Service</Link>
+            <Link href="/terms" className="hover:text-black transition-colors" style={{color: '#050505'}}>Terms of Service</Link>
           </div>
         </div>
       </div>
