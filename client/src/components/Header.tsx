@@ -70,7 +70,13 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <button
               className="p-2 rounded-lg active:bg-gray-100 transition-colors"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              onClick={() => {
+                if (isMobileMenuOpen) {
+                  closeMobileMenu();
+                } else {
+                  setIsMobileMenuOpen(true);
+                }
+              }}
               aria-label={isMobileMenuOpen ? "关闭菜单" : "打开菜单"}
             >
               <Menu size={24} color="black" />
