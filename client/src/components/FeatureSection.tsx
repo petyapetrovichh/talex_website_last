@@ -153,7 +153,7 @@ It’s designed to help people build their own information pathways.`}
             top: '50%',
             transform: 'translateY(-50%)',
             marginTop: '-158px',
-            marginRight: '-12px',
+            marginRight: '-40px',
           }}
         />
       </div>
