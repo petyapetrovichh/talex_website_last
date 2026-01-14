@@ -3,11 +3,11 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   const phoneImages = [
-    '/images/Phone5(1).png',
-    '/images/Phone2(1).png',
-    '/images/Phone1(1).png',
-    '/images/Phone4.png',
-    '/images/Phone3.png',
+    { src: '/images/Phone5(1).png', style: { top: '80px', right: '600px', width: '180px' } },
+    { src: '/images/Phone2(1).png', style: { top: '100px', right: '400px', width: '160px' } },
+    { src: '/images/Phone1(1).png', style: { top: '120px', right: '200px', width: '170px' } },
+    { src: '/images/Phone4.png', style: { top: '90px', right: '0px', width: '175px' } },
+    { src: '/images/Phone3.png', style: { top: '110px', right: '-180px', width: '165px' } },
   ];
 
   return (
@@ -16,9 +16,9 @@ export default function Hero() {
       <div className="absolute top-0 right-0 w-full h-full bg-[url('/images/hero-bg-new.png')] bg-cover bg-center bg-no-repeat pointer-events-none" />
       
       <div className="container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
+        <div className="relative w-full h-full">
           {/* Left side - Text content */}
-          <div className="max-w-2xl" style={{marginRight: '-50px', marginLeft: '50px', marginTop: '75px'}}>
+          <div className="max-w-2xl absolute left-0 top-0" style={{marginRight: '-50px', marginLeft: '50px', marginTop: '75px'}}>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 w-full max-w-[559px]" style={{fontSize: '39px', fontWeight: '400'}}>
               TaleX is where <br />
               <span className="relative inline-block" style={{color: '#6FF000'}}>
@@ -36,22 +36,20 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right side - Phone mockups static grid */}
-          <div className="hidden lg:flex justify-center items-center">
-            <div className="flex gap-3">
-              {phoneImages.map((image, index) => (
-                <div 
-                  key={index}
-                  className="flex-shrink-0"
-                >
-                  <img 
-                    src={image} 
-                    alt={`TaleX app screen ${index + 1}`}
-                    className="h-80 object-contain drop-shadow-2xl"
-                  />
-                </div>
-              ))}
-            </div>
+          {/* Right side - Phone mockups with absolute positioning */}
+          <div className="hidden lg:block absolute right-0 top-0 w-1/2 h-full">
+            {phoneImages.map((phone, index) => (
+              <img 
+                key={index}
+                src={phone.src} 
+                alt={`TaleX app screen ${index + 1}`}
+                className="absolute object-contain drop-shadow-2xl cursor-move hover:drop-shadow-xl transition-all"
+                style={{
+                  ...phone.style,
+                  height: 'auto',
+                }}
+              />
+            ))}
           </div>
         </div>
       </div>
