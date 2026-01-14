@@ -61,7 +61,7 @@ export default function Header() {
 
           <Button 
             onClick={() => window.location.href = 'https://www.talex.world/publish'}
-            className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full border-2 border-transparent transition-colors" style={{width: '125px', height: '23px', fontSize: '13px', paddingRight: '15px', paddingLeft: '15px', marginRight: '-4px'}}
+            className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold transition-colors" style={{width: '125px', height: '23px', fontSize: '14px', paddingRight: '15px', paddingLeft: '15px', marginRight: '5px', borderRadius: '61px', borderWidth: '6px'}}
           >
             Start publishing
           </Button>
