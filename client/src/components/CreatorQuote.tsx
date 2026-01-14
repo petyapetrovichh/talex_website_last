@@ -3,7 +3,34 @@ import { Play } from "lucide-react";
 
 export default function CreatorQuote() {
   return (
-    <section className="relative py-32 bg-[#F0FDF4] overflow-hidden" style={{paddingBottom: '0px', marginTop: '-138px', width: '1737px', height: '1012px', paddingTop: '135px'}}>
+    <section 
+      className="relative py-32 bg-[#F0FDF4] overflow-hidden" 
+      style={{
+        paddingBottom: '0px',
+        // Mobile styles (default)
+        marginTop: '-471px',
+        width: '363px',
+        height: '1220px',
+        paddingTop: '128px', // Restored mobile padding
+      }}
+    >
+      {/* Desktop styles override using style tag for specific values that can't be easily handled by Tailwind classes alone due to specific pixel values */}
+      <style>{`
+        @media (min-width: 768px) {
+          section.relative {
+            margin-top: -138px !important;
+            width: 1737px !important;
+            height: 1012px !important;
+            padding-top: 135px !important;
+          }
+          .quote-image {
+            margin-top: 26px !important;
+            width: 487px !important;
+            height: 414px !important;
+          }
+        }
+      `}</style>
+
       {/* World Map Background */}
       <div className="absolute inset-0 pointer-events-none">
         <img src="/4.png" alt="World Map Background" className="w-full h-full object-cover opacity-30" />
@@ -35,7 +62,17 @@ export default function CreatorQuote() {
         
         {/* Bottom Center Image */}
         <div className="mt-12 flex justify-center" style={{paddingTop: '15px', marginTop: '0px'}}>
-          <img src="/6.png" alt="Petr Osipov" className="w-64 h-auto object-contain" style={{marginTop: '26px', width: '487px', height: '414px'}} />
+          <img 
+            src="/6.png" 
+            alt="Petr Osipov" 
+            className="w-64 h-auto object-contain quote-image" 
+            style={{
+              // Mobile styles (default)
+              marginTop: '-12px', 
+              width: '304px', 
+              height: '362px'
+            }} 
+          />
         </div>
       </div>
     </section>
