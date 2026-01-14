@@ -55,7 +55,7 @@ export default function WhyChoose() {
       {/* =========================================
           DESKTOP VIEW (Visible only on desktop)
           ========================================= */}
-      <div className="hidden md:block container py-24" style={{marginBottom: '197px'}}>
+      <div className="hidden md:block container py-24" style={{marginBottom: '197px', marginTop: '-95px'}}>
         <h2 className="text-4xl font-bold text-center mb-20">Why Creators Choose TaleX</h2>
         
         <div className="max-w-4xl mx-auto space-y-16 h-auto">
