@@ -58,7 +58,11 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
         <p className="text-lg text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-8 w-full" style={{color: '#000000'}}>
           {description}
         </p>
-        <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105" style={{marginTop: '-15px'}}>
+        <Button 
+          onClick={() => window.location.href = 'https://www.talex.world/'}
+          className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105" 
+          style={{marginTop: '-15px'}}
+        >
           {buttonText}
         </Button>
       </div>
