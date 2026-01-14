@@ -7,15 +7,39 @@ interface FeatureProps {
   imageAlt: string;
   reverse?: boolean;
   buttonText?: string;
+  // 新增属性，用于指定移动端显示的图片
+  mobileImages?: { src: string; alt: string }[];
 }
 
-function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring in the app" }: FeatureProps) {
+function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring in the app", mobileImages }: FeatureProps) {
   return (
     <>
       {/* =========================================
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
       <div className="md:hidden flex flex-col gap-8 py-12 w-full">
+        {/* Mobile Image - Moved to top */}
+        <div className="w-full flex justify-center px-4 gap-4">
+          {mobileImages ? (
+            // 如果有指定的移动端图片组，则并排显示
+            mobileImages.map((img, index) => (
+              <img
+                key={index}
+                src={img.src}
+                alt={img.alt}
+                className="w-1/2 max-w-[180px] object-contain drop-shadow-xl"
+              />
+            ))
+          ) : (
+            // 否则显示默认单张图片
+            <img
+              src={imageSrc}
+              alt={imageAlt}
+              className="w-full max-w-sm object-contain drop-shadow-xl"
+            />
+          )}
+        </div>
+
         <div className="w-full px-6">
           <h2 className="text-3xl font-bold tracking-tight leading-tight mb-4 text-left" style={{fontSize: '24px'}}>
             {title}
@@ -29,15 +53,6 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           >
             {buttonText}
           </Button>
-        </div>
-        
-        {/* Mobile Image */}
-        <div className="w-full flex justify-center px-4">
-          <img
-            src={imageSrc}
-            alt={imageAlt}
-            className="w-full max-w-sm object-contain drop-shadow-xl"
-          />
         </div>
       </div>
 
@@ -149,6 +164,11 @@ export default function FeatureSection() {
 It’s designed to help people build their own information pathways.`}
         imageSrc="/images/Phone6.png"
         imageAlt="Discover Feed"
+        // 为第一个特性指定移动端并排显示的图片
+        mobileImages={[
+          { src: "/images/Phone6.png", alt: "Discover Feed" },
+          { src: "/images/Phone8.png", alt: "Support & Earn" }
+        ]}
       />
       
       <Feature 
