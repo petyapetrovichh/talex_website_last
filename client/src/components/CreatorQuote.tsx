@@ -30,7 +30,27 @@ export default function CreatorQuote() {
             <cite className="not-italic font-bold text-lg text-black">— Petr Osipov</cite>
             <span className="text-sm text-[#878787] font-medium">TaleX</span>
             
-            <Button className="mt-6 rounded-full px-6 gap-2 bg-black text-white hover:bg-[#6FF000] hover:text-black transition-colors group" onClick={() => window.open('https://youtu.be/Vn8x8L4dNi4', '_blank')}>
+            <Button 
+              className="mt-6 rounded-full px-6 gap-2 bg-black text-white hover:bg-[#6FF000] hover:text-black transition-colors group" 
+              onClick={(e) => {
+                const btn = e.currentTarget as HTMLButtonElement;
+                btn.style.backgroundColor = '#6FF000';
+                btn.style.color = 'black';
+                setTimeout(() => {
+                  window.open('https://youtu.be/Vn8x8L4dNi4', '_blank');
+                }, 100);
+              }}
+              onMouseDown={(e) => {
+                const btn = e.currentTarget as HTMLButtonElement;
+                btn.style.backgroundColor = '#6FF000';
+                btn.style.color = 'black';
+              }}
+              onTouchStart={(e) => {
+                const btn = e.currentTarget as HTMLButtonElement;
+                btn.style.backgroundColor = '#6FF000';
+                btn.style.color = 'black';
+              }}
+            >
               <Play size={16} fill="white" className="group-hover:fill-black" /> Watch now
             </Button>
           </div>
