@@ -15,8 +15,25 @@ export default function BusinessModel() {
             All that’s left is to focus on creating great content, not on the constant headache of chasing traffic.
           </p>
           <Button 
-            onClick={() => window.location.href = '/model'}
-            className="bg-[#6FF000] hover:bg-black hover:text-white text-black font-bold rounded-full px-8 py-6 w-full transition-colors"
+            onClick={(e) => {
+              const btn = e.currentTarget as HTMLButtonElement;
+              btn.style.backgroundColor = 'black';
+              btn.style.color = 'white';
+              setTimeout(() => {
+                window.location.href = '/model';
+              }, 100);
+            }}
+            className="bg-[#6FF000] hover:bg-black hover:text-white text-black font-bold rounded-full px-8 py-6 transition-all hover:scale-105 shadow-lg shadow-[#6FF000]/20" 
+            onMouseDown={(e) => {
+              const btn = e.currentTarget as HTMLButtonElement;
+              btn.style.backgroundColor = 'black';
+              btn.style.color = 'white';
+            }}
+            onTouchStart={(e) => {
+              const btn = e.currentTarget as HTMLButtonElement;
+              btn.style.backgroundColor = 'black';
+              btn.style.color = 'white';
+            }}
           >
             Learn more about our model
           </Button>
@@ -43,8 +60,25 @@ export default function BusinessModel() {
             All that’s left is to focus on creating great content, not on the constant headache of chasing traffic.
           </p>
           <Button 
-            onClick={() => window.location.href = '/model'}
-            className="mt-8 bg-[#6FF000] hover:bg-black hover:text-white text-black font-bold rounded-full px-8 py-6 transition-colors"
+            onClick={(e) => {
+              const btn = e.currentTarget as HTMLButtonElement;
+              btn.style.backgroundColor = 'black';
+              btn.style.color = 'white';
+              setTimeout(() => {
+                window.location.href = '/model';
+              }, 100);
+            }}
+            className="mt-8 bg-[#6FF000] hover:bg-black hover:text-white text-black font-bold rounded-full px-8 py-6 transition-all hover:scale-105 shadow-lg shadow-[#6FF000]/20" 
+            onMouseDown={(e) => {
+              const btn = e.currentTarget as HTMLButtonElement;
+              btn.style.backgroundColor = 'black';
+              btn.style.color = 'white';
+            }}
+            onTouchStart={(e) => {
+              const btn = e.currentTarget as HTMLButtonElement;
+              btn.style.backgroundColor = 'black';
+              btn.style.color = 'white';
+            }}
           >
             Learn more about our model
           </Button>

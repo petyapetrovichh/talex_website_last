@@ -112,7 +112,24 @@ const CreatorCard = ({ creator }: { creator: typeof creators[0] }) => (
         </div>
 
         {/* Button */}
-        <Button className="w-full bg-white text-black hover:bg-[#6FF000] hover:text-black font-bold text-xs h-8 rounded-md mt-3 transition-colors">
+        <Button 
+          onClick={(e) => {
+            const btn = e.currentTarget as HTMLButtonElement;
+            btn.style.backgroundColor = 'black';
+            btn.style.color = 'white';
+          }}
+          className="w-full bg-white text-black hover:bg-black hover:text-white font-bold text-xs h-8 rounded-md mt-3 transition-all hover:scale-105 shadow-lg shadow-[#6FF000]/20"
+          onMouseDown={(e) => {
+            const btn = e.currentTarget as HTMLButtonElement;
+            btn.style.backgroundColor = 'black';
+            btn.style.color = 'white';
+          }}
+          onTouchStart={(e) => {
+            const btn = e.currentTarget as HTMLButtonElement;
+            btn.style.backgroundColor = 'black';
+            btn.style.color = 'white';
+          }}
+        >
           Read now
         </Button>
       </div>
@@ -142,7 +159,24 @@ export default function CreatorList() {
         <p className="text-gray-700 text-sm md:text-base mb-8 max-w-xl mx-auto" style={{fontSize: '16px'}}>
           Here are just a few of many people you can support and grow together
         </p>
-        <Button className="bg-black text-white hover:bg-white hover:text-black px-8 py-6 rounded-full text-sm font-medium transition-colors">
+        <Button 
+          onClick={(e) => {
+            const btn = e.currentTarget as HTMLButtonElement;
+            btn.style.backgroundColor = '#6FF000';
+            btn.style.color = 'black';
+          }}
+          className="bg-black text-white hover:bg-[#6FF000] hover:text-black px-8 py-6 rounded-full text-sm font-medium transition-all hover:scale-105 shadow-lg shadow-[#6FF000]/20"
+          onMouseDown={(e) => {
+            const btn = e.currentTarget as HTMLButtonElement;
+            btn.style.backgroundColor = '#6FF000';
+            btn.style.color = 'black';
+          }}
+          onTouchStart={(e) => {
+            const btn = e.currentTarget as HTMLButtonElement;
+            btn.style.backgroundColor = '#6FF000';
+            btn.style.color = 'black';
+          }}
+        >
           Discover ever more ideas
         </Button>
       </div>
