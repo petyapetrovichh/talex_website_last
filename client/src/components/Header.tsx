@@ -207,29 +207,29 @@ export default function Header() {
             <div className="p-4 flex flex-col gap-0 overflow-y-auto flex-1" style={{paddingBottom: '60px'}}>
               {/* Explore */}
               <div className="py-3 px-4 text-base font-bold text-black">Explore</div>
-              <a href="https://www.talex.world/" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">TaleX App</a>
-              <Link href="/model" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100 block" onClick={closeMobileMenu}>Our Model</Link>
-              <a href="#" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">Featured</a>
+              <a href="https://www.talex.world/" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">TaleX App</a>
+              <Link href="/model" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100 block" onClick={closeMobileMenu}>Our Model</Link>
+              <a href="#" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Featured</a>
 
               {/* Company */}
               <div className="py-3 px-4 text-base font-bold text-black mt-4">Company</div>
-              <a href="https://docs.talex.world/" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">About</a>
-              <a href="https://t.me/talex_chain_community" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">Help</a>
-              <a href="#" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">Contact</a>
+              <a href="https://docs.talex.world/" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">About</a>
+              <a href="https://t.me/talex_chain_community" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Help</a>
+              <a href="#" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Contact</a>
 
               {/* Community */}
               <div className="py-3 px-4 text-base font-bold text-black mt-4">Community</div>
-              <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">X (Twitter)</a>
-              <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">Telegram</a>
-              <a href="https://discord.gg/talex" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">Discord</a>
-              <a href="https://www.binance.com/en/square/profile/talex_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">Binance Square</a>
-              <a href="https://coinmarketcap.com/community/profile/TaleX_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">CoinMarketCap</a>
-              <a href="https://facebook.com/TaleXchain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">Facebook</a>
-              <a href="https://youtube.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">YouTube</a>
-              <a href="https://www.instagram.com/talexchain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">Instagram</a>
-              <a href="https://www.tiktok.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">TikTok</a>
-              <a href="https://open.spotify.com/show/51Q8zhfB2ADlmyEaUzT3iR" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">Spotify</a>
-              <a href="https://www.linkedin.com/company/talexchain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:bg-gray-100">LinkedIn</a>
+              <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">X (Twitter)</a>
+              <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Telegram</a>
+              <a href="https://discord.gg/talex" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Discord</a>
+              <a href="https://www.binance.com/en/square/profile/talex_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Binance Square</a>
+              <a href="https://coinmarketcap.com/community/profile/TaleX_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">CoinMarketCap</a>
+              <a href="https://facebook.com/TaleXchain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Facebook</a>
+              <a href="https://youtube.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">YouTube</a>
+              <a href="https://www.instagram.com/talexchain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Instagram</a>
+              <a href="https://www.tiktok.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">TikTok</a>
+              <a href="https://open.spotify.com/show/51Q8zhfB2ADlmyEaUzT3iR" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">Spotify</a>
+              <a href="https://www.linkedin.com/company/talexchain" target="_blank" rel="noopener noreferrer" className="py-2.5 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors active:text-[#6FF000] active:bg-gray-100">LinkedIn</a>
             </div>
           </div>
         </>
