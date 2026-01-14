@@ -56,15 +56,11 @@ export default function Header() {
         <div className="md:hidden flex items-center justify-between w-full">
           <div className="flex items-center gap-2">
             <button
-              className="p-2 rounded-lg transition-colors"
+              className="p-2 rounded-lg active:bg-gray-100 transition-colors"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label={isMobileMenuOpen ? "关闭菜单" : "打开菜单"}
-              style={{
-                backgroundColor: isMobileMenuOpen ? 'black' : 'transparent',
-                transition: 'background-color 0.3s ease'
-              }}
             >
-              <Menu size={24} color={isMobileMenuOpen ? 'white' : 'black'} />
+              <Menu size={24} color="black" />
             </button>
 
             <Link href="/">
@@ -76,7 +72,18 @@ export default function Header() {
 
           <Button 
             onClick={() => window.location.href = 'https://www.talex.world/publish'}
-            className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full px-6 border-2 border-transparent transition-colors outline-none" style={{width: '130px', height: '30px', fontSize: '14px', marginRight: '5px', border: 'none', boxShadow: 'none'}}
+            className="font-semibold rounded-full px-6 border-2 border-transparent transition-colors outline-none active:scale-95" 
+            style={{
+              width: '130px', 
+              height: '30px', 
+              fontSize: '14px', 
+              marginRight: '5px', 
+              border: 'none', 
+              boxShadow: 'none',
+              backgroundColor: '#6FF000',
+              color: 'black',
+              transition: 'background-color 0.2s ease, color 0.2s ease'
+            }}
           >
             Start publishing
           </Button>

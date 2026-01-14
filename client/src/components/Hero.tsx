@@ -27,7 +27,13 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4">
             <Button 
               onClick={() => window.location.href = 'https://www.talex.world/publish'}
-              className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105 w-full sm:w-auto"
+              className="font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-all hover:scale-105 w-full sm:w-auto active:scale-95"
+              style={{
+                backgroundColor: '#6FF000',
+                color: 'black',
+                boxShadow: '0 10px 25px rgba(111, 255, 0, 0.2)',
+                transition: 'background-color 0.2s ease, color 0.2s ease, transform 0.1s ease'
+              }}
             >
               Tell Your Tale
             </Button>
