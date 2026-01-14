@@ -6,6 +6,7 @@ import { Menu, X, ChevronDown, Search } from "lucide-react";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [expandedMenu, setExpandedMenu] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +15,15 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleMenu = (menuName: string) => {
+    setExpandedMenu(expandedMenu === menuName ? null : menuName);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+    setExpandedMenu(null);
+  };
 
   return (
     <header
@@ -29,6 +39,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
+            {/* Explore Dropdown */}
             <div className="relative group">
               <div className="flex items-center gap-1 cursor-pointer py-4">
                 <span className="text-sm font-medium text-black group-hover:text-[#6FF000] transition-colors" style={{fontSize: '18px'}}>Explore</span>
@@ -45,6 +56,7 @@ export default function Header() {
               </div>
             </div>
 
+            {/* Company Dropdown */}
             <div className="relative group">
               <div className="flex items-center gap-1 cursor-pointer py-4">
                 <span className="text-sm font-medium text-black group-hover:text-[#6FF000] transition-colors" style={{fontSize: '18px'}}>Company</span>
@@ -61,6 +73,7 @@ export default function Header() {
               </div>
             </div>
 
+            {/* Community Dropdown */}
             <div className="relative group">
               <div className="flex items-center gap-1 cursor-pointer py-4">
                 <span className="text-sm font-medium text-black group-hover:text-[#6FF000] transition-colors" style={{fontSize: '18px'}}>Community</span>
@@ -87,6 +100,7 @@ export default function Header() {
           </nav>
         </div>
 
+        {/* Desktop Right Section */}
         <div className="hidden md:flex items-center gap-4">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={16} />
@@ -106,8 +120,9 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2"
+          className="md:hidden p-2 text-black"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -115,24 +130,92 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b shadow-lg p-4 flex flex-col gap-4 animate-in slide-in-from-top-5">
-          <Link href="/explore">
-            <span className="block py-2 text-base font-medium text-gray-800" onClick={() => setIsMobileMenuOpen(false)}>Explore</span>
-          </Link>
-          <Link href="/community">
-            <span className="block py-2 text-base font-medium text-gray-800" onClick={() => setIsMobileMenuOpen(false)}>Community</span>
-          </Link>
-          <div className="h-px bg-gray-100 my-2" />
-          <Link href="/login">
-            <Button variant="ghost" className="w-full justify-start" onClick={() => setIsMobileMenuOpen(false)}>
-              Sign in
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b shadow-lg max-h-[calc(100vh-80px)] overflow-y-auto">
+          <div className="p-4 flex flex-col gap-2">
+            {/* Explore Menu */}
+            <div>
+              <button
+                onClick={() => toggleMenu('explore')}
+                className="w-full flex items-center justify-between py-3 px-4 text-base font-medium text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors"
+              >
+                <span>Explore</span>
+                <ChevronDown 
+                  size={18} 
+                  className={`transition-transform duration-200 ${expandedMenu === 'explore' ? 'rotate-180' : ''}`}
+                />
+              </button>
+              {expandedMenu === 'explore' && (
+                <div className="pl-4 flex flex-col gap-1 mt-1">
+                  <a href="https://www.talex.world/" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">TaleX App</a>
+                  <a href="#" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">Our Model</a>
+                  <a href="#" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">Featured</a>
+                </div>
+              )}
+            </div>
+
+            {/* Company Menu */}
+            <div>
+              <button
+                onClick={() => toggleMenu('company')}
+                className="w-full flex items-center justify-between py-3 px-4 text-base font-medium text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors"
+              >
+                <span>Company</span>
+                <ChevronDown 
+                  size={18} 
+                  className={`transition-transform duration-200 ${expandedMenu === 'company' ? 'rotate-180' : ''}`}
+                />
+              </button>
+              {expandedMenu === 'company' && (
+                <div className="pl-4 flex flex-col gap-1 mt-1">
+                  <a href="https://docs.talex.world/" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">About</a>
+                  <a href="https://t.me/talex_chain_community" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">Help</a>
+                  <a href="#" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">Contact</a>
+                </div>
+              )}
+            </div>
+
+            {/* Community Menu */}
+            <div>
+              <button
+                onClick={() => toggleMenu('community')}
+                className="w-full flex items-center justify-between py-3 px-4 text-base font-medium text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors"
+              >
+                <span>Community</span>
+                <ChevronDown 
+                  size={18} 
+                  className={`transition-transform duration-200 ${expandedMenu === 'community' ? 'rotate-180' : ''}`}
+                />
+              </button>
+              {expandedMenu === 'community' && (
+                <div className="pl-4 flex flex-col gap-1 mt-1">
+                  <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">X (Twitter)</a>
+                  <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">Telegram</a>
+                  <a href="https://discord.gg/talex" target="_blank" rel="noopener noreferrer" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">Discord</a>
+                  <a href="https://www.binance.com/en/square/profile/talex_chain" target="_blank" rel="noopener noreferrer" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">Binance Square</a>
+                  <a href="https://coinmarketcap.com/community/profile/TaleX_chain" target="_blank" rel="noopener noreferrer" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">CoinMarketCap</a>
+                  <a href="https://facebook.com/TaleXchain" target="_blank" rel="noopener noreferrer" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">Facebook</a>
+                  <a href="https://youtube.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">YouTube</a>
+                  <a href="https://www.instagram.com/talexchain" target="_blank" rel="noopener noreferrer" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">Instagram</a>
+                  <a href="https://www.tiktok.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">TikTok</a>
+                  <a href="https://open.spotify.com/show/51Q8zhfB2ADlmyEaUzT3iR" target="_blank" rel="noopener noreferrer" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">Spotify</a>
+                  <a href="https://www.linkedin.com/company/talexchain" target="_blank" rel="noopener noreferrer" className="py-2 px-4 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">LinkedIn</a>
+                </div>
+              )}
+            </div>
+
+            <div className="h-px bg-gray-100 my-2" />
+
+            {/* Mobile CTA Button */}
+            <Button 
+              onClick={() => {
+                window.location.href = 'https://www.talex.world/publish';
+                closeMobileMenu();
+              }}
+              className="w-full bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full py-3 border-2 border-transparent transition-colors"
+            >
+              Start publishing
             </Button>
-          </Link>
-          <Link href="/signup">
-            <Button className="w-full bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full border-2 border-transparent transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-              Get Started
-            </Button>
-          </Link>
+          </div>
         </div>
       )}
     </header>
