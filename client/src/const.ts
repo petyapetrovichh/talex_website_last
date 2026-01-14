@@ -7,14 +7,15 @@ export { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
 export const IMAGE_CONFIG = {
   // /images/00.png - "Unlock for More" (центральный телефон)
   unlockForMore: {
-    width: 470,
+    width: 425,
     top: "auto",
     left: "50%",
     right: "auto",
     bottom: "auto",
     transform: "translateX(-50%)",
-    marginTop: "45px",
+    marginTop: "-189px",
     marginBottom: "10px",
+    marginLeft: "24px",
   },
   
   // /images/8.png - "Your eyesight is very valuable" (левая карточка)
