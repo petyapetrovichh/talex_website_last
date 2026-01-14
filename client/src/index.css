@@ -222,6 +222,32 @@
     animation: slideLeftToRight 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   }
 
+  @keyframes slideRightToLeft {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  .animate-slide-right-to-left {
+    animation: slideRightToLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+
+  @keyframes fadeOutSlow {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .animate-fade-out-slow {
+    animation: fadeOutSlow 0.8s ease-out forwards;
+  }
+
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),

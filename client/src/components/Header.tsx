@@ -6,6 +6,7 @@ import { Menu, X, ChevronDown, Search, Compass, Building2, Users } from "lucide-
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMenuClosing, setIsMenuClosing] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [activeMenuItem, setActiveMenuItem] = useState<string | null>(null);
   // 默认展开所有菜单
@@ -32,9 +33,11 @@ export default function Header() {
 
   // 关闭菜单时的处理
   const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
-    // 保持菜单展开状态，以便下次打开时仍然展开
-    // setExpandedMenu([]); 
+    setIsMenuClosing(true);
+    setTimeout(() => {
+      setIsMobileMenuOpen(false);
+      setIsMenuClosing(false);
+    }, 800);
   };
 
   // 处理菜单项点击
@@ -190,15 +193,15 @@ export default function Header() {
       </div>
 
       {/* Mobile Menu - 改进的移动端菜单 */}
-      {isMobileMenuOpen && (
+      {(isMobileMenuOpen || isMenuClosing) && (
         <>
           {/* 半透明背景模糊 */}
           <div 
             className="fixed inset-0 bg-black/30 backdrop-blur-md z-40 md:hidden"
-            onClick={() => setIsMobileMenuOpen(false)}
+            onClick={() => closeMobileMenu()}
             style={{ 
               top: '60px',
-              animation: 'fadeInSlow 0.4s ease-out'
+              animation: isMenuClosing ? 'fadeOutSlow 0.8s ease-out' : 'fadeInSlow 0.4s ease-out'
             }}
           />
           
@@ -209,7 +212,7 @@ export default function Header() {
               top: '60px', 
               display: 'flex', 
               flexDirection: 'column',
-              animation: 'slideLeftToRight 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+              animation: isMenuClosing ? 'slideRightToLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)' : 'slideLeftToRight 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
             }}
           >
             {/* 搜索框 */}
