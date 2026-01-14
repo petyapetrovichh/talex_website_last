@@ -39,7 +39,7 @@ export default function Hero() {
           DESKTOP VIEW (Visible only on desktop)
           ========================================= */}
       <div className="hidden md:block container relative z-10 pt-32 pb-20" style={{height: '750px'}}>
-        <div className="relative w-full h-full">
+        <div className="relative w-full h-full" style={{marginLeft: '-31px'}}>
           {/* Left side - Text content */}
           <div className="max-w-2xl absolute left-0 top-0" style={{marginRight: '-50px', marginLeft: '50px', marginTop: '75px'}}>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 w-full max-w-[559px]" style={{fontSize: '39px', fontWeight: '400'}}>
