@@ -427,7 +427,7 @@ Hk is the total historical payments in that tier.
         </section>
 
         {/* 10. Risk control and safety */}
-        <section className="py-24 bg-white" style={{paddingBottom: '48px'}}>
+        <section className="py-24 bg-white" style={{paddingBottom: '120px'}}>
           <div className="container" style={{paddingRight: '0px', paddingLeft: '0px'}}>
             <div className="text-center mb-16 px-4">
               <h2 className="text-4xl font-bold mb-2 font-serif">Risk control and safety</h2>
