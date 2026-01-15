@@ -177,13 +177,13 @@ incentivizing early discovery and dissemination.
                 <div className="flex items-center gap-4">
                   <div className="w-6 h-6 bg-[#FFE600] rounded-sm"></div>
                   <div>
-                    <p className="font-bold text-lg">20% Content Value <span className="text-gray-500 text-sm">(Direct to Creator)</span></p>
+                    <p className="font-bold text-lg" style={{color: '#000000', fontSize: '18px', fontWeight: '400'}}>20% Content Value <span className="text-gray-500 text-sm" style={{color: '#000000', fontSize: '18px', fontWeight: '400'}}>(Direct to Creator)</span></p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-6 h-6 bg-[#6FF000] rounded-sm"></div>
                   <div>
-                    <p className="font-bold text-lg">80% Prediction Market <span className="text-gray-500 text-sm">(To Supporters)</span></p>
+                    <p className="font-bold text-lg" style={{color: '#000000', fontSize: '18px', fontWeight: '400'}}>80% Prediction Market <span className="text-gray-500 text-sm" style={{color: '#000000', fontSize: '18px', fontWeight: '400'}}>(To Supporters)</span></p>
                   </div>
                 </div>
               </div>
