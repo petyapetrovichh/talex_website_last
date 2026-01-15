@@ -129,7 +129,7 @@ export const IMAGE_CONFIG = {
   
   // /images/model4.png - Model 4 (right of central phone, below model3)
   model4: {
-    width: 400,
+    width: 500,
     height: "auto",
     top: "50%",
     left: "auto",
