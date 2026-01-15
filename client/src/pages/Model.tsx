@@ -455,7 +455,7 @@ incentivizing early discovery and dissemination.
               {/* Card 2 */}
               <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
                 <div className="flex-shrink-0" style={{width: '120px', height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                  <img src="/images/no-secondary-market.png" alt="No Secondary Market" style={{width: '100px', height: '100px', objectFit: 'contain'}} />
+                  <img src="/images/no-secondary-market.png" alt="No Secondary Market" style={{width: '110px', height: '100px', objectFit: 'contain', marginTop: '25px'}} />
                 </div>
                 <div>
                   <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>No Secondary Market</h3>
@@ -468,7 +468,7 @@ incentivizing early discovery and dissemination.
               {/* Card 3 */}
               <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
                 <div className="flex-shrink-0" style={{width: '120px', height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                  <img src="/images/finite-lifecycle.png" alt="Finite Lifecycle" style={{width: '100px', height: '100px', objectFit: 'contain'}} />
+                  <img src="/images/finite-lifecycle.png" alt="Finite Lifecycle" style={{width: '120px', height: '100px', objectFit: 'contain', marginTop: '5px'}} />
                 </div>
                 <div>
                   <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Finite Lifecycle</h3>
@@ -481,7 +481,7 @@ incentivizing early discovery and dissemination.
               {/* Card 4 */}
               <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
                 <div className="flex-shrink-0" style={{width: '120px', height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                  <img src="/images/no-guaranteed-returns.png" alt="No Guaranteed Returns" style={{width: '100px', height: '100px', objectFit: 'contain'}} />
+                  <img src="/images/no-guaranteed-returns.png" alt="No Guaranteed Returns" style={{width: '100px', height: '100px', objectFit: 'contain', marginRight: '5px'}} />
                 </div>
                 <div>
                   <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>No Guaranteed Returns</h3>
