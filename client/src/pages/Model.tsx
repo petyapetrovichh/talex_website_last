@@ -307,7 +307,7 @@ incentivizing early discovery and dissemination.
                   </div>
                 </div>
                 
-                <div className="mt-12 p-6 bg-[#F0FDF4] rounded-xl border border-[#6FF000]/20">
+                <div className="mt-12 p-6 bg-[#F0FDF4] rounded-xl border border-[#6FF000]/20" style={{width: '588px'}}>
                   <p className="text-sm text-gray-700" style={{color: '#000000', fontSize: '18px', marginBottom: '16px', marginLeft: '15px'}}>
                     When you pay, your 80% (Prediction Portion) rewards your seniors. When future users pay, you become the senior, earning from their payments.
                   </p>
