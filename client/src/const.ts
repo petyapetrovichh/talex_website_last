@@ -53,7 +53,7 @@ export const IMAGE_CONFIG = {
     bottom: "0",
     transform: "none",
     marginTop: "0",
-    marginLeft: "-53px",
+    marginLeft: "-100px",
     marginBottom: "150px",
   },
   
