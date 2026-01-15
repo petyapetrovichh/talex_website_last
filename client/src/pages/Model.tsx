@@ -1,9 +1,29 @@
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function Model() {
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [isHovering, setIsHovering] = useState(false);
+  const phoneRef = useRef(null);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!phoneRef.current) return;
+    const rect = (phoneRef.current as HTMLDivElement).getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    setMousePos({ x, y });
+  };
+
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -241,13 +261,17 @@ incentivizing early discovery and dissemination.
         <section className="py-24" style={{backgroundImage: 'url(/images/sharing-chain-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed', height: '730px'}}>
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-              <div className="flex justify-center relative group cursor-pointer" onClick={() => window.open('https://www.talex.world/reading/585449588677', '_self')}>
+              <div ref={phoneRef} className="flex justify-center relative cursor-pointer" onMouseMove={handleMouseMove} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={() => window.open('https://www.talex.world/reading/585449588677', '_self')}>
                 <img src="/images/sharing-chain-phone.png" alt="The Sharing Chain" className="w-full max-w-sm h-auto drop-shadow-2xl rounded-3xl" />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl">
-                  <div className="w-24 h-24 bg-[#6FF000] rounded-full flex items-center justify-center hover:bg-black">
-                    <span className="text-black font-bold text-center hover:text-white">Try now</span>
+                {isHovering && (
+                  <div className="absolute w-24 h-24 bg-[#6FF000] rounded-full flex items-center justify-center transition-all duration-75" style={{
+                    left: `${mousePos.x - 48}px`,
+                    top: `${mousePos.y - 48}px`,
+                    pointerEvents: 'none'
+                  }}>
+                    <span className="text-black font-bold text-center text-sm">Try now</span>
                   </div>
-                </div>
+                )}
               </div>
               <div>
                 <h2 className="text-4xl font-bold mb-8 font-serif" style={{fontSize: '39px', marginBottom: '8px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>The sharing chain</h2>
