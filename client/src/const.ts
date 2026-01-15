@@ -112,7 +112,7 @@ export const IMAGE_CONFIG = {
     offsetY: 0,
   },
   
-  // /images/model3.png - Model 3 (right of central phone, top area)
+  // /images/model3.png - Model 3 (right of central phone, aligned with Learn more button)
   model3: {
     width: 400,
     height: "auto",
@@ -121,7 +121,7 @@ export const IMAGE_CONFIG = {
     right: "0",
     bottom: "auto",
     transform: "translateY(-50%)",
-    marginTop: "500px",
+    marginTop: "320px",
     marginRight: "0",
     offsetX: -15,
     offsetY: 0,
