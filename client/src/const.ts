@@ -91,7 +91,7 @@ export const IMAGE_CONFIG = {
     right: "auto",
     bottom: "auto",
     transform: "translateY(-50%)",
-    marginTop: "-99px",
+    marginTop: "-100px",
     marginLeft: "0",
     offsetX: 15,
     offsetY: 0,
