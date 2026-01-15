@@ -156,7 +156,7 @@ incentivizing early discovery and dissemination.
         </section>
 
         {/* 4. The economic mechanism: 20/80 split */}
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-white" style={{height: '855px'}}>
           <div className="container text-center">
             <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '26px'}}>The economic mechanism: 20/80 split</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Your Supporters Become Your Promoters</p>
@@ -203,16 +203,16 @@ incentivizing early discovery and dissemination.
         </section>
 
         {/* 5. Why users pay? */}
-        <section className="py-24 bg-white overflow-hidden">
+        <section className="py-24 bg-white overflow-hidden" style={{paddingTop: '20px', height: '1010px'}}>
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
               <div className="flex flex-col justify-center">
-                <h2 className="text-4xl font-bold mb-12 font-serif" style={{fontSize: '26px'}}>Why users pay?</h2>
-                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest" style={{marginTop: '-34px'}}>Dual Motivation</p>
+                <h2 className="text-4xl font-bold mb-12 font-serif" style={{fontSize: '26px', paddingLeft: '58px'}}>Why users pay?</h2>
+                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest" style={{marginTop: '-34px', paddingLeft: '84px'}}>Dual Motivation</p>
                 
                 <div className="space-y-12">
                   <div>
-                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000'}}>1. Consumption Logic</h3>
+                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000', paddingLeft: '66px'}}>1. Consumption Logic</h3>
                     <p className="text-gray-600 leading-relaxed italic mb-2"></p>
                     <p className="text-gray-600 leading-relaxed text-sm">
                       “I recognize the value of this content”.
@@ -222,7 +222,7 @@ The 20% payment creates a direct value exchange. It signals genuine appreciation
                   </div>
                   
                   <div>
-                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000'}}>2. Prediction Logic</h3>
+                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000', paddingLeft: '76px'}}>2. Prediction Logic</h3>
                     <p className="text-gray-600 leading-relaxed italic mb-2">“I predict this content will go viral”.</p>
                     <p className="text-gray-600 leading-relaxed text-sm">
                       The 80% contribution is an active prediction. By spotting quality early, the user positions themselves to earn “Thank-you Rewards” from future supporters.
@@ -238,7 +238,7 @@ The 20% payment creates a direct value exchange. It signals genuine appreciation
                 <img 
                   src="/images/9.png" 
                   alt="Green Crystal Chess King" 
-                  className="h-full object-contain drop-shadow-2xl" style={{marginTop: '-41px', width: '463px', height: '523px'}}
+                  className="h-full object-contain drop-shadow-2xl" style={{marginTop: '-103px', width: '463px', height: '523px'}}
                 />
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-[#6FF000]/20 blur-3xl -z-10 rounded-full scale-75"></div>
@@ -284,8 +284,8 @@ The 20% payment creates a direct value exchange. It signals genuine appreciation
               </div>
               
               <div>
-                <h2 className="text-4xl font-bold mb-8 font-serif">The sharing chain</h2>
-                <p className="text-gray-500 text-sm mb-12 uppercase tracking-widest">How It Works</p>
+                <h2 className="text-4xl font-bold mb-8 font-serif" style={{fontSize: '26px', paddingLeft: '52px'}}>The sharing chain</h2>
+                <p className="text-gray-500 text-sm mb-12 uppercase tracking-widest" style={{paddingLeft: '98px', marginTop: '-26px'}}>How It Works</p>
                 
                 <div className="space-y-8">
                   <div className="relative pl-8 border-l-2 border-[#6FF000]">
@@ -317,16 +317,16 @@ The Goal: Be the one who sees potential before the crowd does.
         </section>
 
         {/* 7. The 365 day window rule */}
-        <section className="py-24 bg-white" style={{paddingBottom: '51px'}}>
+        <section className="py-24 bg-white" style={{paddingBottom: '51px', height: '495px'}}>
           <div className="container text-center" style={{paddingRight: '0px', paddingLeft: '0px'}}>
-            <h2 className="text-4xl font-bold mb-2 font-serif">The 365 day window rule</h2>
+            <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '26px'}}>The 365 day window rule</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Time-Decay Incentive Model</p>
             
-            <div className="relative w-full max-w-5xl mx-auto mb-11 px-4">
-               <img src="/images/18.png" alt="Distribution Formula" className="w-full h-auto object-contain mx-auto" />
+            <div className="relative w-full max-w-5xl mx-auto mb-11 px-4" style={{paddingRight: '0px', paddingLeft: '0px'}}>
+               <img src="/images/18.png" alt="Distribution Formula" className="w-full h-auto object-contain mx-auto" style={{width: '372px', height: '184px', display: 'inline', objectFit: 'cover', marginTop: '-17px'}} />
             </div>
             
-            <p className="text-gray-500 text-xs mt-8 max-w-xl mx-auto">
+            <p className="text-gray-500 text-xs mt-8 max-w-xl mx-auto" style={{paddingRight: '6px', paddingLeft: '6px', marginTop: '-5px'}}>
               * Rewards are highest in the first 24 hours to incentivize discovery. The window closes after 365 days, ensuring content liquidity.
             </p>
           </div>
@@ -335,14 +335,14 @@ The Goal: Be the one who sees potential before the crowd does.
         {/* 8. Simple math */}
         <section className="py-24 bg-white">
           <div className="container">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-2 font-serif">Simple math</h2>
+            <div className="text-center mb-16" style={{marginTop: '-52px'}}>
+              <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '26px'}}>Simple math</h2>
               <p className="text-gray-500 text-sm uppercase tracking-widest">Distribution Formula</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {/* Creator Connected */}
-              <div className="bg-[#F0FDF4] p-8 rounded-2xl border border-[#6FF000]/20">
+              <div className="bg-[#F0FDF4] p-8 rounded-2xl border border-[#6FF000]/20" style={{marginTop: '-45px'}}>
                 <p className="text-sm text-gray-600 mb-4">For the n-th payer contributing amount $X:</p>
                 <h3 className="text-lg font-bold mb-4 text-gray-800">For those who pay & contribute amount (X):</h3>
                 <div className="bg-white p-6 rounded-xl shadow-sm mb-4">
@@ -356,7 +356,7 @@ The Goal: Be the one who sees potential before the crowd does.
               </div>
 
               {/* Reward Distribution */}
-              <div className="bg-white p-8 rounded-2xl border border-gray-100 flex flex-col justify-center">
+              <div className="bg-white p-8 rounded-2xl border border-gray-100 flex flex-col justify-center" style={{marginTop: '-16px'}}>
                 <p className="text-sm text-gray-600 mb-4">Reward for a specific senior i in tier k:</p>
                 <h3 className="text-lg font-bold mb-4 text-gray-800">Reward for a specific senior (Y) will be:</h3>
                 <div className="bg-[#F6F6F6] p-8 rounded-xl flex items-center justify-center">
@@ -377,10 +377,10 @@ Hk is the total historical payments in that tier.
         </section>
 
         {/* 9. Win Win Win ecosystem */}
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-white" style={{paddingTop: '16px', marginTop: '-61px'}}>
           <div className="container">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-2 font-serif">Win Win Win ecosystem</h2>
+            <div className="text-center mb-16" style={{marginBottom: '26px'}}>
+              <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '26px'}}>Win Win Win ecosystem</h2>
               <p className="text-gray-500 text-sm uppercase tracking-widest">Creators • Users • TaleX</p>
             </div>
 
@@ -422,7 +422,7 @@ Hk is the total historical payments in that tier.
                   alt="Laptop workspace" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{paddingTop: '28px', paddingBottom: '12px'}}>
                   <h3 className="text-2xl font-bold text-black mb-4">TaleX</h3>
                   <p className="text-sm text-black font-medium leading-relaxed">
                     Shifts from an "Ad Engine" to a "Value Engine". Revenue aligns with content quality, not view counts.
@@ -434,20 +434,20 @@ Hk is the total historical payments in that tier.
         </section>
 
         {/* 10. Risk control and safety */}
-        <section className="py-24 bg-white" style={{paddingBottom: '120px'}}>
+        <section className="py-24 bg-white" style={{paddingBottom: '120px', paddingRight: '012px', paddingLeft: '012px'}}>
           <div className="container" style={{paddingRight: '0px', paddingLeft: '0px'}}>
             <div className="text-center mb-16 px-4">
-              <h2 className="text-4xl font-bold mb-2 font-serif">Risk control and safety</h2>
+              <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '26px'}}>Risk control and safety</h2>
               <p className="text-gray-500 text-sm uppercase tracking-widest">Everyone Is Safe To Go</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" style={{width: '1072px', height: 'auto', overflow: 'visible'}}>
               {/* Card 1 */}
-              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
+              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{width: '337px', height: '134px'}}>
                 <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '68px', height: '68px'}}>
                   <img src="/images/11.png" alt="Non-Financial" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
-                <div>
+                <div style={{marginTop: '-9px'}}>
                   <h3 className="text-white font-bold mb-2">Non-Financial Product</h3>
                   <p className="text-gray-400 text-xs leading-relaxed">
                     No tokens, no IPO, no ICO. Strictly a content appreciation mechanism.
@@ -456,7 +456,7 @@ Hk is the total historical payments in that tier.
               </div>
 
               {/* Card 2 */}
-              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
+              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{width: '337px'}}>
                 <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '68px', height: '68px'}}>
                   <img src="/images/22.png" alt="No Secondary Market" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
@@ -469,11 +469,11 @@ Hk is the total historical payments in that tier.
               </div>
 
               {/* Card 3 */}
-              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
+              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{width: '337px'}}>
                 <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '68px', height: '68px'}}>
                   <img src="/images/33.png" alt="Finite Lifecycle" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
-                <div>
+                <div style={{marginTop: '-13px'}}>
                   <h3 className="text-white font-bold mb-2">Finite Lifecycle</h3>
                   <p className="text-gray-400 text-xs leading-relaxed">
                     Rights expire after 365 days. The system resets, preventing "Ponzi" structures.
@@ -482,7 +482,7 @@ Hk is the total historical payments in that tier.
               </div>
 
               {/* Card 4 */}
-              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors">
+              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{width: '337px'}}>
                 <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '68px', height: '68px'}}>
                   <img src="/images/44.png" alt="No Guaranteed Returns" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
@@ -500,8 +500,8 @@ Hk is the total historical payments in that tier.
         {/* 11. The shift from ads to direct value */}
         <section className="py-24 bg-white">
           <div className="container">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-2 font-serif">The shift from ads to direct value</h2>
+            <div className="text-center mb-16" style={{marginTop: '-129px'}}>
+              <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '25px'}}>The shift from ads to direct value</h2>
               <p className="text-gray-500 text-sm uppercase tracking-widest">Back to Creating Real Value</p>
             </div>
 
@@ -509,7 +509,7 @@ Hk is the total historical payments in that tier.
               {/* Chart Area */}
               <div className="absolute inset-0 overflow-hidden">
                 {/* Gradient Area */}
-                <svg className="w-full h-full" preserveAspectRatio="none">
+                <svg className="w-full h-full" preserveAspectRatio="none" style={{height: '403px'}}>
                   <defs>
                     <linearGradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
                       <stop offset="0%" stopColor="#6FF000" stopOpacity="0.5" />
@@ -540,8 +540,8 @@ Hk is the total historical payments in that tier.
         {/* Bottom CTA */}
         <section className="py-32 bg-gradient-to-b from-white to-[#F0FDF4] text-center">
           <div className="container">
-            <h2 className="text-5xl font-bold mb-8 font-serif">A new way of value discovery</h2>
-            <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+            <h2 className="text-5xl font-bold mb-8 font-serif" style={{fontSize: '26px'}}>A new way of value discovery</h2>
+            <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto" style={{fontSize: '15px', marginTop: '-19px'}}>
               Join TaleX today and be part of the revolution that puts value back into the hands of creators and supporters.
             </p>
             <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-12 py-8 text-xl shadow-xl shadow-[#6FF000]/30 transition-all hover:scale-105">
