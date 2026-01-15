@@ -47,12 +47,12 @@ export default function Contact() {
                 <p style={{fontSize: '18px', fontWeight: '400', color: '#000000', lineHeight: '1.6', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', whiteSpace: 'nowrap', textAlign: 'left'}}>
                   <span style={{fontWeight: '700'}}>If you're a creator interested in starting your content work on TaleX:</span> visit{' '}
                   <a 
-                    href="https://talex.world/profile/become-a-creator" 
+                    href="https://www.talex.world/publish" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     style={{textDecoration: 'underline', color: '#000000'}}
                   >
-                    talex.world/profile/become-a-creator
+                    www.talex.world/publish
                   </a>
                 </p>
               </div>
