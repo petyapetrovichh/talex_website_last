@@ -207,11 +207,9 @@ incentivizing early discovery and dissemination.
                 <div className="space-y-12">
                   <div>
                     <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000', fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>1. Consumption Logic</h3>
-                    <p className="text-gray-600 leading-relaxed italic mb-2"></p>
+                    <p className="text-gray-600 leading-relaxed italic mb-2" style={{color: '#000000', fontSize: '18px'}}>"I recognize the value of this content".</p>
                     <p className="text-gray-600 leading-relaxed text-sm" style={{color: '#000000', fontSize: '18px'}}>
-                      “I recognize the value of this content”.
-
-The 20% payment creates a direct value exchange. It signals genuine appreciation and supports the creator's livelihood.
+                      The 20% payment creates a direct value exchange. It signals genuine appreciation and supports the creator's livelihood.
                     </p>
                   </div>
                   
