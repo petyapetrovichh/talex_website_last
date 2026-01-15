@@ -539,7 +539,7 @@ incentivizing early discovery and dissemination.
           <div className="container relative z-10">
             <h2 className="text-5xl font-bold mb-8 font-serif" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>A new way of value discovery</h2>
             <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-              Join TaleX today and be part of the revolution that puts value back into the hands of creators and supporters.
+              Redefining "Tipping" from an emotional expression to a systematic tool for content discovery and growth.
             </p>
             <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-12 py-8 text-xl shadow-xl shadow-[#6FF000]/30 transition-all hover:scale-105" style={{paddingRight: '40px', paddingLeft: '40px'}} onClick={() => window.location.href = 'https://www.talex.world/publish'}>
               Tell Your Tale
