@@ -151,8 +151,8 @@ export default function Footer() {
             © 2026 Powered by TaleX. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-gray-400">
-            <a href="https://www.talex.world/privacy-policy" target="_self" className="hover:text-black transition-colors" style={{color: '#000000'}}>Privacy Policy</a>
-            <a href="https://www.talex.world/terms-of-service" target="_self" className="hover:text-black transition-colors" style={{color: '#050505'}}>Terms of Service</a>
+            <a href="https://www.talex.world/privacy-policy" target="_self" className="hover:text-green-500 active:text-green-500 transition-colors" style={{color: '#000000'}}>Privacy Policy</a>
+            <a href="https://www.talex.world/terms-of-service" target="_self" className="hover:text-green-500 active:text-green-500 transition-colors" style={{color: '#050505'}}>Terms of Service</a>
           </div>
         </div>
       </div>
