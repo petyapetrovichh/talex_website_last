@@ -434,8 +434,8 @@ incentivizing early discovery and dissemination.
         <section className="py-24 bg-white" style={{paddingBottom: '120px'}}>
           <div className="container" style={{paddingRight: '0px', paddingLeft: '0px'}}>
             <div className="text-center mb-16 px-4">
-              <h2 className="text-4xl font-bold mb-2 font-serif">Risk control and safety</h2>
-              <p className="text-gray-500 text-sm uppercase tracking-widest">Everyone Is Safe To Go</p>
+              <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>Risk control and safety</h2>
+              <p className="text-gray-500 text-sm uppercase tracking-widest" style={{fontWeight: '500'}}>Everyone Is Safe To Go</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" style={{width: '1072px', height: 'auto', overflow: 'visible'}}>
@@ -445,8 +445,8 @@ incentivizing early discovery and dissemination.
                   <img src="/images/11.png" alt="Non-Financial" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2">Non-Financial Product</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed">
+                  <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Non-Financial Product</h3>
+                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500'}}>
                     No tokens, no IPO, no ICO. Strictly a content appreciation mechanism.
                   </p>
                 </div>
@@ -458,8 +458,8 @@ incentivizing early discovery and dissemination.
                   <img src="/images/22.png" alt="No Secondary Market" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2">No Secondary Market</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed">
+                  <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>No Secondary Market</h3>
+                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500'}}>
                     Reward rights are tied to the account and cannot be traded or speculated on.
                   </p>
                 </div>
@@ -471,8 +471,8 @@ incentivizing early discovery and dissemination.
                   <img src="/images/33.png" alt="Finite Lifecycle" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2">Finite Lifecycle</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed">
+                  <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Finite Lifecycle</h3>
+                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500'}}>
                     Rights expire after 365 days. The system resets, preventing "Ponzi" structures.
                   </p>
                 </div>
@@ -484,8 +484,8 @@ incentivizing early discovery and dissemination.
                   <img src="/images/44.png" alt="No Guaranteed Returns" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2">No Guaranteed Returns</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed">
+                  <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>No Guaranteed Returns</h3>
+                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500'}}>
                     All rewards depend on future real user activity.
                   </p>
                 </div>
