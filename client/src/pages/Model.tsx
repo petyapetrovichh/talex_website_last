@@ -203,12 +203,12 @@ incentivizing early discovery and dissemination.
         </section>
 
         {/* 5. Why users pay? */}
-        <section className="py-24 bg-white overflow-hidden" style={{paddingTop: '20px', height: '1010px'}}>
-          <div className="container">
+        <section className="py-24 bg-white overflow-hidden" style={{paddingTop: '20px', height: '863px'}}>
+          <div className="container" style={{height: '857px', marginTop: '-15px'}}>
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
               <div className="flex flex-col justify-center">
                 <h2 className="text-4xl font-bold mb-12 font-serif" style={{fontSize: '26px', paddingLeft: '58px'}}>Why users pay?</h2>
-                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest" style={{marginTop: '-34px', paddingLeft: '84px'}}>Dual Motivation</p>
+                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest" style={{marginTop: '-45px', paddingLeft: '84px'}}>Dual Motivation</p>
                 
                 <div className="space-y-12">
                   <div>
@@ -231,14 +231,14 @@ The 20% payment creates a direct value exchange. It signals genuine appreciation
                 </div>
               </div>
               
-              <div className="relative h-[500px] flex flex-col items-center justify-center">
+              <div className="relative h-[500px] flex flex-col items-center justify-center" style={{height: '490px'}}>
                 {/* Dual Motivation Label */}
-                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest text-center">Dual Motivation</p>
+                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest text-center"></p>
                 {/* Green Chess Piece Image */}
                 <img 
                   src="/images/9.png" 
                   alt="Green Crystal Chess King" 
-                  className="h-full object-contain drop-shadow-2xl" style={{marginTop: '-103px', width: '463px', height: '523px'}}
+                  className="h-full object-contain drop-shadow-2xl" style={{marginTop: '-206px', width: '463px', height: '396px'}}
                 />
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-[#6FF000]/20 blur-3xl -z-10 rounded-full scale-75"></div>
@@ -248,7 +248,7 @@ The 20% payment creates a direct value exchange. It signals genuine appreciation
         </section>
 
         {/* 6. The sharing chain */}
-        <section className="py-24 bg-gradient-to-b from-[#F0FDF4] to-white">
+        <section className="py-24 bg-gradient-to-b from-[#F0FDF4] to-white" style={{height: '1398px'}}>
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
               {/* Phone Mockup */}
@@ -317,7 +317,7 @@ The Goal: Be the one who sees potential before the crowd does.
         </section>
 
         {/* 7. The 365 day window rule */}
-        <section className="py-24 bg-white" style={{paddingBottom: '51px', height: '495px'}}>
+        <section className="py-24 bg-white" style={{paddingBottom: '51px', height: '495px', paddingTop: '12px', marginTop: '-23px'}}>
           <div className="container text-center" style={{paddingRight: '0px', paddingLeft: '0px'}}>
             <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '26px'}}>The 365 day window rule</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Time-Decay Incentive Model</p>
@@ -333,7 +333,7 @@ The Goal: Be the one who sees potential before the crowd does.
         </section>
 
         {/* 8. Simple math */}
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-white" style={{paddingTop: '66px', marginTop: '-44px'}}>
           <div className="container">
             <div className="text-center mb-16" style={{marginTop: '-52px'}}>
               <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '26px'}}>Simple math</h2>
@@ -377,7 +377,7 @@ Hk is the total historical payments in that tier.
         </section>
 
         {/* 9. Win Win Win ecosystem */}
-        <section className="py-24 bg-white" style={{paddingTop: '16px', marginTop: '-61px'}}>
+        <section className="py-24 bg-white" style={{paddingTop: '16px', marginTop: '-61px', height: '1308px'}}>
           <div className="container">
             <div className="text-center mb-16" style={{marginBottom: '26px'}}>
               <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '26px'}}>Win Win Win ecosystem</h2>
@@ -434,7 +434,7 @@ Hk is the total historical payments in that tier.
         </section>
 
         {/* 10. Risk control and safety */}
-        <section className="py-24 bg-white" style={{paddingBottom: '120px', paddingRight: '012px', paddingLeft: '012px'}}>
+        <section className="py-24 bg-white" style={{paddingBottom: '120px', paddingRight: '012px', paddingLeft: '012px', paddingTop: '24px', height: '907px'}}>
           <div className="container" style={{paddingRight: '0px', paddingLeft: '0px'}}>
             <div className="text-center mb-16 px-4">
               <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '26px'}}>Risk control and safety</h2>
