@@ -115,6 +115,29 @@ export default function BusinessModel() {
             />
         </div>
 
+        {/* Model 2 - /images/model2.png */}
+        <div 
+          className="absolute" 
+          style={{
+            width: `${IMAGE_CONFIG.model2.width}px`,
+            height: IMAGE_CONFIG.model2.height,
+            top: IMAGE_CONFIG.model2.top,
+            left: IMAGE_CONFIG.model2.left,
+            right: IMAGE_CONFIG.model2.right,
+            bottom: IMAGE_CONFIG.model2.bottom,
+            transform: `${IMAGE_CONFIG.model2.transform} translate(${IMAGE_CONFIG.model2.offsetX}px, ${IMAGE_CONFIG.model2.offsetY}px)`,
+            marginTop: IMAGE_CONFIG.model2.marginTop,
+            marginLeft: IMAGE_CONFIG.model2.marginLeft,
+            zIndex: 9,
+          }}
+        >
+            <img 
+              src="/images/model2.png" 
+              alt="Model 2" 
+              className="w-full h-auto drop-shadow-xl"
+            />
+        </div>
+
         {/* Central Phone Mockup - /images/00.png */}
         <div 
           className="absolute" 
