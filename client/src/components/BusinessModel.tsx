@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { IMAGE_CONFIG } from "@/const";
 
 export default function BusinessModel() {
   return (
@@ -10,9 +11,9 @@ export default function BusinessModel() {
         <div className="text-center mb-12" style={{marginTop: '-177px'}}>
           <h2 className="text-3xl font-bold mb-6" style={{fontSize: '20px'}}>A model that changes everything</h2>
           <p className="text-base text-gray-600 leading-relaxed mb-8" style={{fontSize: '16px'}}>
-            When fans don’t just support creators by tipping their work, but join real economic value distribution, the magic happens. For the first time, creators get what nobody has offered them before — a natural promotional instrument powered by their own audience.
+            When fans don't just support creators by tipping their work, but join real economic value distribution, the magic happens. For the first time, creators get what nobody has offered them before — a natural promotional instrument powered by their own audience.
             <br /><br />
-            All that’s left is to focus on creating great content, not on the constant headache of chasing traffic.
+            All that's left is to focus on creating great content, not on the constant headache of chasing traffic.
           </p>
           <Button 
             onClick={(e) => {
@@ -40,14 +41,20 @@ export default function BusinessModel() {
         </div>
 
         <div className="relative w-full flex justify-center">
-          <img src="/images/00.png" alt="Support & Earn" className="w-full max-w-[280px] h-auto drop-shadow-2xl" />
+          <img 
+            src="/images/00.png" 
+            alt="Support & Earn" 
+            className="h-auto drop-shadow-2xl" 
+            style={{width: `${IMAGE_CONFIG.unlockForMore.width}px`}} 
+          />
         </div>
       </div>
 
       {/* =========================================
           DESKTOP VIEW (Visible only on desktop)
           ========================================= */}
-      <div className="hidden md:block container py-24">
+      <div className="hidden md:block py-24">
+        {/* TEXT CONTAINER WITH MAX-WIDTH */}
         <div className="text-center max-w-3xl mx-auto mb-20" style={{marginTop: '-50px'}}>
           <div className="inline-flex items-center justify-center mb-6">
             <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
@@ -55,9 +62,9 @@ export default function BusinessModel() {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{fontSize: '39px', fontWeight: '400'}}>A model that changes everything</h2>
           <p className="text-lg text-gray-600 leading-relaxed px-4 md:px-16 h-auto" style={{color: '#000000'}}>
-            When fans don’t just support creators by tipping their work, but join real economic value distribution, the magic happens. For the first time, creators get what nobody has offered them before — a natural promotional instrument powered by their own audience.
+            When fans don't just support creators by tipping their work, but join real economic value distribution, the magic happens. For the first time, creators get what nobody has offered them before — a natural promotional instrument powered by their own audience.
             <br /><br />
-            All that’s left is to focus on creating great content, not on the constant headache of chasing traffic.
+            All that's left is to focus on creating great content, not on the constant headache of chasing traffic.
           </p>
           <Button 
             onClick={(e) => {
@@ -85,28 +92,112 @@ export default function BusinessModel() {
           </Button>
         </div>
 
-        <div className="relative max-w-5xl mx-auto w-full h-auto min-h-[600px]">
-            {/* Central Phone Mockup */}
-            <div className="relative z-10 w-full max-w-[320px] mx-auto">
-                <img src="/images/00.png" alt="Support & Earn" className="w-full h-auto drop-shadow-2xl pt-20 md:pt-36 mt-16 mb-6" style={{marginTop: '45px', marginBottom: '10px'}} />
+        {/* Container spanning full screen width */}
+        <div className="relative w-screen h-auto min-h-[600px]" style={{marginLeft: 'calc(-50vw + 50%)'}}>
+            {/* Central Phone Mockup - /images/00.png */}
+            <div 
+              className="absolute" 
+              style={{
+                width: `${IMAGE_CONFIG.unlockForMore.width}px`,
+                top: IMAGE_CONFIG.unlockForMore.top,
+                left: IMAGE_CONFIG.unlockForMore.left,
+                right: IMAGE_CONFIG.unlockForMore.right,
+                bottom: IMAGE_CONFIG.unlockForMore.bottom,
+                transform: IMAGE_CONFIG.unlockForMore.transform,
+                marginTop: IMAGE_CONFIG.unlockForMore.marginTop,
+                marginBottom: IMAGE_CONFIG.unlockForMore.marginBottom,
+                zIndex: 10,
+              }}
+            >
+                <img 
+                  src="/images/00.png" 
+                  alt="Support & Earn" 
+                  className="w-full h-auto drop-shadow-2xl" 
+                />
             </div>
 
-            {/* Floating Cards - Left */}
-            <div className="absolute top-0 left-0 lg:-left-10 w-64 animate-in slide-in-from-left-10 duration-1000">
-                <img src="/images/8.png" alt="Unlock Full Story" className="w-full h-auto drop-shadow-xl" />
+            {/* Left Card - /images/8.png */}
+            <div 
+              className="absolute" 
+              style={{
+                width: `${IMAGE_CONFIG.eyesight.width}px`,
+                top: IMAGE_CONFIG.eyesight.top,
+                left: IMAGE_CONFIG.eyesight.left,
+                right: IMAGE_CONFIG.eyesight.right,
+                bottom: IMAGE_CONFIG.eyesight.bottom,
+                transform: IMAGE_CONFIG.eyesight.transform,
+                zIndex: 9,
+              }}
+            >
+                <img 
+                  src="/images/8.png" 
+                  alt="Your eyesight is very valuable" 
+                  className="w-full h-auto drop-shadow-xl" 
+                />
             </div>
 
-            {/* Floating Cards - Right */}
-            <div className="absolute top-20 right-0 lg:-right-10 w-64 animate-in slide-in-from-right-10 duration-1000 delay-200">
-                <img src="/images/0.png" alt="Total Tipped" className="w-full h-auto drop-shadow-xl" style={{marginTop: '-96px'}} />
+            {/* Right Top Card - /images/0.png */}
+            <div 
+              className="absolute" 
+              style={{
+                width: `${IMAGE_CONFIG.earningsDetail.width}px`,
+                top: IMAGE_CONFIG.earningsDetail.top,
+                left: IMAGE_CONFIG.earningsDetail.left,
+                right: IMAGE_CONFIG.earningsDetail.right,
+                bottom: IMAGE_CONFIG.earningsDetail.bottom,
+                transform: IMAGE_CONFIG.earningsDetail.transform,
+                marginTop: IMAGE_CONFIG.earningsDetail.marginTop,
+                zIndex: 9,
+              }}
+            >
+                <img 
+                  src="/images/0.png" 
+                  alt="Earnings Detail" 
+                  className="w-full h-auto drop-shadow-xl" 
+                />
             </div>
             
-            <div className="absolute bottom-0 right-10 lg:right-0 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-500">
-                <img src="/11.png" alt="Rewards" className="w-full h-auto drop-shadow-xl" style={{marginTop: '-2px', marginBottom: '81px', marginLeft: '44px'}} />
+            {/* Right Bottom Card - /11.png */}
+            <div 
+              className="absolute" 
+              style={{
+                width: `${IMAGE_CONFIG.rewards.width}px`,
+                top: IMAGE_CONFIG.rewards.top,
+                left: IMAGE_CONFIG.rewards.left,
+                right: IMAGE_CONFIG.rewards.right,
+                bottom: IMAGE_CONFIG.rewards.bottom,
+                transform: IMAGE_CONFIG.rewards.transform,
+                marginTop: IMAGE_CONFIG.rewards.marginTop,
+                marginBottom: IMAGE_CONFIG.rewards.marginBottom,
+                marginLeft: IMAGE_CONFIG.rewards.marginLeft,
+                zIndex: 9,
+              }}
+            >
+                <img 
+                  src="/11.png" 
+                  alt="Rewards" 
+                  className="w-full h-auto drop-shadow-xl" 
+                />
             </div>
             
-            <div className="absolute bottom-20 left-0 lg:-left-10 w-64 animate-in slide-in-from-bottom-10 duration-1000 delay-300">
-                <img src="/10.png" alt="Earnings Detail" className="w-full h-auto drop-shadow-xl" />
+            {/* Left Bottom Card - /10.png */}
+            <div 
+              className="absolute" 
+              style={{
+                width: `${IMAGE_CONFIG.totalTipped.width}px`,
+                top: IMAGE_CONFIG.totalTipped.top,
+                left: IMAGE_CONFIG.totalTipped.left,
+                right: IMAGE_CONFIG.totalTipped.right,
+                bottom: IMAGE_CONFIG.totalTipped.bottom,
+                transform: IMAGE_CONFIG.totalTipped.transform,
+                zIndex: 9,
+              }}
+            >
+                <img 
+                  src="/10.png" 
+                  alt="Total Tipped" 
+                  className="w-full h-auto drop-shadow-xl" 
+                />
             </div>
         </div>
       </div>
