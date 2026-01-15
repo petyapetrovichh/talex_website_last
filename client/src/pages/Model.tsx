@@ -323,15 +323,15 @@ incentivizing early discovery and dissemination.
         {/* 7. The 365 day window rule */}
         <section className="py-24 bg-white" style={{paddingBottom: '51px'}}>
           <div className="container text-center" style={{paddingRight: '0px', paddingLeft: '0px'}}>
-            <h2 className="text-4xl font-bold mb-2 font-serif">The 365 day window rule</h2>
-            <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Time-Decay Incentive Model</p>
+            <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>The 365 day window rule</h2>
+            <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest" style={{fontWeight: '500'}}>Each Prediction Has a Lifecycle, Not the Content</p>
             
             <div className="relative w-full max-w-5xl mx-auto mb-11 px-4">
                <img src="/images/18.png" alt="Distribution Formula" className="w-full h-auto object-contain mx-auto" />
             </div>
             
-            <p className="text-gray-500 text-xs mt-8 max-w-xl mx-auto">
-              * Rewards are highest in the first 24 hours to incentivize discovery. The window closes after 365 days, ensuring content liquidity.
+            <p className="text-gray-500 text-xs mt-8 max-w-xl mx-auto" style={{color: '#000000', fontSize: '18px'}}>
+              Rewards are distributed based on recency relative to the current payer. This ensures a dynamic lifecycle for every payment.
             </p>
           </div>
         </section>
