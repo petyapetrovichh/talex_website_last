@@ -10,7 +10,7 @@ export default function Contact() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
       
-      <main className="flex-1 w-full">
+      <main className="flex-1 w-full" style={{marginTop: '82px'}}>
         <div className="container mx-auto px-4 py-20">
           <div className="max-w-3xl mx-auto text-center">
             {/* Main Heading */}
