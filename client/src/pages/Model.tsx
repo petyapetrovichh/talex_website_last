@@ -6,6 +6,8 @@ import { useEffect, useState, useRef } from "react";
 export default function Model() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
+  const [isBouncing, setIsBouncing] = useState(false);
   const phoneRef = useRef(null);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -22,6 +24,13 @@ export default function Model() {
 
   const handleMouseLeave = () => {
     setIsHovering(false);
+  };
+
+  const handleClick = () => {
+    setIsClicked(true);
+    setIsBouncing(true);
+    setTimeout(() => setIsBouncing(false), 300);
+    setTimeout(() => window.open('https://www.talex.world/reading/585449588677', '_self'), 150);
   };
 
   useEffect(() => {
@@ -261,15 +270,20 @@ incentivizing early discovery and dissemination.
         <section className="py-24" style={{backgroundImage: 'url(/images/sharing-chain-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed', height: '730px'}}>
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-              <div ref={phoneRef} className="flex justify-center relative cursor-pointer" onMouseMove={handleMouseMove} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={() => window.open('https://www.talex.world/reading/585449588677', '_self')}>
+              <div ref={phoneRef} className="flex justify-center relative cursor-pointer" onMouseMove={handleMouseMove} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClick}>
                 <img src="/images/sharing-chain-phone.png" alt="The Sharing Chain" className="w-full max-w-sm h-auto drop-shadow-2xl rounded-3xl" />
                 {isHovering && (
-                  <div className="absolute w-24 h-24 bg-[#6FF000] rounded-full flex items-center justify-center transition-all duration-75" style={{
+                  <div className="absolute w-24 h-24 rounded-full flex items-center justify-center" style={{
                     left: `${mousePos.x - 48}px`,
                     top: `${mousePos.y - 48}px`,
-                    pointerEvents: 'none'
+                    pointerEvents: 'none',
+                    backgroundColor: isClicked ? '#000000' : '#6FF000',
+                    transform: isBouncing ? 'scale(0.85)' : 'scale(1)',
+                    transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)'
                   }}>
-                    <span className="text-black font-bold text-center text-sm">Try now</span>
+                    <span className="font-bold text-center text-sm" style={{
+                      color: isClicked ? '#FFFFFF' : '#000000'
+                    }}>Try now</span>
                   </div>
                 )}
               </div>
