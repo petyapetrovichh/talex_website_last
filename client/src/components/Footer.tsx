@@ -6,9 +6,9 @@ export default function Footer() {
       {/* =========================================
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
-      <div className="md:hidden py-12 px-6" style={{paddingTop: '0px', marginTop: '-12px', height: '582px'}}>
-        <div className="flex flex-col gap-10" style={{marginTop: '12px'}}>
-          <div className="flex flex-col gap-4" style={{marginTop: '16px'}}>
+      <div className="md:hidden py-12 px-6">
+        <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-4">
             <Link href="/">
               <div className="flex items-center gap-2 cursor-pointer">
                 <img src="/logo-new.png" alt="TaleX" className="h-6 w-auto" style={{width: '76px', height: '12px'}} />
@@ -92,6 +92,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-gray-600">
               <li><a href="https://www.talex.world/" className="hover:text-[#6FF000] transition-colors">TaleX App</a></li>
               <li><Link href="/model" className="hover:text-[#6FF000] transition-colors">Our Model</Link></li>
+              <li><Link href="/creators" className="hover:text-[#6FF000] transition-colors">Featured</Link></li>
 
             </ul>
           </div>
@@ -151,8 +152,8 @@ export default function Footer() {
             © 2026 Powered by TaleX. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-gray-400">
-            <a href="https://www.talex.world/privacy-policy" target="_self" className="hover:text-green-500 active:text-green-500 transition-colors" style={{color: '#000000'}}>Privacy Policy</a>
-            <a href="https://www.talex.world/terms-of-service" target="_self" className="hover:text-green-500 active:text-green-500 transition-colors" style={{color: '#050505'}}>Terms of Service</a>
+            <Link href="/privacy" className="hover:text-black transition-colors" style={{color: '#000000'}}>Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-black transition-colors" style={{color: '#050505'}}>Terms of Service</Link>
           </div>
         </div>
       </div>
