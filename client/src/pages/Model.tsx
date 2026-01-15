@@ -8,9 +8,9 @@ export default function Model() {
   const [isHovering, setIsHovering] = useState(false);
   const phoneRef = useRef(null);
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLImageElement>) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!phoneRef.current) return;
-    const rect = (phoneRef.current as HTMLImageElement).getBoundingClientRect();
+    const rect = (phoneRef.current as HTMLDivElement).getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     setMousePos({ x, y });
@@ -261,8 +261,8 @@ incentivizing early discovery and dissemination.
         <section className="py-24" style={{backgroundImage: 'url(/images/sharing-chain-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed', height: '730px'}}>
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-              <div className="flex justify-center relative">
-                <img ref={phoneRef} src="/images/sharing-chain-phone.png" alt="The Sharing Chain" className="w-full max-w-sm h-auto drop-shadow-2xl rounded-3xl cursor-pointer" onMouseMove={handleMouseMove} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={() => window.open('https://www.talex.world/reading/585449588677', '_self')} />
+              <div ref={phoneRef} className="flex justify-center relative cursor-pointer" onMouseMove={handleMouseMove} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={() => window.open('https://www.talex.world/reading/585449588677', '_self')}>
+                <img src="/images/sharing-chain-phone.png" alt="The Sharing Chain" className="w-full max-w-sm h-auto drop-shadow-2xl rounded-3xl" />
                 {isHovering && (
                   <div className="absolute w-24 h-24 bg-[#6FF000] rounded-full flex items-center justify-center transition-all duration-75" style={{
                     left: `${mousePos.x - 48}px`,
