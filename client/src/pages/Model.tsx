@@ -241,8 +241,13 @@ incentivizing early discovery and dissemination.
         <section className="py-24" style={{backgroundImage: 'url(/images/sharing-chain-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed', height: '730px'}}>
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-              <div className="flex justify-center">
+              <div className="flex justify-center relative group cursor-pointer" onClick={() => window.open('https://www.talex.world/reading/585449588677', '_self')}>
                 <img src="/images/sharing-chain-phone.png" alt="The Sharing Chain" className="w-full max-w-sm h-auto drop-shadow-2xl rounded-3xl" />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl">
+                  <div className="w-24 h-24 bg-[#6FF000] rounded-full flex items-center justify-center hover:bg-black">
+                    <span className="text-black font-bold text-center hover:text-white">Try now</span>
+                  </div>
+                </div>
               </div>
               <div>
                 <h2 className="text-4xl font-bold mb-8 font-serif" style={{fontSize: '39px', marginBottom: '8px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>The sharing chain</h2>
