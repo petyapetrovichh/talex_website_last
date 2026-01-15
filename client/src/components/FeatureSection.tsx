@@ -150,7 +150,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
             {description}
           </p>
           <Button 
-            onClick={() => window.location.href = 'https://www.talex.world/reading/585449588677'}
+            onClick={() => window.location.href = 'https://www.talex.world/'}
             className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105" 
             style={{marginTop: '-15px'}}
           >
