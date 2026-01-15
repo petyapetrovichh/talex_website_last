@@ -27,7 +27,7 @@ export const IMAGE_CONFIG = {
     width: 300,
     height: "auto",
     top: "0",
-    left: "0",
+    left: "auto",
     right: "auto",
     bottom: "auto",
     transform: "none",
