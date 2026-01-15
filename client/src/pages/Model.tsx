@@ -241,38 +241,6 @@ incentivizing early discovery and dissemination.
         <section className="py-24 bg-gradient-to-b from-[#F0FDF4] to-white">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-              {/* Phone Mockup */}
-              <div className="relative mx-auto w-full max-w-[320px]">
-                <div className="relative rounded-[3rem] overflow-hidden border-8 border-gray-800 bg-white shadow-2xl aspect-[9/19]">
-                  {/* Mockup Content */}
-                  <div className="p-6 h-full flex flex-col">
-                    <div className="flex items-center gap-2 mb-6">
-                      <div className="w-8 h-8 rounded-full bg-gray-200"></div>
-                      <div className="h-4 w-24 bg-gray-100 rounded"></div>
-                    </div>
-                    
-                    <div className="bg-[#F6F6F6] p-4 rounded-2xl mb-4">
-                      <h4 className="font-bold mb-2">Support & Earn</h4>
-                      <p className="text-xs text-gray-500 mb-4">Your tip supports the author and previous backers.</p>
-                      <div className="flex justify-between gap-2 mb-4">
-                        <div className="flex-1 py-2 bg-white rounded-lg text-center text-sm font-bold shadow-sm border border-gray-100">$1</div>
-                        <div className="flex-1 py-2 bg-[#6FF000] rounded-lg text-center text-sm font-bold shadow-sm border border-[#6FF000]">$5</div>
-                        <div className="flex-1 py-2 bg-white rounded-lg text-center text-sm font-bold shadow-sm border border-gray-100">$10</div>
-                      </div>
-                      <div className="w-full py-2 bg-white rounded-lg px-3 text-xs text-gray-400 border border-gray-100 mb-2">
-                        $ Custom Amount
-                      </div>
-                    </div>
-                    
-                    <div className="mt-auto">
-                      <div className="w-full h-12 bg-black rounded-full text-white flex items-center justify-center font-bold text-sm">
-                        Confirm Support
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
               <div>
                 <h2 className="text-4xl font-bold mb-8 font-serif">The sharing chain</h2>
                 <p className="text-gray-500 text-sm mb-12 uppercase tracking-widest">How It Works</p>
