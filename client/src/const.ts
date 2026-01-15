@@ -20,7 +20,7 @@ export const IMAGE_CONFIG = {
   
   // /images/8.png - "Your eyesight is very valuable" (левая карточка)
   eyesight: {
-    width: 256,
+    width: 400,
     height: "auto",
     top: "0",
     left: "0",
