@@ -249,14 +249,14 @@ incentivizing early discovery and dissemination.
                 <p className="text-gray-500 text-sm mb-12 uppercase tracking-widest" style={{fontWeight: '500'}}>How It Works</p>
                 
                 <div className="space-y-8">
-                  <div className="relative pl-8 border-l-2 border-[#6FF000]">
+                  <div className="relative">
                     <h3 className="text-lg font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: '"Abril Fatface", serif', color: '#000000'}}>1. Seniors</h3>
                     <p className="text-gray-600 text-sm" style={{color: '#000000', fontSize: '18px'}}>
                       Anyone who paid before you.
                     </p>
                   </div>
                   
-                  <div className="relative pl-8 border-l-2 border-gray-200">
+                  <div className="relative">
                     <h3 className="text-lg font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: '"Abril Fatface", serif', color: '#000000'}}>2. Juniors</h3>
                     <p className="text-gray-600 text-sm" style={{color: '#000000', fontSize: '18px'}}>
                       Anyone who pays after you.
