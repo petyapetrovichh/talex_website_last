@@ -528,7 +528,7 @@ incentivizing early discovery and dissemination.
               </div>
             </div>
             
-            <p className="text-center text-gray-600 text-sm mt-8 max-w-2xl mx-auto leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
+            <p className="text-center text-gray-600 text-sm mt-8 mx-auto whitespace-nowrap" style={{color: '#000000', fontSize: '18px'}}>
               The market is rapidly shifting away from attention-based ad models towards direct value exchange, driven by the need for quality curation.
             </p>
           </div>
