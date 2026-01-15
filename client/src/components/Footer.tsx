@@ -93,7 +93,6 @@ export default function Footer() {
               <li><a href="https://www.talex.world/" className="hover:text-[#6FF000] transition-colors">TaleX App</a></li>
               <li><Link href="/model" className="hover:text-[#6FF000] transition-colors">Our Model</Link></li>
 
-
             </ul>
           </div>
           
@@ -152,8 +151,8 @@ export default function Footer() {
             © 2026 Powered by TaleX. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-gray-400">
-            <Link href="/privacy" className="hover:text-black transition-colors" style={{color: '#000000'}}>Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-black transition-colors" style={{color: '#050505'}}>Terms of Service</Link>
+            <a href="https://www.talex.world/privacy-policy" target="_self" className="hover:text-green-500 active:text-green-500 transition-colors" style={{color: '#000000'}}>Privacy Policy</a>
+            <a href="https://www.talex.world/terms-of-service" target="_self" className="hover:text-green-500 active:text-green-500 transition-colors" style={{color: '#050505'}}>Terms of Service</a>
           </div>
         </div>
       </div>

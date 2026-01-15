@@ -12,6 +12,14 @@ interface FeatureProps {
 }
 
 function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring in the app", mobileImages }: FeatureProps) {
+  const handleButtonClick = () => {
+    if (buttonText === 'Start supporting & earning') {
+      window.location.href = 'https://www.talex.world/reading/585449588677';
+    } else {
+      window.location.href = 'https://www.talex.world';
+    }
+  };
+
   return (
     <>
       {/* =========================================
@@ -55,7 +63,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
             {description}
           </p>
           <Button 
-            onClick={() => window.location.href = 'https://www.talex.world/reading/585449588677'}
+            onClick={handleButtonClick}
             className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105 w-full" 
           >
             {buttonText}
@@ -150,7 +158,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
             {description}
           </p>
           <Button 
-            onClick={() => window.location.href = 'https://www.talex.world/reading/585449588677'}
+            onClick={handleButtonClick}
             className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105" 
             style={{marginTop: '-15px'}}
           >
@@ -167,8 +175,8 @@ export default function FeatureSection() {
     <section className="container py-10" style={{paddingBottom: '0px', paddingRight: '14px', paddingLeft: '14px', marginBottom: '10px', height: '2012px'}}>
       <Feature 
         title="Discover works worth supporting"
-        description={`On TaleX, discovery isn’t driven by ads, sponsored content, or engagement algorithms. The Home feed is a place to see what you and your friends genuinely choose to support — ideas that earn attention through real tips, not forced promotion.
-It’s designed to help people build their own information pathways.`}
+        description={`On TaleX, discovery isn't driven by ads, sponsored content, or engagement algorithms. The Home feed is a place to see what you and your friends genuinely choose to support — ideas that earn attention through real tips, not forced promotion.
+It's designed to help people build their own information pathways.`}
         imageSrc="/images/Phone6.png"
         imageAlt="Discover Feed"
         // 为第一个特性指定移动端并排显示的图片
