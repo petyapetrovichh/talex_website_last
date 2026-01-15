@@ -33,7 +33,7 @@ export default function Model() {
         <section className="py-24 bg-white" style={{marginTop: '74px'}}>
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-2 font-serif">What went wrong?</h2>
+              <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>What went wrong?</h2>
               <p className="text-gray-500 text-sm uppercase tracking-widest">The Broken Content Economy</p>
             </div>
 
