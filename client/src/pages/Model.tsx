@@ -92,7 +92,7 @@ export default function Model() {
                       <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
-                      <strong>No Ownership:</strong> You build the audience, but the platform owns the relationship.
+                      <strong>Monetization Gap:</strong> Single high-quality pieces often generate zero direct revenue.
                     </p>
                   </div>
                 </div>
