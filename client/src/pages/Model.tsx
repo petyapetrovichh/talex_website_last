@@ -203,16 +203,16 @@ incentivizing early discovery and dissemination.
         </section>
 
         {/* 5. Why users pay? */}
-        <section className="py-24 bg-white overflow-hidden" style={{paddingTop: '0px', paddingBottom: '0px', marginTop: '-48px'}}>
+        <section className="py-24 bg-white overflow-hidden">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-              <div className="flex flex-col justify-center" style={{height: '1374px'}}>
-                <h2 className="text-4xl font-bold mb-12 font-serif" style={{fontSize: '26px', paddingLeft: '66px', marginTop: '-472px'}}>Why users pay?</h2>
-                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest" style={{marginTop: '-34px', paddingLeft: '87px'}}>Dual Motivation</p>
+              <div className="flex flex-col justify-center">
+                <h2 className="text-4xl font-bold mb-12 font-serif" style={{fontSize: '26px'}}>Why users pay?</h2>
+                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest" style={{marginTop: '-34px'}}>Dual Motivation</p>
                 
-                <div className="space-y-12" style={{marginTop: '595px'}}>
-                  <div style={{marginTop: '-135px'}}>
-                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000', paddingLeft: '65px'}}>1. Consumption Logic</h3>
+                <div className="space-y-12">
+                  <div>
+                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000'}}>1. Consumption Logic</h3>
                     <p className="text-gray-600 leading-relaxed italic mb-2"></p>
                     <p className="text-gray-600 leading-relaxed text-sm">
                       “I recognize the value of this content”.
@@ -221,8 +221,8 @@ The 20% payment creates a direct value exchange. It signals genuine appreciation
                     </p>
                   </div>
                   
-                  <div style={{marginTop: '-16px'}}>
-                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000', paddingLeft: '84px'}}>2. Prediction Logic</h3>
+                  <div>
+                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000'}}>2. Prediction Logic</h3>
                     <p className="text-gray-600 leading-relaxed italic mb-2">“I predict this content will go viral”.</p>
                     <p className="text-gray-600 leading-relaxed text-sm">
                       The 80% contribution is an active prediction. By spotting quality early, the user positions themselves to earn “Thank-you Rewards” from future supporters.
@@ -231,12 +231,14 @@ The 20% payment creates a direct value exchange. It signals genuine appreciation
                 </div>
               </div>
               
-              <div className="relative h-[333px] flex flex-col items-center justify-center">
+              <div className="relative h-[500px] flex flex-col items-center justify-center">
+                {/* Dual Motivation Label */}
+                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest text-center">Dual Motivation</p>
                 {/* Green Chess Piece Image */}
                 <img 
                   src="/images/9.png" 
                   alt="Green Crystal Chess King" 
-                  className="h-full object-contain drop-shadow-2xl" style={{width: '463px', height: '406px', marginTop: '-2623px'}}
+                  className="h-full object-contain drop-shadow-2xl" style={{marginTop: '-41px', width: '463px', height: '523px'}}
                 />
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-[#6FF000]/20 blur-3xl -z-10 rounded-full scale-75"></div>
