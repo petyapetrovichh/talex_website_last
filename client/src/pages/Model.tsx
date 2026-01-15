@@ -338,7 +338,7 @@ incentivizing early discovery and dissemination.
 
         {/* 8. Simple math */}
         <section className="py-24 bg-white">
-          <div className="container">
+          <div className="container" style={{marginTop: '-20px'}}>
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>Simple math</h2>
               <p className="text-gray-500 text-sm uppercase tracking-widest" style={{fontWeight: '500'}}>Distribution Formula</p>
@@ -431,8 +431,8 @@ incentivizing early discovery and dissemination.
         </section>
 
         {/* 10. Risk control and safety */}
-        <section className="py-24 bg-white" style={{paddingBottom: '120px'}}>
-          <div className="container" style={{paddingRight: '0px', paddingLeft: '0px'}}>
+        <section className="py-24 bg-white" style={{paddingBottom: '120px', height: '679px'}}>
+          <div className="container" style={{paddingRight: '0px', paddingLeft: '0px', marginTop: '-3px'}}>
             <div className="text-center mb-16 px-4">
               <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>Risk control and safety</h2>
               <p className="text-gray-500 text-sm uppercase tracking-widest" style={{fontWeight: '500'}}>Everyone Is Safe To Go</p>
