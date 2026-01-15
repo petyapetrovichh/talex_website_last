@@ -20,7 +20,7 @@ export const IMAGE_CONFIG = {
   
   // /images/8.png - "Your eyesight is very valuable" (левая карточка)
   eyesight: {
-    width: 400,
+    width: 300,
     height: "auto",
     top: "0",
     left: "0",
@@ -31,7 +31,7 @@ export const IMAGE_CONFIG = {
   
   // /images/0.png - "Earnings Detail" (правая верхняя карточка)
   earningsDetail: {
-    width: 256,
+    width: 300,
     height: "auto",
     top: "80px",
     left: "auto",
@@ -43,7 +43,7 @@ export const IMAGE_CONFIG = {
   
   // /11.png - "REWARDS" (правая нижняя карточка)
   rewards: {
-    width: 256,
+    width: 350,
     height: "auto",
     top: "auto",
     left: "auto",
@@ -57,7 +57,7 @@ export const IMAGE_CONFIG = {
   
   // /10.png - "Total Tipped" (левая нижняя карточка)
   totalTipped: {
-    width: 256,
+    width: 350,
     height: "auto",
     top: "auto",
     left: "0",

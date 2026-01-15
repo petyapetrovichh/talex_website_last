@@ -132,7 +132,7 @@ export default function BusinessModel() {
             <img 
               src="/images/8.png" 
               alt="Your eyesight is very valuable" 
-              className="w-full h-auto drop-shadow-xl" 
+              className="w-full h-auto drop-shadow-xl"
             />
         </div>
 
@@ -154,7 +154,7 @@ export default function BusinessModel() {
             <img 
               src="/images/0.png" 
               alt="Earnings Detail" 
-              className="w-full h-auto drop-shadow-xl" 
+              className="w-full h-auto drop-shadow-xl"
             />
         </div>
         
@@ -178,7 +178,7 @@ export default function BusinessModel() {
             <img 
               src="/11.png" 
               alt="Rewards" 
-              className="w-full h-auto drop-shadow-xl" 
+              className="w-full h-auto drop-shadow-xl"
             />
         </div>
         
@@ -199,7 +199,7 @@ export default function BusinessModel() {
             <img 
               src="/10.png" 
               alt="Total Tipped" 
-              className="w-full h-auto drop-shadow-xl" 
+              className="w-full h-auto drop-shadow-xl"
             />
         </div>
       </div>
