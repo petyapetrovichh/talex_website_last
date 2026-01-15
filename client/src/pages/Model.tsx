@@ -374,8 +374,8 @@ incentivizing early discovery and dissemination.
         </section>
 
         {/* 9. Win Win Win ecosystem */}
-        <section className="py-24 bg-white">
-          <div className="container">
+        <section className="py-24 bg-white" style={{height: '614px'}}>
+          <div className="container" style={{marginTop: '-65px'}}>
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>Win-Win-Win ecosystem</h2>
               <p className="text-gray-500 text-sm uppercase tracking-widest" style={{fontWeight: '500'}}>Creators, Users, Platform</p>
