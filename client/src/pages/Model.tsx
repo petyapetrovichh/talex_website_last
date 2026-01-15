@@ -422,7 +422,7 @@ Hk is the total historical payments in that tier.
                   alt="Laptop workspace" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{paddingTop: '28px', paddingBottom: '12px'}}>
+                <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{paddingTop: '12px', paddingBottom: '12px', marginTop: '-34px'}}>
                   <h3 className="text-2xl font-bold text-black mb-4">TaleX</h3>
                   <p className="text-sm text-black font-medium leading-relaxed">
                     Shifts from an "Ad Engine" to a "Value Engine". Revenue aligns with content quality, not view counts.
@@ -441,7 +441,7 @@ Hk is the total historical payments in that tier.
               <p className="text-gray-500 text-sm uppercase tracking-widest">Everyone Is Safe To Go</p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" style={{width: '1072px', height: 'auto', overflow: 'visible'}}>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" style={{width: '1072px', height: 'auto', overflow: 'visible', marginTop: '-38px'}}>
               {/* Card 1 */}
               <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{width: '337px', height: '134px'}}>
                 <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '68px', height: '68px'}}>
@@ -509,7 +509,7 @@ Hk is the total historical payments in that tier.
               {/* Chart Area */}
               <div className="absolute inset-0 overflow-hidden">
                 {/* Gradient Area */}
-                <svg className="w-full h-full" preserveAspectRatio="none" style={{height: '403px'}}>
+                <svg className="w-full h-full" preserveAspectRatio="none" style={{height: '400px'}}>
                   <defs>
                     <linearGradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
                       <stop offset="0%" stopColor="#6FF000" stopOpacity="0.5" />
@@ -544,7 +544,7 @@ Hk is the total historical payments in that tier.
             <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto" style={{fontSize: '15px', marginTop: '-19px'}}>
               Join TaleX today and be part of the revolution that puts value back into the hands of creators and supporters.
             </p>
-            <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-12 py-8 text-xl shadow-xl shadow-[#6FF000]/30 transition-all hover:scale-105">
+            <Button className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-12 py-8 text-xl shadow-xl shadow-[#6FF000]/30 transition-all hover:scale-105" style={{fontSize: '16px', paddingTop: '22px', paddingBottom: '22px', paddingLeft: '46px', width: '232px', height: '40px'}}>
               Start Publishing Now
             </Button>
           </div>
