@@ -28,7 +28,7 @@ export default function Model() {
             
             {/* Sketch Illustration */}
             <div className="relative w-full max-w-5xl mx-auto h-[400px] mt-12 z-0 model-hero-image-wrapper" style={{marginTop: '-110px', marginBottom: '-38px', width: '1119px', height: '591px', display: 'inline'}}>
-               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain model-hero-image" style={{width: '1642px', height: '525px', objectFit: 'fill', marginLeft: '5px', marginTop: '-181px'}} />
+               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain model-hero-image" style={{width: '1642px', height: '525px', objectFit: 'fill', marginLeft: '5px', marginTop: '-110px'}} />
             </div>
           </div>
         </section>
