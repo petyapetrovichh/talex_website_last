@@ -14,7 +14,7 @@ export default function Model() {
       
       <div className="pt-20">
         {/* 1. Hero Section */}
-        <section className="relative py-24 overflow-hidden bg-white model-hero-section" style={{height: '221px'}}>
+        <section className="relative py-24 overflow-hidden bg-white model-hero-section" style={{height: '247px', marginTop: '4px'}}>
           
           <div className="container relative z-10 text-center model-hero-container" style={{paddingRight: '0px', paddingLeft: '0px', width: '1592px', height: '539px', marginRight: '0px', marginLeft: '0px', display: 'inline'}}>
             <div className="relative z-20">
@@ -28,7 +28,7 @@ export default function Model() {
             
             {/* Sketch Illustration */}
             <div className="relative w-full max-w-5xl mx-auto h-[400px] mt-12 z-0 model-hero-image-wrapper" style={{marginTop: '-110px', marginBottom: '-38px', width: '1119px', height: '591px', display: 'inline'}}>
-               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain model-hero-image" style={{width: '1642px', height: '525px', objectFit: 'fill', marginLeft: '0px', marginTop: '-51px'}} />
+               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain model-hero-image" style={{width: '394px', height: '143px', objectFit: 'fill', marginLeft: '0px', marginTop: '-37px'}} />
             </div>
           </div>
         </section>
