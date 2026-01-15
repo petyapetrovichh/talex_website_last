@@ -41,7 +41,7 @@ export default function Contact() {
             </p>
 
             {/* Contact Information */}
-            <div className="space-y-6 text-left" style={{width: '100%', maxWidth: 'none'}}>
+            <div className="space-y-6" style={{width: '100%', maxWidth: 'none', textAlign: 'center'}}>
               {/* Creator Section */}
               <div>
                 <p style={{fontSize: '18px', fontWeight: '400', color: '#000000', lineHeight: '1.6', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', whiteSpace: 'nowrap'}}>
