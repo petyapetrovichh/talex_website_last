@@ -18,8 +18,8 @@ export default function Contact() {
               className="mb-8"
               style={{
                 fontSize: '64px',
-                fontWeight: '700',
-                fontFamily: 'ui-sans-serif, system-ui, sans-serif',
+                fontWeight: '400',
+                fontFamily: '"Abril Fatface", cursive',
                 color: '#000000',
                 lineHeight: '1.2'
               }}
