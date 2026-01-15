@@ -442,9 +442,9 @@ incentivizing early discovery and dissemination.
               {/* Card 1 */}
               <div className="bg-black p-8 rounded-xl flex items-center gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{marginLeft: '-25px', height: '200px'}}>
                 <div className="flex-shrink-0" style={{width: '120px', height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                  <img src="/images/non-financial-product.png" alt="Non-Financial Product" style={{width: '90px', height: '90px', objectFit: 'contain', marginLeft: '-10px'}} />
+                  <img src="/images/non-financial-product.png" alt="Non-Financial Product" style={{width: '100px', height: '100px', objectFit: 'contain', marginLeft: '-10px'}} />
                 </div>
-                <div style={{marginLeft: '-20px'}}>
+                <div style={{marginLeft: '-10px'}}>
                   <h3 className="text-white font-bold mb-2" style={{fontSize: '22px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Non-Financial Product</h3>
                   <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500'}}>
                     No tokens, no IPO, no ICO. Strictly a content appreciation mechanism.
@@ -468,9 +468,9 @@ incentivizing early discovery and dissemination.
               {/* Card 3 */}
               <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{marginLeft: '-25px', height: '200px'}}>
                 <div className="flex-shrink-0" style={{width: '120px', height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                  <img src="/images/finite-lifecycle.png" alt="Finite Lifecycle" style={{width: '105px', height: '105px', objectFit: 'contain', marginTop: '5px', marginRight: '13px'}} />
+                  <img src="/images/finite-lifecycle.png" alt="Finite Lifecycle" style={{width: '110px', height: '110px', objectFit: 'contain', marginTop: '5px', marginRight: '13px'}} />
                 </div>
-                <div style={{marginLeft: '-17px', marginRight: '-12px', marginTop: '14px'}}>
+                <div style={{marginLeft: '-10px', marginRight: '0px', marginTop: '20px'}}>
                   <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Finite Lifecycle</h3>
                   <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500'}}>
                     Rights expire after 365 days. The system resets, preventing "Ponzi" structures.
