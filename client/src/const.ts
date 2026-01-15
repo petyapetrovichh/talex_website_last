@@ -7,7 +7,7 @@ export { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
 export const IMAGE_CONFIG = {
   // /images/00.png - "Unlock for More" (центральный телефон)
   unlockForMore: {
-    width: 425,
+    width: 450,
     height: "auto",
     top: "auto",
     left: "50%",
