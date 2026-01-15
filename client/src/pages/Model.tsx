@@ -218,7 +218,7 @@ incentivizing early discovery and dissemination.
               </div>
             </div>
             
-            <p className="text-gray-500 text-xs mt-12 max-w-2xl mx-auto italic" style={{color: '#000000', fontSize: '18px'}}>
+            <p className="text-gray-500 text-xs mt-12 max-w-2xl mx-auto" style={{color: '#000000', fontSize: '18px'}}>
               When a user pays $X, 20% goes directly to the creator as stable income. 80% enters the
  "Reward Pool" to reward those who discovered the content earlier.
             </p>
@@ -308,10 +308,10 @@ incentivizing early discovery and dissemination.
                 </div>
                 
                 <div className="mt-12 p-6 bg-[#F0FDF4] rounded-xl border border-[#6FF000]/20">
-                  <p className="text-sm text-gray-700 italic" style={{color: '#000000', fontSize: '18px', marginBottom: '16px'}}>
+                  <p className="text-sm text-gray-700" style={{color: '#000000', fontSize: '18px', marginBottom: '16px'}}>
                     When you pay, your 80% (Prediction Portion) rewards your seniors. When future users pay, you become the senior, earning from their payments.
                   </p>
-                  <p className="text-sm text-gray-700 italic" style={{color: '#000000', fontSize: '18px'}}>
+                  <p className="text-sm text-gray-700" style={{color: '#000000', fontSize: '18px'}}>
                     <span style={{fontWeight: 'bold'}}>The Goal:</span> Be the one who sees potential before the crowd does.
                   </p>
                 </div>
@@ -330,8 +330,8 @@ incentivizing early discovery and dissemination.
                <img src="/images/18.png" alt="Distribution Formula" className="w-full h-auto object-contain mx-auto" />
             </div>
             
-            <p className="text-gray-500 text-xs mt-8 max-w-xl mx-auto" style={{color: '#000000', fontSize: '18px'}}>
-              Rewards are distributed based on recency relative to the current payer. This ensures a dynamic lifecycle for every payment.
+            <p className="text-gray-500 text-xs mt-8 mx-auto whitespace-nowrap" style={{color: '#000000', fontSize: '18px', width: '100%'}}>
+              Rewards are distributed based on <strong>recency</strong> relative to the current payer. This ensures a dynamic lifecycle for every payment.
             </p>
           </div>
         </section>
