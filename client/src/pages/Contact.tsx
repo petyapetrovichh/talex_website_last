@@ -41,10 +41,10 @@ export default function Contact() {
             </p>
 
             {/* Contact Information */}
-            <div className="space-y-6" style={{width: 'fit-content', margin: '0 auto'}}>
+            <div className="space-y-6" style={{width: 'fit-content', margin: '0 auto', marginLeft: '-89px'}}>
               {/* Creator Section */}
               <div>
-                <p style={{fontSize: '18px', fontWeight: '400', color: '#000000', lineHeight: '1.6', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', whiteSpace: 'nowrap'}}>
+                <p style={{fontSize: '18px', fontWeight: '400', color: '#000000', lineHeight: '1.6', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', whiteSpace: 'nowrap', textAlign: 'left'}}>
                   <span style={{fontWeight: '700'}}>If you're a creator interested in starting your content work on TaleX:</span> visit{' '}
                   <a 
                     href="https://talex.world/profile/become-a-creator" 
@@ -59,7 +59,7 @@ export default function Contact() {
 
               {/* Content Issues Section */}
               <div>
-                <p style={{fontSize: '18px', fontWeight: '400', color: '#000000', lineHeight: '1.6', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', whiteSpace: 'nowrap'}}>
+                <p style={{fontSize: '18px', fontWeight: '400', color: '#000000', lineHeight: '1.6', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', whiteSpace: 'nowrap', textAlign: 'left'}}>
                   <span style={{fontWeight: '700'}}>For reporting content-related issues:</span> use{' '}
                   <span style={{fontWeight: '700'}}>Report</span> feature at the end of each content work
                 </p>
@@ -67,7 +67,7 @@ export default function Contact() {
 
               {/* User Agreement Violation Section */}
               <div>
-                <p style={{fontSize: '18px', fontWeight: '400', color: '#000000', lineHeight: '1.6', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', whiteSpace: 'nowrap'}}>
+                <p style={{fontSize: '18px', fontWeight: '400', color: '#000000', lineHeight: '1.6', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', whiteSpace: 'nowrap', textAlign: 'left'}}>
                   <span style={{fontWeight: '700'}}>For reporting a violation of TaleX's User Agreement:</span>{' '}
                   <a 
                     href="mailto:support@talex.world" 
@@ -80,7 +80,7 @@ export default function Contact() {
 
               {/* Support Section */}
               <div>
-                <p style={{fontSize: '18px', fontWeight: '400', color: '#000000', lineHeight: '1.6', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', whiteSpace: 'nowrap'}}>
+                <p style={{fontSize: '18px', fontWeight: '400', color: '#000000', lineHeight: '1.6', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', whiteSpace: 'nowrap', textAlign: 'left'}}>
                   We also handle users' support questions on behalf of creators, so feel free to reach out to us:{' '}
                   <a 
                     href="https://t.me/talex_chain_community" 
