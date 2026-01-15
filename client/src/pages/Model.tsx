@@ -327,7 +327,7 @@ incentivizing early discovery and dissemination.
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest" style={{fontWeight: '500'}}>Each Prediction Has a Lifecycle, Not the Content</p>
             
             <div className="relative w-full max-w-5xl mx-auto mb-11 px-4">
-               <img src="/images/18.png" alt="Distribution Formula" className="w-full h-auto object-contain mx-auto" />
+               <img src="/images/18.png" alt="Distribution Formula" className="w-full h-auto object-contain mx-auto" style={{transform: 'scale(1.5)', transformOrigin: 'center'}} />
             </div>
             
             <p className="text-gray-500 text-xs mt-8 max-w-xl mx-auto" style={{color: '#000000', fontSize: '18px'}}>
