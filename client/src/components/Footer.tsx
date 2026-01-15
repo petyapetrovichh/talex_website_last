@@ -92,7 +92,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-gray-600">
               <li><a href="https://www.talex.world/" className="hover:text-[#6FF000] transition-colors">TaleX App</a></li>
               <li><Link href="/model" className="hover:text-[#6FF000] transition-colors">Our Model</Link></li>
-              <li><Link href="/creators" className="hover:text-[#6FF000] transition-colors">Featured</Link></li>
+
 
             </ul>
           </div>

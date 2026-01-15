@@ -146,7 +146,7 @@ export default function Header() {
                   <div className="flex flex-col">
                     <a href="https://www.talex.world/" className="px-4 py-2.5 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors">TaleX App</a>
                     <Link href="/model" className="px-4 py-2.5 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">Our Model</Link>
-                    <a href="#" className="px-4 py-2.5 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors">Featured</a>
+
                   </div>
                 </div>
               </div>
@@ -255,7 +255,7 @@ export default function Header() {
               <div className="py-3 px-4 text-base font-bold text-black">Explore</div>
               <a href="https://www.talex.world/" onClick={() => handleMenuItemClick('talex-app')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'talex-app' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>TaleX App</a>
               <Link href="/model" onClick={() => { handleMenuItemClick('our-model'); closeMobileMenu(); }} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 block ${activeMenuItem === 'our-model' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Our Model</Link>
-              <a href="#" onClick={() => handleMenuItemClick('featured')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'featured' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Featured</a>
+
 
               {/* Company */}
               <div className="py-3 px-4 text-base font-bold text-black mt-4">Company</div>
