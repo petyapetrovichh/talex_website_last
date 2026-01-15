@@ -39,63 +39,63 @@ export default function Model() {
 
             <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
               {/* For Creators */}
-              <div className="flex flex-col items-center text-center">
-                <h3 className="text-xl font-bold mb-12" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>For Creators</h3>
-                <div className="space-y-8 w-full">
-                  <div className="flex flex-col items-center gap-4 group">
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      <strong>Subscription Ceiling:</strong> Hard to convince users to subscribe forever for occasional hits.
-                    </p>
+              <div>
+                <h3 className="text-xl font-bold mb-12 text-center" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>For Creators</h3>
+                <div className="space-y-8">
+                  <div className="flex gap-4 items-center group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/1.png" alt="Subscription Ceiling" className="w-6 h-6" style={{width: '113px', height: '48px'}} />
                     </div>
-                  </div>
-                  <div className="flex flex-col items-center gap-4 group">
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      <strong>Centralized Traffic:</strong> Algorithms favor clickbait over quality.
+                      <strong>Subscription Ceiling:</strong> Hard to convince users to subscribe forever for occasional hits.
                     </p>
+                  </div>
+                  <div className="flex gap-4 items-center group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
-                  </div>
-                  <div className="flex flex-col items-center gap-4 group">
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      <strong>No Ownership:</strong> You build the audience, but the platform owns the relationship.
+                      <strong>Centralized Traffic:</strong> Algorithms favor clickbait over quality.
                     </p>
+                  </div>
+                  <div className="flex gap-4 items-center group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      <strong>No Ownership:</strong> You build the audience, but the platform owns the relationship.
+                    </p>
                   </div>
                 </div>
               </div>
 
               {/* For Users */}
-              <div className="flex flex-col items-center text-center">
-                <h3 className="text-xl font-bold mb-12" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>For Users</h3>
-                <div className="space-y-8 w-full">
-                  <div className="flex flex-col items-center gap-4 group">
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      <strong>Information Overload:</strong> Valuable content is buried in noise and ads.
-                    </p>
+              <div>
+                <h3 className="text-xl font-bold mb-12 text-center" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>For Users</h3>
+                <div className="space-y-8">
+                  <div className="flex gap-4 items-center group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform" style={{width: '48px', height: '48px'}}>
                       <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
-                  </div>
-                  <div className="flex flex-col items-center gap-4 group">
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      <strong>Inefficient Payment:</strong> Forced to buy "the whole farm" just to eat one apple.
+                      <strong>Information Overload:</strong> Valuable content is buried in noise and ads.
                     </p>
+                  </div>
+                  <div className="flex gap-4 items-center group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform overflow-visible">
                       <img src="/images/5.png" alt="Inefficient Payment" className="w-full h-full object-contain" style={{width: 'auto', height: 'auto'}} />
                     </div>
-                  </div>
-                  <div className="flex flex-col items-center gap-4 group">
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      <strong>Passive Role:</strong> No incentive to curate or filter good content.
+                      <strong>Inefficient Payment:</strong> Forced to buy "the whole farm" just to eat one apple.
                     </p>
+                  </div>
+                  <div className="flex gap-4 items-center group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      <strong>Passive Role:</strong> No incentive to curate or filter good content.
+                    </p>
                   </div>
                 </div>
               </div>
