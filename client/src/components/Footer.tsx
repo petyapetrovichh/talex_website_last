@@ -96,7 +96,7 @@ export default function Footer() {
             </ul>
           </div>
           
-          <div style={{marginRight: '15px', marginLeft: '50px'}}>
+          <div style={{marginRight: '15px', marginLeft: '75px'}}>
             <h4 className="font-bold mb-6" style={{fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', color: '#000000', fontSize: '18px'}}>Company</h4>
             <ul className="space-y-4 text-sm text-gray-600">
               <li><a href="https://docs.talex.world/" className="hover:text-[#6FF000] transition-colors">About</a></li>
@@ -106,7 +106,7 @@ export default function Footer() {
             </ul>
           </div>
           
-          <div style={{marginRight: '300px', marginLeft: '-125px'}}>
+          <div style={{marginRight: '250px', marginLeft: '-83px'}}>
             <h4 className="font-bold mb-6" style={{color: '#000000', fontSize: '18px', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Community</h4>
             <div className="grid grid-cols-2 gap-4">
               <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#6FF000] transition-colors" title="X (Twitter)">
