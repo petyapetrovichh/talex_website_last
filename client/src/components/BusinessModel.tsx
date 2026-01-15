@@ -53,7 +53,7 @@ export default function BusinessModel() {
       {/* =========================================
           DESKTOP VIEW (Visible only on desktop)
           ========================================= */}
-      <div className="hidden md:block pt-24 pb-0 relative" style={{marginLeft: '202px', height: '1241px', width: '1500px'}}>
+      <div className="hidden md:block pt-24 pb-0 relative" style={{marginLeft: '9px', height: '1241px', width: '1500px'}}>
         {/* TEXT CONTAINER WITH MAX-WIDTH */}
         <div className="text-center max-w-3xl mx-auto mb-20" style={{marginTop: '-50px'}}>
           <div className="inline-flex items-center justify-center mb-6">
