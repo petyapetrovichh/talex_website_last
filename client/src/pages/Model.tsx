@@ -238,7 +238,7 @@ incentivizing early discovery and dissemination.
         </section>
 
         {/* 6. The sharing chain */}
-        <section className="py-24 bg-gradient-to-b from-[#F0FDF4] to-white">
+        <section className="py-24" style={{backgroundImage: 'url(/images/sharing-chain-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
               <div className="flex justify-center">
