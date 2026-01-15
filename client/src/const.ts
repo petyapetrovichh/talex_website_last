@@ -12,10 +12,10 @@ export const IMAGE_CONFIG = {
     top: "auto",
     left: "50%",
     right: "auto",
-    bottom: "auto",
+    bottom: "0",
     transform: "translateX(-50%)",
-    marginTop: "-4px",
-    marginBottom: "10px",
+    marginTop: "0",
+    marginBottom: "0",
   },
   
   // /images/8.png - "Your eyesight is very valuable" (левая карточка)
