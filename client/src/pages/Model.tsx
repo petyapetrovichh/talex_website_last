@@ -13,7 +13,7 @@ export default function Model() {
       
       <div className="pt-20">
         {/* 1. Hero Section */}
-        <section className="relative py-24 overflow-hidden" style={{height: '673px', backgroundImage: 'url(/images/our-model-hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <section className="relative py-24 overflow-hidden" style={{height: '655px', backgroundImage: 'url(/images/our-model-hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
           
           <div className="container relative z-10 text-center" style={{paddingRight: '0px', paddingLeft: '0px', width: '1592px', height: '539px', marginRight: '0px', marginLeft: '0px', display: 'inline'}}>
             <div className="relative z-20">
