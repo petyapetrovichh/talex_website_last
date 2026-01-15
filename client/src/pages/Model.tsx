@@ -528,8 +528,8 @@ incentivizing early discovery and dissemination.
               </div>
             </div>
             
-            <p className="text-center text-gray-500 text-xs mt-8">
-              
+            <p className="text-center text-gray-600 text-sm mt-8 max-w-2xl mx-auto leading-relaxed">
+              The market is rapidly shifting away from attention-based ad models towards direct value exchange, driven by the need for quality curation.
             </p>
           </div>
         </section>
