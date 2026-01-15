@@ -99,6 +99,7 @@ export default function BusinessModel() {
               className="absolute" 
               style={{
                 width: `${IMAGE_CONFIG.unlockForMore.width}px`,
+                height: IMAGE_CONFIG.unlockForMore.height,
                 top: IMAGE_CONFIG.unlockForMore.top,
                 left: IMAGE_CONFIG.unlockForMore.left,
                 right: IMAGE_CONFIG.unlockForMore.right,
@@ -121,6 +122,7 @@ export default function BusinessModel() {
               className="absolute" 
               style={{
                 width: `${IMAGE_CONFIG.eyesight.width}px`,
+                height: IMAGE_CONFIG.eyesight.height,
                 top: IMAGE_CONFIG.eyesight.top,
                 left: IMAGE_CONFIG.eyesight.left,
                 right: IMAGE_CONFIG.eyesight.right,
@@ -141,6 +143,7 @@ export default function BusinessModel() {
               className="absolute" 
               style={{
                 width: `${IMAGE_CONFIG.earningsDetail.width}px`,
+                height: IMAGE_CONFIG.earningsDetail.height,
                 top: IMAGE_CONFIG.earningsDetail.top,
                 left: IMAGE_CONFIG.earningsDetail.left,
                 right: IMAGE_CONFIG.earningsDetail.right,
@@ -162,6 +165,7 @@ export default function BusinessModel() {
               className="absolute" 
               style={{
                 width: `${IMAGE_CONFIG.rewards.width}px`,
+                height: IMAGE_CONFIG.rewards.height,
                 top: IMAGE_CONFIG.rewards.top,
                 left: IMAGE_CONFIG.rewards.left,
                 right: IMAGE_CONFIG.rewards.right,
@@ -185,6 +189,7 @@ export default function BusinessModel() {
               className="absolute" 
               style={{
                 width: `${IMAGE_CONFIG.totalTipped.width}px`,
+                height: IMAGE_CONFIG.totalTipped.height,
                 top: IMAGE_CONFIG.totalTipped.top,
                 left: IMAGE_CONFIG.totalTipped.left,
                 right: IMAGE_CONFIG.totalTipped.right,
