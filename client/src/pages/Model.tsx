@@ -30,7 +30,7 @@ export default function Model() {
         </section>
 
         {/* 2. What went wrong? */}
-        <section className="py-24 bg-white" style={{marginTop: '74px'}}>
+        <section className="py-24 bg-white" style={{marginTop: '0px'}}>
           <div className="container">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>What went wrong?</h2>
