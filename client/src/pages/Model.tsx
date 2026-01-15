@@ -457,8 +457,8 @@ incentivizing early discovery and dissemination.
                 <div className="flex-shrink-0" style={{width: '120px', height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                   <img src="/images/no-secondary-market.png" alt="No Secondary Market" style={{width: '110px', height: '100px', objectFit: 'contain', marginTop: '25px'}} />
                 </div>
-                <div>
-                  <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>No Secondary Market</h3>
+                <div style={{marginTop: '24px'}}>
+                  <h3 className="text-white font-bold mb-2" style={{fontSize: '22px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>No Secondary Market</h3>
                   <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500'}}>
                     Reward rights are tied to the account and cannot be traded or speculated on.
                   </p>
@@ -471,7 +471,7 @@ incentivizing early discovery and dissemination.
                   <img src="/images/finite-lifecycle.png" alt="Finite Lifecycle" style={{width: '110px', height: '110px', objectFit: 'contain', marginTop: '5px', marginRight: '13px'}} />
                 </div>
                 <div style={{marginLeft: '-10px', marginRight: '0px', marginTop: '20px'}}>
-                  <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Finite Lifecycle</h3>
+                  <h3 className="text-white font-bold mb-2" style={{fontSize: '22px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Finite Lifecycle</h3>
                   <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500'}}>
                     Rights expire after 365 days. The system resets, preventing "Ponzi" structures.
                   </p>
