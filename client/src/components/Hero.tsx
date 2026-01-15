@@ -13,6 +13,11 @@ export default function Hero() {
       <div className="md:hidden relative z-10 pt-28 pb-16 px-6 flex flex-col" style={{width: '363px', marginTop: '0px', paddingRight: '14px', paddingLeft: '14px'}}>
         <div className="w-full max-w-md mx-auto">
           <h1 className="text-4xl font-bold tracking-tight leading-[1.1] mb-6 text-left" style={{fontWeight: '800', fontSize: '26px'}}>
+            TaleX is where <br />
+            <span className="relative inline-block text-[#6FF000]">
+              great content
+            </span> pays off <br />
+            both creators and supporters
           </h1>
           
           <p className="text-base text-gray-600 mb-8 leading-relaxed text-left" style={{fontSize: '15px'}}>
