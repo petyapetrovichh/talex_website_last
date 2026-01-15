@@ -44,7 +44,7 @@ export default function Model() {
             <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
               {/* For Creators */}
               <div>
-                <h3 className="text-xl font-bold mb-8 border-b-2 border-black pb-2 inline-block">For Creators</h3>
+                <h3 className="text-xl font-bold mb-8 inline-block" style={{marginLeft: '102px'}}>For Creators</h3>
                 <div className="space-y-8" style={{paddingTop: '26px'}}>
                   <div className="flex gap-4 items-start group" style={{marginTop: '-28px', paddingBottom: '20px', height: '54px'}}>
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
@@ -75,7 +75,7 @@ export default function Model() {
 
               {/* For Users */}
               <div>
-                <h3 className="text-xl font-bold mb-8 border-b-2 border-black pb-2 inline-block">For Users</h3>
+                <h3 className="text-xl font-bold mb-8 inline-block" style={{marginLeft: '125px'}}>For Users</h3>
                 <div className="space-y-8">
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform" style={{width: '48px', height: '48px'}}>
@@ -158,7 +158,7 @@ incentivizing early discovery and dissemination.
         {/* 4. The economic mechanism: 20/80 split */}
         <section className="py-24 bg-white">
           <div className="container text-center">
-            <h2 className="text-4xl font-bold mb-2 font-serif">The economic mechanism: 20/80 split</h2>
+            <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '26px'}}>The economic mechanism: 20/80 split</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Your Supporters Become Your Promoters</p>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-16 max-w-4xl mx-auto">
@@ -206,9 +206,9 @@ incentivizing early discovery and dissemination.
         <section className="py-24 bg-white overflow-hidden">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-              <div>
-                <h2 className="text-4xl font-bold mb-12 font-serif">Why users pay?</h2>
-                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest">Dual Motivation</p>
+              <div className="flex flex-col justify-center">
+                <h2 className="text-4xl font-bold mb-12 font-serif" style={{fontSize: '26px'}}>Why users pay?</h2>
+                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest" style={{marginTop: '-34px'}}>Dual Motivation</p>
                 
                 <div className="space-y-12">
                   <div>
@@ -231,7 +231,9 @@ The 20% payment creates a direct value exchange. It signals genuine appreciation
                 </div>
               </div>
               
-              <div className="relative h-[500px] flex items-center justify-center">
+              <div className="relative h-[500px] flex flex-col items-center justify-center">
+                {/* Dual Motivation Label */}
+                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest text-center">Dual Motivation</p>
                 {/* Green Chess Piece Image */}
                 <img 
                   src="/images/9.png" 
