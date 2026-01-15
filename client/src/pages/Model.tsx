@@ -481,11 +481,11 @@ incentivizing early discovery and dissemination.
               {/* Card 4 */}
               <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{marginRight: '-25px'}}>
                 <div className="flex-shrink-0" style={{width: '120px', height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                  <img src="/images/no-guaranteed-returns.png" alt="No Guaranteed Returns" style={{width: '100px', height: '100px', objectFit: 'contain', marginRight: '5px'}} />
+                  <img src="/images/no-guaranteed-returns.png" alt="No Guaranteed Returns" style={{width: '97px', height: '97px', objectFit: 'contain', marginRight: '2px', marginTop: '15px'}} />
                 </div>
-                <div style={{marginTop: '14px'}}>
-                  <h3 className="text-white font-bold mb-2" style={{fontSize: '22px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', marginRight: '-10px', marginLeft: '-19px'}}>No Guaranteed Returns</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500', marginRight: '-10px', marginLeft: '-19px'}}>
+                <div style={{marginTop: '22px'}}>
+                  <h3 className="text-white font-bold mb-2" style={{fontSize: '22px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', marginRight: '-2px', marginLeft: '0px'}}>No Guaranteed Returns</h3>
+                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500', marginRight: '-3px', marginLeft: '0px'}}>
                     All rewards depend on future real user activity.
                   </p>
                 </div>
