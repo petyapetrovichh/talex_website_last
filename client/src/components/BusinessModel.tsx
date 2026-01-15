@@ -102,7 +102,7 @@ export default function BusinessModel() {
             left: IMAGE_CONFIG.unlockForMore.left,
             right: IMAGE_CONFIG.unlockForMore.right,
             bottom: IMAGE_CONFIG.unlockForMore.bottom,
-            transform: IMAGE_CONFIG.unlockForMore.transform,
+            transform: `${IMAGE_CONFIG.unlockForMore.transform} translate(${IMAGE_CONFIG.unlockForMore.offsetX}px, ${IMAGE_CONFIG.unlockForMore.offsetY}px)`,
             marginTop: IMAGE_CONFIG.unlockForMore.marginTop,
             marginBottom: IMAGE_CONFIG.unlockForMore.marginBottom,
             zIndex: 10,
@@ -121,11 +121,12 @@ export default function BusinessModel() {
           style={{
             width: `${IMAGE_CONFIG.eyesight.width}px`,
             height: IMAGE_CONFIG.eyesight.height,
-            top: IMAGE_CONFIG.eyesight.top,
-            left: IMAGE_CONFIG.eyesight.left,
+            top: `calc(${IMAGE_CONFIG.eyesight.top} + ${IMAGE_CONFIG.eyesight.offsetY}px)`,
+            left: `calc(${IMAGE_CONFIG.eyesight.left} + ${IMAGE_CONFIG.eyesight.offsetX}px)`,
             right: IMAGE_CONFIG.eyesight.right,
             bottom: IMAGE_CONFIG.eyesight.bottom,
             transform: IMAGE_CONFIG.eyesight.transform,
+            marginTop: IMAGE_CONFIG.eyesight.marginTop,
             zIndex: 9,
           }}
         >
@@ -142,12 +143,13 @@ export default function BusinessModel() {
           style={{
             width: `${IMAGE_CONFIG.earningsDetail.width}px`,
             height: IMAGE_CONFIG.earningsDetail.height,
-            top: IMAGE_CONFIG.earningsDetail.top,
+            top: `calc(${IMAGE_CONFIG.earningsDetail.top} + ${IMAGE_CONFIG.earningsDetail.offsetY}px)`,
             left: IMAGE_CONFIG.earningsDetail.left,
-            right: IMAGE_CONFIG.earningsDetail.right,
+            right: `calc(${IMAGE_CONFIG.earningsDetail.right} - ${IMAGE_CONFIG.earningsDetail.offsetX}px)`,
             bottom: IMAGE_CONFIG.earningsDetail.bottom,
             transform: IMAGE_CONFIG.earningsDetail.transform,
             marginTop: IMAGE_CONFIG.earningsDetail.marginTop,
+            marginLeft: IMAGE_CONFIG.earningsDetail.marginLeft,
             zIndex: 9,
           }}
         >
@@ -166,8 +168,8 @@ export default function BusinessModel() {
             height: IMAGE_CONFIG.rewards.height,
             top: IMAGE_CONFIG.rewards.top,
             left: IMAGE_CONFIG.rewards.left,
-            right: IMAGE_CONFIG.rewards.right,
-            bottom: IMAGE_CONFIG.rewards.bottom,
+            right: `calc(${IMAGE_CONFIG.rewards.right} - ${IMAGE_CONFIG.rewards.offsetX}px)`,
+            bottom: `calc(${IMAGE_CONFIG.rewards.bottom} + ${IMAGE_CONFIG.rewards.offsetY}px)`,
             transform: IMAGE_CONFIG.rewards.transform,
             marginTop: IMAGE_CONFIG.rewards.marginTop,
             marginBottom: IMAGE_CONFIG.rewards.marginBottom,
@@ -189,10 +191,12 @@ export default function BusinessModel() {
             width: `${IMAGE_CONFIG.totalTipped.width}px`,
             height: IMAGE_CONFIG.totalTipped.height,
             top: IMAGE_CONFIG.totalTipped.top,
-            left: IMAGE_CONFIG.totalTipped.left,
+            left: `calc(${IMAGE_CONFIG.totalTipped.left} + ${IMAGE_CONFIG.totalTipped.offsetX}px)`,
             right: IMAGE_CONFIG.totalTipped.right,
-            bottom: IMAGE_CONFIG.totalTipped.bottom,
+            bottom: `calc(${IMAGE_CONFIG.totalTipped.bottom} + ${IMAGE_CONFIG.totalTipped.offsetY}px)`,
             transform: IMAGE_CONFIG.totalTipped.transform,
+            marginTop: IMAGE_CONFIG.totalTipped.marginTop,
+            marginLeft: IMAGE_CONFIG.totalTipped.marginLeft,
             zIndex: 9,
           }}
         >

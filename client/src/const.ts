@@ -4,6 +4,8 @@ export { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
 // Независимое управление позицией и размером каждой картинки
 // width: ширина в пикселях (пропорции сохраняются автоматически)
 // top/left/right/bottom: позиция в пикселях (для абсолютного позиционирования)
+// offsetX: горизонтальное смещение (положительное = вправо, отрицательное = влево)
+// offsetY: вертикальное смещение (положительное = вниз, отрицательное = вверх)
 export const IMAGE_CONFIG = {
   // /images/00.png - "Unlock for More" (центральный телефон)
   unlockForMore: {
@@ -16,6 +18,8 @@ export const IMAGE_CONFIG = {
     transform: "translateX(-50%)",
     marginTop: "0",
     marginBottom: "-43px",
+    offsetX: 0,
+    offsetY: 0,
   },
   
   // /images/8.png - "Your eyesight is very valuable" (левая карточка)
@@ -28,6 +32,8 @@ export const IMAGE_CONFIG = {
     bottom: "auto",
     transform: "none",
     marginTop: "75px",
+    offsetX: 0,
+    offsetY: 0,
   },
   
   // /images/0.png - "Earnings Detail" (правая верхняя карточка)
@@ -41,6 +47,8 @@ export const IMAGE_CONFIG = {
     transform: "none",
     marginTop: "388px",
     marginLeft: "-123px",
+    offsetX: 0,
+    offsetY: 0,
   },
   
   // /11.png - "REWARDS" (правая нижняя карточка)
@@ -55,6 +63,8 @@ export const IMAGE_CONFIG = {
     marginTop: "0",
     marginLeft: "-100px",
     marginBottom: "150px",
+    offsetX: 0,
+    offsetY: 0,
   },
   
   // /10.png - "Total Tipped" (левая нижняя карточка)
@@ -68,6 +78,8 @@ export const IMAGE_CONFIG = {
     transform: "none",
     marginTop: "0",
     marginLeft: "150px",
+    offsetX: 0,
+    offsetY: 0,
   },
 };
 
