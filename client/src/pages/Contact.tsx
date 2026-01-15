@@ -26,10 +26,10 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col bg-white font-sans text-gray-900">
       <Header />
       
-      <main className="flex-1 w-full" style={{marginTop: '82px'}}>
+      <main className="flex-grow" style={{paddingTop: '82px'}}>
         <div className="container mx-auto px-4 py-20">
           <div className="max-w-3xl mx-auto text-center">
             {/* Main Heading */}
