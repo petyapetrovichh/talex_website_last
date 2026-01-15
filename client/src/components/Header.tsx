@@ -107,7 +107,8 @@ export default function Header() {
               boxShadow: 'none',
               backgroundColor: '#6FF000',
               color: 'black',
-              transition: 'background-color 0.2s ease, color 0.2s ease'
+              transition: 'background-color 0.2s ease, color 0.2s ease',
+              fontWeight: 'bold'
             }}
             onMouseDown={(e) => {
               (e.currentTarget as HTMLButtonElement).style.backgroundColor = 'black';
@@ -203,7 +204,7 @@ export default function Header() {
             </div>
             <Button 
               onClick={() => window.location.href = 'https://www.talex.world/publish'}
-              className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-semibold rounded-full px-6 border-2 border-transparent transition-colors"
+              className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-6 border-2 border-transparent transition-colors"
             >
               Start publishing
             </Button>
