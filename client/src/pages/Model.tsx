@@ -359,7 +359,7 @@ incentivizing early discovery and dissemination.
               </div>
 
               {/* Reward Distribution */}
-              <div className="bg-white p-8 rounded-2xl border border-gray-100 flex flex-col justify-center">
+              <div className="bg-white p-8 rounded-2xl border border-gray-100 flex flex-col justify-center" style={{backgroundColor: '#f0fdf4'}}>
                 <h3 className="text-lg font-bold mb-4 text-gray-800" style={{color: '#000000', fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Reward for a specific senior i in tier k:</h3>
                 <div className="bg-[#F6F6F6] p-8 rounded-xl flex items-center justify-center">
                    <div className="text-center">
@@ -369,9 +369,8 @@ incentivizing early discovery and dissemination.
                       <p className="font-serif text-lg italic text-gray-600 mt-2">ΣX</p>
                    </div>
                 </div>
-                <p className="text-xs text-gray-400 mt-6 text-center">
-                  * Where Xi is the total contributed amount by senior i in tier k,
-Hk is the total historical payments in that tier.
+                <p className="text-xs text-gray-400 mt-6 text-center" style={{color: '#000000', fontSize: '18px'}}>
+                  Where Xi is the total contributed amount by senior i in tier k, Hk is the total historical payments in that tier.
                 </p>
               </div>
             </div>
