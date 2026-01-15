@@ -440,52 +440,52 @@ incentivizing early discovery and dissemination.
 
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" style={{width: '1072px', height: 'auto', overflow: 'visible'}}>
               {/* Card 1 */}
-              <div className="bg-black rounded-xl flex items-center gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{padding: '40px'}}>
-                <div className="flex-shrink-0" style={{width: '150px', height: '150px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                  <img src="/images/non-financial-product.png" alt="Non-Financial Product" style={{width: '125px', height: '125px', objectFit: 'contain'}} />
+              <div className="bg-black rounded-xl flex items-center gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{padding: '32px 40px'}}>
+                <div className="flex-shrink-0" style={{width: '120px', height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                  <img src="/images/non-financial-product.png" alt="Non-Financial Product" style={{width: '100px', height: '100px', objectFit: 'contain'}} />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2" style={{fontSize: '30px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Non-Financial Product</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '17.5px', fontWeight: '500'}}>
+                  <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Non-Financial Product</h3>
+                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500'}}>
                     No tokens, no IPO, no ICO. Strictly a content appreciation mechanism.
                   </p>
                 </div>
               </div>
 
               {/* Card 2 */}
-              <div className="bg-black rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{padding: '40px'}}>
-                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '85px', height: '85px'}}>
-                  <img src="/images/22.png" alt="No Secondary Market" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+              <div className="bg-black rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{padding: '32px 40px'}}>
+                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '68px', height: '68px'}}>
+                  <img src="/images/22.png" alt="No Secondary Market" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2" style={{fontSize: '30px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>No Secondary Market</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '17.5px', fontWeight: '500'}}>
+                  <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>No Secondary Market</h3>
+                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500'}}>
                     Reward rights are tied to the account and cannot be traded or speculated on.
                   </p>
                 </div>
               </div>
 
               {/* Card 3 */}
-              <div className="bg-black rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{padding: '40px'}}>
-                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '85px', height: '85px'}}>
-                  <img src="/images/33.png" alt="Finite Lifecycle" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+              <div className="bg-black rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{padding: '32px 40px'}}>
+                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '68px', height: '68px'}}>
+                  <img src="/images/33.png" alt="Finite Lifecycle" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2" style={{fontSize: '30px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Finite Lifecycle</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '17.5px', fontWeight: '500'}}>
+                  <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Finite Lifecycle</h3>
+                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500'}}>
                     Rights expire after 365 days. The system resets, preventing "Ponzi" structures.
                   </p>
                 </div>
               </div>
 
               {/* Card 4 */}
-              <div className="bg-black rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{padding: '40px'}}>
-                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '85px', height: '85px'}}>
-                  <img src="/images/44.png" alt="No Guaranteed Returns" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+              <div className="bg-black rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{padding: '32px 40px'}}>
+                <div className="w-12 h-12 rounded-full border border-[#6FF000] flex items-center justify-center shrink-0" style={{width: '68px', height: '68px'}}>
+                  <img src="/images/44.png" alt="No Guaranteed Returns" className="w-6 h-6" style={{width: '40px', height: '40px'}} />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2" style={{fontSize: '30px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>No Guaranteed Returns</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '17.5px', fontWeight: '500'}}>
+                  <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>No Guaranteed Returns</h3>
+                  <p className="text-gray-400 text-xs leading-relaxed" style={{fontSize: '14px', fontWeight: '500'}}>
                     All rewards depend on future real user activity.
                   </p>
                 </div>
