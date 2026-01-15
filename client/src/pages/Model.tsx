@@ -347,7 +347,6 @@ incentivizing early discovery and dissemination.
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {/* Creator Connected */}
               <div className="bg-[#F0FDF4] p-8 rounded-2xl border border-[#6FF000]/20">
-                <p className="text-sm text-gray-600 mb-4">For the n-th payer contributing amount $X:</p>
                 <h3 className="text-lg font-bold mb-4 text-gray-800" style={{color: '#000000', fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>For the n-th payer contributing amount $X:</h3>
                 <div className="bg-white p-6 rounded-xl shadow-sm mb-4">
                    <p className="font-mono text-sm text-gray-500 mb-2" style={{color: '#000000', fontSize: '14px', fontWeight: '700'}}>Creator Revenue</p>
@@ -355,13 +354,12 @@ incentivizing early discovery and dissemination.
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-sm">
                    <p className="font-mono text-sm text-gray-500 mb-2" style={{color: '#000000', fontWeight: '800'}}>Reward Pool</p>
-                   <p className="font-mono text-xl font-bold text-[#6FF000]" style={{color: '#000000'}}>Pool = 0.8 * Xn</p>
+                   <p className="font-mono text-xl font-bold text-[#6FF000]" style={{color: '#000000'}}>Pool = 0.8 × Xn</p>
                 </div>
               </div>
 
               {/* Reward Distribution */}
               <div className="bg-white p-8 rounded-2xl border border-gray-100 flex flex-col justify-center">
-                <p className="text-sm text-gray-600 mb-4">Reward for a specific senior i in tier k:</p>
                 <h3 className="text-lg font-bold mb-4 text-gray-800" style={{color: '#000000', fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Reward for a specific senior i in tier k:</h3>
                 <div className="bg-[#F6F6F6] p-8 rounded-xl flex items-center justify-center">
                    <div className="text-center">
