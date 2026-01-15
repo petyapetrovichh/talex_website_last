@@ -28,7 +28,7 @@ export default function Model() {
             
             {/* Sketch Illustration */}
             <div className="relative w-full max-w-5xl mx-auto h-[400px] mt-12 z-0 model-hero-image-wrapper" style={{marginTop: '-110px', marginBottom: '-38px', width: '1119px', height: '591px', display: 'inline'}}>
-               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain model-hero-image" style={{width: '1642px', height: '525px', objectFit: 'fill', marginLeft: '5px', marginTop: '-110px'}} />
+               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain model-hero-image" style={{width: '1642px', height: '525px', objectFit: 'fill', marginLeft: '0px', marginTop: '-110px'}} />
             </div>
           </div>
         </section>
@@ -46,11 +46,11 @@ export default function Model() {
               <div>
                 <h3 className="text-xl font-bold mb-8 border-b-2 border-black pb-2 inline-block">For Creators</h3>
                 <div className="space-y-8" style={{paddingTop: '26px'}}>
-                  <div className="flex gap-4 items-start group" style={{marginTop: '-28px', paddingBottom: '20px'}}>
+                  <div className="flex gap-4 items-start group" style={{marginTop: '-28px', paddingBottom: '20px', height: '54px'}}>
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/1.png" alt="Subscription Ceiling" className="w-6 h-6" style={{width: '113px', height: '48px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1">
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '-16px'}}>
                       <strong>Subscription Ceiling:</strong> Hard to convince users to subscribe forever for occasional hits.
                     </p>
                   </div>
@@ -58,7 +58,7 @@ export default function Model() {
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '-3px'}}>
                       <strong>Centralized Traffic:</strong> Algorithms favor clickbait over quality.
                     </p>
                   </div>
@@ -66,7 +66,7 @@ export default function Model() {
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '0px'}}>
                       <strong>No Ownership:</strong> You build the audience, but the platform owns the relationship.
                     </p>
                   </div>
@@ -81,7 +81,7 @@ export default function Model() {
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform" style={{width: '48px', height: '48px'}}>
                       <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '13px'}}>
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '-1px'}}>
                       <strong>Information Overload:</strong> Valuable content is buried in noise and ads.
                     </p>
                   </div>
@@ -89,7 +89,7 @@ export default function Model() {
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform overflow-visible">
                       <img src="/images/5.png" alt="Inefficient Payment" className="w-full h-full object-contain" style={{width: 'auto', height: 'auto'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '-2px'}}>
                       <strong>Inefficient Payment:</strong> Forced to buy “the whole farm” just to eat one apple.
                     </p>
                   </div>
@@ -97,7 +97,7 @@ export default function Model() {
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '11px'}}>
+                    <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '-1px'}}>
                       <strong>Passive Role:</strong> No incentive to curate or filter good content.
                     </p>
                   </div>
@@ -109,14 +109,14 @@ export default function Model() {
 
         {/* Separator */}
         <div className="w-full relative z-10">
-          <img src="/images/Maskgroup.png" alt="Separator" className="w-full h-auto object-cover" />
+          <img src="/images/Maskgroup.png" alt="Separator" className="w-full h-auto object-cover" style={{marginTop: '-33px'}} />
         </div>
 
         {/* 3. Three core pillars of the new engine */}
         <section className="py-24 bg-white" style={{marginTop: '47px'}}>
-          <div className="container text-center">
-            <h2 className="text-4xl font-bold mb-2 font-serif">Three core pillars of the new engine</h2>
-            <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">The Foundation of the User-Driven Business Model</p>
+          <div className="container text-center" style={{marginTop: '-95px'}}>
+            <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '26px'}}>Three core pillars of the new engine</h2>
+            <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest" style={{fontSize: '15px'}}>The Foundation of the User-Driven Business Model</p>
             
             <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
               <div className="flex flex-col items-center group">
