@@ -109,7 +109,7 @@ export default function Model() {
         </div>
 
         {/* 3. Three core pillars of the new engine */}
-        <section className="py-24 bg-white" style={{marginTop: '47px'}}>
+        <section className="py-24 bg-white" style={{marginTop: '0px'}}>
           <div className="container text-center">
             <h2 className="text-4xl font-bold mb-2 font-serif">Three core pillars of the new engine</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">The Foundation of the User-Driven Business Model</p>
