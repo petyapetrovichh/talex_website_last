@@ -27,6 +27,7 @@ export const IMAGE_CONFIG = {
     right: "auto",
     bottom: "auto",
     transform: "none",
+    marginTop: "75px",
   },
   
   // /images/0.png - "Earnings Detail" (правая верхняя карточка)
@@ -38,7 +39,8 @@ export const IMAGE_CONFIG = {
     right: "0",
     bottom: "auto",
     transform: "none",
-    marginTop: "-96px",
+    marginTop: "388px",
+    marginLeft: "-123px",
   },
   
   // /11.png - "REWARDS" (правая нижняя карточка)
@@ -50,9 +52,9 @@ export const IMAGE_CONFIG = {
     right: "40px",
     bottom: "0",
     transform: "none",
-    marginTop: "-2px",
-    marginBottom: "81px",
-    marginLeft: "44px",
+    marginTop: "0",
+    marginLeft: "-53px",
+    marginBottom: "150px",
   },
   
   // /10.png - "Total Tipped" (левая нижняя карточка)
@@ -62,8 +64,10 @@ export const IMAGE_CONFIG = {
     top: "auto",
     left: "0",
     right: "auto",
-    bottom: "80px",
+    bottom: "0",
     transform: "none",
+    marginTop: "0",
+    marginLeft: "150px",
   },
 };
 
