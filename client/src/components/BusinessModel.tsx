@@ -184,6 +184,29 @@ export default function BusinessModel() {
             />
         </div>
 
+        {/* MODEL 4 - Right side, bottom */}
+        <div
+          style={{
+            position: "absolute",
+            width: `${IMAGE_CONFIG.model4.width}px`,
+            height: IMAGE_CONFIG.model4.height,
+            top: IMAGE_CONFIG.model4.top,
+            left: IMAGE_CONFIG.model4.left,
+            right: IMAGE_CONFIG.model4.right,
+            bottom: IMAGE_CONFIG.model4.bottom,
+            transform: IMAGE_CONFIG.model4.transform,
+            marginTop: IMAGE_CONFIG.model4.marginTop,
+            marginRight: IMAGE_CONFIG.model4.marginRight,
+            zIndex: 9,
+          }}
+        >
+            <img 
+              src="/images/model4.png" 
+              alt="Model 4" 
+              className="w-full h-auto drop-shadow-xl"
+            />
+        </div>
+
 
       </div>
     </section>
