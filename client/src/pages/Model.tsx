@@ -360,7 +360,7 @@ incentivizing early discovery and dissemination.
 
               {/* Reward Distribution */}
               <div className="bg-white p-8 rounded-2xl border border-gray-100 flex flex-col justify-center" style={{backgroundColor: '#f0fdf4'}}>
-                <h3 className="text-lg font-bold mb-4 text-gray-800" style={{color: '#000000', fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Reward for a specific senior i in tier k:</h3>
+                <h3 className="text-lg font-bold mb-4 text-gray-800" style={{color: '#000000', fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', marginTop: '-25px'}}>Reward for a specific senior i in tier k:</h3>
                 <div className="bg-white p-6 rounded-xl shadow-sm">
                    <p className="font-mono text-sm text-gray-500 mb-2" style={{color: '#000000', fontSize: '14px', fontWeight: '700'}}>Reward Distribution</p>
                    <p className="font-mono text-xl font-bold text-[#6FF000]" style={{color: '#000000', fontSize: '20px'}}>Reward<sub>i,k</sub> = Pool<sub>k</sub> × (X<sub>i</sub> / H<sub>k</sub>)</p>
