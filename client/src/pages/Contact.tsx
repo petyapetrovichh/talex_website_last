@@ -50,7 +50,7 @@ export default function Contact() {
                     href="https://www.talex.world/publish" 
                     style={{textDecoration: 'underline', color: '#000000', cursor: 'pointer', transition: 'color 0.3s ease'}}
                     onMouseEnter={(e) => (e.target as HTMLAnchorElement).style.color = '#6FF000'}
-                    onMouseLeave={(e) => (e.target as HTMLAnchorElement).style.color = '#6FF000'}
+                    onMouseLeave={(e) => (e.target as HTMLAnchorElement).style.color = '#000000'}
                   >
                     www.talex.world/publish
                   </a>
@@ -73,7 +73,7 @@ export default function Contact() {
                     href="mailto:support@talex.world" 
                     style={{textDecoration: 'underline', color: '#000000', cursor: 'pointer', transition: 'color 0.3s ease'}}
                     onMouseEnter={(e) => (e.target as HTMLAnchorElement).style.color = '#6FF000'}
-                    onMouseLeave={(e) => (e.target as HTMLAnchorElement).style.color = '#6FF000'}
+                    onMouseLeave={(e) => (e.target as HTMLAnchorElement).style.color = '#000000'}
                   >
                     support@talex.world
                   </a>
@@ -88,7 +88,7 @@ export default function Contact() {
                     href="https://t.me/talex_chain_community" 
                     style={{textDecoration: 'underline', color: '#000000', cursor: 'pointer', transition: 'color 0.3s ease'}}
                     onMouseEnter={(e) => (e.target as HTMLAnchorElement).style.color = '#6FF000'}
-                    onMouseLeave={(e) => (e.target as HTMLAnchorElement).style.color = '#6FF000'}
+                    onMouseLeave={(e) => (e.target as HTMLAnchorElement).style.color = '#000000'}
                   >
                     t.me/talex_chain_community
                   </a>
