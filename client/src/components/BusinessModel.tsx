@@ -161,6 +161,29 @@ export default function BusinessModel() {
             />
         </div>
 
+        {/* Model 3 - /images/model3.png */}
+        <div 
+          className="absolute" 
+          style={{
+            width: `${IMAGE_CONFIG.model3.width}px`,
+            height: IMAGE_CONFIG.model3.height,
+            top: IMAGE_CONFIG.model3.top,
+            left: IMAGE_CONFIG.model3.left,
+            right: IMAGE_CONFIG.model3.right,
+            bottom: IMAGE_CONFIG.model3.bottom,
+            transform: `${IMAGE_CONFIG.model3.transform} translate(${IMAGE_CONFIG.model3.offsetX}px, ${IMAGE_CONFIG.model3.offsetY}px)`,
+            marginTop: IMAGE_CONFIG.model3.marginTop,
+            marginRight: IMAGE_CONFIG.model3.marginRight,
+            zIndex: 9,
+          }}
+        >
+            <img 
+              src="/images/model3.png" 
+              alt="Model 3" 
+              className="w-full h-auto drop-shadow-xl"
+            />
+        </div>
+
 
       </div>
     </section>
