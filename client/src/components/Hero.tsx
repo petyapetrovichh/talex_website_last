@@ -4,8 +4,11 @@ import { ArrowRight } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative bg-white overflow-hidden">
-      {/* Background decoration - Shared */}
-      <div className="absolute top-0 right-0 w-full h-full bg-[url('/images/hero-bg-new.png')] bg-cover bg-center bg-no-repeat pointer-events-none" />
+      {/* Background decoration - Mobile */}
+      <div className="md:hidden absolute top-0 right-0 w-full h-full bg-[url('/images/backphone1.png')] bg-cover bg-center bg-no-repeat pointer-events-none" />
+      
+      {/* Background decoration - Desktop */}
+      <div className="hidden md:block absolute top-0 right-0 w-full h-full bg-[url('/images/hero-bg-new.png')] bg-cover bg-center bg-no-repeat pointer-events-none" />
       
       {/* =========================================
           MOBILE VIEW (Visible only on mobile)
