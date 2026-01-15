@@ -6,9 +6,9 @@ export default function Footer() {
       {/* =========================================
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
-      <div className="md:hidden py-12 px-6">
-        <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-4">
+      <div className="md:hidden py-12 px-6" style={{paddingTop: '0px', marginTop: '-12px', height: '582px'}}>
+        <div className="flex flex-col gap-10" style={{marginTop: '12px'}}>
+          <div className="flex flex-col gap-4" style={{marginTop: '16px'}}>
             <Link href="/">
               <div className="flex items-center gap-2 cursor-pointer">
                 <img src="/logo-new.png" alt="TaleX" className="h-6 w-auto" style={{width: '76px', height: '12px'}} />

@@ -28,7 +28,7 @@ export default function Model() {
             
             {/* Sketch Illustration */}
             <div className="relative w-full max-w-5xl mx-auto h-[400px] mt-12 z-0 model-hero-image-wrapper" style={{marginTop: '-110px', marginBottom: '-38px', width: '1119px', height: '591px', display: 'inline'}}>
-               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain model-hero-image" style={{width: '394px', height: '143px', objectFit: 'fill', marginLeft: '0px', marginTop: '-37px'}} />
+               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain model-hero-image" style={{width: '394px', height: '143px', objectFit: 'fill', marginLeft: '0px', marginTop: '-74px'}} />
             </div>
           </div>
         </section>
@@ -113,7 +113,7 @@ export default function Model() {
         </div>
 
         {/* 3. Three core pillars of the new engine */}
-        <section className="py-24 bg-white" style={{marginTop: '47px'}}>
+        <section className="py-24 bg-white" style={{marginTop: '47px', paddingBottom: '51px'}}>
           <div className="container text-center" style={{marginTop: '-95px'}}>
             <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '26px'}}>Three core pillars of the new engine</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest" style={{fontSize: '15px'}}>The Foundation of the User-Driven Business Model</p>
@@ -156,7 +156,7 @@ incentivizing early discovery and dissemination.
         </section>
 
         {/* 4. The economic mechanism: 20/80 split */}
-        <section className="py-24 bg-white" style={{height: '855px'}}>
+        <section className="py-24 bg-white" style={{height: '791px', paddingTop: '23px', paddingBottom: '0px'}}>
           <div className="container text-center">
             <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '26px'}}>The economic mechanism: 20/80 split</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Your Supporters Become Your Promoters</p>
@@ -498,18 +498,18 @@ Hk is the total historical payments in that tier.
         </section>
 
         {/* 11. The shift from ads to direct value */}
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-white" style={{paddingBottom: '0px'}}>
           <div className="container">
-            <div className="text-center mb-16" style={{marginTop: '-129px'}}>
+            <div className="flex flex-col gap-4" style={{marginTop: '16px'}}>
               <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '25px'}}>The shift from ads to direct value</h2>
               <p className="text-gray-500 text-sm uppercase tracking-widest">Back to Creating Real Value</p>
             </div>
 
-            <div className="max-w-4xl mx-auto relative h-[400px] border-l border-b border-gray-200">
+            <div className="max-w-4xl mx-auto relative h-[400px] border-l border-b border-gray-200" style={{marginTop: '-37px'}}>
               {/* Chart Area */}
               <div className="absolute inset-0 overflow-hidden">
                 {/* Gradient Area */}
-                <svg className="w-full h-full" preserveAspectRatio="none" style={{height: '400px'}}>
+                <svg className="w-full h-full" preserveAspectRatio="none" style={{height: '487px', marginTop: '-77px'}}>
                   <defs>
                     <linearGradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
                       <stop offset="0%" stopColor="#6FF000" stopOpacity="0.5" />
@@ -538,7 +538,7 @@ Hk is the total historical payments in that tier.
         </section>
 
         {/* Bottom CTA */}
-        <section className="py-32 bg-gradient-to-b from-white to-[#F0FDF4] text-center">
+        <section className="py-32 bg-gradient-to-b from-white to-[#F0FDF4] text-center" style={{paddingTop: '29px'}}>
           <div className="container">
             <h2 className="text-5xl font-bold mb-8 font-serif" style={{fontSize: '26px'}}>A new way of value discovery</h2>
             <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto" style={{fontSize: '15px', marginTop: '-19px'}}>
