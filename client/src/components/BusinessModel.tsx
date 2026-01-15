@@ -154,7 +154,7 @@ export default function BusinessModel() {
             <img 
               src="/images/0.png" 
               alt="Earnings Detail" 
-              className="w-full h-auto drop-shadow-xl" style={{marginTop: '388px', marginLeft: '-123px'}}
+              className="w-full h-auto drop-shadow-xl"
             />
         </div>
         
@@ -178,7 +178,7 @@ export default function BusinessModel() {
             <img 
               src="/11.png" 
               alt="Rewards" 
-              className="w-full h-auto drop-shadow-xl" style={{marginBottom: '150px', marginLeft: '-53px'}}
+              className="w-full h-auto drop-shadow-xl"
             />
         </div>
         
