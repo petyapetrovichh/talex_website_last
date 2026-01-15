@@ -14,7 +14,7 @@ export const IMAGE_CONFIG = {
     right: "auto",
     bottom: "auto",
     transform: "translateX(-50%)",
-    marginTop: "-5px",
+    marginTop: "-37px",
     marginBottom: "10px",
   },
   
