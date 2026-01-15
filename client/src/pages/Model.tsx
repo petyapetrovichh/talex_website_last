@@ -154,8 +154,8 @@ incentivizing early discovery and dissemination.
         {/* 4. The economic mechanism: 20/80 split */}
         <section className="py-24 bg-white">
           <div className="container text-center">
-            <h2 className="text-4xl font-bold mb-2 font-serif">The economic mechanism: 20/80 split</h2>
-            <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest">Your Supporters Become Your Promoters</p>
+            <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '39px'}}>The economic mechanism: 20/80 split</h2>
+            <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest" style={{fontWeight: '500'}}>Your Supporters Become Your Promoters</p>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-16 max-w-4xl mx-auto">
               {/* Donut Chart */}
@@ -191,7 +191,7 @@ incentivizing early discovery and dissemination.
               </div>
             </div>
             
-            <p className="text-gray-500 text-xs mt-12 max-w-2xl mx-auto italic">
+            <p className="text-gray-500 text-xs mt-12 max-w-2xl mx-auto italic" style={{color: '#000000', fontSize: '18px'}}>
               * When a user pays $X, 20% goes directly to the creator as stable income. 80% enters the
  “Reward Pool” to reward those who discovered the content earlier.
             </p>
