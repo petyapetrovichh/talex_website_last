@@ -40,7 +40,7 @@ export default function Model() {
             <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
               {/* For Creators */}
               <div>
-                <h3 className="text-xl font-bold mb-8 border-b-2 border-black pb-2 inline-block">For Creators</h3>
+                <h3 className="text-xl font-bold mb-8 border-b-2 border-black pb-2 inline-block" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>For Creators</h3>
                 <div className="space-y-8" style={{paddingTop: '26px'}}>
                   <div className="flex gap-4 items-start group" style={{marginTop: '-28px', paddingBottom: '20px'}}>
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
@@ -71,7 +71,7 @@ export default function Model() {
 
               {/* For Users */}
               <div>
-                <h3 className="text-xl font-bold mb-8 border-b-2 border-black pb-2 inline-block">For Users</h3>
+                <h3 className="text-xl font-bold mb-8 border-b-2 border-black pb-2 inline-block" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>For Users</h3>
                 <div className="space-y-8">
                   <div className="flex gap-4 items-start group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform" style={{width: '48px', height: '48px'}}>
