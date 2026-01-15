@@ -34,19 +34,19 @@ export default function Model() {
           <div className="container">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>What went wrong?</h2>
-              <p className="text-gray-500 text-sm uppercase tracking-widest">The Broken Content Economy</p>
+              <p className="text-gray-500 text-sm uppercase tracking-widest" style={{fontWeight: '500'}}>The Broken Content Economy</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
               {/* For Creators */}
               <div>
-                <h3 className="text-xl font-bold mb-12 text-center" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>For Creators</h3>
+                <h3 className="text-xl font-bold mb-12 text-center" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', fontSize: '24px'}}>For Creators</h3>
                 <div className="space-y-8">
                   <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
                     <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/1.png" alt="Subscription Ceiling" className="w-6 h-6" style={{width: '226px', height: '96px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
                       <strong>Subscription Ceiling:</strong> Hard to convince users to subscribe forever for occasional hits.
                     </p>
                   </div>
@@ -54,7 +54,7 @@ export default function Model() {
                     <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
                       <strong>Centralized Traffic:</strong> Algorithms favor clickbait over quality.
                     </p>
                   </div>
@@ -62,7 +62,7 @@ export default function Model() {
                     <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
                       <strong>No Ownership:</strong> You build the audience, but the platform owns the relationship.
                     </p>
                   </div>
@@ -71,13 +71,13 @@ export default function Model() {
 
               {/* For Users */}
               <div>
-                <h3 className="text-xl font-bold mb-12 text-center" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>For Users</h3>
+                <h3 className="text-xl font-bold mb-12 text-center" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', fontSize: '24px'}}>For Users</h3>
                 <div className="space-y-8">
                   <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
                     <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
                       <strong>Information Overload:</strong> Valuable content is buried in noise and ads.
                     </p>
                   </div>
@@ -85,7 +85,7 @@ export default function Model() {
                     <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform overflow-visible">
                       <img src="/images/5.png" alt="Inefficient Payment" className="w-full h-full object-contain" style={{width: '100px', height: '100px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
                       <strong>Inefficient Payment:</strong> Forced to buy "the whole farm" just to eat one apple.
                     </p>
                   </div>
@@ -93,7 +93,7 @@ export default function Model() {
                     <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
                       <strong>Passive Role:</strong> No incentive to curate or filter good content.
                     </p>
                   </div>
