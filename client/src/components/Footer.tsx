@@ -101,7 +101,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-gray-600">
               <li><a href="https://docs.talex.world/" className="hover:text-[#6FF000] transition-colors">About</a></li>
               <li><a href="https://t.me/talex_chain_community" className="hover:text-[#6FF000] transition-colors">Help</a></li>
-              <li><Link href="/blog" className="hover:text-[#6FF000] transition-colors">Contact</Link></li>
+              <li><Link href="/contact" className="hover:text-[#6FF000] transition-colors">Contact</Link></li>
 
             </ul>
           </div>

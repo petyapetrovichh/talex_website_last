@@ -161,7 +161,7 @@ export default function Header() {
                   <div className="flex flex-col">
                     <a href="https://docs.talex.world/" className="px-4 py-2.5 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors">About</a>
                     <a href="https://t.me/talex_chain_community" className="px-4 py-2.5 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors">Help</a>
-                    <a href="#" className="px-4 py-2.5 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors">Contact</a>
+                    <Link href="/contact" className="px-4 py-2.5 text-sm text-black hover:text-[#6FF000] hover:bg-gray-50 rounded-lg transition-colors block">Contact</Link>
                   </div>
                 </div>
               </div>
