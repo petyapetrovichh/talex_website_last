@@ -350,11 +350,11 @@ incentivizing early discovery and dissemination.
                 <h3 className="text-lg font-bold mb-4 text-gray-800" style={{color: '#000000', fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>For the n-th payer contributing amount $X:</h3>
                 <div className="bg-white p-6 rounded-xl shadow-sm mb-4">
                    <p className="font-mono text-sm text-gray-500 mb-2" style={{color: '#000000', fontSize: '14px', fontWeight: '700'}}>Creator Revenue</p>
-                   <p className="font-mono text-xl font-bold text-[#6FF000]" style={{color: '#000000', fontSize: '18px'}}>Revenue = 0.2 × X<sub>n</sub></p>
+                   <p className="font-mono text-xl font-bold text-[#6FF000]" style={{color: '#000000', fontSize: '20px'}}>Revenue = 0.2 × X<sub>n</sub></p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-sm">
                    <p className="font-mono text-sm text-gray-500 mb-2" style={{color: '#000000', fontWeight: '800'}}>Reward Pool</p>
-                   <p className="font-mono text-xl font-bold text-[#6FF000]" style={{color: '#000000', fontSize: '18px'}}>Pool = 0.8 × X<sub>n</sub></p>
+                   <p className="font-mono text-xl font-bold text-[#6FF000]" style={{color: '#000000', fontSize: '20px'}}>Pool = 0.8 × X<sub>n</sub></p>
                 </div>
               </div>
 
@@ -363,7 +363,7 @@ incentivizing early discovery and dissemination.
                 <h3 className="text-lg font-bold mb-4 text-gray-800" style={{color: '#000000', fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Reward for a specific senior i in tier k:</h3>
                 <div className="bg-white p-6 rounded-xl shadow-sm">
                    <p className="font-mono text-sm text-gray-500 mb-2" style={{color: '#000000', fontSize: '14px', fontWeight: '700'}}>Reward Distribution</p>
-                   <p className="font-mono text-xl font-bold text-[#6FF000]" style={{color: '#000000', fontSize: '18px'}}>Reward<sub>i,k</sub> = Pool<sub>k</sub> × (X<sub>i</sub> / H<sub>k</sub>)</p>
+                   <p className="font-mono text-xl font-bold text-[#6FF000]" style={{color: '#000000', fontSize: '20px'}}>Reward<sub>i,k</sub> = Pool<sub>k</sub> × (X<sub>i</sub> / H<sub>k</sub>)</p>
                 </div>
                 <p className="text-xs text-gray-400 mt-6 text-center" style={{color: '#000000', fontSize: '18px'}}>
                   Where Xi is the total contributed amount by senior i in tier k, Hk is the total historical payments in that tier.
