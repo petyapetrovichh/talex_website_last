@@ -99,7 +99,7 @@ export const IMAGE_CONFIG = {
   
   // /images/model2.png - Model 2 (below model1, left of central phone)
   model2: {
-    width: 400,
+    width: 375,
     height: "auto",
     top: "50%",
     left: "0",
