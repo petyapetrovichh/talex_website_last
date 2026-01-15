@@ -440,7 +440,7 @@ incentivizing early discovery and dissemination.
 
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" style={{width: '1072px', height: 'auto', overflow: 'visible'}}>
               {/* Card 1 */}
-              <div className="bg-black p-8 rounded-xl flex items-center gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{marginLeft: '-25px'}}>
+              <div className="bg-black p-8 rounded-xl flex items-center gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{marginLeft: '-25px', height: '200px'}}>
                 <div className="flex-shrink-0" style={{width: '120px', height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                   <img src="/images/non-financial-product.png" alt="Non-Financial Product" style={{width: '90px', height: '90px', objectFit: 'contain', marginLeft: '-10px'}} />
                 </div>
@@ -466,7 +466,7 @@ incentivizing early discovery and dissemination.
               </div>
 
               {/* Card 3 */}
-              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{marginLeft: '-25px'}}>
+              <div className="bg-black p-8 rounded-xl flex items-start gap-6 group hover:bg-[#1a1a1a] transition-colors" style={{marginLeft: '-25px', height: '200px'}}>
                 <div className="flex-shrink-0" style={{width: '120px', height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                   <img src="/images/finite-lifecycle.png" alt="Finite Lifecycle" style={{width: '105px', height: '105px', objectFit: 'contain', marginTop: '5px', marginRight: '13px'}} />
                 </div>
