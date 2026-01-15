@@ -363,7 +363,9 @@ incentivizing early discovery and dissemination.
                 <h3 className="text-lg font-bold mb-4 text-gray-800" style={{color: '#000000', fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Reward for a specific senior i in tier k:</h3>
                 <div className="bg-white p-6 rounded-xl shadow-sm">
                    <p className="font-mono text-sm text-gray-500 mb-2" style={{color: '#000000', fontSize: '14px', fontWeight: '700'}}>Reward Distribution</p>
-                   <p className="font-mono text-xl font-bold text-[#6FF000]" style={{color: '#000000'}}>Reward = Pool × (Xi / ΣX)</p>
+                   <p className="font-serif text-2xl italic text-gray-800">
+                        Reward(i,k) = Pool(n) * <span className="inline-block border-b-2 border-black px-2 mx-1">X<sub>i</sub></span> / Σ<sub>k</sub>X
+                      </p>
                 </div>
                 <p className="text-xs text-gray-400 mt-6 text-center" style={{color: '#000000', fontSize: '18px'}}>
                   Where Xi is the total contributed amount by senior i in tier k, Hk is the total historical payments in that tier.
