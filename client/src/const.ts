@@ -106,9 +106,9 @@ export const IMAGE_CONFIG = {
     right: "auto",
     bottom: "auto",
     transform: "translateY(-50%)",
-    marginTop: "150px",
+    marginTop: "250px",
     marginLeft: "0",
-    offsetX: 15,
+    offsetX: 90,
     offsetY: 0,
   },
 };
