@@ -269,7 +269,7 @@ incentivizing early discovery and dissemination.
                     When you pay, your 80% (Prediction Portion) rewards your seniors. When future users pay, you become the senior, earning from their payments.
                   </p>
                   <p className="text-sm text-gray-700 italic" style={{color: '#000000', fontSize: '18px'}}>
-                    The Goal: Be the one who sees potential before the crowd does.
+                    <span style={{fontWeight: 'bold'}}>The Goal:</span> Be the one who sees potential before the crowd does.
                   </p>
                 </div>
               </div>
