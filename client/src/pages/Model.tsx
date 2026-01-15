@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
+import "./Model.css";
 
 export default function Model() {
   useEffect(() => {
@@ -13,31 +14,31 @@ export default function Model() {
       
       <div className="pt-20">
         {/* 1. Hero Section */}
-        <section className="relative py-24 overflow-hidden bg-white" style={{height: '595px'}}>
+        <section className="relative py-24 overflow-hidden bg-white model-hero-section" style={{height: '595px'}}>
           
-          <div className="container relative z-10 text-center" style={{paddingRight: '0px', paddingLeft: '0px', width: '1592px', height: '539px', marginRight: '0px', marginLeft: '0px', display: 'inline'}}>
+          <div className="container relative z-10 text-center model-hero-container" style={{paddingRight: '0px', paddingLeft: '0px', width: '1592px', height: '539px', marginRight: '0px', marginLeft: '0px', display: 'inline'}}>
             <div className="relative z-20">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif tracking-tight" style={{fontSize: '56px', fontFamily: '"Abril Fatface", serif'}}>
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif tracking-tight model-hero-title" style={{fontSize: '56px', fontFamily: '"Abril Fatface", serif'}}>
                 A new economic engine for great content
               </h1>
-              <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto model-hero-subtitle">
                 Single-Content Purchase & Prediction Market
               </p>
             </div>
             
             {/* Sketch Illustration */}
-            <div className="relative w-full max-w-5xl mx-auto h-[400px] mt-12 z-0" style={{marginTop: '-110px', marginBottom: '-38px', width: '1119px', height: '591px', display: 'inline'}}>
-               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain" style={{width: '1642px', height: '525px', objectFit: 'fill', marginLeft: '5px', marginTop: '-181px'}} />
+            <div className="relative w-full max-w-5xl mx-auto h-[400px] mt-12 z-0 model-hero-image-wrapper" style={{marginTop: '-110px', marginBottom: '-38px', width: '1119px', height: '591px', display: 'inline'}}>
+               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain model-hero-image" style={{width: '1642px', height: '525px', objectFit: 'fill', marginLeft: '5px', marginTop: '-181px'}} />
             </div>
           </div>
         </section>
 
         {/* 2. What went wrong? */}
-        <section className="py-24 bg-white" style={{marginTop: '74px'}}>
+        <section className="py-24 bg-white model-what-wrong-section" style={{marginTop: '74px'}}>
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-2 font-serif">What went wrong?</h2>
-              <p className="text-gray-500 text-sm uppercase tracking-widest">The Broken Content Economy</p>
+              <h2 className="text-4xl font-bold mb-2 font-serif model-what-wrong-title">What went wrong?</h2>
+              <p className="text-gray-500 text-sm uppercase tracking-widest model-what-wrong-subtitle">The Broken Content Economy</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
