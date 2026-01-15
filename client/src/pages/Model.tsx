@@ -442,7 +442,7 @@ incentivizing early discovery and dissemination.
               {/* Card 1 */}
               <div className="bg-black p-8 rounded-xl flex items-center gap-6 group hover:bg-[#1a1a1a] transition-colors">
                 <div className="flex-shrink-0" style={{width: '120px', height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                  <img src="/images/non-financial-product.png" alt="Non-Financial Product" style={{width: '100%', height: '100%', objectFit: 'contain'}} />
+                  <img src="/images/non-financial-product.png" alt="Non-Financial Product" style={{width: '100px', height: '100px', objectFit: 'contain'}} />
                 </div>
                 <div>
                   <h3 className="text-white font-bold mb-2" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Non-Financial Product</h3>
