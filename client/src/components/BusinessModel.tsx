@@ -111,7 +111,7 @@ export default function BusinessModel() {
             <img 
               src="/images/00.png" 
               alt="Support & Earn" 
-              className="w-full h-auto drop-shadow-2xl" 
+              className="w-full h-auto drop-shadow-2xl"
             />
         </div>
 

@@ -15,7 +15,7 @@ export const IMAGE_CONFIG = {
     bottom: "0",
     transform: "translateX(-50%)",
     marginTop: "0",
-    marginBottom: "0",
+    marginBottom: "-43px",
   },
   
   // /images/8.png - "Your eyesight is very valuable" (левая карточка)
