@@ -31,8 +31,8 @@ export const IMAGE_CONFIG = {
     right: "auto",
     bottom: "auto",
     transform: "none",
-    marginTop: "75px",
-    offsetX: 0,
+    marginTop: "-475px",
+    offsetX: 250,
     offsetY: 0,
   },
   
