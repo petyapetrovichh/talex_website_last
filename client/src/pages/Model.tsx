@@ -111,7 +111,7 @@ export default function Model() {
         {/* 3. Three core pillars of the new engine */}
         <section className="py-24 bg-white" style={{marginTop: '0px'}}>
           <div className="container text-center">
-            <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '39px'}}>Three core pillars of the new engine</h2>
+            <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>Three core pillars of the new engine</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest" style={{fontWeight: '500'}}>The Foundation of the User-Driven Business Model</p>
             
             <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
@@ -154,7 +154,7 @@ incentivizing early discovery and dissemination.
         {/* 4. The economic mechanism: 20/80 split */}
         <section className="py-24 bg-white">
           <div className="container text-center">
-            <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '39px'}}>The economic mechanism: 20/80 split</h2>
+            <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>The economic mechanism: 20/80 split</h2>
             <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest" style={{fontWeight: '500'}}>Your Supporters Become Your Promoters</p>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-16 max-w-4xl mx-auto">
@@ -201,14 +201,14 @@ incentivizing early discovery and dissemination.
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
               <div>
-                <h2 className="text-4xl font-bold mb-12 font-serif">Why users pay?</h2>
-                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest">Dual Motivation</p>
+                <h2 className="text-4xl font-bold mb-12 font-serif" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", serif', marginBottom: '8px'}}>Why users pay?</h2>
+                <p className="text-gray-500 text-sm mb-8 uppercase tracking-widest" style={{fontWeight: '500'}}>Dual Motivation</p>
                 
                 <div className="space-y-12">
                   <div>
-                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000'}}>1. Consumption Logic</h3>
+                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000', fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>1. Consumption Logic</h3>
                     <p className="text-gray-600 leading-relaxed italic mb-2"></p>
-                    <p className="text-gray-600 leading-relaxed text-sm">
+                    <p className="text-gray-600 leading-relaxed text-sm" style={{color: '#000000', fontSize: '18px'}}>
                       “I recognize the value of this content”.
 
 The 20% payment creates a direct value exchange. It signals genuine appreciation and supports the creator's livelihood.
@@ -216,9 +216,9 @@ The 20% payment creates a direct value exchange. It signals genuine appreciation
                   </div>
                   
                   <div>
-                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000'}}>2. Prediction Logic</h3>
-                    <p className="text-gray-600 leading-relaxed italic mb-2">“I predict this content will go viral”.</p>
-                    <p className="text-gray-600 leading-relaxed text-sm">
+                    <h3 className="text-xl font-bold mb-4 text-[#6FF000]" style={{color: '#000000', fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>2. Prediction Logic</h3>
+                    <p className="text-gray-600 leading-relaxed italic mb-2" style={{color: '#000000', fontSize: '18px'}}>“I predict this content will go viral”.</p>
+                    <p className="text-gray-600 leading-relaxed text-sm" style={{color: '#000000', fontSize: '18px'}}>
                       The 80% contribution is an active prediction. By spotting quality early, the user positions themselves to earn “Thank-you Rewards” from future supporters.
                     </p>
                   </div>
