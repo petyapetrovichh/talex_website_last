@@ -92,6 +92,29 @@ export default function BusinessModel() {
           </Button>
         </div>
 
+        {/* Model 1 Card - /images/model1.png */}
+        <div 
+          className="absolute" 
+          style={{
+            width: `${IMAGE_CONFIG.model1.width}px`,
+            height: IMAGE_CONFIG.model1.height,
+            top: IMAGE_CONFIG.model1.top,
+            left: `calc(${IMAGE_CONFIG.model1.left} + ${IMAGE_CONFIG.model1.offsetX}px)`,
+            right: IMAGE_CONFIG.model1.right,
+            bottom: IMAGE_CONFIG.model1.bottom,
+            transform: IMAGE_CONFIG.model1.transform,
+            marginTop: IMAGE_CONFIG.model1.marginTop,
+            marginLeft: IMAGE_CONFIG.model1.marginLeft,
+            zIndex: 9,
+          }}
+        >
+            <img 
+              src="/images/model1.png" 
+              alt="Model 1" 
+              className="w-full h-auto drop-shadow-xl"
+            />
+        </div>
+
         {/* Central Phone Mockup - /images/00.png */}
         <div 
           className="absolute" 

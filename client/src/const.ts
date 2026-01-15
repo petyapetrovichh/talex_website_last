@@ -81,6 +81,21 @@ export const IMAGE_CONFIG = {
     offsetX: 0,
     offsetY: 0,
   },
+  
+  // /images/model1.png - Модель 1 (слева от центрального телефона)
+  model1: {
+    width: 400,
+    height: "auto",
+    top: "50%",
+    left: "0",
+    right: "auto",
+    bottom: "auto",
+    transform: "translateY(-50%)",
+    marginTop: "0",
+    marginLeft: "0",
+    offsetX: 0,
+    offsetY: 0,
+  },
 };
 
 // Generate login URL at runtime so redirect URI reflects the current origin.
