@@ -13,11 +13,11 @@ export default function Model() {
       
       <div className="pt-20">
         {/* 1. Hero Section */}
-        <section className="relative py-24 overflow-hidden" style={{height: '595px', backgroundImage: 'url(/images/our-model-hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <section className="relative py-24 overflow-hidden" style={{height: '673px', backgroundImage: 'url(/images/our-model-hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
           
           <div className="container relative z-10 text-center" style={{paddingRight: '0px', paddingLeft: '0px', width: '1592px', height: '539px', marginRight: '0px', marginLeft: '0px', display: 'inline'}}>
             <div className="relative z-20">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif tracking-tight" style={{fontSize: '56px', fontFamily: '"Abril Fatface", serif', color: '#000000'}}>
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif tracking-tight" style={{fontSize: '56px', fontFamily: '"Abril Fatface", serif', color: '#000000', textShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
                 A new economic engine for great content
               </h1>
               <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto" style={{color: '#4B5563'}}>
