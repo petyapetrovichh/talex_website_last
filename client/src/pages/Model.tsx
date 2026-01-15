@@ -13,16 +13,21 @@ export default function Model() {
       
       <div className="pt-20">
         {/* 1. Hero Section */}
-        <section className="relative py-24 overflow-hidden" style={{height: '655px', backgroundImage: 'url(/images/our-model-hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <section className="relative py-24 overflow-hidden bg-white" style={{height: '595px'}}>
           
           <div className="container relative z-10 text-center" style={{paddingRight: '0px', paddingLeft: '0px', width: '1592px', height: '539px', marginRight: '0px', marginLeft: '0px', display: 'inline'}}>
             <div className="relative z-20">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif tracking-tight" style={{fontSize: '56px', fontFamily: '"Abril Fatface", serif', color: '#000000', textShadow: '0 2px 4px rgba(0,0,0,0.1)', marginTop: '50px', fontWeight: '400'}}>
-                A new economic engine for <span style={{color: '#6FF000'}}>great content</span>
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif tracking-tight" style={{fontSize: '56px', fontFamily: '"Abril Fatface", serif'}}>
+                A new economic engine for great content
               </h1>
-              <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto" style={{color: '#000000'}}>
+              <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
                 Single-Content Purchase & Prediction Market
               </p>
+            </div>
+            
+            {/* Sketch Illustration */}
+            <div className="relative w-full max-w-5xl mx-auto h-[400px] mt-12 z-0" style={{marginTop: '-110px', marginBottom: '-38px', width: '1119px', height: '591px', display: 'inline'}}>
+               <img src="/images/Group1556239238.png" alt="People connecting sketch" className="w-full h-full object-contain" style={{width: '1642px', height: '525px', objectFit: 'fill', marginLeft: '5px', marginTop: '-181px'}} />
             </div>
           </div>
         </section>
@@ -80,8 +85,8 @@ export default function Model() {
                     </p>
                   </div>
                   <div className="flex gap-4 items-start group">
-                    <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/5.png" alt="Inefficient Payment" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+                    <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform overflow-visible">
+                      <img src="/images/5.png" alt="Inefficient Payment" className="w-full h-full object-contain" style={{width: 'auto', height: 'auto'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed pt-1" style={{marginTop: '10px'}}>
                       <strong>Inefficient Payment:</strong> Forced to buy “the whole farm” just to eat one apple.
