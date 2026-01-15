@@ -499,7 +499,7 @@ incentivizing early discovery and dissemination.
           <div className="container" style={{marginTop: '38px'}}>
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>The shift from ads to direct value</h2>
-              <p className="text-gray-500 text-sm uppercase tracking-widest">Back to Creating Real Value</p>
+              <p className="text-gray-500 text-sm uppercase tracking-widest" style={{fontWeight: '500'}}>Back to Creating Real Value</p>
             </div>
 
             <div className="max-w-4xl mx-auto relative h-[400px] border-l border-b border-gray-200">
