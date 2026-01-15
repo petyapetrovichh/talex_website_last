@@ -44,7 +44,7 @@ export default function Model() {
                 <div className="space-y-8">
                   <div className="flex gap-4 items-center group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/1.png" alt="Subscription Ceiling" className="w-6 h-6" style={{width: '113px', height: '48px'}} />
+                      <img src="/images/1.png" alt="Subscription Ceiling" className="w-6 h-6" style={{width: '226px', height: '96px'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed">
                       <strong>Subscription Ceiling:</strong> Hard to convince users to subscribe forever for occasional hits.
@@ -52,7 +52,7 @@ export default function Model() {
                   </div>
                   <div className="flex gap-4 items-center group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+                      <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed">
                       <strong>Centralized Traffic:</strong> Algorithms favor clickbait over quality.
@@ -60,7 +60,7 @@ export default function Model() {
                   </div>
                   <div className="flex gap-4 items-center group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+                      <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed">
                       <strong>No Ownership:</strong> You build the audience, but the platform owns the relationship.
@@ -75,7 +75,7 @@ export default function Model() {
                 <div className="space-y-8">
                   <div className="flex gap-4 items-center group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform" style={{width: '48px', height: '48px'}}>
-                      <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+                      <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed">
                       <strong>Information Overload:</strong> Valuable content is buried in noise and ads.
@@ -83,7 +83,7 @@ export default function Model() {
                   </div>
                   <div className="flex gap-4 items-center group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform overflow-visible">
-                      <img src="/images/5.png" alt="Inefficient Payment" className="w-full h-full object-contain" style={{width: 'auto', height: 'auto'}} />
+                      <img src="/images/5.png" alt="Inefficient Payment" className="w-full h-full object-contain" style={{width: '100px', height: '100px'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed">
                       <strong>Inefficient Payment:</strong> Forced to buy "the whole farm" just to eat one apple.
@@ -91,7 +91,7 @@ export default function Model() {
                   </div>
                   <div className="flex gap-4 items-center group">
                     <div className="w-12 h-12 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" style={{width: '50px', height: '50px'}} />
+                      <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed">
                       <strong>Passive Role:</strong> No incentive to curate or filter good content.
