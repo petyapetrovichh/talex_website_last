@@ -116,8 +116,8 @@ export default function Model() {
             
             <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
               <div className="flex flex-col items-center group">
-                <div className="w-24 h-24 mb-6 text-[#6FF000] group-hover:scale-110 transition-transform duration-300">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <div className="w-24 h-24 mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <img src="/images/single-payment-icon.png" alt="Single Payment" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-xl font-bold mb-4" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Single Payment</h3>
                 <p className="text-gray-600 text-sm leading-relaxed max-w-xs" style={{color: '#000000', fontSize: '18px'}}>
