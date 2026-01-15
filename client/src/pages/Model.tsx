@@ -192,8 +192,8 @@ incentivizing early discovery and dissemination.
             </div>
             
             <p className="text-gray-500 text-xs mt-12 max-w-2xl mx-auto italic" style={{color: '#000000', fontSize: '18px'}}>
-              * When a user pays $X, 20% goes directly to the creator as stable income. 80% enters the
- “Reward Pool” to reward those who discovered the content earlier.
+              When a user pays $X, 20% goes directly to the creator as stable income. 80% enters the
+ "Reward Pool" to reward those who discovered the content earlier.
             </p>
           </div>
         </section>
