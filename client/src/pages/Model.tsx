@@ -535,8 +535,8 @@ incentivizing early discovery and dissemination.
         </section>
 
         {/* Bottom CTA */}
-        <section className="py-32 bg-gradient-to-b from-white to-[#F0FDF4] text-center">
-          <div className="container">
+        <section className="py-32 bg-gradient-to-b from-white to-[#F0FDF4] text-center relative overflow-hidden" style={{backgroundImage: 'url(/images/new-way-value-discovery.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+          <div className="container relative z-10">
             <h2 className="text-5xl font-bold mb-8 font-serif">A new way of value discovery</h2>
             <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
               Join TaleX today and be part of the revolution that puts value back into the hands of creators and supporters.
