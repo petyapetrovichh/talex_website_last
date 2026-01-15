@@ -187,7 +187,7 @@ export default function CreatorList() {
           }}
           style={{fontSize: '18px'}}
         >
-          Discover ever more ideas
+          Discover even more ideas
         </Button>
       </div>
 
