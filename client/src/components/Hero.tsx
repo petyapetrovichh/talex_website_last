@@ -13,7 +13,7 @@ export default function Hero() {
       {/* =========================================
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
-      <div className="md:hidden relative z-10 pt-28 pb-16 px-6 flex flex-col" style={{width: '363px', marginTop: '0px', paddingRight: '14px', paddingLeft: '14px'}}>
+      <div className="md:hidden relative z-10 pt-28 pb-16 px-6 flex flex-col" style={{width: '363px', marginTop: '0px', paddingRight: '14px', paddingLeft: '14px', height: '650px'}}>
         <div className="w-full max-w-md mx-auto">
           <h1 className="text-4xl font-bold tracking-tight leading-[1.1] mb-6 text-left" style={{fontWeight: '400', fontSize: '24px', color: '#000000', paddingLeft: '10px'}}>
             TaleX is where <br />
