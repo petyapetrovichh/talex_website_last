@@ -75,19 +75,19 @@ export default function Footer() {
           DESKTOP VIEW (Visible only on desktop)
           ========================================= */}
       <div className="hidden md:block container pt-20 pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          <div className="col-span-1 md:col-span-1" style={{marginRight: '-200px'}}>
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-0 mb-16" style={{justifyContent: 'space-between'}}>
+          <div className="col-span-1" style={{flex: '0 0 auto', width: '200px'}}>
             <Link href="/">
               <div className="flex items-center gap-2 cursor-pointer mb-6">
                 <img src="/logo-new.png" alt="TaleX" className="h-8 w-auto" style={{width: '136px', height: '24px'}} />
               </div>
             </Link>
-            <p className="text-gray-500 text-sm leading-relaxed" style={{width: '600px', color: '#838383', fontSize: '18px', whiteSpace: 'nowrap', fontFamily: '"Abril Fatface", cursive'}}>
+            <p className="text-gray-500 text-sm leading-relaxed" style={{width: '200px', color: '#838383', fontSize: '18px', whiteSpace: 'nowrap', fontFamily: '"Abril Fatface", cursive'}}>
               Where great content pays off both creators and supporters
             </p>
           </div>
           
-          <div style={{marginLeft: '250px', marginRight: '-50px'}}>
+          <div style={{flex: '1 1 auto', minWidth: '100px'}}>
             <h4 className="font-bold mb-6" style={{fontSize: '18px', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', color: '#000000'}}>Explore</h4>
             <ul className="space-y-4 text-sm text-gray-600">
               <li><a href="https://www.talex.world/" className="hover:text-[#6FF000] transition-colors">TaleX App</a></li>
@@ -96,7 +96,7 @@ export default function Footer() {
             </ul>
           </div>
           
-          <div style={{marginRight: '15px', marginLeft: '50px'}}>
+          <div style={{flex: '1 1 auto', minWidth: '100px'}}>
             <h4 className="font-bold mb-6" style={{fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', color: '#000000', fontSize: '18px'}}>Company</h4>
             <ul className="space-y-4 text-sm text-gray-600">
               <li><a href="https://docs.talex.world/" className="hover:text-[#6FF000] transition-colors">About</a></li>
@@ -106,7 +106,7 @@ export default function Footer() {
             </ul>
           </div>
           
-          <div style={{marginRight: '300px', marginLeft: '-125px'}}>
+          <div style={{flex: '1 1 auto', minWidth: '100px'}}>
             <h4 className="font-bold mb-6" style={{color: '#000000', fontSize: '18px', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Community</h4>
             <div className="grid grid-cols-2 gap-4">
               <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#6FF000] transition-colors" title="X (Twitter)">
