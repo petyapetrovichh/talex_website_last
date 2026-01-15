@@ -41,12 +41,12 @@ export default function BusinessModel() {
         </div>
 
         <div className="relative w-full flex justify-center">
-          <img 
-            src="/images/00.png" 
-            alt="Support & Earn" 
-            className="h-auto drop-shadow-2xl" 
-            style={{width: `${IMAGE_CONFIG.unlockForMore.width}px`}} 
-          />
+            <img 
+              src="/images/sharing-chain-phone.png" 
+              alt="Support & Earn" 
+              className="h-auto drop-shadow-2xl" 
+              style={{width: `${IMAGE_CONFIG.unlockForMore.width}px`}} 
+            />
         </div>
       </div>
 
@@ -155,7 +155,7 @@ export default function BusinessModel() {
           }}
         >
             <img 
-              src="/images/00.png" 
+              src="/images/sharing-chain-phone.png" 
               alt="Support & Earn" 
               className="w-full h-auto drop-shadow-2xl"
             />
