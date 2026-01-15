@@ -138,8 +138,8 @@ This signal is stronger than clicks, effectively filtering out noise.
               </div>
               
               <div className="flex flex-col items-center group">
-                <div className="w-24 h-24 mb-6 text-[#6FF000] group-hover:scale-110 transition-transform duration-300">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                 <div className="w-24 h-24 mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <img src="/images/prediction-game-icon.png" alt="Prediction Game" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-xl font-bold mb-4" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Prediction Game</h3>
                 <p className="text-gray-600 text-sm leading-relaxed max-w-xs" style={{color: '#000000', fontSize: '18px'}}>
