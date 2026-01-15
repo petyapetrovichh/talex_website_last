@@ -42,7 +42,7 @@ export default function Model() {
               <div>
                 <h3 className="text-xl font-bold mb-12 text-center" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>For Creators</h3>
                 <div className="space-y-8">
-                  <div className="flex gap-4 items-center group">
+                  <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
                     <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/1.png" alt="Subscription Ceiling" className="w-6 h-6" style={{width: '226px', height: '96px'}} />
                     </div>
@@ -50,7 +50,7 @@ export default function Model() {
                       <strong>Subscription Ceiling:</strong> Hard to convince users to subscribe forever for occasional hits.
                     </p>
                   </div>
-                  <div className="flex gap-4 items-center group">
+                  <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
                     <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
                     </div>
@@ -58,7 +58,7 @@ export default function Model() {
                       <strong>Centralized Traffic:</strong> Algorithms favor clickbait over quality.
                     </p>
                   </div>
-                  <div className="flex gap-4 items-center group">
+                  <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
                     <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
                     </div>
@@ -73,7 +73,7 @@ export default function Model() {
               <div>
                 <h3 className="text-xl font-bold mb-12 text-center" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>For Users</h3>
                 <div className="space-y-8">
-                  <div className="flex gap-4 items-center group">
+                  <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
                     <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
                     </div>
@@ -81,7 +81,7 @@ export default function Model() {
                       <strong>Information Overload:</strong> Valuable content is buried in noise and ads.
                     </p>
                   </div>
-                  <div className="flex gap-4 items-center group">
+                  <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
                     <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform overflow-visible">
                       <img src="/images/5.png" alt="Inefficient Payment" className="w-full h-full object-contain" style={{width: '100px', height: '100px'}} />
                     </div>
@@ -89,7 +89,7 @@ export default function Model() {
                       <strong>Inefficient Payment:</strong> Forced to buy "the whole farm" just to eat one apple.
                     </p>
                   </div>
-                  <div className="flex gap-4 items-center group">
+                  <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
                     <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
                     </div>
