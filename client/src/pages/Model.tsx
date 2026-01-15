@@ -365,7 +365,7 @@ incentivizing early discovery and dissemination.
                    <p className="font-mono text-sm text-gray-500 mb-2" style={{color: '#000000', fontSize: '14px', fontWeight: '700'}}>Reward Distribution</p>
                    <p className="font-mono text-xl font-bold text-[#6FF000]" style={{color: '#000000', fontSize: '20px'}}>Reward<sub>i,k</sub> = Pool<sub>k</sub> × (X<sub>i</sub> / H<sub>k</sub>)</p>
                 </div>
-                <p className="text-xs text-gray-400 mt-6 text-center" style={{color: '#000000', fontSize: '18px'}}>
+                <p className="text-xs text-gray-400 mt-6 text-center" style={{color: '#000000', fontSize: '18px', textAlign: 'left'}}>
                   Where Xi is the total contributed amount by senior i in tier k, Hk is the total historical payments in that tier.
                 </p>
               </div>
@@ -377,8 +377,8 @@ incentivizing early discovery and dissemination.
         <section className="py-24 bg-white">
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-2 font-serif">Win Win Win ecosystem</h2>
-              <p className="text-gray-500 text-sm uppercase tracking-widest">Creators • Users • TaleX</p>
+              <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>Win-Win-Win ecosystem</h2>
+              <p className="text-gray-500 text-sm uppercase tracking-widest" style={{fontWeight: '500'}}>Creators, Users, Platform</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto" style={{alignItems: 'start'}}>
@@ -390,8 +390,8 @@ incentivizing early discovery and dissemination.
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-2xl font-bold text-black mb-4">Creators</h3>
-                  <p className="text-sm text-black font-medium leading-relaxed">
+                  <h3 className="text-2xl font-bold text-black mb-4" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Creators</h3>
+                  <p className="text-sm text-black font-medium leading-relaxed" style={{fontSize: '18px'}}>
                     Focus on quality over quantity. Immediate 20% revenue from single hits without needing a massive subscriber base.
                   </p>
                 </div>
@@ -405,8 +405,8 @@ incentivizing early discovery and dissemination.
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-2xl font-bold text-black mb-4">Users</h3>
-                  <p className="text-sm text-black font-medium leading-relaxed">
+                  <h3 className="text-2xl font-bold text-black mb-4" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Users</h3>
+                  <p className="text-sm text-black font-medium leading-relaxed" style={{fontSize: '18px'}}>
                     Recover attention ownership. Gain financial upside from good taste. Information feed becomes high-signal.
                   </p>
                 </div>
@@ -420,8 +420,8 @@ incentivizing early discovery and dissemination.
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-transparent group-hover:bg-[#6FF000] flex flex-col justify-center items-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-2xl font-bold text-black mb-4">TaleX</h3>
-                  <p className="text-sm text-black font-medium leading-relaxed">
+                  <h3 className="text-2xl font-bold text-black mb-4" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Platform</h3>
+                  <p className="text-sm text-black font-medium leading-relaxed" style={{fontSize: '18px'}}>
                     Shifts from an "Ad Engine" to a "Value Engine". Revenue aligns with content quality, not view counts.
                   </p>
                 </div>
