@@ -238,15 +238,15 @@ incentivizing early discovery and dissemination.
         </section>
 
         {/* 6. The sharing chain */}
-        <section className="py-24" style={{backgroundImage: 'url(/images/sharing-chain-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
+        <section className="py-24" style={{backgroundImage: 'url(/images/sharing-chain-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed', height: '730px'}}>
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
               <div className="flex justify-center">
                 <img src="/images/sharing-chain-phone.png" alt="The Sharing Chain" className="w-full max-w-sm h-auto drop-shadow-2xl rounded-3xl" />
               </div>
               <div>
-                <h2 className="text-4xl font-bold mb-8 font-serif">The sharing chain</h2>
-                <p className="text-gray-500 text-sm mb-12 uppercase tracking-widest">How It Works</p>
+                <h2 className="text-4xl font-bold mb-8 font-serif" style={{fontSize: '39px', marginBottom: '8px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>The sharing chain</h2>
+                <p className="text-gray-500 text-sm mb-12 uppercase tracking-widest" style={{fontWeight: '500'}}>How It Works</p>
                 
                 <div className="space-y-8">
                   <div className="relative pl-8 border-l-2 border-[#6FF000]">
