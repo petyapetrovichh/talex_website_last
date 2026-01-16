@@ -47,11 +47,11 @@ export default function WhyChoose() {
                 <img src={feature.image} alt={feature.title} className="w-20 h-20 object-contain" style={{width: '152px', height: '152px'}} />
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2" style={{fontSize: '20px'}}>{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-base" style={{fontSize: '16px'}}>
+                <h3 className="text-xl font-bold mb-2" style={{fontSize: '20px', textAlign: 'left', color: '#000000', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed text-base" style={{fontSize: '18px', color: '#000000', textAlign: 'left'}}>
                   {feature.description}
                 </p>
-                <button className="mt-3 text-[#6FF000] font-bold text-sm hover:underline">
+                <button className="mt-3 text-[#6FF000] font-bold text-sm hover:underline" style={{fontSize: '16px', textAlign: 'left'}}>
                   Learn more →
                 </button>
               </div>
