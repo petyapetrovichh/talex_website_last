@@ -26,7 +26,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-white font-sans text-gray-900" style={{height: '850px', overflow: 'hidden'}}>
+    <div className="min-h-screen flex flex-col bg-white font-sans text-gray-900" style={{height: '850px'}}>
       <Header />
       
       <main className="flex-grow" style={{paddingTop: '82px'}}>
