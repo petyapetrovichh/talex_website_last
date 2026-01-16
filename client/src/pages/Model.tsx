@@ -40,7 +40,8 @@ export default function Model() {
     <div className="min-h-screen bg-white font-sans text-black">
       <Header />
       
-      <div className="pt-20">
+      {/* MOBILE VERSION */}
+      <div className="md:hidden pt-20">
         {/* 1. Hero Section */}
         <section className="relative py-24 overflow-hidden" style={{height: '655px', backgroundImage: 'url(/images/our-model-hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
           
@@ -544,6 +545,148 @@ incentivizing early discovery and dissemination.
             <Button className="bg-black hover:bg-[#6FF000] text-white hover:text-black font-bold rounded-full px-12 py-8 text-xl shadow-xl shadow-black/30 hover:shadow-[#6FF000]/30 transition-all hover:scale-105" style={{paddingRight: '40px', paddingLeft: '40px'}} onClick={() => window.location.href = 'https://www.talex.world/publish'}>
               Tell Your Tale
             </Button>
+          </div>
+        </section>
+      </div>
+
+      {/* DESKTOP VERSION */}
+      <div className="hidden md:block pt-20">
+        {/* 1. Hero Section */}
+        <section className="relative py-24 overflow-hidden" style={{height: '655px', backgroundImage: 'url(/images/our-model-hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
+          
+          <div className="container relative z-10 text-center" style={{paddingRight: '0px', paddingLeft: '0px', width: '1592px', height: '539px', marginRight: '0px', marginLeft: '0px', display: 'inline'}}>
+            <div className="relative z-20">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif tracking-tight" style={{fontSize: '56px', fontFamily: '"Abril Fatface", serif', color: '#000000', textShadow: '0 2px 4px rgba(0,0,0,0.1)', marginTop: '50px', fontWeight: '400'}}>
+                A new economic engine for <span style={{color: '#6FF000'}}>great content</span>
+              </h1>
+              <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto" style={{color: '#000000'}}>
+                Single-Content Purchase & Prediction Market
+              </p>
+            </div>
+            
+
+          </div>
+        </section>
+
+        {/* 2. What went wrong? */}
+        <section className="py-24 bg-white" style={{marginTop: '0px'}}>
+          <div className="container">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontWeight: '400', fontFamily: '"Abril Fatface", serif', fontSize: '39px'}}>What went wrong?</h2>
+              <p className="text-gray-500 text-sm uppercase tracking-widest" style={{fontWeight: '500'}}>The Broken Content Economy</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+              {/* For Creators */}
+              <div>
+                <h3 className="text-xl font-bold mb-12 text-center" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', fontSize: '24px'}}>For Creators</h3>
+                <div className="space-y-8">
+                  <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
+                    <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <img src="/images/1.png" alt="Subscription Ceiling" className="w-6 h-6" style={{width: '226px', height: '96px'}} />
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
+                      <strong>Subscription Ceiling:</strong> Hard to convince users to subscribe forever for occasional hits.
+                    </p>
+                  </div>
+                  <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
+                    <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <img src="/images/2.png" alt="Centralized Traffic" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
+                      <strong>Centralized Traffic:</strong> Algorithms favor clickbait over quality.
+                    </p>
+                  </div>
+                  <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
+                    <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <img src="/images/3.png" alt="No Ownership" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
+                      <strong>Monetization Gap:</strong> Single high-quality pieces often generate zero direct revenue.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* For Users */}
+              <div>
+                <h3 className="text-xl font-bold mb-12 text-center" style={{fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', fontSize: '24px'}}>For Users</h3>
+                <div className="space-y-8">
+                  <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
+                    <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <img src="/images/4.png" alt="Information Overload" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
+                      <strong>Information Overload:</strong> Valuable content is buried in noise and ads.
+                    </p>
+                  </div>
+                  <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
+                    <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform overflow-visible">
+                      <img src="/images/5.png" alt="Inefficient Payment" className="w-full h-full object-contain" style={{width: '100px', height: '100px'}} />
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
+                      <strong>Inefficient Payment:</strong> Forced to buy "the whole farm" just to eat one apple.
+                    </p>
+                  </div>
+                  <div className="flex gap-4 items-center group" style={{marginBottom: '50px'}}>
+                    <div className="w-24 h-24 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <img src="/images/6.png" alt="Passive Role" className="w-6 h-6" style={{width: '100px', height: '100px'}} />
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed" style={{color: '#000000', fontSize: '18px'}}>
+                      <strong>Passive Role:</strong> No incentive to curate or filter good content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Separator */}
+        <div className="w-full relative z-10">
+          <img src="/images/Maskgroup.png" alt="Separator" className="w-full h-auto object-cover" />
+        </div>
+
+        {/* 3. Three core pillars of the new engine */}
+        <section className="py-24 bg-white" style={{marginTop: '0px'}}>
+          <div className="container text-center">
+            <h2 className="text-4xl font-bold mb-2 font-serif" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>Three core pillars of the new engine</h2>
+            <p className="text-gray-500 text-sm mb-16 uppercase tracking-widest" style={{fontWeight: '500'}}>The Foundation of the User-Driven Business Model</p>
+            
+            <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+              <div className="flex flex-col items-center group">
+                <div className="w-24 h-24 mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <img src="/images/single-payment-icon.png" alt="Single Payment" className="w-full h-full object-contain" style={{marginLeft: '10px'}} />
+                </div>
+                <h3 className="text-xl font-bold mb-4" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Single Payment</h3>
+                <p className="text-gray-600 text-sm leading-relaxed max-w-xs" style={{color: '#000000', fontSize: '18px'}}>
+                  Pay per content piece, not per creator. 
+Flexible, low-friction micro-payments that liberate consumption.
+                </p>
+              </div>
+              
+              <div className="flex flex-col items-center group">
+                <div className="w-24 h-24 mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <img src="/images/user-filter-icon.png" alt="User Filter" className="w-full h-full object-contain" />
+                </div>
+                <h3 className="text-xl font-bold mb-4" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>User Filter</h3>
+                <p className="text-gray-600 text-sm leading-relaxed max-w-xs" style={{color: '#000000', fontSize: '18px'}}>
+                  Users "vote with money". 
+This signal is stronger than clicks, effectively filtering out noise.
+                </p>
+              </div>
+              
+              <div className="flex flex-col items-center group">
+                 <div className="w-24 h-24 mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <img src="/images/prediction-game-icon.png" alt="Prediction Game" className="w-full h-full object-contain" />
+                </div>
+                <h3 className="text-xl font-bold mb-4" style={{fontSize: '24px', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Prediction Game</h3>
+                <p className="text-gray-600 text-sm leading-relaxed max-w-xs" style={{color: '#000000', fontSize: '18px'}}>
+                  Payment acts as a prediction of future popularity,
+incentivizing early discovery and dissemination.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </div>
