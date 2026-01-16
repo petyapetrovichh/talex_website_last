@@ -14,8 +14,8 @@ export default function Hero() {
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
       <div className="md:hidden relative z-10 pt-28 pb-16 px-6 flex flex-col" style={{width: '363px', marginTop: '0px', paddingRight: '14px', paddingLeft: '14px', height: '825px'}}>
-        <div className="w-full max-w-md mx-auto" style={{width: '366px'}}>
-          <h1 className="text-4xl font-bold tracking-tight leading-[1.1] mb-6 text-left" style={{fontWeight: '400', fontSize: '28px', color: '#000000', paddingLeft: '10px'}}>
+        <div className="w-full max-w-md mx-auto" style={{width: '366px', marginTop: '125px'}}>
+          <h1 className="text-4xl font-bold tracking-tight leading-[1.1] mb-6 text-left" style={{fontWeight: '400', fontSize: '28px', color: '#000000', paddingLeft: '10px', marginBottom: '30px'}}>
             TaleX is where <br />
             <span className="relative inline-block text-[#6FF000]">
               great content
@@ -23,7 +23,7 @@ export default function Hero() {
             both creators and supporters
           </h1>
           
-          <p className="text-base text-gray-600 mb-8 leading-relaxed text-left" style={{fontSize: '15px', color: '#000000', paddingLeft: '10px'}}>
+          <p className="text-base text-gray-600 mb-8 leading-relaxed text-left" style={{fontSize: '18px', color: '#000000', paddingLeft: '10px'}}>
             TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
           </p>
           
