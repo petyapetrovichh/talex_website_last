@@ -1,14 +1,18 @@
 import { Link } from "wouter";
 import { useState } from "react";
 
-export default function Footer() {
+interface FooterProps {
+  id?: string;
+}
+
+export default function Footer({ id }: FooterProps) {
   const [activeLink, setActiveLink] = useState<string | null>(null);
 
   const handleLinkClick = (linkId: string) => {
     setActiveLink(linkId);
   };
   return (
-    <footer className="bg-white border-t border-gray-100" style={{marginTop: '50px', borderStyle: 'none'}}>
+    <footer id={id} className="bg-white border-t border-gray-100" style={{marginTop: '50px', borderStyle: 'none'}}>
       <style>{`
         @media (max-width: 768px) {
           footer { margin-top: 100px !important; position: relative; }

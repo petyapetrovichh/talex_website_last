@@ -10,6 +10,11 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-white font-sans text-gray-900">
+      <style>{`
+        @media (max-width: 768px) {
+          #home-footer { margin-top: 300px !important; }
+        }
+      `}</style>
       <Header />
       <main className="flex-grow" style={{height: '7700px'}}>
         <Hero />
@@ -19,7 +24,7 @@ export default function Home() {
         <CreatorList />
         <WhyChoose />
       </main>
-      <Footer />
+      <Footer id="home-footer" />
     </div>
   );
 }
