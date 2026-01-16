@@ -1,11 +1,7 @@
 import { Link } from "wouter";
 import { useState } from "react";
 
-interface FooterProps {
-  mobileMarginTop?: string;
-}
-
-export default function Footer({ mobileMarginTop = '0px' }: FooterProps) {
+export default function Footer() {
   const [activeLink, setActiveLink] = useState<string | null>(null);
 
   const handleLinkClick = (linkId: string) => {
@@ -15,7 +11,7 @@ export default function Footer({ mobileMarginTop = '0px' }: FooterProps) {
     <footer className="bg-white border-t border-gray-100" style={{marginTop: '50px'}}>
       <style>{`
         @media (max-width: 768px) {
-          footer { margin-top: ${mobileMarginTop} !important; }
+          footer { margin-top: 0px !important; position: relative; }
           .mobile-social-btn:active {
             background-color: #6FF000 !important;
             transform: scale(0.95);
