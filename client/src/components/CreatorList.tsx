@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 // Mock data based on the design image
 const creators = [
@@ -66,7 +66,7 @@ const creators = [
   }
 ];
 
-// Duplicate creators to ensure smooth infinite scroll
+// Duplicate creators to ensure smooth infinite scroll - multiply by 3 to show all 5 unique cards
 const marqueeCreators = [...creators, ...creators, ...creators];
 
 const CreatorCard = ({ creator }: { creator: typeof creators[0] }) => (
@@ -145,43 +145,6 @@ const CreatorCard = ({ creator }: { creator: typeof creators[0] }) => (
   </div>
 );
 
-// Mobile Carousel Component
-interface Creator {
-  id: number;
-  title: string;
-  author: string;
-  role: string;
-  reads: string;
-  tipped: string;
-  avatar: string;
-  bgImage: string;
-  cardColor: string;
-  link: string;
-}
-
-function MobileCarousel({ creators }: { creators: Creator[] }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % creators.length);
-    }, 6000); // 30 seconds / 5 cards = 6 seconds per card
-    return () => clearInterval(interval);
-  }, [creators.length]);
-
-  return (
-    <div className="relative w-full overflow-hidden">
-      <div className="flex transition-transform duration-500 ease-in-out" style={{
-        transform: `translateX(calc(-${currentIndex * 100}% - ${currentIndex * 24}px))`
-      }}>
-            {creators.map((creator: Creator, index: number) => (
-          <CreatorCard key={`carousel-${index}`} creator={creator} />
-        ))}
-      </div>
-    </div>
-  );
-}
-
 export default function CreatorList() {
   return (
     <>
@@ -189,9 +152,13 @@ export default function CreatorList() {
       <section className="md:hidden bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1250px', marginTop: '225px'}}>
         {/* Top Gradient Overlay for smooth blending if needed, though design shows solid background */}
         
-        {/* First Row - Carousel */}
+        {/* First Row - Marquee Left */}
         <div className="mb-16 relative w-full overflow-hidden">
-          <MobileCarousel creators={creators} />
+          <div className="flex animate-marquee-mobile whitespace-nowrap">
+            {marqueeCreators.map((creator, index) => (
+              <CreatorCard key={`row1-${index}`} creator={creator} />
+            ))}
+          </div>
         </div>
 
         {/* Center Content */}
@@ -226,10 +193,36 @@ export default function CreatorList() {
           </Button>
         </div>
 
-        {/* Second Row - Carousel (Reverse) */}
+        {/* Second Row - Marquee Right */}
         <div className="relative w-full overflow-hidden">
-          <MobileCarousel creators={creators} />
+          <div className="flex animate-marquee-reverse-mobile whitespace-nowrap">
+            {marqueeCreators.map((creator, index) => (
+              <CreatorCard key={`row2-${index}`} creator={creator} />
+            ))}
+          </div>
         </div>
+
+        {/* CSS for Marquee Animation */}
+        <style>{`
+          @keyframes marquee-mobile {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          @keyframes marquee-reverse-mobile {
+            0% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+          }
+          .animate-marquee-mobile {
+            animation: marquee-mobile 8s linear infinite;
+          }
+          .animate-marquee-reverse-mobile {
+            animation: marquee-reverse-mobile 8s linear infinite;
+          }
+          /* Pause on hover */
+          .animate-marquee-mobile:hover, .animate-marquee-reverse-mobile:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
       </section>
 
       {/* Desktop Version */}
