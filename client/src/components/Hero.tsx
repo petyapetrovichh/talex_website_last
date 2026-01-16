@@ -23,7 +23,7 @@ export default function Hero() {
             both creators and supporters
           </h1>
           
-          <p className="text-base text-gray-600 mb-8 leading-relaxed text-left" style={{fontSize: '18px', color: '#000000', paddingLeft: '10px'}}>
+          <p className="text-base text-gray-600 mb-8 leading-relaxed text-left" style={{fontSize: '18px', color: '#000000', paddingLeft: '10px', marginBottom: '20px'}}>
             TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
           </p>
           
@@ -42,7 +42,7 @@ export default function Hero() {
                 backgroundColor: '#6FF000',
                 color: 'black',
                 boxShadow: '0 10px 25px rgba(111, 255, 0, 0.2)',
-                transition: 'background-color 0.2s ease, color 0.2s ease, transform 0.1s ease'
+                transition: 'background-color 0.2s ease, color 0.2s ease, transform 0.1s ease', marginLeft: '9px', width: '172px'
               }}
               onMouseDown={(e) => {
                 const btn = e.currentTarget as HTMLButtonElement;
