@@ -15,7 +15,7 @@ export default function Hero() {
           ========================================= */}
       <div className="md:hidden relative z-10 pt-28 pb-16 px-6 flex flex-col" style={{width: '363px', marginTop: '0px', paddingRight: '14px', paddingLeft: '14px', height: '825px'}}>
         <div className="w-full max-w-md mx-auto" style={{width: '366px', marginTop: '125px'}}>
-          <h1 className="text-4xl font-bold tracking-tight leading-[1.1] mb-6 text-left" style={{fontWeight: '400', fontSize: '28px', color: '#000000', paddingLeft: '10px', marginBottom: '30px'}}>
+          <h1 className="text-4xl font-bold tracking-tight leading-[1.1] mb-6 text-left" style={{fontWeight: '400', fontSize: '28px', color: '#000000', paddingLeft: '10px', marginBottom: '30px', lineHeight: '1.5'}}>
             TaleX is where <br />
             <span className="relative inline-block text-[#6FF000]">
               great content
