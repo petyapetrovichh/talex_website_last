@@ -19,14 +19,14 @@ export default function Footer() {
                 <img src="/logo-new.png" alt="TaleX" className="h-6 w-auto" style={{width: '100px', height: '18px'}} />
               </div>
             </Link>
-            <p className="text-gray-500 text-xs leading-relaxed" style={{color: '#838383', fontSize: '14px'}}>
+            <p className="text-gray-500 text-xs leading-relaxed" style={{color: '#838383', fontSize: '12px', fontFamily: '"Abril Fatface", cursive'}}>
               Where great content pays off both creators and supporters
             </p>
           </div>
           
           <div className="grid grid-cols-2 gap-6">
             <div>
-              <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000'}}>Explore</h4>
+              <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Explore</h4>
               <ul className="space-y-3 text-xs text-gray-600">
                 <li><a href="https://www.talex.world/" className="hover:text-[#6FF000] transition-colors">TaleX App</a></li>
                 <li><Link href="/model" className="hover:text-[#6FF000] transition-colors">Our Model</Link></li>
@@ -34,7 +34,7 @@ export default function Footer() {
             </div>
             
             <div>
-              <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000'}}>Company</h4>
+              <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Company</h4>
               <ul className="space-y-3 text-xs text-gray-600">
                 <li><a href="https://docs.talex.world/" className="hover:text-[#6FF000] transition-colors">About</a></li>
                 <li><a href="https://t.me/talex_chain_community" className="hover:text-[#6FF000] transition-colors">Help</a></li>
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000'}}>Community</h4>
+            <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Community</h4>
             <div className="grid grid-cols-5 gap-2">
               <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-colors" title="X (Twitter)">
                 <img src="/x-icon.png" alt="X" className="w-4 h-4" />
@@ -65,10 +65,10 @@ export default function Footer() {
           </div>
 
           <div className="border-t border-gray-100 pt-6 flex flex-col gap-3">
-            <p className="text-xs text-gray-400" style={{color: '#000000'}}>
+            <p className="text-xs text-gray-400" style={{color: '#000000', textAlign: 'center'}}>
               © 2026 Powered by TaleX. All rights reserved.
             </p>
-            <div className="flex gap-4 text-xs text-gray-400">
+            <div className="flex gap-4 text-xs text-gray-400 justify-center">
               <a href="https://www.talex.world/privacy-policy" target="_self" className="hover:text-green-500 active:text-green-500 transition-colors" style={{color: '#000000'}}>Privacy Policy</a>
               <a href="https://www.talex.world/terms-of-service" target="_self" className="hover:text-green-500 active:text-green-500 transition-colors" style={{color: '#050505'}}>Terms of Service</a>
             </div>

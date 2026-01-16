@@ -38,7 +38,7 @@ export default function WhyChoose() {
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
       <div className="md:hidden py-16 px-6" style={{marginTop: '-119px'}}>
-        <h2 className="text-3xl font-bold text-center mb-12" style={{fontSize: '22px'}}>Why Creators Choose TaleX</h2>
+        <h2 className="text-3xl font-bold text-center mb-12" style={{fontSize: '22px', color: '#000000', fontWeight: '400'}}>Why Creators Choose TaleX</h2>
         
         <div className="space-y-12">
           {features.map((feature, index) => (
