@@ -10,6 +10,10 @@ export default function Footer() {
             background-color: #6FF000 !important;
             transform: scale(0.95);
           }
+          .mobile-text-link:active {
+            color: #6FF000 !important;
+            font-weight: 600;
+          }
         }
       `}</style>
       {/* =========================================
@@ -32,17 +36,17 @@ export default function Footer() {
             <div>
               <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Explore</h4>
               <ul className="space-y-3 text-xs text-gray-600">
-                <li><a href="https://www.talex.world/" className="hover:text-[#6FF000] transition-colors">TaleX App</a></li>
-                <li><Link href="/model" className="hover:text-[#6FF000] transition-colors">Our Model</Link></li>
+                <li><a href="https://www.talex.world/" className="mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000]">TaleX App</a></li>
+                <li><Link href="/model" className="mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000]">Our Model</Link></li>
               </ul>
             </div>
             
             <div>
               <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Company</h4>
               <ul className="space-y-3 text-xs text-gray-600">
-                <li><a href="https://docs.talex.world/" className="hover:text-[#6FF000] transition-colors">About</a></li>
-                <li><a href="https://t.me/talex_chain_community" className="hover:text-[#6FF000] transition-colors">Help</a></li>
-                <li><Link href="/contact" className="hover:text-[#6FF000] transition-colors">Contact</Link></li>
+                <li><a href="https://docs.talex.world/" className="mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000]">About</a></li>
+                <li><a href="https://t.me/talex_chain_community" className="mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000]">Help</a></li>
+                <li><Link href="/contact" className="mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000]">Contact</Link></li>
               </ul>
             </div>
           </div>
