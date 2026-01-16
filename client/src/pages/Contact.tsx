@@ -122,7 +122,7 @@ export default function Contact() {
         </div>
 
         {/* MOBILE VIEW */}
-        <div className="md:hidden px-6 py-12" style={{paddingTop: '100px'}}>
+        <div className="md:hidden px-6 py-4" style={{paddingTop: '40px', paddingBottom: '20px'}}>
           <div className="text-center">
             {/* Main Heading - Single Line */}
             <h1 
