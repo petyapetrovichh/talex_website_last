@@ -34,7 +34,7 @@ export default function Footer() {
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
       <div className="md:hidden py-12 px-6" style={{marginTop: '-600px'}}>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8" style={{marginTop: '-30px'}}>
           <div className="flex flex-col gap-3">
             <Link href="/">
               <div className="flex items-center gap-2 cursor-pointer mb-4">
