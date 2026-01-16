@@ -42,11 +42,11 @@ export default function WhyChoose() {
         
         <div className="space-y-12">
           {features.map((feature, index) => (
-            <div key={`mobile-${index}`} className="flex flex-col gap-4 items-center text-center">
+            <div key={`mobile-${index}`} className="flex flex-col gap-4 items-start text-left">
               <div className="flex-shrink-0">
                 <img src={feature.image} alt={feature.title} className="w-20 h-20 object-contain" style={{width: '152px', height: '152px'}} />
               </div>
-              <div>
+              <div className="w-full text-left">
                 <h3 className="text-xl font-bold mb-2" style={{fontSize: '20px', textAlign: 'left', color: '#000000', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>{feature.title}</h3>
                 <p className="text-gray-600 leading-relaxed text-base" style={{fontSize: '18px', color: '#000000', textAlign: 'left'}}>
                   {feature.description}
