@@ -14,7 +14,7 @@ export default function CreatorQuote() {
         <div className="absolute inset-0 pointer-events-none"></div>
 
         <div className="container relative z-10 -mt-[104px]">
-          <div className="max-w-4xl mx-auto text-center" style={{marginTop: '65px'}}>
+          <div className="max-w-4xl mx-auto text-center" style={{marginTop: '125px'}}>
             <div className="mb-8 flex justify-center">
               <div className="w-16 h-16 rounded-xl">
                   <img src="/5.png" alt="Icon" className="w-full h-full object-contain" />
