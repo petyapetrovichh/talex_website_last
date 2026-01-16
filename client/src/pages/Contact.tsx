@@ -26,7 +26,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-white font-sans text-gray-900">
+    <div className="min-h-screen flex flex-col bg-white font-sans text-gray-900" style={{height: '750px'}}>
       <Header />
       
       <main className="flex-grow" style={{paddingTop: '82px'}}>
@@ -123,7 +123,7 @@ export default function Contact() {
 
         {/* MOBILE VIEW */}
         <div className="md:hidden px-6 py-4" style={{paddingTop: '40px', paddingBottom: '20px'}}>
-          <div className="text-center">
+          <div className="text-center" style={{marginTop: '25px'}}>
             {/* Main Heading - Single Line */}
             <h1 
               className="mb-6"
@@ -203,7 +203,7 @@ export default function Contact() {
                   <br />
                   <a 
                     href="https://t.me/talex_chain_community" 
-                    style={{textDecoration: 'underline', color: getLinkColor('https://t.me/talex_chain_community'), cursor: 'pointer', transition: 'color 0.3s ease', wordBreak: 'break-all', display: 'inline-block', marginTop: '4px'}}
+                    style={{textDecoration: 'underline', color: getLinkColor('https://t.me/talex_chain_community'), cursor: 'pointer', transition: 'color 0.3s ease', wordBreak: 'break-all', display: 'inline-block', marginTop: '0px'}}
                     onClick={() => handleLinkClick('https://t.me/talex_chain_community')}
                     onMouseEnter={(e) => handleMouseEnter(e, 'https://t.me/talex_chain_community')}
                     onMouseLeave={(e) => handleMouseLeave(e, 'https://t.me/talex_chain_community')}
