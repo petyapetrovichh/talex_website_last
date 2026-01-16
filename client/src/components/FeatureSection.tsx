@@ -27,7 +27,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           ========================================= */}
       <div className="md:hidden flex flex-col gap-8 py-12 w-full">
         {/* Mobile Image - Moved to top */}
-        <div className="w-full flex justify-center px-4 gap-4" style={{marginTop: '-87px', paddingRight: '20px', paddingLeft: '28px'}}>
+        <div className="w-full flex justify-center px-4 gap-4 overflow-hidden" style={{marginTop: '-87px', paddingRight: '0px', paddingLeft: '0px'}}>
           {mobileImages ? (
             // 如果有指定的移动端图片组，则并排显示
             mobileImages.map((img, index) => (
