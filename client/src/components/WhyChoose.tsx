@@ -42,8 +42,8 @@ export default function WhyChoose() {
         
         <div className="space-y-12">
           {features.map((feature, index) => (
-            <div key={`mobile-${index}`} className="flex flex-col gap-4 items-start text-left">
-              <div className="flex-shrink-0">
+            <div key={`mobile-${index}`} className="flex flex-col gap-4 items-center text-left">
+              <div className="flex-shrink-0 w-full flex justify-center">
                 <img src={feature.image} alt={feature.title} className="w-20 h-20 object-contain" style={{width: '152px', height: '152px'}} />
               </div>
               <div className="w-full text-left">
