@@ -7,7 +7,7 @@ export default function CreatorQuote() {
       {/* Mobile Version */}
       <section 
         className="md:hidden relative py-16 overflow-hidden" 
-        style={{height: '1374px', marginTop: '-258px', backgroundImage: 'url(/images/background_mobile_quote.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}
+        style={{height: '1061px', marginTop: '-258px', backgroundImage: 'url(/images/background_mobile_quote.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}
       >
 
         {/* Background overlay for better text contrast */}
