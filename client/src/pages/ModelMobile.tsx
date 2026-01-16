@@ -299,7 +299,7 @@ export default function ModelMobile() {
 
               {/* Phone Image moved to bottom */}
               <div ref={phoneRef} className="relative cursor-pointer w-full max-w-[280px]" onClick={handleClick}>
-                <img src="/images/sharing-chain-phone.png" alt="The Sharing Chain" className="w-full h-auto drop-shadow-2xl rounded-3xl" style={{marginTop: '5px'}} />
+                <img src="/images/sharing-chain-phone.png" alt="The Sharing Chain" className="w-full h-auto drop-shadow-2xl rounded-3xl" style={{marginTop: '20px'}} />
               </div>
             </div>
           </div>
