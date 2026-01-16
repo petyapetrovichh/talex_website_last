@@ -42,7 +42,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
                   marginLeft: index === 0 ? '-9px' : '0px',
                   height: index === 0 ? '313px' : 'auto',
                   paddingTop: '0px',
-                  transform: 'scale(1.5)',
+                  transform: 'scale(1.25)',
                   transformOrigin: 'top left'
                 }}
               />
