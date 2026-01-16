@@ -261,7 +261,7 @@ export default function ModelMobile() {
         </section>
 
         {/* 6. The sharing chain */}
-        <section className="py-12" style={{backgroundImage: 'url(/images/sharing-chain-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'scroll'}}>
+        <section className="py-12" style={{backgroundImage: 'url(/images/sharing-chain-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'scroll', height: '970px'}}>
           <div className="container px-4">
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold mb-2 font-serif" style={{fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>The sharing chain</h2>
