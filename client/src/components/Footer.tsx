@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="bg-white border-t border-gray-100" style={{marginTop: '50px', borderStyle: 'none'}}>
       <style>{`
         @media (max-width: 768px) {
-          footer { margin-top: 0px !important; position: relative; }
+          footer { margin-top: 100px !important; position: relative; }
           .mobile-social-btn:active {
             background-color: #6FF000 !important;
             transform: scale(0.95);
@@ -33,7 +33,7 @@ export default function Footer() {
       {/* =========================================
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
-      <div className="md:hidden py-12 px-6" style={{marginTop: '1000px'}}>
+      <div className="md:hidden py-12 px-6">
         <div className="flex flex-col gap-8" style={{marginTop: '0px'}}>
           <div className="flex flex-col gap-3">
             <Link href="/">

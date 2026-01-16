@@ -29,7 +29,7 @@ export default function Contact() {
     <div className="min-h-screen flex flex-col bg-white font-sans text-gray-900" style={{height: '850px'}}>
       <style>{`
         @media (max-width: 768px) {
-          footer { margin-top: 200px !important; }
+          footer { margin-top: 100px !important; }
         }
       `}</style>
       <Header />
