@@ -6,14 +6,12 @@ export default function CreatorQuote() {
     <>
       {/* Mobile Version */}
       <section 
-        className="md:hidden relative py-16 bg-[#F0FDF4] overflow-hidden" 
-        style={{height: '1374px', marginTop: '-258px'}}
+        className="md:hidden relative py-16 overflow-hidden" 
+        style={{height: '1374px', marginTop: '-258px', backgroundImage: 'url(/images/background_mobile_quote.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}
       >
 
-        {/* World Map Background */}
-        <div className="absolute inset-0 pointer-events-none">
-          <img src="/4.png" alt="World Map Background" className="w-full h-full object-cover opacity-30" />
-        </div>
+        {/* Background overlay for better text contrast */}
+        <div className="absolute inset-0 pointer-events-none"></div>
 
         <div className="container relative z-10 -mt-[104px]">
           <div className="max-w-4xl mx-auto text-center" style={{marginTop: '65px'}}>
