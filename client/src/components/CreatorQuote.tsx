@@ -68,7 +68,7 @@ export default function CreatorQuote() {
             <img 
               src="/6.png" 
               alt="Petr Osipov" 
-              className="w-[342px] h-auto object-contain mt-[26px]" 
+              className="w-[342px] h-auto object-contain" style={{marginTop: '0px'}} 
             />
           </div>
         </div>

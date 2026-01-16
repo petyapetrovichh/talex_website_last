@@ -230,7 +230,7 @@ It's designed to help people build their own information pathways.`}
           src="/images/creator_illustration.png"
           alt="Creator illustration"
           className="w-full h-auto object-contain drop-shadow-xl"
-          style={{marginTop: '-105px', marginLeft: '215px', width: '158px'}}
+          style={{marginTop: '-105px', marginLeft: '205px', width: '158px'}}
         />
       </div>
 
