@@ -154,7 +154,7 @@ export default function CreatorList() {
         
         {/* First Row - Marquee Left */}
         <div className="mb-16 relative w-full overflow-hidden">
-          <div className="flex animate-marquee whitespace-nowrap">
+          <div className="flex animate-marquee-mobile whitespace-nowrap">
             {marqueeCreators.map((creator, index) => (
               <CreatorCard key={`row1-${index}`} creator={creator} />
             ))}
@@ -195,7 +195,7 @@ export default function CreatorList() {
 
         {/* Second Row - Marquee Right */}
         <div className="relative w-full overflow-hidden">
-          <div className="flex animate-marquee-reverse whitespace-nowrap">
+          <div className="flex animate-marquee-reverse-mobile whitespace-nowrap">
             {marqueeCreators.map((creator, index) => (
               <CreatorCard key={`row2-${index}`} creator={creator} />
             ))}
@@ -204,22 +204,22 @@ export default function CreatorList() {
 
         {/* CSS for Marquee Animation */}
         <style>{`
-          @keyframes marquee {
+          @keyframes marquee-mobile {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
           }
-          @keyframes marquee-reverse {
+          @keyframes marquee-reverse-mobile {
             0% { transform: translateX(-50%); }
             100% { transform: translateX(0); }
           }
-          .animate-marquee {
-            animation: marquee 5.334s linear infinite;
+          .animate-marquee-mobile {
+            animation: marquee-mobile 5.334s linear infinite;
           }
-          .animate-marquee-reverse {
-            animation: marquee-reverse 5.334s linear infinite;
+          .animate-marquee-reverse-mobile {
+            animation: marquee-reverse-mobile 5.334s linear infinite;
           }
           /* Pause on hover */
-          .animate-marquee:hover, .animate-marquee-reverse:hover {
+          .animate-marquee-mobile:hover, .animate-marquee-reverse-mobile:hover {
             animation-play-state: paused;
           }
         `}</style>
