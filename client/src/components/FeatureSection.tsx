@@ -57,16 +57,16 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           )}
         </div>
 
-        <div className="w-full px-6" style={{paddingRight: '0px', paddingLeft: '0px', marginTop: '-21px'}}>
-          <h2 className="text-3xl font-bold tracking-tight leading-tight mb-4 text-left" style={{fontSize: '22px'}}>
+        <div className="w-full px-6" style={{paddingRight: '0px', paddingLeft: '0px', marginTop: '-40px'}}>
+          <h2 className="text-3xl font-bold tracking-tight leading-tight mb-4 text-left" style={{fontSize: '22px', color: '#000000', fontWeight: '400', marginBottom: '24px'}}>
             {title}
           </h2>
-          <p className="text-base text-gray-600 leading-relaxed mb-6 text-left" style={{fontSize: '16px'}}>
+          <p className="text-base text-gray-600 leading-relaxed mb-6 text-left" style={{fontSize: '18px', color: '#000000'}}>
             {description}
           </p>
           <Button 
             onClick={handleButtonClick}
-            className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105 w-full" 
+            className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105 w-full" style={{fontSize: '15px', width: '228px'}} 
           >
             {buttonText}
           </Button>
