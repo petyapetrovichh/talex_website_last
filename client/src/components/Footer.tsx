@@ -8,7 +8,7 @@ export default function Footer() {
     setActiveLink(linkId);
   };
   return (
-    <footer className="bg-white border-t border-gray-100" style={{marginTop: '200px'}}>
+    <footer className="bg-white border-t border-gray-100" style={{marginTop: '50px'}}>
       <style>{`
         @media (max-width: 768px) {
           footer { margin-top: 0px !important; position: relative; }
