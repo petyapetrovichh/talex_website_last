@@ -79,7 +79,7 @@ export default function CreatorQuote() {
       {/* Desktop Version */}
       <section 
         className="hidden md:block relative py-32 bg-[#F0FDF4] overflow-hidden -mt-[138px]" 
-        style={{height: '1219px', marginTop: '-129px'}}
+        style={{height: '1041px', marginTop: '-129px'}}
       >
 
         {/* World Map Background */}
