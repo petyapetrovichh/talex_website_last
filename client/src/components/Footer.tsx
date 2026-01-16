@@ -70,7 +70,7 @@ export default function Footer() {
                   <img src="/facebook-icon.png" alt="Facebook" className="w-4 h-4" />
                 </a>
               </div>
-              <div className="grid grid-cols-5 gap-2">
+              <div className="grid grid-cols-6 gap-2">
                 <a href="https://youtube.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000]" title="YouTube">
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                 </a>
@@ -86,6 +86,7 @@ export default function Footer() {
                 <a href="https://www.linkedin.com/company/talexchain" target="_blank" rel="noopener noreferrer" className="mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000]" title="LinkedIn">
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.81 0-9.728h3.554v1.375c.425-.654 1.187-1.586 2.882-1.586 2.105 0 3.685 1.375 3.685 4.331v5.608zM5.337 8.855c-1.144 0-1.915-.762-1.915-1.715 0-.953.77-1.715 1.958-1.715 1.187 0 1.915.762 1.915 1.715 0 .953-.728 1.715-1.958 1.715zm1.6 11.597H3.738V9.579h3.199v10.873zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
                 </a>
+                <div className="w-8 h-8"></div>
               </div>
             </div>
           </div>
