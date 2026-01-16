@@ -3,6 +3,11 @@ import { Link } from "wouter";
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-100" style={{marginTop: '50px'}}>
+      <style>{`
+        @media (max-width: 768px) {
+          footer { margin-top: 200px !important; }
+        }
+      `}</style>
       {/* =========================================
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
