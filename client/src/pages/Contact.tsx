@@ -199,10 +199,11 @@ export default function Contact() {
               {/* Support Section */}
               <div>
                 <p style={{fontSize: '14px', fontWeight: '400', color: '#000000', lineHeight: '1.6', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"', textAlign: 'left', wordWrap: 'break-word', whiteSpace: 'normal'}}>
-                  We also handle users' support questions on behalf of creators, so feel free to reach out to us:{' '}
+                  We also handle users' support questions on behalf of creators, so feel free to reach out to us:
+                  <br />
                   <a 
                     href="https://t.me/talex_chain_community" 
-                    style={{textDecoration: 'underline', color: getLinkColor('https://t.me/talex_chain_community'), cursor: 'pointer', transition: 'color 0.3s ease', wordBreak: 'break-all'}}
+                    style={{textDecoration: 'underline', color: getLinkColor('https://t.me/talex_chain_community'), cursor: 'pointer', transition: 'color 0.3s ease', wordBreak: 'break-all', display: 'inline-block', marginTop: '4px'}}
                     onClick={() => handleLinkClick('https://t.me/talex_chain_community')}
                     onMouseEnter={(e) => handleMouseEnter(e, 'https://t.me/talex_chain_community')}
                     onMouseLeave={(e) => handleMouseLeave(e, 'https://t.me/talex_chain_community')}
