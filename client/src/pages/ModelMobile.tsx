@@ -47,10 +47,10 @@ export default function ModelMobile() {
     <div className="md:hidden w-full overflow-x-hidden">
       <div className="pt-20">
         {/* 1. Hero Section */}
-        <section className="relative overflow-hidden bg-white" style={{backgroundImage: 'url(/images/mobile-model-hero-v2.png)', backgroundSize: 'cover', backgroundPosition: 'center', height: '800px'}}>
+        <section className="relative overflow-hidden bg-white" style={{backgroundImage: 'url(/images/mobile-model-hero-v2.png)', backgroundSize: 'cover', backgroundPosition: 'center', height: '350px', marginTop: '-15px'}}>
           <div className="container relative z-10 text-center px-4 pt-12">
             <div className="relative z-20">
-              <h1 className="text-4xl font-bold mb-6 font-serif tracking-tight" style={{fontFamily: '"Abril Fatface", serif', color: '#000000', textShadow: '0 2px 4px rgba(0,0,0,0.1)', marginTop: '176px', fontWeight: '400', fontSize: '28px'}}>
+              <h1 className="text-4xl font-bold mb-6 font-serif tracking-tight" style={{fontFamily: '"Abril Fatface", serif', color: '#000000', textShadow: '0 2px 4px rgba(0,0,0,0.1)', marginTop: '52px', fontWeight: '400', fontSize: '28px'}}>
                 A new economic model for<br/><span style={{color: '#6FF000'}}>great content</span>
               </h1>
               <p className="text-base text-gray-600 mb-8 mx-auto" style={{color: '#000000', fontSize: '16px'}}>
