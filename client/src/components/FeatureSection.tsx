@@ -53,7 +53,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
                 className="w-1/2 max-w-[180px] object-contain drop-shadow-xl"
                 style={{
                   width: '172px',
-                  marginTop: index === 0 ? '33px' : '91px',
+                  marginTop: index === 0 ? '89px' : '38px',
                   marginLeft: index === 0 ? '-45px' : '-10px',
                   height: index === 0 ? '313px' : 'auto',
                   paddingTop: '0px',
