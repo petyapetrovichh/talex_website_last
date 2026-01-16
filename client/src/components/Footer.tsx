@@ -1,6 +1,12 @@
 import { Link } from "wouter";
+import { useState } from "react";
 
 export default function Footer() {
+  const [activeLink, setActiveLink] = useState<string | null>(null);
+
+  const handleLinkClick = (linkId: string) => {
+    setActiveLink(linkId);
+  };
   return (
     <footer className="bg-white border-t border-gray-100" style={{marginTop: '50px'}}>
       <style>{`
@@ -10,7 +16,15 @@ export default function Footer() {
             background-color: #6FF000 !important;
             transform: scale(0.95);
           }
+          .mobile-social-btn.active-state {
+            background-color: #6FF000 !important;
+            transform: scale(0.95);
+          }
           .mobile-text-link:active {
+            color: #6FF000 !important;
+            font-weight: 600;
+          }
+          .mobile-text-link.active-state {
             color: #6FF000 !important;
             font-weight: 600;
           }
@@ -36,17 +50,17 @@ export default function Footer() {
             <div>
               <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Explore</h4>
               <ul className="space-y-3 text-xs text-gray-600">
-                <li><a href="https://www.talex.world/" className="mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000]">TaleX App</a></li>
-                <li><Link href="/model" className="mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000]">Our Model</Link></li>
+                <li><a href="https://www.talex.world/" className={`mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000] ${activeLink === 'talex-app' ? 'active-state' : ''}`} onMouseDown={() => handleLinkClick('talex-app')}>TaleX App</a></li>
+                <li><Link href="/model" className={`mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000] ${activeLink === 'our-model' ? 'active-state' : ''}`} onMouseDown={() => handleLinkClick('our-model')}>Our Model</Link></li>
               </ul>
             </div>
             
             <div>
               <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Company</h4>
               <ul className="space-y-3 text-xs text-gray-600">
-                <li><a href="https://docs.talex.world/" className="mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000]">About</a></li>
-                <li><a href="https://t.me/talex_chain_community" className="mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000]">Help</a></li>
-                <li><Link href="/contact" className="mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000]">Contact</Link></li>
+                <li><a href="https://docs.talex.world/" className={`mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000] ${activeLink === 'about' ? 'active-state' : ''}`} onMouseDown={() => handleLinkClick('about')}>About</a></li>
+                <li><a href="https://t.me/talex_chain_community" className={`mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000] ${activeLink === 'help' ? 'active-state' : ''}`} onMouseDown={() => handleLinkClick('help')}>Help</a></li>
+                <li><Link href="/contact" className={`mobile-text-link hover:text-[#6FF000] transition-all active:text-[#6FF000] ${activeLink === 'contact' ? 'active-state' : ''}`} onMouseDown={() => handleLinkClick('contact')}>Contact</Link></li>
               </ul>
             </div>
           </div>
@@ -55,39 +69,39 @@ export default function Footer() {
             <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000', fontWeight: '800', fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>Community</h4>
             <div className="grid gap-3">
               <div className="grid grid-cols-6 gap-2">
-                <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000]" title="X (Twitter)">
+                <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className={`mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000] ${activeLink === 'x' ? 'active-state' : ''}`} title="X (Twitter)" onMouseDown={() => handleLinkClick('x')}>
                   <img src="/x-icon.png" alt="X" className="w-4 h-4" />
                 </a>
-                <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" className="mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000]" title="Telegram">
+                <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" className={`mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000] ${activeLink === 'telegram' ? 'active-state' : ''}`} title="Telegram" onMouseDown={() => handleLinkClick('telegram')}>
                   <img src="/telegram-icon.png" alt="Telegram" className="w-4 h-4" />
                 </a>
-                <a href="https://discord.gg/talex" target="_blank" rel="noopener noreferrer" className="mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000]" title="Discord">
+                <a href="https://discord.gg/talex" target="_blank" rel="noopener noreferrer" className={`mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000] ${activeLink === 'discord' ? 'active-state' : ''}`} title="Discord" onMouseDown={() => handleLinkClick('discord')}>
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.211.375-.445.864-.607 1.25a18.27 18.27 0 00-5.487 0c-.163-.386-.395-.875-.607-1.25a.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.873-1.295 1.226-1.994a.076.076 0 00-.042-.106 13.107 13.107 0 01-1.872-.892.077.077 0 00-.009-.128c.126-.094.252-.192.372-.291a.074.074 0 00.03-.066c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 00.033.065c.12.099.246.198.373.292a.077.077 0 00-.006.127 13.052 13.052 0 01-1.873.892.077.077 0 00-.041.107c.359.698.77 1.364 1.225 1.994a.076.076 0 00.084.028 19.86 19.86 0 006.002-3.03.077.077 0 00.032-.054c.5-4.718-.838-8.812-3.549-12.456a.06.06 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-.965-2.157-2.156 0-1.193.964-2.157 2.157-2.157 1.193 0 2.157.964 2.157 2.157 0 1.191-.964 2.156-2.157 2.156zm7.975 0c-1.183 0-2.157-.965-2.157-2.156 0-1.193.964-2.157 2.157-2.157 1.193 0 2.157.964 2.157 2.157 0 1.191-.964 2.156-2.157 2.156z"/></svg>
                 </a>
-                <a href="https://www.binance.com/en/square/profile/talex_chain" target="_blank" rel="noopener noreferrer" className="mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000]" title="Binance Square">
+                <a href="https://www.binance.com/en/square/profile/talex_chain" target="_blank" rel="noopener noreferrer" className={`mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000] ${activeLink === 'binance' ? 'active-state' : ''}`} title="Binance Square" onMouseDown={() => handleLinkClick('binance')}>
                   <img src="/binance-icon.png" alt="Binance" className="w-4 h-4" />
                 </a>
-                <a href="https://coinmarketcap.com/community/profile/TaleX_chain" target="_blank" rel="noopener noreferrer" className="mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000]" title="CoinMarketCap">
+                <a href="https://coinmarketcap.com/community/profile/TaleX_chain" target="_blank" rel="noopener noreferrer" className={`mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000] ${activeLink === 'cmc' ? 'active-state' : ''}`} title="CoinMarketCap" onMouseDown={() => handleLinkClick('cmc')}>
                   <img src="/coinmarketcap-icon.png" alt="CoinMarketCap" className="w-4 h-4" />
                 </a>
-                <a href="https://facebook.com/TaleXchain" target="_blank" rel="noopener noreferrer" className="mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000]" title="Facebook">
+                <a href="https://facebook.com/TaleXchain" target="_blank" rel="noopener noreferrer" className={`mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000] ${activeLink === 'facebook' ? 'active-state' : ''}`} title="Facebook" onMouseDown={() => handleLinkClick('facebook')}>
                   <img src="/facebook-icon.png" alt="Facebook" className="w-4 h-4" />
                 </a>
               </div>
               <div className="grid grid-cols-6 gap-2">
-                <a href="https://youtube.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000]" title="YouTube">
+                <a href="https://youtube.com/@talex_chain" target="_blank" rel="noopener noreferrer" className={`mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000] ${activeLink === 'youtube' ? 'active-state' : ''}`} title="YouTube" onMouseDown={() => handleLinkClick('youtube')}>
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                 </a>
-                <a href="https://www.instagram.com/talexchain" target="_blank" rel="noopener noreferrer" className="mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000]" title="Instagram">
+                <a href="https://www.instagram.com/talexchain" target="_blank" rel="noopener noreferrer" className={`mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000] ${activeLink === 'instagram' ? 'active-state' : ''}`} title="Instagram" onMouseDown={() => handleLinkClick('instagram')}>
                   <img src="/instagram-icon.png" alt="Instagram" className="w-4 h-4" />
                 </a>
-                <a href="https://www.tiktok.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000]" title="TikTok">
+                <a href="https://www.tiktok.com/@talex_chain" target="_blank" rel="noopener noreferrer" className={`mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000] ${activeLink === 'tiktok' ? 'active-state' : ''}`} title="TikTok" onMouseDown={() => handleLinkClick('tiktok')}>
                   <img src="/tiktok-icon.png" alt="TikTok" className="w-4 h-4" />
                 </a>
-                <a href="https://open.spotify.com/show/51Q8zhfB2ADlmyEaUzT3iR" target="_blank" rel="noopener noreferrer" className="mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000]" title="Spotify">
+                <a href="https://open.spotify.com/show/51Q8zhfB2ADlmyEaUzT3iR" target="_blank" rel="noopener noreferrer" className={`mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000] ${activeLink === 'spotify' ? 'active-state' : ''}`} title="Spotify" onMouseDown={() => handleLinkClick('spotify')}>
                   <img src="/spotify-icon.png" alt="Spotify" className="w-4 h-4" />
                 </a>
-                <a href="https://www.linkedin.com/company/talexchain" target="_blank" rel="noopener noreferrer" className="mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000]" title="LinkedIn">
+                <a href="https://www.linkedin.com/company/talexchain" target="_blank" rel="noopener noreferrer" className={`mobile-social-btn flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-all active:bg-[#6FF000] ${activeLink === 'linkedin' ? 'active-state' : ''}`} title="LinkedIn" onMouseDown={() => handleLinkClick('linkedin')}>
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.81 0-9.728h3.554v1.375c.425-.654 1.187-1.586 2.882-1.586 2.105 0 3.685 1.375 3.685 4.331v5.608zM5.337 8.855c-1.144 0-1.915-.762-1.915-1.715 0-.953.77-1.715 1.958-1.715 1.187 0 1.915.762 1.915 1.715 0 .953-.728 1.715-1.958 1.715zm1.6 11.597H3.738V9.579h3.199v10.873zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
                 </a>
                 <div className="w-8 h-8"></div>
