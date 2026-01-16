@@ -12,65 +12,65 @@ export default function Footer() {
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
       <div className="md:hidden py-12 px-6">
-        <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-3">
             <Link href="/">
-              <div className="flex items-center gap-2 cursor-pointer">
-                <img src="/logo-new.png" alt="TaleX" className="h-6 w-auto" style={{width: '76px', height: '12px'}} />
+              <div className="flex items-center gap-2 cursor-pointer mb-4">
+                <img src="/logo-new.png" alt="TaleX" className="h-6 w-auto" style={{width: '100px', height: '18px'}} />
               </div>
             </Link>
-            <p className="text-gray-500 text-sm leading-relaxed">
-              Where great content pays off both creators and supporters. Join the revolution of content ownership.
+            <p className="text-gray-500 text-xs leading-relaxed" style={{color: '#838383', fontSize: '14px'}}>
+              Where great content pays off both creators and supporters
             </p>
           </div>
-
-          <div className="grid grid-cols-2 gap-8">
+          
+          <div className="grid grid-cols-2 gap-6">
             <div>
-              <h4 className="font-bold mb-4 text-sm">Product</h4>
-              <ul className="space-y-3 text-sm text-gray-600">
-                <li><Link href="/features" className="hover:text-black transition-colors">Features</Link></li>
-                <li><Link href="/pricing" className="hover:text-black transition-colors">Pricing</Link></li>
-                <li><Link href="/creators" className="hover:text-black transition-colors">For Creators</Link></li>
-  
+              <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000'}}>Explore</h4>
+              <ul className="space-y-3 text-xs text-gray-600">
+                <li><a href="https://www.talex.world/" className="hover:text-[#6FF000] transition-colors">TaleX App</a></li>
+                <li><Link href="/model" className="hover:text-[#6FF000] transition-colors">Our Model</Link></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-bold mb-4 text-sm">Company</h4>
-              <ul className="space-y-3 text-sm text-gray-600">
-                <li><Link href="/about" className="hover:text-black transition-colors">About Us</Link></li>
-                <li><Link href="/careers" className="hover:text-black transition-colors">Careers</Link></li>
-                <li><Link href="/blog" className="hover:text-black transition-colors">Blog</Link></li>
-                <li><Link href="/contact" className="hover:text-black transition-colors">Contact</Link></li>
+              <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000'}}>Company</h4>
+              <ul className="space-y-3 text-xs text-gray-600">
+                <li><a href="https://docs.talex.world/" className="hover:text-[#6FF000] transition-colors">About</a></li>
+                <li><a href="https://t.me/talex_chain_community" className="hover:text-[#6FF000] transition-colors">Help</a></li>
+                <li><Link href="/contact" className="hover:text-[#6FF000] transition-colors">Contact</Link></li>
               </ul>
             </div>
           </div>
 
           <div>
-            <h4 className="font-bold mb-4 text-sm">Connect</h4>
-            <div className="grid grid-cols-2 gap-3">
-              <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">X (Twitter)</a>
-              <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Telegram</a>
-              <a href="https://discord.gg/talex" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Discord</a>
-              <a href="https://www.binance.com/en/square/profile/talex_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Binance Square</a>
-              <a href="https://coinmarketcap.com/community/profile/TaleX_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">CoinMarketCap</a>
-              <a href="https://facebook.com/TaleXchain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Facebook</a>
-              <a href="https://youtube.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">YouTube</a>
-              <a href="https://www.instagram.com/talexchain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Instagram</a>
-              <a href="https://www.tiktok.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">TikTok</a>
-              <a href="https://open.spotify.com/show/51Q8zhfB2ADlmyEaUzT3iR" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">Spotify</a>
-              <a href="https://www.linkedin.com/company/talexchain" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-[#6FF000] transition-colors">LinkedIn</a>
+            <h4 className="font-bold mb-4 text-xs" style={{fontSize: '14px', color: '#000000'}}>Community</h4>
+            <div className="grid grid-cols-5 gap-2">
+              <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-colors" title="X (Twitter)">
+                <img src="/x-icon.png" alt="X" className="w-4 h-4" />
+              </a>
+              <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-colors" title="Telegram">
+                <img src="/telegram-icon.png" alt="Telegram" className="w-4 h-4" />
+              </a>
+              <a href="https://discord.gg/talex" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-colors" title="Discord">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.211.375-.445.864-.607 1.25a18.27 18.27 0 00-5.487 0c-.163-.386-.395-.875-.607-1.25a.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.873-1.295 1.226-1.994a.076.076 0 00-.042-.106 13.107 13.107 0 01-1.872-.892.077.077 0 00-.009-.128c.126-.094.252-.192.372-.291a.074.074 0 00.03-.066c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 00.033.065c.12.099.246.198.373.292a.077.077 0 00-.006.127 13.052 13.052 0 01-1.873.892.077.077 0 00-.041.107c.359.698.77 1.364 1.225 1.994a.076.076 0 00.084.028 19.86 19.86 0 006.002-3.03.077.077 0 00.032-.054c.5-4.718-.838-8.812-3.549-12.456a.06.06 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-.965-2.157-2.156 0-1.193.964-2.157 2.157-2.157 1.193 0 2.157.964 2.157 2.157 0 1.191-.964 2.156-2.157 2.156zm7.975 0c-1.183 0-2.157-.965-2.157-2.156 0-1.193.964-2.157 2.157-2.157 1.193 0 2.157.964 2.157 2.157 0 1.191-.964 2.156-2.157 2.156z"/></svg>
+              </a>
+              <a href="https://www.binance.com/en/square/profile/talex_chain" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-colors" title="Binance Square">
+                <img src="/binance-icon.png" alt="Binance" className="w-4 h-4" />
+              </a>
+              <a href="https://facebook.com/TaleXchain" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#6FF000] transition-colors" title="Facebook">
+                <img src="/facebook-icon.png" alt="Facebook" className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
-          <div className="border-t border-gray-100 pt-8 flex flex-col gap-4">
-            <p className="text-xs text-gray-400 text-center">
-              © 2024 TaleX Inc. All rights reserved.
+          <div className="border-t border-gray-100 pt-6 flex flex-col gap-3">
+            <p className="text-xs text-gray-400" style={{color: '#000000'}}>
+              © 2026 Powered by TaleX. All rights reserved.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
-              <Link href="/privacy" className="hover:text-black transition-colors" style={{color: '#000000'}}>Privacy Policy</Link>
-              <Link href="/terms" className="hover:text-black transition-colors" style={{color: '#000000'}}>Terms of Service</Link>
-
+            <div className="flex gap-4 text-xs text-gray-400">
+              <a href="https://www.talex.world/privacy-policy" target="_self" className="hover:text-green-500 active:text-green-500 transition-colors" style={{color: '#000000'}}>Privacy Policy</a>
+              <a href="https://www.talex.world/terms-of-service" target="_self" className="hover:text-green-500 active:text-green-500 transition-colors" style={{color: '#050505'}}>Terms of Service</a>
             </div>
           </div>
         </div>
