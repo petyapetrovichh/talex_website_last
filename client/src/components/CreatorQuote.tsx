@@ -7,7 +7,7 @@ export default function CreatorQuote() {
       {/* Mobile Version */}
       <section 
         className="md:hidden relative py-16 bg-[#F0FDF4] overflow-hidden" 
-        style={{height: '1042px', marginTop: '-217px'}}
+        style={{height: '1374px', marginTop: '-258px'}}
       >
 
         {/* World Map Background */}
