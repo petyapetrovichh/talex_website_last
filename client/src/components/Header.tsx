@@ -82,7 +82,7 @@ export default function Header() {
               {isMobileMenuOpen ? <X size={24} color="black" /> : <Menu size={24} color="black" />}
             </button>
 
-            <Link href="/">
+            <Link href="/" onClick={() => window.scrollTo(0, 0)}>
               <div className="flex items-center gap-2 cursor-pointer">
                 <img src="/logo-new.png" alt="TaleX" className="h-8 w-auto" style={{width: '100px', height: 'auto'}} />
               </div>
@@ -128,7 +128,7 @@ export default function Header() {
             ========================================= */}
         <div className="hidden md:flex items-center justify-between w-full">
           <div className="flex items-center gap-8">
-            <Link href="/">
+            <Link href="/" onClick={() => window.scrollTo(0, 0)}>
               <div className="flex items-center gap-2 cursor-pointer">
                 <img src="/logo-new.png" alt="TaleX" className="h-8 w-auto" style={{width: '165px', height: '29px'}} />
               </div>
