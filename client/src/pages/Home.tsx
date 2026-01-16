@@ -12,7 +12,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-white font-sans text-gray-900">
       <style>{`
         @media (max-width: 768px) {
-          #home-footer { margin-top: 300px !important; }
+          #home-footer { margin-top: 600px !important; }
         }
       `}</style>
       <Header />
