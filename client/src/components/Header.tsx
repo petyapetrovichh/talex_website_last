@@ -33,9 +33,9 @@ export default function Header() {
 
   // 关闭菜单时的处理
   const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
     setIsMenuClosing(true);
     setTimeout(() => {
-      setIsMobileMenuOpen(false);
       setIsMenuClosing(false);
     }, 300);
   };
