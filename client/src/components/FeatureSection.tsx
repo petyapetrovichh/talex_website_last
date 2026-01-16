@@ -219,7 +219,7 @@ It's designed to help people build their own information pathways.`}
       />
       
       {/* Mobile Illustration */}
-      <div className="md:hidden w-full mt-12 px-4" style={{marginTop: '-65px', marginLeft: '0px', width: '355px', paddingLeft: '25px'}}>
+      <div className="md:hidden w-full mt-12 px-4" style={{marginTop: '-70px', marginLeft: '0px', width: '355px', paddingLeft: '25px'}}>
         <img
           src="/images/community_illustration.png"
           alt="Community illustration"
@@ -230,7 +230,7 @@ It's designed to help people build their own information pathways.`}
           src="/images/creator_illustration.png"
           alt="Creator illustration"
           className="w-full h-auto object-contain drop-shadow-xl"
-          style={{marginTop: '-105px', marginLeft: '186px', width: '158px'}}
+          style={{marginTop: '-105px', marginLeft: '200px', width: '158px'}}
         />
       </div>
 
