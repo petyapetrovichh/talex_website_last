@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-white border-t border-gray-100" style={{marginTop: '50px'}}>
       <style>{`
         @media (max-width: 768px) {
-          footer { margin-top: 1000px !important; }
+          footer { margin-top: 950px !important; }
         }
       `}</style>
       {/* =========================================
