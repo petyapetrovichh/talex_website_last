@@ -213,10 +213,10 @@ export default function CreatorList() {
             100% { transform: translateX(0); }
           }
           .animate-marquee-mobile {
-            animation: marquee-mobile 5.334s linear infinite;
+            animation: marquee-mobile 40s linear infinite;
           }
           .animate-marquee-reverse-mobile {
-            animation: marquee-reverse-mobile 5.334s linear infinite;
+            animation: marquee-reverse-mobile 40s linear infinite;
           }
           /* Pause on hover */
           .animate-marquee-mobile:hover, .animate-marquee-reverse-mobile:hover {
