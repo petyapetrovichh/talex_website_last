@@ -149,7 +149,7 @@ export default function CreatorList() {
   return (
     <>
       {/* Mobile Version */}
-      <section className="md:hidden bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1250px', marginTop: '230px'}}>
+      <section className="md:hidden bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1250px', marginTop: '225px'}}>
         {/* Top Gradient Overlay for smooth blending if needed, though design shows solid background */}
         
         {/* First Row - Marquee Left */}
