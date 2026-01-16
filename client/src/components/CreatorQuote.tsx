@@ -5,7 +5,7 @@ export default function CreatorQuote() {
   return (
     <section 
       className="relative py-16 md:py-32 bg-[#F0FDF4] overflow-hidden -mt-[471px] md:-mt-[138px]" 
-      style={{height: '1042px'}}
+      style={{height: '1042px', marginTop: '-217px'}}
     >
 
       {/* World Map Background */}
