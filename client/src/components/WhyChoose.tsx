@@ -51,8 +51,29 @@ export default function WhyChoose() {
                 <p className="text-gray-600 leading-relaxed text-base" style={{fontSize: '18px', color: '#000000', textAlign: 'left'}}>
                   {feature.description}
                 </p>
-                <button className="mt-3 text-[#6FF000] font-bold text-sm hover:underline" style={{fontSize: '16px', textAlign: 'left'}}>
-                  Learn more →
+                <button 
+                  className="mt-4 font-bold text-sm transition-colors"
+                  style={{color: '#000000', fontSize: '16px', textAlign: 'left'}}
+                  onMouseEnter={(e) => {
+                    const btn = e.currentTarget as HTMLButtonElement;
+                    btn.style.color = '#6FF000';
+                  }}
+                  onMouseLeave={(e) => {
+                    const btn = e.currentTarget as HTMLButtonElement;
+                    if (!btn.dataset.clicked) {
+                      btn.style.color = '#000000';
+                    }
+                  }}
+                  onClick={(e) => {
+                    const btn = e.currentTarget as HTMLButtonElement;
+                    btn.style.color = '#6FF000';
+                    btn.dataset.clicked = 'true';
+                    setTimeout(() => {
+                      window.location.href = feature.buttonLink;
+                    }, 100);
+                  }}
+                >
+                  {feature.buttonText}
                 </button>
               </div>
             </div>
