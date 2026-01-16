@@ -8,7 +8,7 @@ export default function Footer() {
     setActiveLink(linkId);
   };
   return (
-    <footer className="bg-white border-t border-gray-100" style={{marginTop: '50px'}}>
+    <footer className="bg-white border-t border-gray-100" style={{marginTop: '237px'}}>
       <style>{`
         @media (max-width: 768px) {
           footer { margin-top: 0px !important; position: relative; }
@@ -33,7 +33,7 @@ export default function Footer() {
       {/* =========================================
           MOBILE VIEW (Visible only on mobile)
           ========================================= */}
-      <div className="md:hidden py-12 px-6" style={{marginTop: '192px'}}>
+      <div className="md:hidden py-12 px-6" style={{marginTop: '0px'}}>
         <div className="flex flex-col gap-8" style={{marginTop: '0px'}}>
           <div className="flex flex-col gap-3">
             <Link href="/">
