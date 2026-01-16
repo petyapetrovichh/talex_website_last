@@ -42,7 +42,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           ========================================= */}
       <div className="md:hidden flex flex-col gap-8 py-12 w-full">
         {/* Mobile Image - Moved to top */}
-        <div className="w-screen flex justify-center gap-4 overflow-hidden" style={{marginTop: '-87px', marginLeft: 'calc(-50vw + 50%)', marginRight: 'calc(-50vw + 50%)', paddingRight: '0px', paddingLeft: '0px', paddingBottom: '0px', width: '100vw'}}>
+        <div className="w-full flex justify-center px-4 gap-4 overflow-hidden" style={{marginTop: '-87px', paddingRight: '20px', paddingLeft: '20px', paddingBottom: '100px'}}>
           {mobileImages ? (
             // 如果有指定的移动端图片组，则并排显示
             mobileImages.map((img, index) => (
@@ -54,13 +54,11 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
                 style={{
                   width: '172px',
                   marginTop: reverse ? (index === 0 ? '89px' : '-75px') : (index === 0 ? '33px' : '91px'),
-                  marginLeft: index === 0 ? '0px' : '0px',
-                  marginRight: index === 0 ? '0px' : '0px',
+                  marginLeft: index === 0 ? '-45px' : '-10px',
                   height: index === 0 ? '313px' : 'auto',
                   paddingTop: '0px',
                   transform: 'scale(1.25)',
-                  transformOrigin: 'top left',
-                  marginBottom: '-50px'
+                  transformOrigin: 'top left'
                 }}
               />
             ))
