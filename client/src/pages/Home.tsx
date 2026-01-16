@@ -19,7 +19,7 @@ export default function Home() {
         <CreatorList />
         <WhyChoose />
       </main>
-      <Footer />
+      <Footer mobileMarginTop="0px" />
     </div>
   );
 }

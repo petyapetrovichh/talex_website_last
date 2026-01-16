@@ -217,7 +217,7 @@ export default function Contact() {
         </div>
       </main>
 
-      <Footer />
+      <Footer mobileMarginTop="-600px" />
     </div>
   );
 }
