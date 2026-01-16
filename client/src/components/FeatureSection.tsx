@@ -13,23 +13,29 @@ interface FeatureProps {
 }
 
 function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring in the app", mobileImages }: FeatureProps) {
-  const [isButtonActive, setIsButtonActive] = useState(false);
+  const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const btn = e.currentTarget as HTMLButtonElement;
+    btn.style.color = '#6FF000';
+    btn.dataset.clicked = 'true';
+    setTimeout(() => {
+      if (buttonText === 'Start supporting & earning') {
+        window.location.href = 'https://www.talex.world/reading/585449588677';
+      } else {
+        window.location.href = 'https://www.talex.world';
+      }
+    }, 100);
+  };
 
-  const handleButtonClick = () => {
-    setIsButtonActive(true);
-    if (buttonText === 'Start supporting & earning') {
-      window.location.href = 'https://www.talex.world/reading/585449588677';
-    } else {
-      window.location.href = 'https://www.talex.world';
+  const handleButtonMouseEnter = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const btn = e.currentTarget as HTMLButtonElement;
+    btn.style.color = '#6FF000';
+  };
+
+  const handleButtonMouseLeave = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const btn = e.currentTarget as HTMLButtonElement;
+    if (!btn.dataset.clicked) {
+      btn.style.color = '#000000';
     }
-  };
-
-  const handleButtonMouseDown = () => {
-    setIsButtonActive(true);
-  };
-
-  const handleButtonMouseUp = () => {
-    setIsButtonActive(false);
   };
 
   return (
@@ -78,14 +84,10 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           </p>
           <Button 
             onClick={handleButtonClick}
-            onMouseDown={handleButtonMouseDown}
-            onMouseUp={handleButtonMouseUp}
-            className={`font-bold rounded-full px-8 py-6 text-lg shadow-lg transition-all w-full ${
-              isButtonActive 
-                ? 'bg-black text-white shadow-lg shadow-black/20' 
-                : 'bg-[#6FF000] text-black hover:bg-black hover:text-white active:bg-black active:text-white focus:bg-black focus:text-white shadow-lg shadow-[#6FF000]/20 hover:scale-105 active:scale-95'
-            }`}
-            style={{fontSize: '15px', width: '228px'}} 
+            onMouseEnter={handleButtonMouseEnter}
+            onMouseLeave={handleButtonMouseLeave}
+            className="bg-[#6FF000] font-bold rounded-full px-8 py-6 text-lg shadow-lg shadow-[#6FF000]/20 transition-all w-full"
+            style={{fontSize: '15px', width: '228px', color: '#000000'}} 
           >
             {buttonText}
           </Button>
