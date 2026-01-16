@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useEffect, useState, useRef } from "react";
+import ModelMobile from "./ModelMobile";
 
 export default function Model() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -40,7 +41,9 @@ export default function Model() {
     <div className="min-h-screen bg-white font-sans text-black">
       <Header />
       
-      <div className="pt-20">
+      <ModelMobile />
+
+      <div className="hidden md:block pt-20">
         {/* 1. Hero Section */}
         <section className="relative py-24 overflow-hidden" style={{height: '655px', backgroundImage: 'url(/images/our-model-hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
           
@@ -547,7 +550,9 @@ incentivizing early discovery and dissemination.
           </div>
         </section>
       </div>
-      <Footer />
+      <div className="hidden md:block">
+        <Footer />
+      </div>
     </div>
   );
 }
