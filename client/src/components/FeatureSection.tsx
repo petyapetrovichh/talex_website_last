@@ -82,7 +82,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           <Button 
             onClick={handleMobileButtonClick}
             className="bg-[#6FF000] font-bold rounded-full px-8 py-6 text-lg shadow-lg shadow-[#6FF000]/20 transition-all w-full"
-            style={{fontSize: '15px', width: '228px', color: '#000000'}} 
+            style={{fontSize: '18px', width: '275px', color: '#000000'}} 
           >
             {buttonText}
           </Button>
