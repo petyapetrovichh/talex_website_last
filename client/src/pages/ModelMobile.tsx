@@ -527,7 +527,7 @@ export default function ModelMobile() {
         </section>
 
         {/* Bottom CTA */}
-        <section className="py-20 bg-gradient-to-b from-white to-[#F0FDF4] text-center relative overflow-hidden" style={{backgroundImage: 'url(/images/new-way-value-discovery.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <section className="py-20 bg-gradient-to-b from-white to-[#F0FDF4] text-center relative overflow-hidden" style={{backgroundImage: 'url(/images/mobile-model-value-discovery-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
           <div className="container relative z-10 px-4">
             <h2 className="text-3xl font-bold mb-6 font-serif" style={{fontWeight: '400', fontFamily: '"Abril Fatface", serif'}}>A new way of value discovery</h2>
             <p className="text-lg text-gray-600 mb-10 mx-auto" style={{color: '#000000', fontWeight: '500'}}>
