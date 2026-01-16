@@ -9,7 +9,7 @@ export default function BusinessModel() {
           ========================================= */}
       <div className="md:hidden py-16 px-6" style={{marginTop: '159px', height: '740px'}}>
         <div className="text-center mb-12 flex flex-col items-center" style={{marginTop: '-177px'}}>
-          <h2 className="text-3xl font-bold mb-6" style={{fontSize: '22px', color: '#000000', fontWeight: '400', width: '329px', margin: '0 auto'}}>A model that changes everything</h2>
+          <h2 className="text-3xl font-bold mb-6" style={{fontSize: '22px', color: '#000000', fontWeight: '400', width: '329px', margin: '0 auto', marginBottom: '24px'}}>A model that changes everything</h2>
           <p className="text-base text-gray-600 leading-relaxed mb-8" style={{fontSize: '18px', color: '#000000'}}>
             When fans don't just support creators by tipping their work, but join real economic value distribution, the magic happens. For the first time, creators get what nobody has offered them before — a natural promotional instrument powered by their own audience.
             <br /><br />
