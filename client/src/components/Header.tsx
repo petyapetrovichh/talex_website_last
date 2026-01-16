@@ -79,7 +79,7 @@ export default function Header() {
               }}
               aria-label={isMobileMenuOpen ? "关闭菜单" : "打开菜单"}
             >
-              {(isMobileMenuOpen || isMenuClosing) ? <X size={24} color="black" /> : <Menu size={24} color="black" />}
+              {isMobileMenuOpen ? <X size={24} color="black" /> : <Menu size={24} color="black" />}
             </button>
 
             <Link href="/">
