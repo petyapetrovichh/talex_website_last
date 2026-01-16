@@ -147,80 +147,156 @@ const CreatorCard = ({ creator }: { creator: typeof creators[0] }) => (
 
 export default function CreatorList() {
   return (
-    <section className="bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1250px'}}>
-      {/* Top Gradient Overlay for smooth blending if needed, though design shows solid background */}
-      
-      {/* First Row - Marquee Left */}
-      <div className="mb-16 relative w-full overflow-hidden">
-        <div className="flex animate-marquee whitespace-nowrap">
-          {marqueeCreators.map((creator, index) => (
-            <CreatorCard key={`row1-${index}`} creator={creator} />
-          ))}
+    <>
+      {/* MOBILE VERSION */}
+      <section className="md:hidden bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1250px'}}>
+        {/* First Row - Marquee Left */}
+        <div className="mb-16 relative w-full overflow-hidden">
+          <div className="flex animate-marquee whitespace-nowrap">
+            {marqueeCreators.map((creator, index) => (
+              <CreatorCard key={`row1-${index}`} creator={creator} />
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* Center Content */}
-      <div className="container text-center mb-16 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 font-serif text-black" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", cursive'}}>
-          Ideas already live on TaleX
-        </h2>
-        <p className="text-gray-700 text-sm md:text-base mb-8 max-w-xl mx-auto" style={{fontSize: '18px', color: '#000000'}}>
-          Here are just a few of many people you can support and grow together
-        </p>
-        <Button 
-          onClick={(e) => {
-            window.open('https://www.talex.world/', '_self');
-            const btn = e.currentTarget as HTMLButtonElement;
-            btn.style.backgroundColor = '#6FF000';
-            btn.style.color = 'black';
-          }}
-          className="bg-black text-white hover:bg-[#6FF000] hover:text-black px-8 py-6 rounded-full text-sm font-medium transition-all hover:scale-105 shadow-lg shadow-[#6FF000]/20"
-          onMouseDown={(e) => {
-            const btn = e.currentTarget as HTMLButtonElement;
-            btn.style.backgroundColor = '#6FF000';
-            btn.style.color = 'black';
-          }}
-          onTouchStart={(e) => {
-            const btn = e.currentTarget as HTMLButtonElement;
-            btn.style.backgroundColor = '#6FF000';
-            btn.style.color = 'black';
-          }}
-          style={{fontSize: '18px'}}
-        >
-          Discover even more ideas
-        </Button>
-      </div>
-
-      {/* Second Row - Marquee Right */}
-      <div className="relative w-full overflow-hidden">
-        <div className="flex animate-marquee-reverse whitespace-nowrap">
-          {marqueeCreators.map((creator, index) => (
-            <CreatorCard key={`row2-${index}`} creator={creator} />
-          ))}
+        {/* Center Content */}
+        <div className="container text-center mb-16 relative z-10">
+          <h2 className="text-4xl font-bold mb-4 font-serif text-black" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", cursive'}}>
+            Ideas already live on TaleX
+          </h2>
+          <p className="text-gray-700 text-sm mb-8 max-w-xl mx-auto" style={{fontSize: '18px', color: '#000000'}}>
+            Here are just a few of many people you can support and grow together
+          </p>
+          <Button 
+            onClick={(e) => {
+              window.open('https://www.talex.world/', '_self');
+              const btn = e.currentTarget as HTMLButtonElement;
+              btn.style.backgroundColor = '#6FF000';
+              btn.style.color = 'black';
+            }}
+            className="bg-black text-white hover:bg-[#6FF000] hover:text-black px-8 py-6 rounded-full text-sm font-medium transition-all hover:scale-105 shadow-lg shadow-[#6FF000]/20"
+            onMouseDown={(e) => {
+              const btn = e.currentTarget as HTMLButtonElement;
+              btn.style.backgroundColor = '#6FF000';
+              btn.style.color = 'black';
+            }}
+            onTouchStart={(e) => {
+              const btn = e.currentTarget as HTMLButtonElement;
+              btn.style.backgroundColor = '#6FF000';
+              btn.style.color = 'black';
+            }}
+            style={{fontSize: '18px'}}
+          >
+            Discover even more ideas
+          </Button>
         </div>
-      </div>
 
-      {/* CSS for Marquee Animation */}
-      <style>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        @keyframes marquee-reverse {
-          0% { transform: translateX(-50%); }
-          100% { transform: translateX(0); }
-        }
-        .animate-marquee {
-          animation: marquee 26.67s linear infinite;
-        }
-        .animate-marquee-reverse {
-          animation: marquee-reverse 26.67s linear infinite;
-        }
-        /* Pause on hover */
-        .animate-marquee:hover, .animate-marquee-reverse:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
-    </section>
+        {/* Second Row - Marquee Right */}
+        <div className="relative w-full overflow-hidden">
+          <div className="flex animate-marquee-reverse whitespace-nowrap">
+            {marqueeCreators.map((creator, index) => (
+              <CreatorCard key={`row2-${index}`} creator={creator} />
+            ))}
+          </div>
+        </div>
+
+        {/* CSS for Marquee Animation */}
+        <style>{`
+          @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          @keyframes marquee-reverse {
+            0% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+          }
+          .animate-marquee {
+            animation: marquee 26.67s linear infinite;
+          }
+          .animate-marquee-reverse {
+            animation: marquee-reverse 26.67s linear infinite;
+          }
+          /* Pause on hover */
+          .animate-marquee:hover, .animate-marquee-reverse:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+      </section>
+
+      {/* DESKTOP VERSION */}
+      <section className="hidden md:block bg-[#C1F09D] py-20 overflow-hidden relative" style={{height: '1250px'}}>
+        {/* First Row - Marquee Left */}
+        <div className="mb-16 relative w-full overflow-hidden">
+          <div className="flex animate-marquee whitespace-nowrap">
+            {marqueeCreators.map((creator, index) => (
+              <CreatorCard key={`row1-${index}`} creator={creator} />
+            ))}
+          </div>
+        </div>
+
+        {/* Center Content */}
+        <div className="container text-center mb-16 relative z-10">
+          <h2 className="text-5xl font-bold mb-4 font-serif text-black" style={{fontSize: '39px', fontWeight: '400', fontFamily: '"Abril Fatface", cursive'}}>
+            Ideas already live on TaleX
+          </h2>
+          <p className="text-gray-700 text-base mb-8 max-w-xl mx-auto" style={{fontSize: '18px', color: '#000000'}}>
+            Here are just a few of many people you can support and grow together
+          </p>
+          <Button 
+            onClick={(e) => {
+              window.open('https://www.talex.world/', '_self');
+              const btn = e.currentTarget as HTMLButtonElement;
+              btn.style.backgroundColor = '#6FF000';
+              btn.style.color = 'black';
+            }}
+            className="bg-black text-white hover:bg-[#6FF000] hover:text-black px-8 py-6 rounded-full text-sm font-medium transition-all hover:scale-105 shadow-lg shadow-[#6FF000]/20"
+            onMouseDown={(e) => {
+              const btn = e.currentTarget as HTMLButtonElement;
+              btn.style.backgroundColor = '#6FF000';
+              btn.style.color = 'black';
+            }}
+            onTouchStart={(e) => {
+              const btn = e.currentTarget as HTMLButtonElement;
+              btn.style.backgroundColor = '#6FF000';
+              btn.style.color = 'black';
+            }}
+            style={{fontSize: '18px'}}
+          >
+            Discover even more ideas
+          </Button>
+        </div>
+
+        {/* Second Row - Marquee Right */}
+        <div className="relative w-full overflow-hidden">
+          <div className="flex animate-marquee-reverse whitespace-nowrap">
+            {marqueeCreators.map((creator, index) => (
+              <CreatorCard key={`row2-${index}`} creator={creator} />
+            ))}
+          </div>
+        </div>
+
+        {/* CSS for Marquee Animation */}
+        <style>{`
+          @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          @keyframes marquee-reverse {
+            0% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+          }
+          .animate-marquee {
+            animation: marquee 26.67s linear infinite;
+          }
+          .animate-marquee-reverse {
+            animation: marquee-reverse 26.67s linear infinite;
+          }
+          /* Pause on hover */
+          .animate-marquee:hover, .animate-marquee-reverse:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+      </section>
+    </>
   );
 }
