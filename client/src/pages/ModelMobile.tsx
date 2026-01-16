@@ -11,6 +11,7 @@ export default function ModelMobile() {
   
   // State for Win-Win-Win ecosystem cards tap interaction
   const [activeCard, setActiveCard] = useState<string | null>(null);
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!phoneRef.current) return;
@@ -298,7 +299,7 @@ export default function ModelMobile() {
 
               {/* Phone Image moved to bottom */}
               <div ref={phoneRef} className="relative cursor-pointer w-full max-w-[280px]" onClick={handleClick}>
-                <img src="/images/sharing-chain-phone.png" alt="The Sharing Chain" className="w-full h-auto drop-shadow-2xl rounded-3xl" />
+                <img src="/images/sharing-chain-phone.png" alt="The Sharing Chain" className="w-full h-auto drop-shadow-2xl rounded-3xl" style={{marginTop: '5px'}} />
               </div>
             </div>
           </div>
@@ -533,7 +534,15 @@ export default function ModelMobile() {
             <p className="text-lg text-gray-600 mb-10 mx-auto" style={{color: '#000000', fontWeight: '500'}}>
               Redefining "Tipping" from an emotional expression to a systematic tool for content discovery and growth.
             </p>
-            <Button className="bg-black hover:bg-[#6FF000] text-white hover:text-black font-bold rounded-full px-8 py-6 text-lg shadow-xl transition-all w-full max-w-xs" onClick={() => window.location.href = 'https://www.talex.world/publish'}>
+            <Button 
+              className={`font-bold rounded-full px-8 py-6 text-lg shadow-xl transition-all w-full max-w-xs ${isButtonClicked ? 'bg-[#6FF000] text-black' : 'bg-black text-white hover:bg-[#6FF000] hover:text-black'}`} 
+              onClick={() => {
+                setIsButtonClicked(true);
+                setTimeout(() => {
+                  window.location.href = 'https://www.talex.world/publish';
+                }, 300);
+              }}
+            >
               Tell Your Tale
             </Button>
           </div>
