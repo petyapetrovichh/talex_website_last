@@ -260,7 +260,18 @@ export default function Header() {
               <div className="py-3 px-4 text-base font-bold text-black mt-4">Company</div>
               <a href="https://docs.talex.world/" onClick={() => handleMenuItemClick('about')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'about' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>About</a>
               <a href="https://t.me/talex_chain_community" onClick={() => handleMenuItemClick('help')} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 ${activeMenuItem === 'help' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Help</a>
-              <Link href="/contact" onClick={() => { handleMenuItemClick('contact'); closeMobileMenu(); }} className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 block ${activeMenuItem === 'contact' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}>Contact</Link>
+              <div 
+                  onClick={() => { 
+                    handleMenuItemClick('contact'); 
+                    setTimeout(() => {
+                      window.location.href = '/contact';
+                      closeMobileMenu();
+                    }, 300);
+                  }} 
+                  className={`py-2.5 px-4 text-sm rounded-lg transition-colors hover:text-[#6FF000] hover:bg-gray-50 block cursor-pointer ${activeMenuItem === 'contact' ? 'text-[#6FF000] bg-gray-100' : 'text-black'}`}
+                >
+                  Contact
+                </div>
 
               {/* Community */}
               <div className="py-3 px-4 text-base font-bold text-black mt-4">Community</div>
