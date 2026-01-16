@@ -66,7 +66,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
           </p>
           <Button 
             onClick={handleButtonClick}
-            className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105 w-full" style={{fontSize: '15px', width: '228px'}} 
+            className="bg-[#6FF000] hover:bg-black active:bg-black text-black hover:text-white active:text-white font-bold rounded-full px-8 py-6 text-lg shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105 active:scale-95 w-full" style={{fontSize: '15px', width: '228px'}} 
           >
             {buttonText}
           </Button>
