@@ -76,7 +76,7 @@ export default function ModelMobile() {
                 <div className="space-y-8">
                   <div className="flex items-center gap-4">
                     <div className="w-20 h-20 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0">
-                      <img src="/images/1.png" alt="Subscription Ceiling" className="w-12 h-auto" />
+                      <img src="/images/1.png" alt="Subscription Ceiling" className="w-16 h-auto" />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed text-left" style={{color: '#000000'}}>
                       <strong>Subscription Ceiling:</strong> Hard to convince users to subscribe forever for occasional hits.
@@ -84,7 +84,7 @@ export default function ModelMobile() {
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-20 h-20 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0">
-                      <img src="/images/2.png" alt="Centralized Traffic" className="w-12 h-auto" />
+                      <img src="/images/2.png" alt="Centralized Traffic" className="w-16 h-auto" />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed text-left" style={{color: '#000000'}}>
                       <strong>Centralized Traffic:</strong> Algorithms favor clickbait over quality.
@@ -92,7 +92,7 @@ export default function ModelMobile() {
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-20 h-20 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0">
-                      <img src="/images/3.png" alt="No Ownership" className="w-12 h-auto" />
+                      <img src="/images/3.png" alt="No Ownership" className="w-16 h-auto" />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed text-left" style={{color: '#000000'}}>
                       <strong>Monetization Gap:</strong> Single high-quality pieces often generate zero direct revenue.
@@ -107,7 +107,7 @@ export default function ModelMobile() {
                 <div className="space-y-8">
                   <div className="flex items-center gap-4">
                     <div className="w-20 h-20 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0">
-                      <img src="/images/4.png" alt="Information Overload" className="w-12 h-auto" />
+                      <img src="/images/4.png" alt="Information Overload" className="w-16 h-auto" />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed text-left" style={{color: '#000000'}}>
                       <strong>Information Overload:</strong> Valuable content is buried in noise and ads.
@@ -115,7 +115,7 @@ export default function ModelMobile() {
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-20 h-20 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0">
-                      <img src="/images/5.png" alt="Inefficient Payment" className="w-12 h-auto" />
+                      <img src="/images/5.png" alt="Inefficient Payment" className="w-16 h-auto" />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed text-left" style={{color: '#000000'}}>
                       <strong>Inefficient Payment:</strong> Forced to buy "the whole farm" just to eat one apple.
@@ -123,7 +123,7 @@ export default function ModelMobile() {
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-20 h-20 rounded-full bg-[#6FF000] flex items-center justify-center shrink-0">
-                      <img src="/images/6.png" alt="Passive Role" className="w-12 h-auto" />
+                      <img src="/images/6.png" alt="Passive Role" className="w-16 h-auto" />
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed text-left" style={{color: '#000000'}}>
                       <strong>Passive Role:</strong> No incentive to curate or filter good content.
