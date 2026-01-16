@@ -541,7 +541,7 @@ export default function ModelMobile() {
                 setTimeout(() => {
                   window.location.href = 'https://www.talex.world/publish';
                 }, 300);
-              }}
+              }} style={{width: '179px'}}
             >
               Tell Your Tale
             </Button>
