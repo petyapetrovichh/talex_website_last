@@ -13,9 +13,10 @@ interface FeatureProps {
 }
 
 function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText = "Start exploring in the app", mobileImages }: FeatureProps) {
-  const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleMobileButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     const btn = e.currentTarget as HTMLButtonElement;
-    btn.style.color = '#6FF000';
+    btn.style.backgroundColor = '#000000';
+    btn.style.color = '#ffffff';
     btn.dataset.clicked = 'true';
     setTimeout(() => {
       if (buttonText === 'Start supporting & earning') {
@@ -26,15 +27,11 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
     }, 100);
   };
 
-  const handleButtonMouseEnter = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const btn = e.currentTarget as HTMLButtonElement;
-    btn.style.color = '#6FF000';
-  };
-
-  const handleButtonMouseLeave = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const btn = e.currentTarget as HTMLButtonElement;
-    if (!btn.dataset.clicked) {
-      btn.style.color = '#000000';
+  const handleDesktopButtonClick = () => {
+    if (buttonText === 'Start supporting & earning') {
+      window.location.href = 'https://www.talex.world/reading/585449588677';
+    } else {
+      window.location.href = 'https://www.talex.world';
     }
   };
 
@@ -83,9 +80,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
             {description}
           </p>
           <Button 
-            onClick={handleButtonClick}
-            onMouseEnter={handleButtonMouseEnter}
-            onMouseLeave={handleButtonMouseLeave}
+            onClick={handleMobileButtonClick}
             className="bg-[#6FF000] font-bold rounded-full px-8 py-6 text-lg shadow-lg shadow-[#6FF000]/20 transition-all w-full"
             style={{fontSize: '15px', width: '228px', color: '#000000'}} 
           >
@@ -181,7 +176,7 @@ function Feature({ title, description, imageSrc, imageAlt, reverse, buttonText =
             {description}
           </p>
           <Button 
-            onClick={handleButtonClick}
+            onClick={handleDesktopButtonClick}
             className="bg-[#6FF000] hover:bg-black text-black hover:text-white font-bold rounded-full px-8 py-6 text-lg mt-4 shadow-lg shadow-[#6FF000]/20 transition-all hover:scale-105" 
             style={{marginTop: '-15px'}}
           >
