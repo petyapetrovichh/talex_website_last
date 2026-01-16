@@ -219,7 +219,7 @@ It's designed to help people build their own information pathways.`}
       />
       
       {/* Mobile Illustration */}
-      <div className="md:hidden w-full mt-12 px-4" style={{marginTop: '-75px', marginLeft: '0px', width: '355px'}}>
+      <div className="md:hidden w-full mt-12 px-4" style={{marginTop: '-65px', marginLeft: '0px', width: '355px', paddingLeft: '25px'}}>
         <img
           src="/images/community_illustration.png"
           alt="Community illustration"
